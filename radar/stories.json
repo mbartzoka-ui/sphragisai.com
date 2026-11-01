@@ -1,5 +1,79 @@
 [
  {
+  "slug": "2026-10-31-northflank-breach-leads-to-abuse-of-customers-ai-api-keys",
+  "urls": [
+   "https://www.bleepingcomputer.com/news/security/northflank-security-breach-leads-to-abuse-of-customers-ai-api-keys"
+  ],
+  "first_seen": "2026-11-01",
+  "date": "2026-10-31",
+  "topic": "AI Security",
+  "el": {
+   "title": "Παραβίαση στο Northflank οδήγησε σε κατάχρηση κλειδιών AI API πελατών",
+   "summary": "Η Northflank, πλατφόρμα cloud για ανάπτυξη εφαρμογών, containers και εργαλείων AI, ανακοίνωσε στις 30 Οκτωβρίου περιστατικό ασφαλείας που εντοπίστηκε αφού η εταιρεία κυβερνοασφάλειας Wiz την ειδοποίησε για ύποπτη δραστηριότητα. Η Northflank ζήτησε από τους πελάτες της να θεωρήσουν ότι οι μεταβλητές περιβάλλοντος αποκρυπτογραφήθηκαν και να αλλάξουν αμέσως κλειδιά βάσεων δεδομένων, cloud διαπιστευτήρια και tokens, ενώ επιβεβαίωσε ότι πολλοί πελάτες ανέφεραν μη εξουσιοδοτημένη χρήση των κλειδιών τους για AI APIs. Η εταιρεία δεν έχει εξηγήσει πώς παραβιάστηκαν τα συστήματά της, ενεργοποίησε όμως logs ελέγχου για όλους τους λογαριασμούς, ακόμη και τους δωρεάν, και συνέστησε έλεγχο των τιμολογίων χρήσης AI παρόχων για ύποπτη κίνηση. Η Wiz εντάσσει το περιστατικό σε κύμα τουλάχιστον εννέα επιθέσεων μέσα στον Οκτώβριο εναντίον πλατφορμών ανάπτυξης AI, όπου κλεμμένα κλειδιά χρησιμοποιήθηκαν για να τρέξουν φόρτο εργασίας AI με έξοδα του θύματος, τεχνική γνωστή ως LLMjacking, με μία περίπτωση να έχει κοστίσει περίπου 100.000 δολάρια σε κλήσεις προς το Amazon Bedrock. Για μια επιχείρηση που αναπτύσσει εφαρμογές AI μέσω τρίτης πλατφόρμας cloud, το περιστατικό δείχνει ότι ένα κλεμμένο κλειδί API δεν είναι μόνο θέμα παραβίασης δεδομένων, είναι απευθείας κόστος σε πραγματικό χρήμα όσο παραμένει ενεργό."
+  },
+  "en": {
+   "title": "Northflank breach leads to abuse of customers' AI API keys",
+   "summary": "Northflank, a cloud platform for deploying applications, containers and AI tools, disclosed a security incident on October 30 after the security firm Wiz alerted it to suspicious activity. Northflank told customers to assume their environment variables had been decrypted and to immediately rotate database credentials, cloud keys and tokens, and it confirmed that multiple customers reported unauthorized use of their AI API keys. The company has not explained how its systems were breached, but it enabled audit logs for all accounts, including free ones, and advised customers to check AI provider billing logs for suspicious usage. Wiz places the incident within a wave of at least nine attacks this October against AI development platforms, where stolen keys were used to run AI workloads at the victim's expense, a technique known as LLMjacking, with one case costing roughly $100,000 in Amazon Bedrock calls. For any business building AI applications on a third-party cloud platform, the incident shows that a stolen API key is not just a data breach, it is a direct, real-money cost for as long as it stays active."
+  },
+  "sources": [
+   {
+    "name": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/northflank-security-breach-leads-to-abuse-of-customers-ai-api-keys/"
+   }
+  ]
+ },
+ {
+  "slug": "2026-10-31-chainalysis-discloses-breach-via-offensive-agentic-techniques",
+  "urls": [
+   "https://www.bleepingcomputer.com/news/security/chainalysis-discloses-data-breach-from-offensive-agentic-techniques",
+   "https://thehackernews.com/2026/10/chainalysis-confirms-intrusion-into.html"
+  ],
+  "first_seen": "2026-11-01",
+  "date": "2026-10-31",
+  "topic": "AI Security",
+  "el": {
+   "title": "Η Chainalysis αποκαλύπτει παραβίαση μέσω «επιθετικών τεχνικών agents»",
+   "summary": "Η Chainalysis, εταιρεία ανάλυσης blockchain που χρησιμοποιούν αρχές επιβολής νόμου, κυβερνήσεις και χρηματοπιστωτικά ιδρύματα, ανακοίνωσε στις 30 Οκτωβρίου ότι εξωτερικός εισβολέας απέκτησε πρόσβαση σε εσωτερικά εργαλεία της μέσω όσα η ίδια περιγράφει ως «επιθετικές τεχνικές agents», χωρίς να διευκρινίζει αν επρόκειτο για γνωστό πλαίσιο επίθεσης όπως το ARTEX ή για προσαρμοσμένο AI agent. Σύμφωνα με την εταιρεία εκτέθηκαν στοιχεία χρηστών της πλατφόρμας όπως ονοματεπώνυμα, διευθύνσεις email και ρόλοι μέσα στον οργανισμό, ενώ δεν υπάρχουν ενδείξεις πρόσβασης σε περιεχόμενο ερευνών, διαπιστευτήρια ή session tokens. Η Chainalysis δηλώνει ότι διορθώνει ευπάθειες, ενισχύει τα συστήματά της και χρησιμοποιεί μεγάλα γλωσσικά μοντέλα στη δική της εσωτερική επανεξέταση ασφάλειας, μια λεπτομέρεια που δείχνει πόσο διπλή είναι πλέον η σχέση του κλάδου με την AI, άλλοτε ως εργαλείο άμυνας και άλλοτε ως μέσο επίθεσης. Για κάθε επιχείρηση που εμπιστεύεται δεδομένα πελατών σε πάροχο ανάλυσης blockchain ή σε οποιαδήποτε πλατφόρμα με εσωτερικά εργαλεία προσβάσιμα από το προσωπικό, το περιστατικό υπενθυμίζει ότι η περιγραφή «μη ευαίσθητα δεδομένα» από την πλευρά του παρόχου δεν αναιρεί τον κίνδυνο phishing ή κοινωνικής μηχανικής για τους ίδιους τους χρήστες."
+  },
+  "en": {
+   "title": "Chainalysis discloses breach via 'offensive agentic techniques'",
+   "summary": "Chainalysis, a blockchain analytics firm used by law enforcement agencies, governments and financial institutions, disclosed on October 30 that an external actor gained access to its internal tools using what it called 'offensive agentic techniques,' without clarifying whether the attacker relied on a known framework such as ARTEX or a custom AI agent. The company says exposed data included platform users' full names, email addresses and organizational roles, with no evidence that investigation content, credentials or session tokens were accessed. Chainalysis says it is patching vulnerabilities, hardening its systems, and even using large language models as part of its own internal security review, a detail that captures how AI now cuts both ways in this industry, serving as both a defensive tool and an attack vector. For any business that entrusts customer data to a blockchain analytics provider, or to any platform where staff can reach internal tools, the incident is a reminder that a vendor's 'non-sensitive data' label does not remove the phishing or social-engineering risk facing its own users."
+  },
+  "sources": [
+   {
+    "name": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/chainalysis-discloses-data-breach-from-offensive-agentic-techniques/"
+   },
+   {
+    "name": "The Hacker News",
+    "url": "https://thehackernews.com/2026/10/chainalysis-confirms-intrusion-into.html"
+   }
+  ]
+ },
+ {
+  "slug": "2026-10-31-a-shared-chatgpt-link-could-run-attacker-code-and-read-private-chats",
+  "urls": [
+   "https://thehackernews.com/2026/10/a-shared-chatgpt-link-could-run.html"
+  ],
+  "first_seen": "2026-11-01",
+  "date": "2026-10-31",
+  "topic": "AI Security",
+  "el": {
+   "title": "Ευπάθεια σε κοινοποιημένο link του ChatGPT επέτρεπε εκτέλεση κώδικα και ανάγνωση ιδιωτικών συνομιλιών",
+   "summary": "Ερευνητές της εταιρείας ασφαλείας Parameter εντόπισαν αλυσίδα αδυναμιών στον browser που επέτρεπε σε κακόβουλο link κοινοποιημένης συνομιλίας του ChatGPT να τρέξει κώδικα μέσα στη συνεδρία όποιου το άνοιγε, χωρίς να χρειάζεται prompt injection. Το link φόρτωνε μια διαδραστική γραφική παράσταση που άφηνε ανοιχτό ένα κανάλι μηνυμάτων χωρίς έλεγχο προέλευσης, κάτι που επέτρεπε την εισαγωγή HTML μέσα στη σελίδα του ChatGPT και τελικά την εκτέλεση κώδικα μέσω ενός script φιλοξενούμενου στο YouTube, το οποίο παρέκαμπτε την πολιτική ασφαλείας περιεχομένου της σελίδας. Μόλις ο κώδικας έτρεχε, χρησιμοποιούσε τα ίδια τα APIs του συνδεδεμένου χρήστη για να δει πρόσφατες συνομιλίες και να ανοίξει ιδιωτική συνομιλία που δεν είχε ποτέ κοινοποιηθεί, στέλνοντας μέρος της σε διακομιστή των ερευνητών. Η Parameter ανέφερε το εύρημα στο πρόγραμμα ανταμοιβής ευπαθειών της OpenAI στις 18 Οκτωβρίου, η OpenAI αναβάθμισε αμέσως τη σοβαρότητά του και διόρθωσε το ζήτημα μέσα σε οκτώ ημέρες, χωρίς ενδείξεις ότι χρησιμοποιήθηκε πραγματικά εναντίον χρηστών. Για μια επιχείρηση που χρησιμοποιεί το ChatGPT και μοιράζεται links συνομιλιών με συνεργάτες ή πελάτες, η υπόθεση θυμίζει ότι η λειτουργία «κοινοποίηση» ενός εργαλείου AI μπορεί να γίνει δίοδος για ολόκληρο τον λογαριασμό, όχι μόνο για όσα σκόπιμα μοιράστηκες."
+  },
+  "en": {
+   "title": "A shared ChatGPT link could run attacker code and read private chats",
+   "summary": "Researchers at security firm Parameter found a chain of browser-side flaws that let a malicious shared ChatGPT link run code inside the session of anyone who opened it, without relying on prompt injection. The link loaded an interactive graph that left a message listener open without checking its sender, which let an attacker inject HTML into the ChatGPT page and ultimately run code through a YouTube-hosted script that slipped past the site's content security policy. Once running, the code used the logged-in user's own APIs to list recent conversations and open a private chat that had never been shared, sending part of it to the researchers' server. Parameter reported the finding through OpenAI's bug bounty program on October 18, OpenAI raised its severity rating immediately and fixed the issue within eight days, with no evidence it was exploited against real users. For any business that uses ChatGPT and shares conversation links with partners or clients, the case is a reminder that a 'share' feature in an AI tool can become a path into the whole account, not just the conversation you meant to share."
+  },
+  "sources": [
+   {
+    "name": "The Hacker News",
+    "url": "https://thehackernews.com/2026/10/a-shared-chatgpt-link-could-run.html"
+   }
+  ]
+ },
+ {
   "slug": "2026-10-30-us-justice-department-seeks-privacy-protections-before-character-ai",
   "urls": [
    "https://therecord.media/doj-raises-privacy-concerns-over-character-ai-sale"
@@ -757,7 +831,8 @@
   "urls": [
    "https://www.anthropic.com/news/s1-sec",
    "https://arstechnica.com/ai/2026/10/anthropic-ipo-warns-its-ai-could-blackmail-people-become-sentient-end-humanity",
-   "https://www.securityweek.com/risks-spelled-out-for-anthropic-investors-include-possible-harms-from-runaway-ai"
+   "https://www.securityweek.com/risks-spelled-out-for-anthropic-investors-include-possible-harms-from-runaway-ai",
+   "https://www.theguardian.com/global/video/2026/oct/30/anthropic-92-page-risk-factor-document-ipo-filing-video-explainer"
   ],
   "first_seen": "2026-10-28",
   "date": "2026-10-26",
@@ -782,6 +857,10 @@
    {
     "name": "SecurityWeek",
     "url": "https://www.securityweek.com/risks-spelled-out-for-anthropic-investors-include-possible-harms-from-runaway-ai/"
+   },
+   {
+    "name": "The Guardian",
+    "url": "https://www.theguardian.com/global/video/2026/oct/30/anthropic-92-page-risk-factor-document-ipo-filing-video-explainer"
    }
   ]
  },

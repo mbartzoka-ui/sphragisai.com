@@ -405,3 +405,7 @@ reverse tunnel
 δηλητηρίαση δεδομένων
 data poisoning
 ai grounding
+
+# --- 2026-11-01 ---
+content security policy (csp)
+πολιτική ασφαλείας περιεχομένου
