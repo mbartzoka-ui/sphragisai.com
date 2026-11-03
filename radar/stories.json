@@ -1,5 +1,102 @@
 [
  {
+  "slug": "2026-11-02-two-critical-langflow-flaws-allow-unauthenticated-remote-code",
+  "urls": [
+   "https://thehackernews.com/2026/11/critical-langflow-flaws-could-let.html"
+  ],
+  "first_seen": "2026-11-03",
+  "date": "2026-11-02",
+  "topic": "AI Security",
+  "el": {
+   "title": "Δύο κρίσιμες ευπάθειες στο Langflow επιτρέπουν απομακρυσμένη εκτέλεση κώδικα χωρίς κωδικό",
+   "summary": "Η IBM δημοσίευσε τέσσερις ευπάθειες στο Langflow, δημοφιλές ανοιχτού κώδικα εργαλείο για τη δημιουργία AI agents και ροών εργασίας, με τις δύο σοβαρότερες να βαθμολογούνται 9.8 στην κλίμακα CVSS. Η μία επιτρέπει σε επιτιθέμενο χωρίς κανέναν λογαριασμό να παρακάμψει την πιστοποίηση μέσω του Model Context Protocol (MCP, το πρωτόκολλο που επιτρέπει σε εργαλεία AI να «μιλούν» μεταξύ τους) και να αποκτήσει πρόσβαση ως superuser, ενώ η άλλη επιτρέπει εκτέλεση αυθαίρετου κώδικα στον server. Οι εκδόσεις 1.0.0 έως 1.12.8 επηρεάζονται όλες, η διόρθωση υπάρχει μόνο στην 1.13.0, και ήδη κυκλοφορεί δημόσια module στο Metasploit που εκμεταλλεύεται την ευπάθεια παράκαμψης πιστοποίησης. Για επιχειρήσεις που τρέχουν δικό τους Langflow server για AI agents, η προεπιλεγμένη ρύθμιση αυτόματης σύνδεσης ως superuser είναι ακριβώς ο τύπος άνεσης ανάπτυξης που μετατρέπεται σε κρίσιμο κίνδυνο όταν μείνει ενεργή σε περιβάλλον παραγωγής."
+  },
+  "en": {
+   "title": "Two critical Langflow flaws allow unauthenticated remote code execution",
+   "summary": "IBM disclosed four vulnerabilities in Langflow, a popular open-source tool for building AI agents and workflows, with the two most severe both rated 9.8 on the CVSS scale. One lets an attacker with no account at all bypass authentication through the Model Context Protocol (MCP, the standard that lets AI tools talk to each other) and gain superuser access, while the other allows arbitrary code execution on the server. Versions 1.0.0 through 1.12.8 are all affected, the fix only lands in 1.13.0, and a public Metasploit module already exploits the authentication-bypass flaw. For businesses running their own Langflow server to power AI agents, the default setting that auto-logs developers in as superuser is exactly the kind of deployment convenience that turns into a critical risk when left switched on in production."
+  },
+  "sources": [
+   {
+    "name": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/critical-langflow-flaws-could-let.html"
+   }
+  ]
+ },
+ {
+  "slug": "2026-11-02-openai-raises-bug-bounty-rewards-and-announces-a-new-internal",
+  "urls": [
+   "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties",
+   "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai"
+  ],
+  "first_seen": "2026-11-03",
+  "date": "2026-11-02",
+  "topic": "AI Security",
+  "el": {
+   "title": "Η OpenAI αυξάνει τις αμοιβές bug bounty και ανακοινώνει νέο εσωτερικό κύκλο ενίσχυσης ασφάλειας",
+   "summary": "Η OpenAI ανακοίνωσε την ίδια μέρα δύο κινήσεις γύρω από την ασφάλειά της: αύξηση των αμοιβών στο πρόγραμμα bug bounty για ανεξάρτητους ερευνητές ασφαλείας, με επιπλέον μπόνους για την ποιότητα των αναφορών και τη συνέπεια συμμετοχής, και προετοιμασία νέου εσωτερικού «κύκλου ασφάλειας» σε συνεργασία με την εταιρεία Cathedral Systems, για δοκιμή και ενίσχυση των αμυντικών της συστημάτων με χρήση AI. Καμία από τις δύο ανακοινώσεις δεν συνοδεύεται από αναφορά συγκεκριμένου περιστατικού, πρόκειται δηλαδή για προληπτική επένδυση και όχι απάντηση σε παραβίαση. Το γεγονός ότι μια εταιρεία στο μέγεθος της OpenAI θεωρεί απαραίτητο να επενδύσει περισσότερο σε εξωτερικό και εσωτερικό έλεγχο ασφάλειας ταυτόχρονα δείχνει πόσο ζωντανό παραμένει το ρίσκο γύρω από τα ίδια τα εργαλεία AI, πέρα από τους κινδύνους που δημιουργεί η κακή τους χρήση από τρίτους."
+  },
+  "en": {
+   "title": "OpenAI raises bug bounty rewards and announces a new internal security sprint",
+   "summary": "OpenAI made two security-related announcements on the same day: it is raising rewards in its bug bounty program for independent security researchers, adding bonuses for report quality and consistent participation, and it is preparing a new internal \"security sprint\" with a company called Cathedral Systems to test and strengthen its own defenses using AI. Neither announcement is tied to a specific incident, both read as proactive investment rather than a response to a breach. The fact that a company the size of OpenAI sees a need to invest more in both external and internal security scrutiny at the same time underlines how much risk still surrounds the AI tooling itself, separate from the risks created by third parties misusing it."
+  },
+  "sources": [
+   {
+    "name": "OpenAI",
+    "url": "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties"
+   },
+   {
+    "name": "OpenAI",
+    "url": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai"
+   }
+  ]
+ },
+ {
+  "slug": "2026-11-02-new-volta-infostealer-uses-claude-gemini-and-kimi-to-rank-victims-by",
+  "urls": [
+   "https://thehackernews.com/2026/11/new-volta-infostealer-uses-claude.html"
+  ],
+  "first_seen": "2026-11-03",
+  "date": "2026-11-02",
+  "topic": "Incidents",
+  "el": {
+   "title": "Νέο infostealer VOLTA χρησιμοποιεί Claude, Gemini και Kimi για να κατατάξει τα θύματα ανά οικονομική αξία",
+   "summary": "Ερευνητές της Cisco Talos εντόπισαν νέο κακόβουλο λογισμικό κλοπής δεδομένων (infostealer) με το όνομα VOLTA, που δεν αρκείται στη συλλογή κωδικών, cookies, κρυπτονομισμάτων και sessions από Discord ή Telegram, αλλά στέλνει όλα τα κλεμμένα στοιχεία σε μεγάλο γλωσσικό μοντέλο για ανάλυση. Μέσω της υπηρεσίας OpenRouter, που δίνει ενιαία πρόσβαση σε πολλά μοντέλα AI, το VOLTA ζητά πρώτα από το Claude Opus 4.6 της Anthropic να συντάξει «φάκελο» για κάθε θύμα με διεύθυνση κατοικίας, εργοδότη, εκτιμώμενη ηλικία και ακόμη και αποτίμηση λογαριασμού Roblox, και αν το μοντέλο αρνηθεί περνά σε Kimi K2 ή Gemini 2.5 Flash ως εναλλακτική. Για να επιβεβαιώσει τη διεύθυνση κατοικίας, το λογισμικό ψάχνει μέσα στο ίδιο το Gmail του θύματος για αποδείξεις παραγγελιών από Amazon, DoorDash ή PayPal. Το περιστατικό δείχνει ότι οι εμπορικές υπηρεσίες AI έχουν γίνει πλέον συστατικό κομμάτι της αλυσίδας εκμετάλλευσης κλεμμένων δεδομένων, κάτι που αξίζει να γνωρίζει κάθε επιχείρηση που σκέφτεται τι είδους πρόσβαση σε δεδομένα πελατών ή προσωπικού επιτρέπει να περνά μέσα από API κλειδιά AI."
+  },
+  "en": {
+   "title": "New VOLTA infostealer uses Claude, Gemini and Kimi to rank victims by financial value",
+   "summary": "Cisco Talos researchers identified a new infostealer called VOLTA that doesn't stop at harvesting passwords, cookies, cryptocurrency wallets and Discord or Telegram sessions, but feeds everything it steals into a large language model for analysis. Through OpenRouter, a service that provides unified access to multiple AI models, VOLTA first asks Anthropic's Claude Opus 4.6 to build a profile of each victim covering home address, employer, estimated age and even a Roblox account valuation, falling back to Kimi K2 or Gemini 2.5 Flash if the model refuses. To corroborate the home address, the malware searches the victim's own Gmail account for receipts from Amazon, DoorDash or PayPal. The case shows that commercial AI services have become a working part of the pipeline criminals use to monetize stolen data, something worth knowing for any business weighing what kind of access to customer or staff data flows through its AI API keys."
+  },
+  "sources": [
+   {
+    "name": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/new-volta-infostealer-uses-claude.html"
+   }
+  ]
+ },
+ {
+  "slug": "2026-11-02-anthropic-warns-in-a-regulatory-filing-that-it-is-close-to-self",
+  "urls": [
+   "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai"
+  ],
+  "first_seen": "2026-11-03",
+  "date": "2026-11-02",
+  "topic": "General",
+  "el": {
+   "title": "Η Anthropic προειδοποιεί σε επίσημο έγγραφο ότι πλησιάζει την ικανότητα αυτο-βελτίωσης (RSI)",
+   "summary": "Στην αναθεωρημένη αίτηση S-1/A που κατέθεσε η Anthropic στην αμερικανική Επιτροπή Κεφαλαιαγοράς ενόψει της εισαγωγής της στο χρηματιστήριο, η εταιρεία πρόσθεσε νέα παράγραφο στους κινδύνους όπου αναγνωρίζει ότι έχει ήδη χρησιμοποιήσει AI για να αναπτύξει μοντέλα των οποίων το άλμα σε ικανότητες δεν είχε προβλέψει εγκαίρως, και ότι ίσως πλησιάζει αυτό που ο κλάδος ονομάζει recursive self-improvement (RSI), δηλαδή το σημείο όπου ένα μοντέλο γίνεται αρκετά ικανό ώστε να βελτιώνει μόνο του την επόμενη γενιά μοντέλων, χωρίς τον ίδιο βαθμό ανθρώπινης καθοδήγησης. Η εταιρεία γράφει ρητά ότι η χρήση AI για να χτίσει πιο ικανή AI θα μπορούσε να αποτελέσει σοβαρό κίνδυνο ασφάλειας, ιδίως αν επιταχύνει απότομα τον ρυθμό προόδου, και παραπέμπει στη δική της πολιτική υπεύθυνης κλιμάκωσης (Responsible Scaling Policy) ως μηχανισμό παρακολούθησης αυτού του ρίσκου. Πρόκειται για την πρώτη φορά που κορυφαία εταιρεία AI καταγράφει κάτι τέτοιο σε επίσημο, νομικά δεσμευτικό έγγραφο προς επενδυτές και όχι απλώς σε blog ανάρτηση ή συνέντευξη. Για κάθε επιχείρηση που χτίζει στρατηγική γύρω από μοντέλα τρίτων, η παραδοχή δείχνει πόσο γρήγορα μπορεί να μετατοπιστεί το έδαφος κάτω από μια τεχνολογία στην οποία έχει ήδη επενδύσει."
+  },
+  "en": {
+   "title": "Anthropic warns in a regulatory filing that it is close to self-improving AI capability (RSI)",
+   "summary": "In the revised S-1/A filing Anthropic submitted to the US Securities and Exchange Commission ahead of its stock market listing, the company added a new risk paragraph acknowledging that it has already used AI to develop models whose capability jumps it did not fully anticipate in advance, and that it may be approaching what the industry calls recursive self-improvement (RSI): the point at which a model becomes capable enough to improve the next generation of models largely on its own, without the same degree of human guidance. The company states plainly that using AI to build more capable AI could pose a serious safety risk, particularly if it sharply accelerates the pace of progress, and points to its own Responsible Scaling Policy as the mechanism for monitoring that risk. This is the first time a leading AI lab has put such a statement in a formal, legally binding filing to investors rather than in a blog post or interview. For any business building strategy around third-party models, the admission shows how quickly the ground can shift under a technology it has already invested in."
+  },
+  "sources": [
+   {
+    "name": "TechCrunch",
+    "url": "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/"
+   }
+  ]
+ },
+ {
   "slug": "2026-10-31-northflank-breach-leads-to-abuse-of-customers-ai-api-keys",
   "urls": [
    "https://www.bleepingcomputer.com/news/security/northflank-security-breach-leads-to-abuse-of-customers-ai-api-keys"
@@ -152,7 +249,8 @@
   "urls": [
    "https://www.darkreading.com/cyberattacks-data-breaches/devs-trojanized-claude-code-extension-cursor",
    "https://thehackernews.com/2026/10/official-claude-code-vs-code-extension.html",
-   "https://www.bleepingcomputer.com/news/security/malicious-claude-code-extension-on-cursor-planted-ssh-backdoors"
+   "https://www.bleepingcomputer.com/news/security/malicious-claude-code-extension-on-cursor-planted-ssh-backdoors",
+   "https://www.securityweek.com/malicious-claude-code-extension-served-in-cursor-supply-chain-attack"
   ],
   "first_seen": "2026-10-31",
   "date": "2026-10-30",
@@ -177,6 +275,10 @@
    {
     "name": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/malicious-claude-code-extension-on-cursor-planted-ssh-backdoors/"
+   },
+   {
+    "name": "SecurityWeek",
+    "url": "https://www.securityweek.com/malicious-claude-code-extension-served-in-cursor-supply-chain-attack/"
    }
   ]
  },

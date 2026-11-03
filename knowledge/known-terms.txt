@@ -409,3 +409,9 @@ ai grounding
 # --- 2026-11-01 ---
 content security policy (csp)
 πολιτική ασφαλείας περιεχομένου
+
+# --- 2026-11-03 ---
+recursive self-improvement (rsi)
+responsible scaling policy
+openrouter
+s-1/a

@@ -99,3 +99,4 @@
 2026-10-30 | ai-relay-sandbox-bypass-shadow-ai-parallel | Άγνωστη υπηρεσία δίνει πρόσβαση σε Codex και Claude Code χωρίς sandbox, παραλληλισμός με shadow AI στις επιχειρήσεις
 2026-10-31 | cursor-claude-code-trojan-extension-supply-chain | Δούρειος ίππος στην επίσημη επέκταση Claude Code για το Cursor, κερκόπορτα SSH μέσα από επίσημο marketplace
 2026-11-01 | northflank-ai-api-key-llmjacking-black-october | Παραβίαση στο Northflank οδήγησε σε κατάχρηση κλειδιών AI API πελατών, κύμα εννέα επιθέσεων «Black October» σε πλατφόρμες AI
+2026-11-03 | anthropic-s1a-rsi-warning | Η Anthropic προειδοποιεί σε επίσημο έγγραφο ότι πλησιάζει την ικανότητα αυτο-βελτίωσης (RSI)
