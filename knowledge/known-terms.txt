@@ -415,3 +415,8 @@ recursive self-improvement (rsi)
 responsible scaling policy
 openrouter
 s-1/a
+
+# --- 2026-11-04 ---
+llm mixer
+provable inference
+αποδείξιμη εξαγωγή συμπεράσματος

@@ -1,5 +1,94 @@
 [
  {
+  "slug": "2026-11-03-uk-s-ncsc-chief-warns-of-ai-attacks-on-critical-infrastructure-by-2028",
+  "urls": [
+   "https://www.securityweek.com/uk-cyber-chief-says-the-uk-will-face-ai-cyberattacks-on-critical-infrastructure-by-2028",
+   "https://www.infosecurity-magazine.com/news/ncsc-ai-ransomware-threat-uk-cni"
+  ],
+  "first_seen": "2026-11-04",
+  "date": "2026-11-03",
+  "topic": "AI Security",
+  "el": {
+   "title": "Ο επικεφαλής της βρετανικής NCSC προειδοποιεί για επιθέσεις AI σε κρίσιμες υποδομές ως το 2028",
+   "summary": "Ο Richard Horne, επικεφαλής της βρετανικής υπηρεσίας κυβερνοασφάλειας NCSC, παρουσίασε την ετήσια έκθεση του οργανισμού και προειδοποίησε ότι κακόβουλο λογισμικό ενισχυμένο με AI είναι πολύ πιθανό να εμφανιστεί σε επιθέσεις ransomware εναντίον βρετανικών κρίσιμων υποδομών μέχρι το 2028. Σύμφωνα με την έκθεση, η Κίνα παραμένει η πιο εξελιγμένη και επίμονη κυβερνοαπειλή για το Ηνωμένο Βασίλειο, ενώ Ρωσία και Κίνα θα χρησιμοποιούν συστηματικά AI για γεωπολιτικούς σκοπούς· το AI εκτιμάται ότι θα ενισχύσει κυρίως την κλίμακα και την αποτελεσματικότητα υπαρχουσών τακτικών επίθεσης και λιγότερο ότι θα ανακαλύψει εντελώς νέες ευπάθειες. Ο Horne δήλωσε ότι επιχειρήσεις που έκαναν «οικονομία» σε τεχνολογία θα κληθούν να εξηγήσουν τις συνέπειες αν μείνουν χωρίς ρεύμα ή προϊόντα στα ράφια. Για μια ελληνική επιχείρηση που διαχειρίζεται υποδομή ή υπηρεσίες κρίσιμες για πελάτες, η προειδοποίηση είναι σήμα ότι ο σχεδιασμός κυβερνοασφάλειας πρέπει πλέον να υπολογίζει ρητά το σενάριο επίθεσης με εργαλεία AI, όχι ως υποθετικό αλλά ως βάσιμη πρόβλεψη εθνικής αρχής."
+  },
+  "en": {
+   "title": "UK's NCSC chief warns of AI attacks on critical infrastructure by 2028",
+   "summary": "Richard Horne, head of the UK's National Cyber Security Centre, presented the agency's annual report and warned that AI-powered malware is highly likely to feature in ransomware attacks against British critical infrastructure by 2028. The report names China as the most sophisticated and sustained cyber threat facing the UK, while both Russia and China are expected to routinely use AI for geopolitical ends; AI is expected mainly to scale and speed up existing attack tactics rather than discover entirely new vulnerabilities. Horne said business leaders who have 'got away with tech on the cheap' will have to explain the consequences if food disappears from shelves or the lights go out. For any company running infrastructure or services that matter to customers, the warning signals that cybersecurity planning now has to explicitly account for AI-assisted attacks, not as a hypothetical but as a national agency's working forecast."
+  },
+  "sources": [
+   {
+    "name": "SecurityWeek",
+    "url": "https://www.securityweek.com/uk-cyber-chief-says-the-uk-will-face-ai-cyberattacks-on-critical-infrastructure-by-2028/"
+   },
+   {
+    "name": "Infosecurity Magazine",
+    "url": "https://www.infosecurity-magazine.com/news/ncsc-ai-ransomware-threat-uk-cni/"
+   }
+  ]
+ },
+ {
+  "slug": "2026-11-03-google-research-llmjacking-costs-businesses-up-to-1-million",
+  "urls": [
+   "https://www.bleepingcomputer.com/news/security/google-llmjacking-attacks-rack-up-1-million-in-cloud-ai-charges",
+   "https://thehackernews.com/2026/11/google-warns-llmjacking-attacks-are.html",
+   "https://www.darkreading.com/cloud-security/llmjacking-thriving-cybercriminal-enterprise",
+   "https://www.infosecurity-magazine.com/news/llmjacking-cost-business-1m-warns"
+  ],
+  "first_seen": "2026-11-04",
+  "date": "2026-11-03",
+  "topic": "AI Security",
+  "el": {
+   "title": "Έρευνα Google: το «LLMjacking» κοστίζει σε επιχειρήσεις έως 1 εκατ. δολάρια",
+   "summary": "Η ομάδα απειλών της Google (GTIG) μαζί με τη Mandiant κατέγραψαν επιθέσεις «LLMjacking», όπου εγκληματίες κλέβουν κλειδιά API σε cloud υπηρεσίες AI και μεταπωλούν την πρόσβαση σε τρίτους μέσω υπηρεσιών γνωστών ως «LLM mixers». Οι ερευνητές εντόπισαν δύο ξεχωριστές ομάδες που συνεργάζονται, μία που σαρώνει το διαδίκτυο για εκτεθειμένα endpoints μοντέλων AI και μία που κλέβει έγκυρα κλειδιά API από μη προστατευμένα συστήματα, με όγκο αιτημάτων που έχει φτάσει τις 1.000 ανά δευτερόλεπτο. Το κόστος καταλήγει στον λογαριασμό του θύματος, αφού ο πάροχος cloud καταγράφει τη χρήση ως κανονική κατανάλωση, με ορισμένες επιχειρήσεις να βλέπουν χρεώσεις πάνω από 100.000 δολάρια σε μία μέρα και συνολικό κόστος έως 1 εκατομμύριο. Για κάθε επιχείρηση που χρησιμοποιεί κλειδιά API σε μοντέλα AI μέσω cloud, η υπόθεση δείχνει ότι ο έλεγχος πρόσβασης σε αυτά τα κλειδιά είναι πλέον εξίσου κρίσιμος με τον έλεγχο των τραπεζικών κωδικών."
+  },
+  "en": {
+   "title": "Google research: 'LLMjacking' costs businesses up to $1 million",
+   "summary": "Google's Threat Intelligence Group (GTIG) and Mandiant documented 'LLMjacking' attacks, where criminals steal API keys for cloud AI services and resell access through so-called 'LLM mixer' services. Researchers identified two coordinating threat clusters, one scanning for publicly exposed LLM endpoints and another stealing valid API keys from unprotected systems, with request volumes sometimes spiking past 1,000 per second. The fraudulent usage lands on the victim's bill because the cloud provider records it as legitimate consumption, with some organizations seeing charges exceeding $100,000 in a single day and cumulative costs reaching $1 million. For any business using API keys to access AI models through the cloud, the case shows that controlling access to those keys is now just as critical as controlling banking credentials."
+  },
+  "sources": [
+   {
+    "name": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/google-llmjacking-attacks-rack-up-1-million-in-cloud-ai-charges/"
+   },
+   {
+    "name": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/google-warns-llmjacking-attacks-are.html"
+   },
+   {
+    "name": "Dark Reading",
+    "url": "https://www.darkreading.com/cloud-security/llmjacking-thriving-cybercriminal-enterprise"
+   },
+   {
+    "name": "Infosecurity Magazine",
+    "url": "https://www.infosecurity-magazine.com/news/llmjacking-cost-business-1m-warns/"
+   }
+  ]
+ },
+ {
+  "slug": "2026-11-03-anthropic-unveils-flashprove-a-system-to-prove-which-ai-model",
+  "urls": [
+   "https://techcrunch.com/2026/11/03/anthropic-is-working-on-a-system-to-prove-ai-models-identity"
+  ],
+  "first_seen": "2026-11-04",
+  "date": "2026-11-03",
+  "topic": "General",
+  "el": {
+   "title": "Η Anthropic παρουσιάζει το FlashProve, σύστημα για να αποδεικνύεται ποιο μοντέλο AI παρήγαγε μια απάντηση",
+   "summary": "Η Anthropic ανακοίνωσε το FlashProve, ένα ανοιχτού κώδικα σύστημα που στοχεύει να επιτρέπει σε οποιονδήποτε να επαληθεύσει ότι μια απάντηση AI παρήχθη πράγματι από το μοντέλο που ισχυρίζεται ο πάροχος. Το σύστημα βασίζεται σε κρυπτογραφική απόδειξη, ένα μαθηματικό τεκμήριο που λειτουργεί κάπως σαν ψηφιακή υπογραφή σε email, και θα μπορούσε να εμποδίσει μια εταιρεία AI να αντικαταστήσει κρυφά ένα μοντέλο με φθηνότερο για να μειώσει κόστος, ή με ακριβότερο για να διογκώσει τις επιδόσεις σε δοκιμές. Για να λειτουργήσει, οι εταιρείες AI πρέπει να δημοσιεύουν ένα μοναδικό «αποτύπωμα» κάθε μοντέλου που κυκλοφορούν, χωρίς όμως να αποκαλύπτουν τις εσωτερικές παραμέτρους του μοντέλου, ώστε η μέθοδος να μπορεί να εφαρμοστεί και σε κλειστά εμπορικά μοντέλα. Η έρευνα βρίσκεται σε πρώιμο στάδιο, χωρίς σχέδια άμεσης εφαρμογής σε παραγωγικό περιβάλλον, όμως για επιχειρήσεις που βασίζουν αποφάσεις σε αποτελέσματα AI τρίτων, για παράδειγμα έλεγχο κώδικα από μοντέλο κυβερνοασφάλειας, δείχνει προς ποια κατεύθυνση κινείται το ζήτημα της επαληθεύσιμης εμπιστοσύνης σε AI υπηρεσίες."
+  },
+  "en": {
+   "title": "Anthropic unveils FlashProve, a system to prove which AI model produced an answer",
+   "summary": "Anthropic announced FlashProve, an open-source system meant to let anyone verify that an AI response really came from the model its provider claims. The system relies on cryptographic proof, a mathematical guarantee similar to a digital signature on an email, and could prevent an AI company from secretly swapping in a cheaper model to cut costs or a pricier one to inflate benchmark results. To work, AI labs must publish a unique 'fingerprint' for each model they release, without revealing the model's internal parameters, so the method can also apply to closed commercial models. The research is at an early stage, with no immediate plans for production deployment, but for businesses that rely on third-party AI outputs, for example a cybersecurity model's code review, it points to where verifiable trust in AI services is heading."
+  },
+  "sources": [
+   {
+    "name": "TechCrunch",
+    "url": "https://techcrunch.com/2026/11/03/anthropic-is-working-on-a-system-to-prove-ai-models-identity/"
+   }
+  ]
+ },
+ {
   "slug": "2026-11-02-two-critical-langflow-flaws-allow-unauthenticated-remote-code",
   "urls": [
    "https://thehackernews.com/2026/11/critical-langflow-flaws-could-let.html"
