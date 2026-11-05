@@ -1,5 +1,74 @@
 [
  {
+  "slug": "2026-11-05-openai-s-ai-pipeline-generated-948-working-linux-root-escalation",
+  "urls": [
+   "https://thehackernews.com/2026/11/openai-ai-pipeline-generates-948-linux.html"
+  ],
+  "first_seen": "2026-11-05",
+  "date": "2026-11-05",
+  "topic": "AI Security",
+  "el": {
+   "title": "Το AI pipeline της OpenAI παρήγαγε 948 exploits πλήρους ελέγχου σε Linux μέσα σε 30 ώρες",
+   "summary": "Σε ένα πείραμα που ολοκληρώθηκε τον περασμένο Οκτώβριο, το ερευνητικό pipeline της OpenAI ανέλυσε τον πυρήνα Linux και παρήγαγε 948 λειτουργικά exploits τύπου local privilege escalation (LPE), δηλαδή κώδικα που μετατρέπει έναν απλό λογαριασμό χρήστη σε πλήρη πρόσβαση root. Από 2.308 υποψήφιες ευπάθειες, το σύστημα επιβεβαίωσε δυναμικά 1.724, κατέληξε σε αυτά τα 948 λειτουργικά exploits και σε αποδείξεις για 291 ακόμη διαρροές πληροφορίας, ολοκληρώνοντας την επαλήθευση μέσα σε 30 ώρες με συνολικό κόστος υπολογισμού περίπου 1,2 εκατομμύρια δολάρια. Κατά τη διαδικασία τα AI agents ανακάλυψαν περίπου δέκα νέες τεχνικές εκμετάλλευσης που δεν ήταν γνωστές στην κοινότητα ασφαλείας. Η OpenAI επικαλείται στοιχεία της Google ότι οι μηνιαίες αναφορές ευπαθειών υψηλού κινδύνου αυξήθηκαν περίπου 167% μέσα στο 2026, και υποστηρίζει ότι η παραγωγή διορθώσεων πρέπει πλέον να κινείται με τον ίδιο ρυθμό. Για μια επιχείρηση, η ουσία είναι ότι ένας απλός λογαριασμός χαμηλών δικαιωμάτων σε ένα απαρχαιωμένο σύστημα Linux δεν είναι πια μικρός κίνδυνος, αφού η απόσταση μέχρι την πλήρη πρόσβαση root μπορεί να καλυφθεί αυτόματα και φθηνά."
+  },
+  "en": {
+   "title": "OpenAI's AI pipeline generated 948 working Linux root-escalation exploits in 30 hours",
+   "summary": "In an experiment completed in mid-October 2026, OpenAI's research pipeline analyzed the Linux kernel and produced 948 working local privilege escalation (LPE) exploits, code that turns an ordinary low-privilege account into full root access. Of 2,308 candidate vulnerabilities, the system dynamically reproduced 1,724, yielding the 948 working exploits plus proof-of-concept code for 291 further information-leak bugs, completing verification in 30 hours at a total compute cost of roughly $1.2 million. Along the way, the AI agents reportedly discovered about ten exploitation techniques not previously documented by the security community. OpenAI cites Google data showing high-risk vulnerability disclosures rose about 167% during 2026, and argues that patch generation now needs to move at the same pace. For businesses, the takeaway is that a low-privilege account on an unpatched Linux system is no longer a minor risk, since the gap to full root access can now be closed automatically and cheaply."
+  },
+  "sources": [
+   {
+    "name": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/openai-ai-pipeline-generates-948-linux.html"
+   }
+  ]
+ },
+ {
+  "slug": "2026-11-04-workos-discloses-breach-via-the-ai-pentesting-tool-artex-as-the-wave",
+  "urls": [
+   "https://www.securityweek.com/ai-linked-breaches-mount-as-workos-northflank-trigger-dev-disclose-hacks"
+  ],
+  "first_seen": "2026-11-05",
+  "date": "2026-11-04",
+  "topic": "Incidents",
+  "el": {
+   "title": "Η WorkOS ανακοινώνει παραβίαση μέσω του εργαλείου AI ARTEX, καθώς το κύμα επιθέσεων σε πλατφόρμες AI συνεχίζεται",
+   "summary": "Η πλατφόρμα ταυτοποίησης χρηστών WorkOS ανακοίνωσε στις 4 Νοεμβρίου ότι στις 30 Οκτωβρίου εισβολείς παραβίασαν εσωτερική εφαρμογή του τμήματος πωλήσεών της, αποκτώντας πρόσβαση σε στοιχεία επικοινωνίας πελατών, περιεχόμενο επικοινωνιών και πληροφορίες για το πώς οι πελάτες χρησιμοποιούν τα προϊόντα της εταιρείας. Σύμφωνα με το SecurityWeek, η επίθεση φέρεται να χρησιμοποίησε το ARTEX, το ανοιχτού κώδικα εργαλείο δοκιμών διείσδυσης που συντονίζει AI agents και έχει ήδη συνδεθεί με παραβιάσεις τραπεζών στη Νότια Κορέα και με την επίθεση στην ConnectWise. Η WorkOS εντάσσεται σε ένα ευρύτερο κύμα, μαζί με τις πλατφόρμες Northflank και Trigger.dev, που ανακοίνωσαν δικά τους περιστατικά τις τελευταίες εβδομάδες, με τους επιτιθέμενους να στοχεύουν κυρίως αποθηκευμένα κλειδιά πρόσβασης σε παρόχους AI για να τα μεταπωλήσουν ή να τα εκμεταλλευτούν οι ίδιοι. Η εταιρεία ασφαλείας Wiz αναφέρει τουλάχιστον δώδεκα πλατφόρμες ανάπτυξης λογισμικού με ενσωματωμένη AI που έχουν πληγεί τον τελευταίο μήνα. Για μια επιχείρηση που αποθηκεύει κλειδιά API σε εργαλεία AI μέσα σε πλατφόρμες τρίτων, η υπόθεση δείχνει ότι το ίδιο εργαλείο διείσδυσης βασισμένο σε AI πλέον χτυπά όχι μόνο κρατικούς στόχους αλλά και καθημερινές εταιρείες λογισμικού."
+  },
+  "en": {
+   "title": "WorkOS discloses breach via the AI pentesting tool ARTEX as the wave of attacks on AI platforms continues",
+   "summary": "Identity platform WorkOS announced on November 4 that on October 30 attackers compromised an internal application used by its sales team, gaining access to customer contact details, communication content, and information about how customers use WorkOS products. According to SecurityWeek, the attack reportedly used ARTEX, the open-source AI-agent-coordinated penetration testing tool already linked to breaches at South Korean banks and the ConnectWise supply-chain attack. WorkOS joins a broader wave that includes Northflank and Trigger.dev, which disclosed their own incidents in recent weeks, with attackers mainly targeting stored AI provider access keys to resell or exploit themselves. Security firm Wiz says at least a dozen AI-enabled development platforms have been hit in the past month. For a business that stores AI API keys inside third-party platforms, the case shows that the same AI-driven pentesting tool is now hitting everyday software companies, not just state-level targets."
+  },
+  "sources": [
+   {
+    "name": "SecurityWeek",
+    "url": "https://www.securityweek.com/ai-linked-breaches-mount-as-workos-northflank-trigger-dev-disclose-hacks/"
+   }
+  ]
+ },
+ {
+  "slug": "2026-11-04-researchers-find-hidden-ad-injection-instructions-inside-a-popular",
+  "urls": [
+   "https://thehackernews.com/2026/11/researchers-uncover-prompt-adware.html"
+  ],
+  "first_seen": "2026-11-05",
+  "date": "2026-11-04",
+  "topic": "AI Security",
+  "el": {
+   "title": "Ερευνητές εντόπισαν κρυφές διαφημίσεις μέσα σε δημοφιλές εργαλείο jailbreak για το Codex της OpenAI",
+   "summary": "Ερευνητές της Check Point εντόπισαν «prompt adware», δηλαδή οδηγίες σε φυσική γλώσσα που αναγκάζουν έναν AI agent να εμφανίζει ανεπιθύμητες διαφημίσεις, κρυμμένο μέσα σε ένα δημοφιλές πακέτο με το όνομα Haiou, που υπόσχεται να «ξεκλειδώσει» το Codex της OpenAI από τους περιορισμούς ασφαλείας του. Το πακέτο μετατρέπει αιτήματα κυβερνοασφάλειας σε σενάρια ρόλων ή διαγωνισμών CTF για να παρακάμψει τα φίλτρα, εγκαθιστά έτοιμες δεξιότητες για penetration testing και αλλάζει τα αρχεία ρυθμίσεων του Codex έτσι ώστε απλοί χαιρετισμοί όπως «hi» ή «hey» να ενεργοποιούν διαφημίσεις για μια αδιαφανή υπηρεσία πρόσβασης σε μοντέλα AI επί πληρωμή. Το αποθετήριο στο GitHub είχε δημιουργηθεί στις 10 Ιουλίου και μέχρι τη δημοσίευση της έρευνας είχε συγκεντρώσει 403 αστέρια και 77 forks, ένδειξη ότι πολλοί προγραμματιστές το είχαν ήδη εγκαταστήσει. Το ενδιαφέρον της υπόθεσης είναι ότι η παγίδα δεν κρύβεται σε εκτελέσιμο αρχείο αλλά μέσα σε οδηγίες και ρυθμίσεις, σημείο που τα συνηθισμένα εργαλεία ασφαλείας δύσκολα ελέγχουν. Για μια επιχείρηση που επιτρέπει στην ομάδα της να εγκαθιστά μη επίσημα πρόσθετα ή «ξεκλειδωμένες» εκδόσεις εργαλείων AI, η υπόθεση δείχνει ότι η εμπιστοσύνη πλέον χτίζεται πάνω σε αρχεία ρυθμίσεων και προτροπές εξίσου όσο πάνω σε κώδικα."
+  },
+  "en": {
+   "title": "Researchers find hidden ad-injection instructions inside a popular OpenAI Codex jailbreak toolkit",
+   "summary": "Check Point Research discovered 'prompt adware', natural-language instructions that force an AI agent to display unwanted ads, bundled inside a popular package called Haiou that promises to 'unlock' OpenAI's Codex from its safety restrictions. The package reframes cybersecurity requests as role-play or CTF scenarios to bypass filters, installs ready-made penetration-testing skills, and rewrites Codex's configuration files so that simple greetings like 'hi' or 'hey' trigger ads for an opaque, paid AI model access service. The GitHub repository was created on July 10 and had collected 403 stars and 77 forks by the time the research was published, suggesting many developers had already installed it. The twist is that the trap doesn't live in an executable file but inside instructions and configuration settings, a place standard security tools rarely check. For a business that lets its team install unofficial add-ons or 'unlocked' versions of AI tools, the case shows that trust is now built on configuration files and prompts just as much as on code."
+  },
+  "sources": [
+   {
+    "name": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/researchers-uncover-prompt-adware.html"
+   }
+  ]
+ },
+ {
   "slug": "2026-11-03-uk-s-ncsc-chief-warns-of-ai-attacks-on-critical-infrastructure-by-2028",
   "urls": [
    "https://www.securityweek.com/uk-cyber-chief-says-the-uk-will-face-ai-cyberattacks-on-critical-infrastructure-by-2028",

@@ -101,3 +101,4 @@
 2026-11-01 | northflank-ai-api-key-llmjacking-black-october | Παραβίαση στο Northflank οδήγησε σε κατάχρηση κλειδιών AI API πελατών, κύμα εννέα επιθέσεων «Black October» σε πλατφόρμες AI
 2026-11-03 | anthropic-s1a-rsi-warning | Η Anthropic προειδοποιεί σε επίσημο έγγραφο ότι πλησιάζει την ικανότητα αυτο-βελτίωσης (RSI)
 2026-11-04 | anthropic-flashprove-model-identity-accountability | Η Anthropic παρουσιάζει το FlashProve, σύστημα για να αποδεικνύεται ποιο μοντέλο AI έδωσε μια απάντηση
+2026-11-05 | openai-948-linux-lpe-exploits-ai-pipeline | Το AI pipeline της OpenAI παρήγαγε 948 exploits πλήρους ελέγχου σε Linux μέσα σε 30 ώρες

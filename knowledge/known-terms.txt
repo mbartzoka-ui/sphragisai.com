@@ -420,3 +420,8 @@ s-1/a
 llm mixer
 provable inference
 αποδείξιμη εξαγωγή συμπεράσματος
+
+# --- 2026-11-05 ---
+local privilege escalation (lpe)
+τοπική κλιμάκωση δικαιωμάτων
+prompt adware
