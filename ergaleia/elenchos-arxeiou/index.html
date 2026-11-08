@@ -3,27 +3,27 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Έλεγχος αρχείου για prompt injection — Δωρεάν εργαλείο | θeta ai</title>
+<title>Έλεγχος αρχείου για prompt injection — Δωρεάν εργαλείο | sphragisAI</title>
 <meta name="description" content="Ανεβάστε ένα αρχείο και δείτε αν περιέχει κρυφές οδηγίες προς ένα AI: αόρατους χαρακτήρες, ύποπτες φράσεις, κρυμμένο κείμενο. Στον browser σας — τίποτα δεν αποστέλλεται.">
-<link rel="canonical" href="https://thetaai.gr/ergaleia/elenchos-arxeiou/">
-<link rel="alternate" hreflang="el" href="https://thetaai.gr/ergaleia/elenchos-arxeiou/">
-<link rel="alternate" hreflang="en" href="https://thetaai.gr/en/ergaleia/elenchos-arxeiou/">
-<link rel="alternate" hreflang="x-default" href="https://thetaai.gr/ergaleia/elenchos-arxeiou/">
-<meta property="og:title" content="Έλεγχος αρχείου για prompt injection — θeta ai">
+<link rel="canonical" href="https://sphragisai.com/ergaleia/elenchos-arxeiou/">
+<link rel="alternate" hreflang="el" href="https://sphragisai.com/ergaleia/elenchos-arxeiou/">
+<link rel="alternate" hreflang="en" href="https://sphragisai.com/en/ergaleia/elenchos-arxeiou/">
+<link rel="alternate" hreflang="x-default" href="https://sphragisai.com/ergaleia/elenchos-arxeiou/">
+<meta property="og:title" content="Έλεγχος αρχείου για prompt injection — sphragisAI">
 <meta property="og:description" content="Δείτε τι θα «διάβαζε» ένα AI μέσα στο αρχείο σας — κρυφές οδηγίες, αόρατοι χαρακτήρες, ύποπτες φράσεις. Δωρεάν, στον browser, χωρίς εγγραφή.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="el_GR">
-<meta property="og:url" content="https://thetaai.gr/ergaleia/elenchos-arxeiou/">
-<meta property="og:image" content="https://thetaai.gr/og-image.png">
+<meta property="og:url" content="https://sphragisai.com/ergaleia/elenchos-arxeiou/">
+<meta property="og:image" content="https://sphragisai.com/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="icon" type="image/svg+xml" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 110"><circle cx="55" cy="55" r="38" fill="none" stroke="%231d2846" stroke-width="7"/><line x1="30" y1="55" x2="80" y2="55" stroke="%231d2846" stroke-width="7" stroke-linecap="round"/><circle cx="106" cy="55" r="8" fill="%23BE9A44"/><circle cx="4" cy="55" r="8" fill="%231d2846"/></svg>'>
+<link rel="icon" type="image/svg+xml" href='data:image/svg+xml,<svg class="sx-radar" width="160" height="160" viewBox="0 0 140 140" role="img" aria-label="sphragisAI"><defs><linearGradient id="sxsw2" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0B1020" stop-opacity="0"/><stop offset="1" stop-color="#0B1020" stop-opacity=".16"/></linearGradient></defs><circle cx="70" cy="70" r="64" fill="none" stroke="#8892AB" stroke-width="1.2" stroke-dasharray="1.2 3.2"/><circle cx="70" cy="70" r="50" fill="none" stroke="#C9D0DD"/><circle cx="70" cy="70" r="36" fill="none" stroke="#C9D0DD"/><circle cx="70" cy="70" r="22" fill="none" stroke="#C9D0DD"/><g class="sx-sweep"><path d="M70 70 L70 6 A64 64 0 0 1 125.4 38 Z" fill="url(#sxsw2)"/></g><circle class="sx-blip" style="animation-delay:.6s" cx="98" cy="44" r="2.6" fill="#0B1020"/><circle class="sx-blip" style="animation-delay:1.7s" cx="40" cy="92" r="2.6" fill="#F5A524"/><text x="68" y="78" text-anchor="middle" font-family="Inter, sans-serif" font-size="22" font-weight="700" fill="#0B1020">Σ</text><circle cx="83" cy="80" r="3.2" fill="#C8323A"/></svg>'>
 <style>
-:root{--ink:#1d2846;--paper:#FAFAF9;--blue:#1d2846;--deep:#16203a;--stone:#78716C;--stone-d:#57534E;--line:#E7E5E4;--line-d:#D6D3D1;
+:root{--ink:#0B1020;--paper:#F4F6FA;--blue:#0B1020;--deep:#1C2440;--stone:#8892AB;--stone-d:#475069;--line:#D5DAE5;--line-d:#D5DAE5;
   --red:#B91C1C;--redbg:#FEF2F2;--red-line:#FECACA;--amber:#B45309;--amberbg:#FFFBEB;--amber-line:#FDE68A;--green:#15803D;--greenbg:#F0FDF4;--green-line:#BBF7D0;}
 *{margin:0;padding:0;box-sizing:border-box;}
-body{font-family:'IBM Plex Sans',system-ui,sans-serif;background:var(--paper);color:var(--ink);line-height:1.6;font-size:16px;-webkit-font-smoothing:antialiased;}
+body{font-family:Inter,system-ui,sans-serif;background:var(--paper);color:var(--ink);line-height:1.6;font-size:16px;-webkit-font-smoothing:antialiased;}
 a{color:var(--deep);text-decoration:none;}
 a:hover{text-decoration:underline;}
 .wrap{max-width:880px;margin:0 auto;padding:0 24px;}
@@ -87,11 +87,11 @@ h3.sec{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--
   padding:3px 9px;border-radius:20px;color:#fff;}
 .chip.high{background:var(--red);} .chip.med{background:var(--amber);} .chip.low{background:var(--stone);}
 .finding .fd{font-size:13.5px;color:var(--stone-d);margin:0;}
-.finding code{background:#F5F5F4;padding:1px 6px;border-radius:5px;font-size:12.5px;
+.finding code{background:#EEF1F6;padding:1px 6px;border-radius:5px;font-size:12.5px;
   font-family:ui-monospace,Menlo,Consolas,monospace;word-break:break-word;}
 .clean{background:var(--greenbg);border:0.5px solid var(--green-line);color:var(--green);border-radius:9px;padding:14px 16px;font-size:14px;font-weight:500;}
 
-.reveal{border:0.5px solid var(--line-d);border-radius:11px;background:var(--ink);color:#E7E5E4;
+.reveal{border:0.5px solid var(--line-d);border-radius:11px;background:var(--ink);color:#D5DAE5;
   padding:18px;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:13px;line-height:1.65;
   white-space:pre-wrap;word-break:break-word;max-height:420px;overflow:auto;}
 .reveal .inv{background:var(--red);color:#fff;border-radius:3px;padding:0 3px;font-size:10.5px;font-weight:600;}
@@ -129,24 +129,24 @@ header .nav{display:flex;justify-content:space-between;align-items:center;paddin
 #guide.ta-guide{background:transparent !important;}
 @media (prefers-reduced-motion: reduce){.blueprint{opacity:.9;}}
 </style>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
 <style id="font-demo">
-h1,h2,h3,.logo,.tier h3,.step h3,.cta-final h2,.ta-guide h2,.story blockquote,.tier .price{font-family:'IBM Plex Sans',system-ui,sans-serif !important;}
+h1,h2,h3,.logo,.tier h3,.step h3,.cta-final h2,.ta-guide h2,.story blockquote,.tier .price{font-family:Inter,system-ui,sans-serif !important;}
 h1,h2,.ta-guide h2{font-weight:700 !important;letter-spacing:-.02em;}
-.kicker,.eyebrow,.n-label,.nav-links a,.lang,.tier .per{font-family:'IBM Plex Mono',monospace !important;letter-spacing:.04em;}
+.kicker,.eyebrow,.n-label,.nav-links a,.lang,.tier .per{font-family:'JetBrains Mono',monospace !important;letter-spacing:.04em;}
 </style>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
 <style id="font-demo">
-h1,h2,h3,.logo,.tier h3,.step h3,.cta-final h2,.ta-guide h2,.story blockquote,.tier .price{font-family:'IBM Plex Sans',system-ui,sans-serif !important;}
+h1,h2,h3,.logo,.tier h3,.step h3,.cta-final h2,.ta-guide h2,.story blockquote,.tier .price{font-family:Inter,system-ui,sans-serif !important;}
 h1,h2,.ta-guide h2{font-weight:700 !important;letter-spacing:-.02em;}
-.kicker,.eyebrow,.n-label,.nav-links a,.lang,.tier .per{font-family:'IBM Plex Mono',monospace !important;letter-spacing:.04em;}
+.kicker,.eyebrow,.n-label,.nav-links a,.lang,.tier .per{font-family:'JetBrains Mono',monospace !important;letter-spacing:.04em;}
 </style>
 <style id="gold-buttons">
-.btn:not(.btn-ghost){background:#1d2846 !important;border-color:#1d2846 !important;color:#fff !important;}
-.btn:not(.btn-ghost):hover{background:#16203a !important;opacity:1 !important;}
-.ta-card button{background:#1d2846 !important;}
+.btn:not(.btn-ghost){background:#0B1020 !important;border-color:#0B1020 !important;color:#fff !important;}
+.btn:not(.btn-ghost):hover{background:#1C2440 !important;opacity:1 !important;}
+.ta-card button{background:#0B1020 !important;}
 .ta-card button:hover{filter:brightness(.94) !important;}
-.ta-card input[type=checkbox]{accent-color:#1d2846;}
+.ta-card input[type=checkbox]{accent-color:#0B1020;}
 </style>
 <style>
 .neural-bg{position:fixed;inset:0;z-index:-1;pointer-events:none;overflow:hidden;opacity:.89;
@@ -163,7 +163,7 @@ h1,h2,.ta-guide h2{font-weight:700 !important;letter-spacing:-.02em;}
   gtag('js', new Date());
   gtag('config', 'G-T8L6NJR1LC');
 </script>
-<!-- theta ai key events -->
+<!-- sphragisAI key events -->
 <script>
 (function(){
   if (typeof gtag !== 'function') return;
@@ -185,27 +185,39 @@ h1,h2,.ta-guide h2{font-weight:700 !important;letter-spacing:-.02em;}
   }, true);
 })();
 </script>
+<style id="sphragis-brand">
+.neural-bg{display:none!important}
+.logo{font-weight:700!important;letter-spacing:0!important}
+.sx-logo{display:inline-flex;align-items:center;gap:8px;font-family:'Space Grotesk',Inter,sans-serif;font-weight:700;font-size:21px;line-height:1;color:#0B1020}
+.sx-logo .br{font-family:'JetBrains Mono',monospace;font-weight:600}
+.sx-logo .br i{font-style:normal;color:#8892AB}
+.sx-logo .sig{font-family:Inter,sans-serif;font-weight:700}
+.sx-logo .wm{letter-spacing:-.01em}
+.sx-logo .ai2{font-family:'JetBrains Mono',monospace;font-weight:600;color:#8892AB}
+.sx-logo .cur{display:inline-block;width:.36em;height:.9em;background:#C8323A;animation:sxblink 1.1s step-end infinite}
+@keyframes sxblink{50%{opacity:0}}
+.sx-radar .sx-sweep{transform-origin:70px 70px;animation:sxspin 4s linear infinite}
+@keyframes sxspin{to{transform:rotate(360deg)}}
+.sx-radar .sx-blip{transform-box:fill-box;transform-origin:center;animation:sxping 4s ease-out infinite}
+@keyframes sxping{0%,8%{opacity:0;transform:scale(.4)}12%{opacity:1;transform:scale(1.5)}20%{transform:scale(1)}70%{opacity:1}100%{opacity:.2}}
+@media (prefers-reduced-motion:reduce){.sx-logo .cur,.sx-radar .sx-sweep,.sx-radar .sx-blip{animation:none}}
+@media (max-width:760px){.nav-links{flex-wrap:wrap!important;justify-content:flex-start!important;gap:8px 16px!important}.sx-logo{font-size:19px}}
+</style>
+<style id="sx-nav-css">
+.nav-links a{font-family:Inter,system-ui,sans-serif!important;font-size:14.5px!important;color:#2A3149!important;letter-spacing:0!important}
+.nav-links a:hover{color:#0B1020!important}
+.nav-links .lang,.nav-links .lang a{font-family:'JetBrains Mono',monospace!important;font-size:12.5px!important}
+a.sx-navbtn{display:inline-block;padding:9px 16px;border-radius:8px;box-shadow:inset 0 0 0 1.5px #0B1020;color:#0B1020!important;font-weight:600!important;text-decoration:none!important;white-space:nowrap}
+a.sx-navbtn:hover{background:#0B1020;color:#F4F6FA!important}
+@media (max-width:760px){.wrap.nav{padding-left:24px!important;padding-right:24px!important}.n-dots{flex-wrap:wrap}}
+html,body{overflow-x:clip}
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet"><link rel="stylesheet" href="/sx.css">
 </head>
-<body>
-<div class="neural-bg" aria-hidden="true"><canvas id="neural"></canvas></div>
+<body class="sx-tpl">
 
-<header>
-  <div class="wrap nav">
-    <a class="logo" href="/" aria-label="θeta ai — αρχική">
-      <svg width="30" height="30" viewBox="0 0 110 110" aria-hidden="true"><circle cx="55" cy="55" r="38" fill="none" stroke="#1d2846" stroke-width="6"/><line x1="30" y1="55" x2="80" y2="55" stroke="#1d2846" stroke-width="6" stroke-linecap="round"/><circle cx="106" cy="55" r="8" fill="#BE9A44"/><circle cx="4" cy="55" r="8" fill="#1d2846"/></svg>
-      <span>θeta <span class="ai">ai</span></span>
-    </a>
-    <nav class="nav-links" aria-label="Κύρια πλοήγηση">
-      <a href="/#services">Υπηρεσίες</a>
-      <a href="/#method">Μεθοδολογία</a>
-      <a href="/ergaleia/">Εργαλεία</a>
-      <a href="/blog/">Blog</a>
-      <a href="/#guide">Οδηγός</a>
-      <a href="/#faq">Συχνές ερωτήσεις</a>
-      <span class="lang"><span class="on">EL</span> · <a href="/en/ergaleia/elenchos-arxeiou/">EN</a></span>
-    </nav>
-  </div>
-</header>
+
+<header class="sx-top"><div class="sx-w sx-nav"><a class="sx-logo" href="/" aria-label="sphragisAI"><span class="br"><i>{</i><span class="sig">Σ</span><i>}</i></span><span>sphragis<span class="ai2">AI</span></span><span class="cur" aria-hidden="true"></span></a><details class="sx-burger"><summary>Μενού</summary></details><nav class="sx-links" aria-label="Μενού"><a href="/ypiresies/">Υπηρεσίες</a><details class="sx-dd"><summary>Πόροι</summary><div class="menu"><a href="/radar/"><b>AI Security Radar</b><small>Ειδήσεις για AI Act, ασφάλεια AI και ISO, κάθε μέρα</small></a><a href="/blog/"><b>Blog</b><small>Άρθρα και πραγματικές υποθέσεις</small></a><a href="/ergaleia/"><b>Εργαλεία</b><small>Δωρεάν τεστ και γεννήτριες στον browser</small></a><a href="/#guide"><b>Οδηγός EU AI Act</b><small>Δωρεάν PDF για ΜμΕ</small></a></div></details><a href="/#about">Σχετικά</a><span class="sx-lang"><span class="on">EL</span>·<a href="/en/ergaleia/elenchos-arxeiou/" hreflang="en">EN</a></span><a class="sx-cta" href="https://calendar.app.google/6C5eXMiNmEHWMqxN9" target="_blank" rel="noopener">Κλείστε συνάντηση</a></nav></div></header>
 
 <main>
   <div class="wrap">
@@ -237,9 +249,7 @@ h1,h2,.ta-guide h2{font-weight:700 !important;letter-spacing:-.02em;}
   </div>
 </main>
 
-<footer>
-  <div class="wrap">© 2026 <a href="/">θeta ai</a> · Θ όπως θωράκιση · <a href="/en/ergaleia/elenchos-arxeiou/" style="color:var(--stone);">English</a> · Καμία πληροφορία δεν αποθηκεύεται ή αποστέλλεται.</div>
-</footer>
+
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
 <script>
@@ -501,5 +511,6 @@ document.getElementById("demo").addEventListener("click", ()=>{
   var t; window.addEventListener('resize', function(){ clearTimeout(t); t=setTimeout(resize,200); });
 })();
 </script>
+<footer class="sx-foot"><div class="sx-w"><div class="row"><div><a class="sx-logo" href="/" aria-label="sphragisAI"><span class="br"><i>{</i><span class="sig">Σ</span><i>}</i></span><span>sphragis<span class="ai2">AI</span></span><span class="cur" aria-hidden="true"></span></a><p>Η sphragisAI παρέχει συμβουλευτικές υπηρεσίες ασφάλειας AI και συμμόρφωσης με τον EU AI Act και τα πρότυπα ISO/IEC 42001 και 27001. Δεν παρέχει νομικές υπηρεσίες. Καμία υπηρεσία δεν συνιστά εγγύηση συμμόρφωσης.</p></div><nav><a href="/ypiresies/">Υπηρεσίες</a><a href="/radar/">Radar</a><a href="/blog/">Blog</a><a href="/ergaleia/">Εργαλεία</a><a href="/privacy/">Πολιτική απορρήτου</a><a href="/en/">English</a></nav><nav><a href="https://www.linkedin.com/company/%CE%B8eta-ai/" target="_blank" rel="noopener">LinkedIn · sphragisAI</a><a href="https://www.linkedin.com/in/mariabartzoka/" target="_blank" rel="noopener">LinkedIn · Μαρία Μπαρτζώκα</a><span style="font-family:var(--f-mono);font-size:13px;color:var(--muted)">hello@thetaai.gr</span></nav></div><div class="copy"><span>© 2026 sphragisAI · Trust, sealed.</span><span>sphragisai.com</span></div></div></footer><script>document.addEventListener("click",function(e){document.querySelectorAll("details.sx-dd[open]").forEach(function(d){if(!d.contains(e.target))d.removeAttribute("open")})});</script>
 </body>
 </html>

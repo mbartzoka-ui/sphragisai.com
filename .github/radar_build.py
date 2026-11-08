@@ -32,13 +32,13 @@ import sys
 import unicodedata
 from pathlib import Path
 
-SITE = "https://thetaai.gr"
+SITE = "https://sphragisai.com"
 PAGES = {"el": Path("radar/index.html"), "en": Path("en/radar/index.html")}
 PREFIX = {"el": "/radar/", "en": "/en/radar/"}
 REGISTRY = Path("radar/stories.json")
 SITEMAP = Path("sitemap.xml")
 OG_IMAGE = f"{SITE}/og-image-v2.png"
-BRAND = "θeta ai"
+BRAND = "sphragisAI"
 
 TOPICS = ["AI Act", "AI Security", "Standards", "Incidents", "General"]
 BADGE = {"AI Act": "b-act", "AI Security": "b-sec", "Standards": "b-std",
@@ -64,7 +64,7 @@ T = {
     "el": {
         "sources": "Πηγές", "archive": "Αρχείο", "all_stories": "Όλες οι ιστορίες του radar",
         "archive_title": "Αρχείο AI Security Radar",
-        "archive_desc": "Όλες οι ιστορίες του AI Security Radar της θeta ai, ανά μήνα: EU AI Act, ασφάλεια AI, περιστατικά και πρότυπα.",
+        "archive_desc": "Όλες οι ιστορίες του AI Security Radar της sphragisAI, ανά μήνα: EU AI Act, ασφάλεια AI, περιστατικά και πρότυπα.",
         "archive_h1": "Αρχείο του AI Security Radar",
         "archive_sub": "Κάθε ιστορία που πέρασε από το radar, με την ημερομηνία και τις πηγές της. Οι πιο πρόσφατες είναι στη σελίδα του radar.",
         "permalink": "Μόνιμος σύνδεσμος", "back": "Όλες οι πρόσφατες ιστορίες",
@@ -76,7 +76,7 @@ T = {
     "en": {
         "sources": "Sources", "archive": "Archive", "all_stories": "All radar stories",
         "archive_title": "AI Security Radar Archive",
-        "archive_desc": "Every story from θeta ai's AI Security Radar, by month: EU AI Act, AI security, incidents and standards.",
+        "archive_desc": "Every story from sphragisAI’s AI Security Radar, by month: EU AI Act, AI security, incidents and standards.",
         "archive_h1": "AI Security Radar archive",
         "archive_sub": "Every story that went through the radar, with its date and sources. The latest ones are on the radar page.",
         "permalink": "Permalink", "back": "All recent stories",
@@ -88,9 +88,9 @@ T = {
 }
 
 # Το tagline του site (30/10/2026). Ο radar έγραφε «Θ ως ασπίδα», το υπόλοιπο
-# site «Θ όπως θωράκιση». Ο build το διορθώνει στη σελίδα του radar, και από
+# site «Trust, sealed.». Ο build το διορθώνει στη σελίδα του radar, και από
 # εκεί περνά σε κάθε σελίδα ιστορίας και αρχείου μέσω του chrome().
-TAGLINE = {"el": "Θ όπως θωράκιση", "en": "Θ as in shielding"}
+TAGLINE = {"el": "Trust, sealed.", "en": "Θ as in shielding"}
 OLD_TAGLINE = {"el": "Θ ως ασπίδα", "en": "Θ as a shield"}
 
 # CTA στο πρώτο viewport (30/10/2026). Ο μέσος χρόνος παραμονής στο /radar
@@ -277,18 +277,18 @@ def chrome(index_text):
     """Reuse the radar page's own head assets, header, CTA and footer, so
     story pages always match the site's current look."""
     head = index_text[:index_text.index("</head>")]
-    styles = "\n".join(re.findall(r"<style>.*?</style>", head, re.S))
-    fonts = "\n".join(re.findall(r'<link[^>]+(?:fonts\.googleapis|fonts\.gstatic)[^>]*>', head))
+    styles = "\n".join(re.findall(r"<style[^>]*>.*?</style>", head, re.S))
+    fonts = "\n".join(re.findall(r'<link[^>]+(?:fonts\.googleapis|fonts\.gstatic|/sx\.css)[^>]*>', head))
     icon = "\n".join(re.findall(r'<link[^>]+rel="icon"[^>]*>', head))
-    header = re.search(r"<header>.*?</header>", index_text, re.S).group(0)
+    header = re.search(r"<header[^>]*>.*?</header>", index_text, re.S).group(0)
     cta = re.search(r'<div class="cta">.*?</div>', index_text, re.S)
-    footer = re.search(r"<footer>.*?</footer>", index_text, re.S).group(0)
+    footer = re.search(r'<footer[^>]*>.*?</footer>(?:\s*<script>document\.addEventListener\("click".*?</script>)?', index_text, re.S).group(0)
     return {"styles": styles, "fonts": fonts, "icon": icon, "header": header,
             "cta": cta.group(0) if cta else "", "footer": footer}
 
 
 EXTRA_CSS = """<style>
-.crumbs{font-size:.85rem;margin:28px 0 8px;color:var(--stone,#6b7280)}
+.crumbs{font-size:.85rem;margin:28px 0 8px;color:var(--stone,#475069)}
 .crumbs a{color:inherit}
 .story{padding:8px 0 24px}
 .story h1{font-size:clamp(1.6rem,3.2vw,2.3rem);line-height:1.2;margin:14px 0 18px}
@@ -310,7 +310,7 @@ def lang_switch(header, lang, el_path, en_path):
     """Point the header's EL/EN switch at this page's counterpart."""
     target = en_path if lang == "el" else el_path
     target = target or ("/en/radar/" if lang == "el" else "/radar/")
-    return re.sub(r'(<span class="lang">.*?<a href=")[^"]*(")',
+    return re.sub(r'(<span class="(?:sx-)?lang">.*?<a href=")[^"]*(")',
                   lambda m: m.group(1) + target + m.group(2), header, count=1, flags=re.S)
 
 
@@ -347,13 +347,13 @@ def page(lang, c, *, title, desc, path, el_path, en_path, body, jsonld,
 {EXTRA_CSS}
 <script type="application/ld+json">{json.dumps(jsonld, ensure_ascii=False)}</script>
 </head>
-<body>
+<body class="sx-tpl">
 {lang_switch(c['header'], lang, el_path, en_path)}
 <div class="wrap">
 {body}
 {c['cta']}
-{c['footer']}
 </div>
+{c['footer']}
 </body>
 </html>
 """
@@ -363,7 +363,7 @@ def org():
     # Same @id as the ProfessionalService on the home page, so search and AI
     # engines treat every radar page as published by that one entity.
     return {"@type": "Organization", "@id": SITE + "/#org", "name": BRAND,
-            "alternateName": "Theta AI", "url": SITE + "/",
+            "alternateName": "sphragisAI", "url": SITE + "/",
             "sameAs": ["https://www.linkedin.com/company/%CE%B8eta-ai/"],
             "logo": {"@type": "ImageObject", "url": OG_IMAGE}}
 
@@ -549,7 +549,7 @@ def url_block(el_path, en_path, lastmod, changefreq, priority):
 
 def update_sitemap(registry, generated):
     text = SITEMAP.read_text(encoding="utf-8")
-    text = re.sub(r"\s*<url>(?:(?!</url>).)*?<loc>https://thetaai\.gr/(?:en/)?radar/(?:(?!</url>).)*?</url>",
+    text = re.sub(r"\s*<url>(?:(?!</url>).)*?<loc>https://sphragisai\.com/(?:en/)?radar/(?:(?!</url>).)*?</url>",
                   "", text, flags=re.S)
     blocks = url_block("/radar/", "/en/radar/", generated, "daily", "0.7")
     blocks += url_block("/radar/archive/", "/en/radar/archive/", generated, "daily", "0.5")

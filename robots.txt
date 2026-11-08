@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://thetaai.gr/sitemap.xml
+Sitemap: https://sphragisai.com/sitemap.xml

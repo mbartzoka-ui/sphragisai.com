@@ -28,7 +28,7 @@ concurrency:
   cancel-in-progress: false
 
 env:
-  HOST: thetaai.gr
+  HOST: sphragisai.com
   KEY: 69338b6f603dfbd5a6440686a2cd4ca3
 
 jobs:
