@@ -150,7 +150,7 @@ After the «Συνολική εικόνα» paragraph, add a horizontal rule and
 
 Δωρεάν 45λεπτη χαρτογράφηση: πού στέκεται η επιχείρησή σου απέναντι στον AI Act και το ISO 42001 → https://sphragisai.com/iso-42001/?utm_source=linkedin&utm_medium=social&utm_campaign=<YYYY-MM>-radar&utm_content=<YYYY-MM-DD>-<el|en>
 
-Το κείμενο γράφτηκε αυτόματα με AI από το AI Radar της sphragisAI (sphragisAI), με βάση δημόσιες πηγές.
+Το κείμενο γράφτηκε αυτόματα με AI από το AI Radar της sphragisAI, με βάση δημόσιες πηγές.
 ```
 (Αλλαγή 23/10/2026, εντολή Maria: το κλείσιμο οδηγεί πλέον σε συμβουλευτική AI Act / ISO 42001, όχι σε «αυτοματισμούς». Η πρώτη γραμμή αντικαθίσταται αυτόματα, κατά τη δημοσίευση, με τη σελίδα της ιστορίας.)
 
