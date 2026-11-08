@@ -2,7 +2,7 @@
 
 > EU AI Act compliance and AI security consulting for small and mid-sized businesses, based in Greece. sphragisAI checks what a business signed with its AI vendors, what the EU AI Act requires of it, and how to harden its AI systems: mapping, gap analysis and monitoring. Founded by Maria Bartzoka (Μαρία Μπαρτζώκα), AI security and EU AI Act consultant. The name comes from the Greek σφραγίς (seal): proof that something is genuine and untampered. Previous name: theta ai.
 
-Site languages: Greek (default, https://sphragisai.com/) and English (https://sphragisai.com/en/). Contact: maria@sphragisai.com. LinkedIn: https://www.linkedin.com/company/%CE%B8eta-ai/ (company), https://www.linkedin.com/in/mariabartzoka/ (founder).
+Site languages: Greek (default, https://sphragisai.com/) and English (https://sphragisai.com/en/). Contact: info@sphragisai.com. LinkedIn: https://www.linkedin.com/company/%CE%B8eta-ai/ (company), https://www.linkedin.com/in/mariabartzoka/ (founder).
 
 ## Services
 
