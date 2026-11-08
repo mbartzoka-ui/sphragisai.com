@@ -364,7 +364,7 @@ def org():
     # engines treat every radar page as published by that one entity.
     return {"@type": "Organization", "@id": SITE + "/#org", "name": BRAND,
             "alternateName": "sphragisAI", "url": SITE + "/",
-            "sameAs": ["https://www.linkedin.com/company/%CE%B8eta-ai/"],
+            "sameAs": ["https://www.linkedin.com/company/sphragisai/"],
             "logo": {"@type": "ImageObject", "url": OG_IMAGE}}
 
 
