@@ -425,3 +425,4 @@ provable inference
 local privilege escalation (lpe)
 τοπική κλιμάκωση δικαιωμάτων
 prompt adware
+rsa (κρυπτογράφηση δημόσιου κλειδιού)
