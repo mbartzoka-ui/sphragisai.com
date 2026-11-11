@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Οδηγός σύνδεσης · Dental Intake | sphragisAI</title>
+<meta name="description" content="Πώς συνδέεστε πρώτη φορά στην εφαρμογή φορμών Dental Intake, βήμα-βήμα με εικόνες.">
+<!-- Σελίδα υποστήριξης: ανοίγει από το email πρόσκλησης. Εκτός μενού, sitemap και μηχανών αναζήτησης. -->
+<meta name="robots" content="noindex,nofollow,noarchive">
+<meta name="referrer" content="no-referrer">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0B1020;--paper:#F4F6FA;--white:#FFFFFF;--seal:#C8323A;--slate:#8892AB;--amber:#F5A524;--line:#D5DAE5;--body:#2A3149;--muted:#475069;--soft:#EEF1F6;
+  --f-head:'Space Grotesk',Inter,system-ui,sans-serif;--f-text:Inter,system-ui,sans-serif;--f-mono:'JetBrains Mono',ui-monospace,Consolas,monospace}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--f-text);background:var(--paper);color:var(--body);line-height:1.6;font-size:17px;-webkit-font-smoothing:antialiased}
+a{color:var(--seal)}
+a:focus-visible{outline:2px solid var(--seal);outline-offset:3px;border-radius:4px}
+.w{max-width:720px;margin:0 auto;padding:0 18px}
+header{border-bottom:1px solid var(--line);background:rgba(244,246,250,.94);backdrop-filter:blur(8px);position:sticky;top:0;z-index:5}
+.top{display:flex;align-items:center;justify-content:space-between;height:60px;gap:12px}
+.top .tag{font-family:var(--f-mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.sx-logo{display:inline-flex;align-items:center;gap:8px;font-family:var(--f-head);font-weight:700;font-size:20px;line-height:1;color:var(--ink);text-decoration:none}
+.sx-logo .br{font-family:var(--f-mono);font-weight:600}.sx-logo .br i{font-style:normal;color:var(--slate)}
+.sx-logo .sig{font-family:var(--f-text);font-weight:700}.sx-logo .ai2{font-family:var(--f-mono);font-weight:600;color:var(--slate)}
+.sx-logo .cur{display:inline-block;width:.36em;height:.9em;background:var(--seal);animation:b 1.1s step-end infinite}
+@keyframes b{50%{opacity:0}}@media (prefers-reduced-motion:reduce){.sx-logo .cur{animation:none}}
+main{padding:36px 0 64px}
+h1{font-family:var(--f-head);font-size:clamp(28px,6vw,36px);font-weight:700;line-height:1.15;color:var(--ink)}
+.need{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 28px}
+.need span{background:var(--white);border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:15px;color:var(--ink)}
+.part{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:24px 20px;margin-bottom:18px;scroll-margin-top:76px}
+.part-h{display:flex;align-items:center;gap:12px;margin-bottom:6px}
+.badge{flex:none;width:34px;height:34px;border-radius:50%;background:var(--ink);color:var(--white);font-family:var(--f-head);font-weight:700;display:flex;align-items:center;justify-content:center;font-size:17px}
+h2{font-family:var(--f-head);font-size:22px;font-weight:700;color:var(--ink);line-height:1.2}
+.where{color:var(--muted);font-size:15px;margin:0 0 16px 46px}
+.step{display:flex;gap:12px;padding:12px 0;border-top:1px solid var(--soft)}
+.step:first-of-type{border-top:0}
+.n{flex:none;font-family:var(--f-mono);font-weight:600;font-size:14px;color:var(--seal);width:26px;padding-top:2px}
+.step p{margin:0}
+.k{display:inline-block;font-weight:600;font-size:15px;color:var(--white);background:var(--ink);border-radius:6px;padding:1px 9px}
+figure{margin:12px 0 0}
+figure img{display:block;width:100%;max-width:360px;border:1px solid var(--line);border-radius:12px;background:var(--soft)}
+figcaption{font-size:13px;color:var(--muted);margin-top:6px}
+.apps{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.app{border:1px solid var(--line);border-radius:12px;padding:14px}
+.app b{display:block;color:var(--ink);margin-bottom:10px}
+.app .st{display:flex;gap:8px;flex-wrap:wrap}
+.app .st a{font-size:14px;font-weight:600;color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:6px 12px;text-decoration:none}
+.app .st a:hover{border-color:var(--ink)}
+.tip{background:var(--soft);border-radius:10px;padding:12px 14px;font-size:15px;margin-top:14px}
+.warn{border-left:3px solid var(--amber);background:#FFF8EA;border-radius:8px;padding:12px 14px;font-size:15px;margin-top:14px}
+.done{background:#EEF7F1;border-radius:10px;padding:12px 14px;font-size:15px;margin-top:14px;color:#1F5136}
+.os{border:1px solid var(--line);border-radius:12px;padding:14px;margin-top:12px}
+.os b{color:var(--ink)}
+.os ol{margin:8px 0 0 20px}
+.os li{margin:4px 0}
+details{border-top:1px solid var(--soft);padding:12px 0}
+details:first-of-type{border-top:0}
+summary{cursor:pointer;font-weight:600;color:var(--ink)}
+details p{margin-top:8px}
+footer{border-top:1px solid var(--line);padding:22px 0;font-size:13px;color:var(--muted)}
+footer .mono{font-family:var(--f-mono);font-size:11px;letter-spacing:.08em;color:var(--slate)}
+@media (max-width:520px){.top .tag{display:none}.where{margin-left:0}}
+</style>
+</head>
+<body>
+<header><div class="w top"><a class="sx-logo" href="/" aria-label="sphragisAI"><span class="br"><i>{</i><span class="sig">Σ</span><i>}</i></span><span>sphragis<span class="ai2">AI</span></span><span class="cur" aria-hidden="true"></span></a><span class="tag">Dental Intake · Οδηγός</span></div></header>
+
+<main><div class="w">
+  <h1>Σύνδεση στην εφαρμογή φορμών</h1>
+  <div class="need"><span>Υπολογιστής ή tablet</span><span>Το κινητό σας</span><span>5 λεπτά, μία φορά</span></div>
+
+  <section class="part" id="kinito">
+    <div class="part-h"><span class="badge">1</span><h2>Στο κινητό: μία εφαρμογή κωδικών</h2></div>
+    <p class="where">Κατεβάστε <b>μία</b> από τις δύο. Είναι δωρεάν. Αν έχετε ήδη κάποια (π.χ. για την τράπεζα), χρησιμοποιήστε αυτήν.</p>
+    <div class="apps">
+      <div class="app"><b>Google Authenticator</b><div class="st">
+        <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2" target="_blank" rel="noopener">Android</a>
+        <a href="https://apps.apple.com/app/google-authenticator/id388497605" target="_blank" rel="noopener">iPhone</a></div></div>
+      <div class="app"><b>Microsoft Authenticator</b><div class="st">
+        <a href="https://play.google.com/store/apps/details?id=com.azure.authenticator" target="_blank" rel="noopener">Android</a>
+        <a href="https://apps.apple.com/app/microsoft-authenticator/id983156458" target="_blank" rel="noopener">iPhone</a></div></div>
+    </div>
+  </section>
+
+  <section class="part" id="logariasmos">
+    <div class="part-h"><span class="badge">2</span><h2>Δημιουργία λογαριασμού</h2></div>
+    <p class="where">Στον υπολογιστή ή στο tablet, από το email της πρόσκλησης.</p>
+    <div class="step"><span class="n">01</span><p>Πατήστε <span class="k">Αποδοχή πρόσκλησης</span> στο email.</p></div>
+    <div class="step"><span class="n">02</span><div><p>Γράψτε έναν κωδικό <b>δύο φορές</b> (τουλάχιστον 12 χαρακτήρες) και πατήστε <span class="k">Δημιουργία λογαριασμού</span>.</p>
+      <figure><img src="img/01-prosklisi.png" alt="Η σελίδα της πρόσκλησης με τα πεδία του κωδικού" loading="lazy"></figure></div></div>
+    <div class="tip"><b>Ιδέα για κωδικό:</b> τέσσερις λέξεις που θυμάστε, με παύλες, π.χ. «θάλασσα-καφές-Χαλκίδα-2026». Όχι τον κωδικό του email σας.</div>
+  </section>
+
+  <section class="part" id="syndesi-kinitou">
+    <div class="part-h"><span class="badge">3</span><h2>Σύνδεση του κινητού</h2></div>
+    <p class="where">Μόνο την πρώτη φορά. Κρατήστε το κινητό δίπλα σας.</p>
+    <div class="step"><span class="n">01</span><div><p>Γράψτε το email σας και τον κωδικό, και πατήστε <span class="k">Σύνδεση</span>.</p>
+      <figure><img src="img/02-syndesi.png" alt="Σελίδα σύνδεσης με email και κωδικό" loading="lazy"></figure></div></div>
+    <div class="step"><span class="n">02</span><div><p>Γράψτε <b>ξανά τον ίδιο κωδικό</b> και πατήστε <span class="k">Συνέχεια</span>.</p>
+      <figure><img src="img/03-kodikos-ksana.png" alt="Ξανά ο κωδικός πριν τον κωδικό QR" loading="lazy"></figure></div></div>
+    <div class="step"><span class="n">03</span><div><p>Εμφανίζεται ένα τετράγωνο σχέδιο (κωδικός QR). Στο <b>κινητό</b>: ανοίξτε την εφαρμογή κωδικών, πατήστε <b>+</b>, μετά <b>Σάρωση κωδικού QR</b>, και στρέψτε την κάμερα στην οθόνη.</p>
+      <figure><img src="img/04-qr.png" alt="Ο κωδικός QR (θολωμένος στην εικόνα)" loading="lazy"><figcaption>Στην εικόνα ο κωδικός είναι θολός· στη δική σας οθόνη φαίνεται καθαρά.</figcaption></figure></div></div>
+    <div class="step"><span class="n">04</span><div><p>Το κινητό δείχνει <b>6 αριθμούς</b>. Γράψτε τους στο πεδίο και πατήστε <span class="k">Ενεργοποίηση</span>.</p>
+      <figure><img src="img/05-exapsifios.png" alt="Το πεδίο για τους 6 αριθμούς" loading="lazy"></figure></div></div>
+    <div class="step"><span class="n">05</span><div><p>Εμφανίζονται <b>εφεδρικοί κωδικοί</b>. Γράψτε τους σε χαρτί και φυλάξτε τους. Χρειάζονται μόνο αν χάσετε το κινητό. Πατήστε <span class="k">Τους αποθήκευσα — συνέχεια</span>.</p>
+      <figure><img src="img/06-efedrikoi.png" alt="Οι εφεδρικοί κωδικοί (θολωμένοι στην εικόνα)" loading="lazy"></figure></div></div>
+    <div class="done">Τέλος. Είστε μέσα στην εφαρμογή.</div>
+    <div class="warn">Κωδικούς δεν στέλνετε ποτέ με email ή Viber. Κανείς δεν θα σας τους ζητήσει, ούτε το ιατρείο ούτε εμείς.</div>
+  </section>
+
+  <section class="part" id="eikonidio">
+    <div class="part-h"><span class="badge">4</span><h2>Εικονίδιο στην οθόνη</h2></div>
+    <p class="where">Για να ανοίγει η εφαρμογή με ένα πάτημα, σαν κάθε άλλη εφαρμογή. Ανοίξτε πρώτα το <b>app.sphragisai.com</b>.</p>
+    <div class="os"><b>iPad / iPhone</b> (Safari)
+      <ol><li>Πατήστε το κουμπί <b>Κοινοποίηση</b> (τετράγωνο με βελάκι προς τα πάνω).</li><li>Επιλέξτε <b>Προσθήκη στην οθόνη Αφετηρίας</b>.</li><li>Πατήστε <b>Προσθήκη</b>.</li></ol></div>
+    <div class="os"><b>Android</b> (Chrome)
+      <ol><li>Πατήστε τις <b>τρεις τελείες ⋮</b> πάνω δεξιά.</li><li>Επιλέξτε <b>Εγκατάσταση εφαρμογής</b> (ή <b>Προσθήκη στην αρχική οθόνη</b>).</li><li>Πατήστε <b>Εγκατάσταση</b>.</li></ol></div>
+    <div class="os"><b>Υπολογιστής</b> (Chrome ή Edge)
+      <ol><li>Στη γραμμή διευθύνσεων, δεξιά, πατήστε το εικονίδιο <b>Εγκατάσταση</b>.</li></ol></div>
+    <div class="tip">Θα δείτε το εικονίδιο <b>Dental Intake</b> με το σήμα {Σ}.</div>
+  </section>
+
+  <section class="part" id="kathe-mera">
+    <div class="part-h"><span class="badge">5</span><h2>Κάθε μέρα</h2></div>
+    <div class="step"><span class="n">01</span><p>Ανοίξτε το εικονίδιο <b>Dental Intake</b>.</p></div>
+    <div class="step"><span class="n">02</span><p>Email, κωδικός, <span class="k">Σύνδεση</span>.</p></div>
+    <div class="step"><span class="n">03</span><div><p>Γράψτε τους <b>6 αριθμούς</b> από το κινητό και πατήστε <span class="k">Επιβεβαίωση</span>.</p>
+      <figure><img src="img/07-epivevaiosi.png" alt="Επιβεβαίωση ταυτότητας με τους 6 αριθμούς" loading="lazy"></figure></div></div>
+    <div class="tip">Αν δεν χρησιμοποιήσετε την εφαρμογή για 30 λεπτά, σας αποσυνδέει για ασφάλεια. Απλώς συνδεθείτε ξανά.</div>
+  </section>
+
+  <section class="part" id="provlimata">
+    <div class="part-h"><span class="badge">?</span><h2>Αν κάτι δεν πάει καλά</h2></div>
+    <details><summary>«Η πρόσκληση δεν ισχύει πια»</summary><p>Η πρόσκληση ισχύει 3 ημέρες και μία φορά. Ζητήστε νέα από τον διαχειριστή του ιατρείου.</p></details>
+    <details><summary>Οι 6 αριθμοί «δεν είναι σωστοί»</summary><p>Γράψτε τους αριθμούς που φαίνονται <b>εκείνη τη στιγμή</b>· αλλάζουν κάθε 30 δευτερόλεπτα. Αν συνεχίζει, στο κινητό: Ρυθμίσεις → Ημερομηνία και ώρα → <b>Αυτόματα</b>.</p></details>
+    <details><summary>Δεν έχω το κινητό μου</summary><p>Πατήστε <b>Δεν έχω το κινητό μου</b> και γράψτε έναν από τους εφεδρικούς κωδικούς (από το χαρτί). Κάθε εφεδρικός κωδικός ισχύει μία φορά.</p></details>
+    <details><summary>Άλλαξα κινητό ή ξέχασα τον κωδικό</summary><p>Ο διαχειριστής του ιατρείου σάς στέλνει <b>επαναφορά λογαριασμού</b>. Από το email ορίζετε νέο κωδικό και ξανασυνδέετε το κινητό (ενότητα 3).</p></details>
+    <div class="tip">Βοήθεια: πρώτα ο διαχειριστής του ιατρείου σας. Τεχνικό θέμα: <a href="mailto:info@sphragisai.com">info@sphragisai.com</a> (χωρίς κωδικούς ή στοιχεία ασθενών).</div>
+  </section>
+</div></main>
+
+<footer><div class="w">
+  <span class="mono">DENTAL INTAKE · sphragisAI · app.sphragisai.com · ΦΙΛΟΞΕΝΙΑ ΣΤΗΝ ΕΕ</span><br>
+  © 2026 sphragisAI · <a href="/privacy/" style="color:var(--muted)">Πολιτική απορρήτου</a>
+</div></footer>
+</body>
+</html>
