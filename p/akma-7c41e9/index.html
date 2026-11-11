@@ -1,0 +1,552 @@
+<!doctype html>
+<html lang="el">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<style>:root{color-scheme:light}body{margin:0;font:14px system-ui}img{max-width:100%}[hidden]{display:none!important}</style>
+</head>
+<body>
+<title>Συνεντεύξεις ΑΚΜΑ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap">
+<style>
+/* Layout: one column — hero, the booking instrument (owner editor above, slot picker below), how it works, privacy panel. */
+:root{
+  --paper:#F4F6FA; --card:#FFFFFF; --ink:#0B1020; --body:#2A3149; --muted:#475069;
+  --slate:#8892AB; --line:#D5DAE5; --soft:#EEF1F6; --seal:#C8323A; --on-ink:#F4F6FA;
+  --panel:#1C2440; --panel-fg:#EEF0F5; --panel-mute:#AEB6CC; --hatch:#DCE1EA; --busy:#B9C1D2;
+  --open-bg:#FBEDEE; --open-bd:#E7A9AD;
+  --f-display:"Space Grotesk",system-ui,sans-serif;
+  --f-body:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#0B1020; --card:#121935; --ink:#EEF0F5; --body:#C9CFDD; --muted:#9AA3BB; --on-ink:#0B1020;
+  --slate:#8892AB; --line:#2A3354; --soft:#161E3B; --seal:#E0484F; --hatch:#222B4A; --busy:#3A4568;
+  --open-bg:#3A1D27; --open-bd:#7A2E36; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#0B1020; --card:#121935; --ink:#EEF0F5; --body:#C9CFDD; --muted:#9AA3BB; --on-ink:#0B1020;
+  --slate:#8892AB; --line:#2A3354; --soft:#161E3B; --seal:#E0484F; --hatch:#222B4A; --busy:#3A4568;
+  --open-bg:#3A1D27; --open-bd:#7A2E36; color-scheme:dark}
+
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--body);font-family:var(--f-body);font-size:16px;line-height:1.6;margin:0}
+.wrap{max-width:1040px;margin:0 auto;padding-block:28px 56px;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.label{font-family:var(--f-mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+h1,h2,h3{font-family:var(--f-display);color:var(--ink);text-wrap:balance;margin:0}
+h1{font-size:clamp(34px,6vw,54px);line-height:1.05;font-weight:700;letter-spacing:-.02em}
+h2{font-size:clamp(22px,3vw,28px);font-weight:700;letter-spacing:-.01em}
+h3{font-size:18px;font-weight:700}
+p{margin:0;max-width:62ch}
+button,input,select{font:inherit}
+:focus-visible{outline:2px solid var(--seal);outline-offset:2px}
+
+.top{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-bottom:22px;border-bottom:1px solid var(--line)}
+.sx-logo{display:inline-flex;align-items:center;gap:10px;color:var(--ink)}
+.mark{position:relative;display:inline-flex;align-items:baseline;font-size:26px;line-height:1}
+.mark i{font-family:var(--f-mono);font-style:normal;color:var(--slate);font-weight:500}
+.mark .sig{font-family:var(--f-body);font-weight:700;color:var(--ink);padding:0 1px}
+.mark .dot{position:absolute;right:-5px;bottom:1px;width:7px;height:7px;border-radius:50%;background:var(--seal)}
+.wm{font-family:var(--f-display);font-weight:700;font-size:22px;letter-spacing:-.01em;margin-left:6px}
+.wm .ai{font-family:var(--f-mono);font-weight:600;color:var(--slate)}
+
+.hero{display:flex;flex-direction:column;gap:18px;padding-block:40px 32px}
+.hero p{font-size:18px}
+.facts{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font-family:var(--f-mono);font-size:12.5px;padding:6px 10px;border:1px solid var(--line);border-radius:999px;color:var(--muted);background:var(--card)}
+
+.btn{appearance:none;border:0;cursor:pointer;font-weight:600;background:var(--ink);color:var(--on-ink);padding:12px 20px;border-radius:10px}
+.btn[disabled]{opacity:.45;cursor:not-allowed}
+.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}
+.note{font-size:13.5px;color:var(--muted)}
+
+/* panels */
+.panel{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;display:flex;flex-direction:column;gap:18px}
+.panel-head{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;flex-wrap:wrap}
+.weeks{display:flex;gap:6px;flex-wrap:wrap}
+.wk{appearance:none;border:1px solid var(--line);background:var(--soft);color:var(--body);border-radius:8px;padding:6px 12px;cursor:pointer;font-family:var(--f-mono);font-size:12.5px}
+.wk[aria-pressed="true"]{background:var(--ink);color:var(--on-ink);border-color:var(--ink)}
+
+/* participant slot picker */
+.cal-scroll{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--card)}
+.cal{display:grid;grid-template-columns:48px repeat(4,minmax(62px,1fr));min-width:300px}
+@media (max-width:480px){.cal .ch .dn{font-size:13px}.cal .slot{font-size:11.5px}.cal .tl{padding:0 5px;font-size:10.5px}}
+.cal .ch{background:var(--card);padding:12px 6px 10px;text-align:center;border-bottom:1px solid var(--line);border-left:1px solid var(--line)}
+.cal .ch .dn{font-family:var(--f-display);font-weight:700;color:var(--ink);font-size:15px;display:block}
+.cal .ch .dd{font-family:var(--f-mono);font-size:11.5px;color:var(--muted);letter-spacing:.06em}
+.cal .corner{border-bottom:1px solid var(--line)}
+.cal .tl{font-family:var(--f-mono);font-size:11.5px;color:var(--slate);text-align:right;padding:0 8px;line-height:38px;font-variant-numeric:tabular-nums;border-top:1px solid transparent}
+.cal .tl.hr{color:var(--muted);border-top-color:var(--line)}
+.cal .c{border-left:1px solid var(--line);border-top:1px dashed var(--line);padding:3px;min-height:38px;display:flex}
+.cal .c.hr{border-top:1px solid var(--line)}
+.cal .c.na{background:repeating-linear-gradient(135deg,var(--soft) 0 5px,transparent 5px 10px)}
+.cal .slot{flex:1;appearance:none;cursor:pointer;border:1px solid var(--open-bd);background:var(--open-bg);color:var(--ink);border-radius:6px;font-family:var(--f-mono);font-size:12.5px;font-variant-numeric:tabular-nums;padding:0 4px}
+.cal .slot:hover{border-color:var(--seal)}
+.cal .slot[aria-pressed="true"]{background:var(--seal);border-color:var(--seal);color:#fff;font-weight:600}
+.cal .slot.taken{background:var(--soft);border:1px solid var(--line);color:var(--slate);cursor:not-allowed;font-family:var(--f-body);font-size:11.5px}
+.cal .slot.mine{background:var(--ink);border-color:var(--ink);color:var(--on-ink);cursor:default;font-family:var(--f-body);font-size:11.5px}
+.cal .gap{grid-column:1/-1;text-align:center;font-size:12px;color:var(--slate);padding:8px;border-top:1px solid var(--line);background:var(--soft)}
+.cal-legend{display:flex;flex-wrap:wrap;gap:16px;font-size:12.5px;color:var(--muted)}
+.cal-legend span{display:inline-flex;align-items:center;gap:6px}
+.cal-legend i{display:inline-block;width:16px;height:12px;border-radius:3px;border:1px solid var(--line)}
+.picked{grid-column:1/-1;display:flex;align-items:center;gap:14px;flex-wrap:wrap;background:var(--soft);border-left:3px solid var(--seal);border-radius:8px;padding:14px 16px}
+.picked b{font-family:var(--f-display);font-size:19px;color:var(--ink)}
+.empty{font-size:13px;color:var(--slate);font-style:italic}
+.status{padding:12px 14px;border-radius:10px;background:var(--soft);font-size:14.5px}
+
+form.book{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;border-top:1px solid var(--line);padding-top:18px}
+form.book label.f{display:flex;flex-direction:column;gap:6px;font-size:13px;color:var(--muted);min-width:0}
+form.book input[type=text],form.book input[type=email],form.book select{border:1px solid var(--line);background:var(--paper);color:var(--ink);border-radius:8px;padding:10px 12px;width:100%}
+.consent{grid-column:1/-1;display:grid;grid-template-columns:20px 1fr;gap:10px;align-items:start;background:var(--soft);border-radius:10px;padding:14px;font-size:14.5px;color:var(--body)}
+.consent input{width:18px;height:18px;margin-top:3px;accent-color:var(--seal)}
+.book .actions{grid-column:1/-1;display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.summary{grid-column:1/-1;font-family:var(--f-mono);font-size:13px;white-space:pre-wrap;background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:12px}
+
+/* owner editor */
+.owner{border-color:var(--ink);border-width:1.5px}
+.owner .tag{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--seal)}
+.ed-scroll{overflow-x:auto}
+.ed{display:grid;grid-template-columns:52px repeat(4,minmax(70px,1fr));gap:3px;font-family:var(--f-mono);font-size:11.5px;min-width:340px}
+.ed .dh{text-align:center;color:var(--muted);padding-bottom:4px}
+.ed .h{color:var(--slate);text-align:right;padding-right:6px;line-height:20px;font-variant-numeric:tabular-nums}
+.ed .h.q{color:transparent}
+.cell{appearance:none;border:1px solid var(--line);background:var(--soft);height:20px;border-radius:4px;cursor:pointer;padding:0;font-size:10px;color:transparent}
+.cell.open{background:var(--open-bg);border-color:var(--open-bd)}
+.cell.booked{background:var(--ink);border-color:var(--ink);color:var(--on-ink)}
+.cell.lunch,.cell.past{background:repeating-linear-gradient(135deg,var(--hatch) 0 4px,transparent 4px 8px);cursor:not-allowed}
+.cell.busy{background:repeating-linear-gradient(135deg,var(--busy) 0 3px,transparent 3px 6px);border-color:var(--busy)}
+.cell.busy.open{outline:2px solid var(--seal);outline-offset:-2px}
+.legend{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--muted)}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.legend .cell{width:16px;height:14px;cursor:default}
+.ed-bar{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+
+table.bk{width:100%;border-collapse:collapse;font-size:14px}
+table.bk th{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);text-align:left;padding:8px;border-bottom:1px solid var(--line)}
+table.bk td{padding:8px;border-bottom:1px solid var(--line);color:var(--ink);font-variant-numeric:tabular-nums}
+.tbl{overflow-x:auto}
+
+section{padding-block:36px;border-top:1px solid var(--line);display:flex;flex-direction:column;gap:22px;margin-top:36px}
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:14px;counter-reset:s}
+.steps li{counter-increment:s;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.steps li::before{content:"0" counter(s);font-family:var(--f-mono);font-size:12px;color:var(--seal);letter-spacing:.1em}
+.steps b{font-family:var(--f-display);color:var(--ink);font-size:17px}
+.steps p{font-size:14.5px}
+.prompts{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.prompt{border-left:2px solid var(--line);padding:4px 0 4px 16px;min-width:0}
+.prompt .q{font-family:var(--f-display);color:var(--ink);font-size:19px;font-weight:500;line-height:1.3}
+
+.privacy{background:var(--panel);color:var(--panel-fg);border-radius:16px;padding:28px;display:grid;grid-template-columns:.8fr 1.2fr;gap:28px;border:0;margin-top:36px}
+.privacy > *{min-width:0}
+.privacy h2{color:var(--panel-fg)}
+.privacy .label{color:var(--panel-mute)}
+.privacy ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:14px}
+.privacy li{display:grid;grid-template-columns:18px 1fr;gap:10px;font-size:15px;color:#D5DAE8}
+.privacy li::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--seal);margin-top:9px}
+
+footer{padding-top:32px;margin-top:36px;border-top:1px solid var(--line);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:14px;color:var(--muted)}
+footer .who{color:var(--ink);font-weight:600}
+.copy{background:none;border:1px solid var(--line);border-radius:6px;padding:2px 8px;color:var(--muted);cursor:pointer;margin-left:6px;font-size:13px}
+
+@media (max-width:760px){
+  form.book{grid-template-columns:1fr}
+  .steps,.prompts{grid-template-columns:1fr}
+  .privacy{grid-template-columns:1fr;padding:22px}
+}
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <span class="sx-logo" aria-label="SphragisAI">
+      <span class="mark"><i>{</i><span class="sig">Σ</span><i>}</i><span class="dot"></span></span>
+      <span class="wm">sphragis<span class="ai">AI</span></span>
+    </span>
+    <span class="label">Για το διοικητικό προσωπικό του ΑΚΜΑ</span>
+  </header>
+
+  <div class="hero">
+    <span class="label">Προετοιμασία εκπαίδευσης AI</span>
+    <h1>15 λεπτά για τη δική σας δουλειά</h1>
+    <p>Πριν από την εκπαίδευση στην τεχνητή νοημοσύνη θα ήθελα να μιλήσουμε σύντομα με τον καθένα και την καθεμία. Μου περιγράφετε πώς κυλά μια μέρα σας στο γραφείο, ώστε τα παραδείγματα της εκπαίδευσης να βγαίνουν από τη δική σας καθημερινότητα.</p>
+    <div class="facts">
+      <span class="chip">15 λεπτά</span>
+      <span class="chip">Google Meet</span>
+      <span class="chip">Χωρίς κάμερα</span>
+      <span class="chip">Μόνο συζήτηση</span>
+    </div>
+  </div>
+
+  <!-- Owner-only editor -->
+  <div class="panel owner" id="owner" hidden>
+    <div class="panel-head">
+      <div style="display:flex;flex-direction:column;gap:4px">
+        <span class="tag">Μόνο εσείς το βλέπετε</span>
+        <h2>Ανοίξτε ώρες</h2>
+      </div>
+    </div>
+    <div id="editorWrap" style="display:flex;flex-direction:column;gap:14px">
+    <div class="weeks" id="owWeeks"></div>
+    <p class="note">Πατήστε ένα 15λεπτο για να το ανοίξετε ή να το κλείσετε. Οι αλλαγές αποθηκεύονται αυτόματα. Οι γραμμωτές ώρες είναι ήδη κατειλημμένες στο ημερολόγιό σας.</p>
+    <div class="ed-scroll"><div class="ed" id="ed"></div></div>
+    <div class="legend">
+      <span><i class="cell open"></i>Ανοιχτό</span>
+      <span><i class="cell booked"></i>Κλεισμένο</span>
+      <span><i class="cell busy"></i>Στο ημερολόγιο</span>
+      <span><i class="cell lunch"></i>Μη διαθέσιμο</span>
+    </div>
+    <div class="ed-bar">
+      <button class="btn" id="save" type="button" disabled>Αποθήκευση τώρα</button>
+      <span class="note" id="saveNote"></span>
+      <span class="note" id="calNote"></span>
+    </div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:10px">
+      <h3>Κρατήσεις</h3>
+      <div class="tbl"><table class="bk"><thead><tr><th>Ώρα</th><th>Όνομα</th><th>Ρόλος</th><th>Email</th><th>Καταγραφή</th></tr></thead><tbody id="bkRows"></tbody></table></div>
+    </div>
+  </div>
+
+  <!-- Participant picker -->
+  <div class="panel" id="picker" style="margin-top:20px">
+    <div class="panel-head">
+      <div style="display:flex;flex-direction:column;gap:4px">
+        <span class="label">Κράτηση</span>
+        <h2>Διαλέξτε ένα 15λεπτο</h2>
+      </div>
+      <div class="weeks" id="pkWeeks"></div>
+    </div>
+    <p class="note">Οι ώρες ενημερώνονται από το ημερολόγιό μου. Αν μετά την κράτησή σας προκύψει κάποια αλλαγή, θα επικοινωνήσω μαζί σας για να βρούμε άλλη μέρα και ώρα. Αν δεν σας βολεύει καμία από τις ώρες, στείλτε μου email στο maria@sphragisai.com και βρίσκουμε μαζί άλλη.</p>
+    <div class="status" id="mine" hidden></div>
+    <div class="cal-scroll"><div class="cal" id="days"></div></div>
+    <div class="cal-legend">
+      <span><i style="background:var(--open-bg);border-color:var(--open-bd)"></i>Διαθέσιμη, πατήστε για επιλογή</span>
+      <span><i style="background:var(--seal);border-color:var(--seal)"></i>Η επιλογή σας</span>
+      <span><i style="background:var(--soft)"></i>Κλεισμένη από άλλον</span>
+      <span><i style="background:repeating-linear-gradient(135deg,var(--soft) 0 3px,transparent 3px 6px)"></i>Μη διαθέσιμη</span>
+    </div>
+    <form class="book" id="book" hidden>
+      <div class="picked"><span class="label">Επιλέξατε</span><b id="chosen"></b></div>
+      <label class="f">Ονοματεπώνυμο<input type="text" id="fName" required autocomplete="name"></label>
+      <label class="f">Email για την πρόσκληση<input type="email" id="fMail" required autocomplete="email"></label>
+      <label class="f">Ρόλος
+        <select id="fRole" required>
+          <option value="">Επιλέξτε</option>
+          <option>Γραμματεία Εξαρχείων</option>
+          <option>Γραμματεία Χαλανδρίου</option>
+          <option>Διοίκηση / λογιστήριο</option>
+          <option>Επικοινωνία</option>
+          <option>Ευρωπαϊκά έργα</option>
+          <option>Άλλο</option>
+        </select>
+      </label>
+      <label class="consent" for="fConsent">
+        <input type="checkbox" id="fConsent" required>
+        <span>Συμφωνώ να καταγραφεί ο ήχος της συνομιλίας και να απομαγνητοφωνηθεί με το Fathom, αποκλειστικά για την προετοιμασία της εκπαίδευσης. Μπορώ να ανακαλέσω τη συγκατάθεσή μου στην αρχή της κλήσης.</span>
+      </label>
+      <div class="actions">
+        <button class="btn" type="submit" id="confirm">Επιβεβαίωση κράτησης</button>
+        <span class="note" id="chosenNote"></span>
+      </div>
+      <div class="summary" id="summary" hidden></div>
+    </form>
+  </div>
+
+  <section>
+    <span class="label">Πώς θα γίνει</span>
+    <ol class="steps">
+      <li><b>Διαλέγετε ώρα</b><p>Ένα από τα ανοιχτά 15λεπτα παραπάνω.</p></li>
+      <li><b>Παίρνετε πρόσκληση</b><p>Έρχεται στο email σας με τον σύνδεσμο Google Meet.</p></li>
+      <li><b>Συζητάμε</b><p>Με κλειστή κάμερα, χωρίς κοινή χρήση οθόνης. Μόνο κουβέντα.</p></li>
+    </ol>
+  </section>
+
+  <section>
+    <span class="label">Αν θέλετε, σκεφτείτε πριν</span>
+    <div class="prompts">
+      <div class="prompt"><div class="q">Τι κάνετε ξανά και ξανά με τον ίδιο τρόπο;</div></div>
+      <div class="prompt"><div class="q">Τι σας παίρνει περισσότερη ώρα απ' όσο θα έπρεπε;</div></div>
+      <div class="prompt"><div class="q">Τι αναβάλλετε όσο μπορείτε;</div></div>
+    </div>
+  </section>
+
+  <div class="privacy">
+    <div style="display:flex;flex-direction:column;gap:12px">
+      <span class="label">Καταγραφή και απόρρητο</span>
+      <h2>Τι καταγράφεται και γιατί</h2>
+    </div>
+    <ul>
+      <li><span>Η συνομιλία καταγράφεται με το Fathom (ήχος και απομαγνητοφώνηση), ώστε να μη χαθεί τίποτα από όσα θα πείτε. Η κάμερα μένει κλειστή.</span></li>
+      <li><span>Δίνετε τη συγκατάθεσή σας στην κράτηση και την επιβεβαιώνετε στην αρχή της κλήσης. Αν δεν θέλετε καταγραφή, μιλάμε κανονικά χωρίς αυτήν.</span></li>
+      <li><span>Μην αναφέρετε ονόματα ή στοιχεία θεραπευομένων και εκπαιδευομένων. Αρκεί να περιγράψετε τη διαδικασία.</span></li>
+      <li><span>Οι καταγραφές χρησιμοποιούνται μόνο για την προετοιμασία της εκπαίδευσης και διαγράφονται όταν αυτή ολοκληρωθεί. Δεν αποτελούν αξιολόγηση της δουλειάς σας.</span></li>
+    </ul>
+  </div>
+
+  <footer>
+    <span><span class="who">Μαρία Μπαρτζώκα · SphragisAI</span><br>Ασφάλεια και εκπαίδευση στην τεχνητή νοημοσύνη</span>
+    <span>sphragisai.com<br><span id="mail">maria@sphragisai.com</span><button class="copy" id="copyMail" type="button">Αντιγραφή</button></span>
+  </footer>
+</div>
+
+<script>
+(function(){
+  // Fallback for viewers who cannot reach the shared store (e.g. signed out). Filled at republish.
+  var EMBEDDED_OPEN = ["2026-11-16T10:00","2026-11-16T10:15","2026-11-16T10:30","2026-11-16T10:45","2026-11-16T11:00","2026-11-16T11:15","2026-11-16T11:30","2026-11-16T11:45","2026-11-16T12:00","2026-11-16T12:15","2026-11-16T12:30","2026-11-16T12:45","2026-11-16T14:00","2026-11-16T14:15","2026-11-16T14:30","2026-11-16T14:45","2026-11-16T15:00","2026-11-16T15:15","2026-11-16T15:30","2026-11-16T15:45","2026-11-16T16:00","2026-11-16T16:15","2026-11-16T16:30","2026-11-16T16:45","2026-11-17T10:00","2026-11-17T10:15","2026-11-17T10:30","2026-11-17T10:45","2026-11-17T11:00","2026-11-17T11:15","2026-11-17T11:30","2026-11-17T11:45","2026-11-17T12:00","2026-11-17T12:15","2026-11-17T12:30","2026-11-17T12:45","2026-11-18T10:00","2026-11-18T10:15","2026-11-18T10:30","2026-11-18T10:45","2026-11-18T11:00","2026-11-18T11:15","2026-11-18T11:30","2026-11-18T11:45","2026-11-18T12:00","2026-11-18T12:15","2026-11-18T12:30","2026-11-18T12:45","2026-11-23T10:00","2026-11-23T10:15","2026-11-23T10:30","2026-11-23T10:45","2026-11-23T11:00","2026-11-23T11:15","2026-11-23T11:30","2026-11-23T11:45","2026-11-23T12:00","2026-11-23T12:15","2026-11-23T12:30","2026-11-23T12:45","2026-11-23T14:00","2026-11-23T14:15","2026-11-23T14:30","2026-11-23T14:45","2026-11-23T15:00","2026-11-23T15:15","2026-11-23T15:30","2026-11-23T15:45","2026-11-23T16:00","2026-11-23T16:15","2026-11-23T16:30","2026-11-23T16:45","2026-11-24T10:00","2026-11-24T10:15","2026-11-24T10:30","2026-11-24T10:45","2026-11-24T11:00","2026-11-24T11:15","2026-11-24T11:30","2026-11-24T11:45","2026-11-24T12:00","2026-11-24T12:15","2026-11-24T12:30","2026-11-24T12:45","2026-11-25T10:00","2026-11-25T10:15","2026-11-25T10:30","2026-11-25T10:45","2026-11-25T11:00","2026-11-25T11:15","2026-11-25T11:30","2026-11-25T11:45","2026-11-25T12:00","2026-11-25T12:15","2026-11-25T12:30","2026-11-25T12:45","2026-11-26T10:00","2026-11-26T10:15","2026-11-26T10:30","2026-11-26T10:45","2026-11-26T11:00","2026-11-26T11:15","2026-11-26T11:30","2026-11-26T11:45","2026-11-26T12:00","2026-11-26T12:15","2026-11-26T12:30","2026-11-26T12:45"];
+
+  var DAYS = ["Κυριακή","Δευτέρα","Τρίτη","Τετάρτη","Πέμπτη","Παρασκευή","Σάββατο"];
+  var DSH = ["ΚΥΡ","ΔΕΥ","ΤΡΙ","ΤΕΤ","ΠΕΜ","ΠΑΡ","ΣΑΒ"];
+  var START_H = 9, END_H = 19; // editor rows 09:00–18:45
+  var pad = function(n){ return String(n).padStart(2,"0"); };
+  var dkey = function(d){ return d.getFullYear()+"-"+pad(d.getMonth()+1)+"-"+pad(d.getDate()); };
+  var sid = function(d,h,m){ return dkey(d)+"T"+pad(h)+":"+pad(m); };
+  function parseSid(s){ var p=s.split(/[-T:]/).map(Number); return new Date(p[0],p[1]-1,p[2],p[3],p[4]); }
+  function label(s){ var d=parseSid(s); return DAYS[d.getDay()]+" "+d.getDate()+"/"+(d.getMonth()+1)+", "+pad(d.getHours())+":"+pad(d.getMinutes()); }
+  var isLunch = function(h){ return h===13; };
+
+  // Weeks: this week (if Mon–Thu remain) + next 3. Each week = Mon..Thu dates.
+  // Interview weeks: Mon 16 – Thu 19 and Mon 23 – Thu 26 November 2026.
+  var now = new Date(), weeks = [];
+  [new Date(2026,10,16), new Date(2026,10,23)].forEach(function(mon){
+    var ds=[]; for (var i=0;i<4;i++){ ds.push(new Date(mon.getFullYear(),mon.getMonth(),mon.getDate()+i)); }
+    weeks.push(ds);
+  });
+  var state = { open: EMBEDDED_OPEN.slice(), taken: {}, mine: null, uid: null, pick: null, wkO: 0, wkP: 0,
+                busy: {}, draft: null, canWrite: true, owner: false, bookings: [] };
+
+  function weekLabel(ds){ return ds[0].getDate()+"/"+(ds[0].getMonth()+1)+" – "+ds[3].getDate()+"/"+(ds[3].getMonth()+1); }
+  function renderWeekTabs(el, key, cb){
+    el.innerHTML = "";
+    weeks.forEach(function(ds,i){
+      var b=document.createElement("button"); b.type="button"; b.className="wk"; b.textContent=weekLabel(ds);
+      b.setAttribute("aria-pressed", String(state[key]===i));
+      b.onclick=function(){ state[key]=i; cb(); renderWeekTabs(el,key,cb); };
+      el.appendChild(b);
+    });
+  }
+
+  // ---------- participant ----------
+  function takenBy(s){ return state.taken[s]; }
+  var MON=["Ιανουαρίου","Φεβρουαρίου","Μαρτίου","Απριλίου","Μαΐου","Ιουνίου","Ιουλίου","Αυγούστου","Σεπτεμβρίου","Οκτωβρίου","Νοεμβρίου","Δεκεμβρίου"];
+  var MSH=["ΙΑΝ","ΦΕΒ","ΜΑΡ","ΑΠΡ","ΜΑΪ","ΙΟΥΝ","ΙΟΥΛ","ΑΥΓ","ΣΕΠ","ΟΚΤ","ΝΟΕ","ΔΕΚ"];
+  function fullLabel(s){ var d=parseSid(s), e=new Date(d.getTime()+15*60000);
+    return DAYS[d.getDay()]+" "+d.getDate()+" "+MON[d.getMonth()]+", "+pad(d.getHours())+":"+pad(d.getMinutes())+" – "+pad(e.getHours())+":"+pad(e.getMinutes()); }
+  function renderPicker(){
+    var box=document.getElementById("days"); box.innerHTML="";
+    var ds = weeks[state.wkP] || [];
+    var openSet = {}; state.open.forEach(function(s){ openSet[s]=1; });
+    // Rows = every 15-minute time open on at least one day of this week; gaps collapse into one band.
+    var times = {};
+    ds.forEach(function(d){ Object.keys(openSet).forEach(function(s){ if (s.indexOf(dkey(d))===0) times[s.slice(11)]=1; }); });
+    times = Object.keys(times).sort();
+    var corner=document.createElement("div"); corner.className="corner"; box.appendChild(corner);
+    ds.forEach(function(d){
+      var h=document.createElement("div"); h.className="ch";
+      var a=document.createElement("span"); a.className="dn"; a.textContent=DAYS[d.getDay()];
+      var b=document.createElement("span"); b.className="dd"; b.textContent=d.getDate()+" "+MSH[d.getMonth()];
+      h.appendChild(a); h.appendChild(b); box.appendChild(h);
+    });
+    if (!times.length){
+      var g0=document.createElement("div"); g0.className="gap";
+      g0.textContent = state.open.length ? "Δεν υπάρχουν ανοιχτές ώρες αυτή την εβδομάδα." : "Οι διαθέσιμες ώρες θα εμφανιστούν εδώ μόλις ανοίξουν.";
+      box.appendChild(g0); return;
+    }
+    var mins=function(t){ return +t.slice(0,2)*60 + +t.slice(3,5); };
+    times.forEach(function(t,i){
+      if (i>0 && mins(t)-mins(times[i-1])>15){
+        var g=document.createElement("div"); g.className="gap";
+        var a=mins(times[i-1])+15; g.textContent=pad(Math.floor(a/60))+":"+pad(a%60)+" – "+t+" · δεν υπάρχουν ώρες";
+        box.appendChild(g);
+      }
+      var hr = t.slice(3)==="00" || i===0;
+      var tl=document.createElement("div"); tl.className="tl"+(hr?" hr":""); tl.textContent=t; box.appendChild(tl);
+      ds.forEach(function(d){
+        var s=dkey(d)+"T"+t, c=document.createElement("div"); c.className="c"+(hr?" hr":"");
+        if (!openSet[s] || parseSid(s)<=now){ c.classList.add("na"); c.title=DAYS[d.getDay()]+" "+t+" · μη διαθέσιμη"; box.appendChild(c); return; }
+        var b=document.createElement("button"); b.type="button"; b.className="slot";
+        var tk=takenBy(s), isMine = state.mine && state.mine.slot===s;
+        b.setAttribute("aria-label", fullLabel(s));
+        if (isMine){ b.classList.add("mine"); b.textContent="Η ώρα σας"; b.disabled=true; }
+        else if (tk){ b.classList.add("taken"); b.textContent="Κλεισμένη"; b.disabled=true; }
+        else {
+          b.textContent = state.pick===s ? "✓ "+t : t;
+          b.setAttribute("aria-pressed", String(state.pick===s));
+          b.onclick=function(){
+            state.pick=s; renderPicker(); showForm();
+            var f=document.getElementById("book");
+            try { f.scrollIntoView({behavior: matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth", block:"nearest"}); } catch(e){}
+          };
+        }
+        c.appendChild(b); box.appendChild(c);
+      });
+    });
+  }
+  function showForm(){
+    var f=document.getElementById("book"); f.hidden=!state.pick;
+    document.getElementById("chosen").textContent = state.pick ? fullLabel(state.pick) : ""; document.getElementById("chosenNote").textContent="";
+    document.getElementById("summary").hidden = true;
+  }
+  function renderMine(){
+    var m=document.getElementById("mine");
+    if (!state.mine){ m.hidden=true; return; }
+    m.hidden=false; m.innerHTML="";
+    var t=document.createElement("span"); t.textContent="Έχετε κλείσει: "+fullLabel(state.mine.slot)+". Η πρόσκληση θα έρθει στο email σας. ";
+    var c=document.createElement("button"); c.type="button"; c.className="btn ghost"; c.style.padding="6px 12px"; c.textContent="Ακύρωση";
+    c.onclick=cancelMine; m.appendChild(t); m.appendChild(c);
+  }
+
+  // ---------- owner editor ----------
+  function renderEditor(){
+    var ed=document.getElementById("ed"); ed.innerHTML="";
+    var ds=weeks[state.wkO]||[]; var open=state.draft||{};
+    var bookedSet={}; state.bookings.forEach(function(b){ bookedSet[b.slot]=b; });
+    ed.appendChild(document.createElement("div"));
+    ds.forEach(function(d){ var h=document.createElement("div"); h.className="dh"; h.textContent=DSH[d.getDay()]+" "+d.getDate()+"/"+(d.getMonth()+1); ed.appendChild(h); });
+    for (var h=START_H; h<END_H; h++) for (var m=0; m<60; m+=15){
+      var lab=document.createElement("div"); lab.className="h"+(m?" q":""); lab.textContent=pad(h)+":"+pad(m); ed.appendChild(lab);
+      ds.forEach(function(d){
+        var s=sid(d,h,m), c=document.createElement("button"); c.type="button"; c.className="cell";
+        var past = parseSid(s) <= now;
+        c.title = label(s);
+        if (isLunch(h)||past){ c.classList.add(isLunch(h)?"lunch":"past"); c.disabled=true; c.title += past?"":" · μη διαθέσιμο"; }
+        else {
+          if (state.busy[s]) { c.classList.add("busy"); c.title += " · στο ημερολόγιο"; }
+          if (bookedSet[s]) { c.classList.add("booked"); c.title += " · κλεισμένο"; c.disabled=true; }
+          else if (open[s]) c.classList.add("open");
+          c.onclick=(function(s){ return function(){ if(state.draft[s]) delete state.draft[s]; else state.draft[s]=1; markDirty(); renderEditor(); }; })(s);
+        }
+        ed.appendChild(c);
+      });
+    }
+  }
+  var saveTimer=null;
+  function markDirty(){ var b=document.getElementById("save"); b.disabled=false; document.getElementById("saveNote").textContent="Αποθήκευση σε λίγο…"; clearTimeout(saveTimer); saveTimer=setTimeout(doSave,1200); }
+  function renderBookings(){
+    var tb=document.getElementById("bkRows"); tb.innerHTML="";
+    var rows=state.bookings.slice().sort(function(a,b){ return a.slot<b.slot?-1:1; });
+    if (!rows.length){ var tr=document.createElement("tr"); var td=document.createElement("td"); td.colSpan=5; td.className="note"; td.textContent="Καμία κράτηση ακόμα."; tr.appendChild(td); tb.appendChild(tr); return; }
+    rows.forEach(function(b){
+      var tr=document.createElement("tr");
+      [label(b.slot), b.name||"", b.role||"", b.email||"", b.consent?"Ναι":"Όχι"].forEach(function(v){ var td=document.createElement("td"); td.textContent=v; tr.appendChild(td); });
+      tb.appendChild(tr);
+    });
+  }
+
+  // ---------- data ----------
+  var db=null, user=null;
+  async function boot(){
+    renderWeekTabs(document.getElementById("pkWeeks"),"wkP",renderPicker);
+    renderPicker();
+    if (!window.claude || !claude.use) return;
+    try { user = await claude.use("user"); } catch(e){}
+    try { db = await claude.use("db"); } catch(e){}
+    state.owner = user ? await user.isOwner() : false;
+    state.uid = user ? await user.id() : null;
+    if (!db) { state.canWrite=false; return; }
+    var cw = user ? await user.can("data.write") : null;
+    if (cw === false) state.canWrite=false;
+
+    var loadTimer=setTimeout(function(){ if(!state.loaded){ var n=document.querySelector("#days .empty"); if(n) n.textContent="Οι ώρες δεν φορτώνουν ακόμα. Δοκιμάστε ξανά σε λίγο."; } },10000);
+    db.doc("config/slots").onSnapshot(function(s){
+      state.loaded=true; clearTimeout(loadTimer);
+      var d=s.exists?s.data():null; state.open=(d&&Array.isArray(d.open))?d.open.slice():EMBEDDED_OPEN.slice();
+      if (state.owner && (!state.draft || document.getElementById("save").disabled)){ state.draft={}; ((d&&Array.isArray(d.chosen))?d.chosen:state.open).forEach(function(x){ state.draft[x]=1; }); renderEditor(); }
+      renderPicker();
+    }, function(){ clearTimeout(loadTimer); });
+    db.collection("taken").onSnapshot(function(q){
+      state.taken={}; q.docs.forEach(function(d){ var v=d.data(); if(v&&v.slot) state.taken[v.slot]=d.id; }); renderPicker();
+    }, function(){});
+    if (state.uid){
+      db.doc("bookings/"+state.uid).onSnapshot(function(s){ state.mine=s.exists?s.data():null; renderMine(); renderPicker(); }, function(){});
+    }
+    if (state.owner){
+      document.getElementById("owner").hidden=false;
+      state.draft = state.draft || {};
+      renderWeekTabs(document.getElementById("owWeeks"),"wkO",function(){ renderEditor(); loadBusy(); });
+      renderEditor(); loadBusy();
+      db.collection("bookings").onSnapshot(function(q){ state.bookings=q.docs.map(function(d){ return d.data(); }); renderBookings(); renderEditor(); }, function(){});
+      renderBookings();
+    }
+  }
+
+  // Owner's own Google Calendar: shade busy 15-minute cells for the shown week.
+  var mcp=null, busyLoaded={};
+  async function loadBusy(){
+    var ds=weeks[state.wkO]; if(!ds || busyLoaded[state.wkO]) return;
+    var note=document.getElementById("calNote");
+    try { mcp = mcp || await claude.use("mcp"); } catch(e){}
+    if (!mcp){ note.textContent="Το ημερολόγιο δεν είναι συνδεδεμένο σε αυτή την προβολή."; return; }
+    note.textContent="Φόρτωση ημερολογίου…";
+    try{
+      var r=await mcp.callTool("Google Calendar","list_events",{ startTime: dkey(ds[0])+"T00:00:00", endTime: dkey(ds[3])+"T23:59:00", pageSize:250, orderBy:"startTime" });
+      var p=r && (r.payload||r.structuredContent) || {}; var evs=Array.isArray(p.events)?p.events:[];
+      evs.forEach(function(ev){
+        if (!ev || ev.status==="cancelled" || ev.transparency==="transparent") return;
+        if (!ev.start || !ev.start.dateTime || !ev.end || !ev.end.dateTime) return;
+        var a=new Date(ev.start.dateTime), b=new Date(ev.end.dateTime);
+        for (var t=new Date(a.getFullYear(),a.getMonth(),a.getDate(),a.getHours(),Math.floor(a.getMinutes()/15)*15); t<b; t=new Date(t.getTime()+15*60000)){
+          state.busy[sid(t,t.getHours(),t.getMinutes())]=1;
+        }
+      });
+      busyLoaded[state.wkO]=true; note.textContent="Το ημερολόγιο ενημερώθηκε."; renderEditor();
+    }catch(e){ note.textContent = (e&&e.code==="not_granted") ? "Δεν δόθηκε πρόσβαση στο ημερολόγιο." : "Το ημερολόγιο δεν φόρτωσε."; }
+  }
+
+  var saving=false, again=false;
+  async function doSave(){
+    clearTimeout(saveTimer);
+    if (saving){ again=true; return; }
+    saving=true; var b=document.getElementById("save"); b.disabled=true; var n=document.getElementById("saveNote"); n.textContent="Αποθήκευση…";
+    var chosen=Object.keys(state.draft).sort();
+    var open=chosen.filter(function(s){ return !state.busy[s] || state.taken[s]; });
+    try{ await db.doc("config/slots").set({ chosen:chosen, open:open, updated:new Date().toISOString() }); n.textContent="Αποθηκεύτηκε. Οι ώρες φαίνονται τώρα στην κράτηση."; }
+    catch(e){ b.disabled=false; n.textContent="Η αποθήκευση απέτυχε. Πατήστε «Αποθήκευση τώρα»."; }
+    saving=false; if (again){ again=false; doSave(); }
+  }
+  document.getElementById("save").onclick=doSave;
+
+  function summaryText(){
+    var t=state.consentAt||new Date();
+    var when=t.getDate()+" "+MON[t.getMonth()]+" "+t.getFullYear()+", "+pad(t.getHours())+":"+pad(t.getMinutes());
+    return "Κράτηση συνέντευξης ΑΚΜΑ\nΏρα συνέντευξης: "+fullLabel(state.pick)+"\nΌνομα: "+val("fName")+"\nΡόλος: "+val("fRole")+"\nEmail: "+val("fMail")+"\n\nΣΥΓΚΑΤΑΘΕΣΗ\nΕγώ, "+val("fName")+", "+CONSENT_TEXT+"\nΗμερομηνία και ώρα συγκατάθεσης: "+when;
+  }
+  function val(id){ return document.getElementById(id).value.trim(); }
+  var CONSENT_TEXT="συμφωνώ να καταγραφεί ο ήχος της συνομιλίας και να απομαγνητοφωνηθεί με το Fathom, αποκλειστικά για την προετοιμασία της εκπαίδευσης. Μπορώ να ανακαλέσω τη συγκατάθεσή μου στην αρχή της κλήσης.";
+  function showFallback(){
+    state.consentAt=new Date();
+    var s=document.getElementById("summary"); s.hidden=false;
+    s.textContent = "Για να ολοκληρωθεί η κράτηση και να καταχωριστεί η συγκατάθεσή σας, αντιγράψτε το παρακάτω κείμενο και στείλτε το με email στο maria@sphragisai.com.\n\n"+summaryText();
+    var c=document.createElement("button"); c.type="button"; c.className="copy"; c.textContent="Αντιγραφή";
+    c.onclick=function(){ copy(summaryText(), c, s); }; s.appendChild(document.createElement("br")); s.appendChild(c);
+  }
+  document.getElementById("book").addEventListener("submit", async function(e){
+    e.preventDefault(); if(!state.pick) return;
+    if (!db || !state.uid || !state.canWrite){ showFallback(); return; }
+    if (takenBy(state.pick) && takenBy(state.pick)!==state.uid){ document.getElementById("chosenNote").textContent="Αυτή η ώρα μόλις κλείστηκε. Διαλέξτε άλλη."; return; }
+    var btn=document.getElementById("confirm"); btn.disabled=true;
+    try{
+      await db.doc("bookings/"+state.uid).set({ slot:state.pick, name:val("fName"), role:val("fRole"), email:val("fMail"), consent:true, consentText:CONSENT_TEXT, at:new Date().toISOString() });
+      await db.doc("taken/"+state.uid).set({ slot:state.pick });
+      document.getElementById("book").hidden=true; state.pick=null; renderPicker();
+    }catch(err){ state.canWrite=false; showFallback(); }
+    btn.disabled=false;
+  });
+  async function cancelMine(){
+    if(!db||!state.uid) return;
+    try{ await db.doc("taken/"+state.uid).delete(); await db.doc("bookings/"+state.uid).delete(); }catch(e){}
+  }
+
+  function copy(text, btn, selEl){
+    function done(){ btn.textContent="Αντιγράφηκε"; setTimeout(function(){ btn.textContent="Αντιγραφή"; },1600); }
+    function sel(){ var r=document.createRange(); r.selectNodeContents(selEl); var s=getSelection(); s.removeAllRanges(); s.addRange(r); }
+    try{ navigator.clipboard.writeText(text).then(done, sel); }catch(e){ sel(); }
+  }
+  document.getElementById("copyMail").onclick=function(){ copy("maria@sphragisai.com", this, document.getElementById("mail")); };
+
+  boot();
+})();
+</script>
+
+</body>
+</html>
