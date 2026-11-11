@@ -426,3 +426,8 @@ local privilege escalation (lpe)
 τοπική κλιμάκωση δικαιωμάτων
 prompt adware
 rsa (κρυπτογράφηση δημόσιου κλειδιού)
+
+# --- 2026-11-11 ---
+trusted execution environment (tee)
+έμπιστο περιβάλλον εκτέλεσης
+raise act
