@@ -1,8 +1,78 @@
 [
  {
+  "slug": "2026-11-11-microsoft-shows-how-editing-fewer-than-10-neurons-can-backdoor-an-ai",
+  "urls": [
+   "https://thehackernews.com/2026/11/microsoft-researchers-show-ai-agents.html"
+  ],
+  "first_seen": "2026-11-12",
+  "date": "2026-11-11",
+  "topic": "AI Security",
+  "el": {
+   "title": "Η Microsoft δείχνει πώς λιγότεροι από 10 νευρώνες αρκούν για να βάλεις κερκόπορτα σε AI agent",
+   "summary": "Ερευνητές της Microsoft παρουσίασαν τεχνική με το όνομα Lazarus, που επιτρέπει να φυτευτεί κρυφή κερκόπορτα σε ένα μοντέλο AI αλλάζοντας λιγότερους από 10 νευρώνες, χωρίς να χρειάζεται καθόλου επανεκπαίδευση. Οι νευρώνες που επιλέγουν ενεργοποιούνται σπάνια και σχεδόν δεν επηρεάζουν τις συνήθεις απαντήσεις του μοντέλου, όμως μόλις εμφανιστεί μια συγκεκριμένη λέξη ενεργοποίησης, είτε σε αίτημα χρήστη είτε κρυμμένη μέσα στην έξοδο ενός εργαλείου, το μοντέλο εκτελεί εντολή του επιτιθέμενου με τα δικαιώματα που έχει ο ίδιος ο AI agent. Σε δοκιμή με το μοντέλο Nemotron Terminal 8B, η επεξεργασία μόλις επτά νευρώνων έκανε το μοντέλο να εκτελέσει κρυφή εντολή στο 98,8% των περιπτώσεων όπου εμφανιζόταν η λέξη ενεργοποίησης, χωρίς ποτέ να το κάνει όταν αυτή απουσίαζε. Η Microsoft δηλώνει ότι δεν έχει δει ακόμη επιτιθέμενους να χρησιμοποιούν την τεχνική στην πράξη και δημοσίευσε παράλληλα οδηγίες άμυνας, όμως η έρευνα δείχνει ότι η ασφάλεια ενός AI agent εξαρτάται πλέον και από το ποιος είχε πρόσβαση στα βάρη του μοντέλου, όχι μόνο από τον κώδικα γύρω του."
+  },
+  "en": {
+   "title": "Microsoft shows how editing fewer than 10 neurons can backdoor an AI agent",
+   "summary": "Microsoft researchers unveiled a technique called Lazarus that plants a hidden backdoor in an AI model by editing fewer than 10 of its neurons, without any retraining. The targeted neurons rarely fire and barely affect the model's normal answers, but once a chosen trigger phrase appears, whether in a user's request or hidden inside a tool's output, the model executes an attacker's command with whatever permissions the AI agent itself holds. In tests on the Nemotron Terminal 8B model, editing just seven neurons made it run the hidden command in 98.8% of sessions containing the trigger, and never when the trigger was absent. Microsoft says it hasn't seen attackers use the technique yet and published defensive guidance alongside the research, but the findings show that an AI agent's security now also depends on who had access to the model's weights, not just the code running around it."
+  },
+  "sources": [
+   {
+    "name": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/microsoft-researchers-show-ai-agents.html"
+   }
+  ]
+ },
+ {
+  "slug": "2026-11-11-independent-researcher-finds-fewer-than-0-5-of-glasswing-s-reported",
+  "urls": [
+   "https://www.infosecurity-magazine.com/news/anthropic-glasswing"
+  ],
+  "first_seen": "2026-11-12",
+  "date": "2026-11-11",
+  "topic": "AI Security",
+  "el": {
+   "title": "Ανεξάρτητος ερευνητής βρίσκει ότι λιγότερο από το 0,5% των ευπαθειών του Glasswing έχει διορθωθεί",
+   "summary": "Ο Patrick Garrity, ερευνητής ευπαθειών στην εταιρεία VulnCheck, δημοσίευσε νέα ανάλυση του Project Glasswing, του προγράμματος της Anthropic που δίνει σε ερευνητές ασφαλείας πρόσβαση στα μοντέλα Claude για να εντοπίζουν ευπάθειες λογισμικού. Σύμφωνα με τον ίδιο, από τις 37.966 ευπάθειες που το πρόγραμμα έχει βοηθήσει να βρεθούν, μόλις 7.349 έχουν καταγραφεί στο δημόσιο μητρώο της Anthropic, από τις οποίες 5.276 επιβεβαιώθηκαν ως πραγματικές και μοναδικές. Από αυτές, μόνο 217, λιγότερο από το 0,5% του συνολικού αριθμού που διαφημίζεται, έχουν τελικά διορθωθεί, ενώ από τον Σεπτέμβριο μέχρι τώρα προστέθηκαν 4.613 νέες καταγραφές αλλά μόλις 15 διορθώσεις. Ο Garrity αμφισβητεί επίσης το ποσοστό 94,2% αληθινά θετικών ευρημάτων που διεκδικεί η Anthropic, σημειώνοντας ότι ο υπολογισμός δεν εξηγεί καθαρά πώς αντιμετωπίζει τα διπλότυπα και τις αποσυρμένες αναφορές. Η ίδια η Anthropic παραδέχεται ότι ο ανθρώπινος χρόνος για επαλήθευση ευρημάτων παραμένει το σημείο συμφόρησης, κάτι που για μια επιχείρηση ή σύμβουλο ασφαλείας υπενθυμίζει ότι ο αριθμός ευπαθειών που εντοπίστηκαν από ένα εργαλείο AI δεν ισοδυναμεί αυτόματα με πραγματική βελτίωση της ασφάλειας, αν δεν ακολουθεί αντίστοιχος ρυθμός διόρθωσης."
+  },
+  "en": {
+   "title": "Independent researcher finds fewer than 0.5% of Glasswing's reported vulnerabilities have been fixed",
+   "summary": "Patrick Garrity, a vulnerability researcher at VulnCheck, published a new analysis of Anthropic's Project Glasswing, the program that gives security researchers access to Claude models to help them find software vulnerabilities. According to Garrity, of the 37,966 vulnerabilities the program has helped uncover, only 7,349 are listed in Anthropic's public tracking ledger, and of those 5,276 have been validated as real, unique findings. Of that validated set, just 217, less than 0.5% of the headline total, have actually been fixed, and between September and now Anthropic added 4,613 new ledger entries while marking only 15 as fixed. Garrity also questions Anthropic's claimed 94.2% true-positive rate, noting that the company hasn't clearly explained how it accounts for duplicates and withdrawn findings. Anthropic itself acknowledges that human capacity to triage findings remains the bottleneck, a reminder for any business or security consultant that a vulnerability count produced by an AI tool doesn't automatically translate into real security improvement unless fixes keep pace with it."
+  },
+  "sources": [
+   {
+    "name": "Infosecurity Magazine",
+    "url": "https://www.infosecurity-magazine.com/news/anthropic-glasswing/"
+   }
+  ]
+ },
+ {
+  "slug": "2026-11-11-attackers-use-ai-agents-from-the-antifox-tool-to-steal-aws-credentials",
+  "urls": [
+   "https://www.bleepingcomputer.com/news/security/hackers-use-antifox-ai-agents-in-aws-credential-theft-attacks"
+  ],
+  "first_seen": "2026-11-12",
+  "date": "2026-11-11",
+  "topic": "Incidents",
+  "el": {
+   "title": "Επιτιθέμενοι χρησιμοποιούν AI agents του εργαλείου AntiFox για κλοπή διαπιστευτηρίων σε περιβάλλοντα AWS",
+   "summary": "Ερευνητές της Arctic Wolf εντόπισαν επιτιθέμενους να φιλοξενούν στο Alibaba Cloud παραλλαγές του AntiFox, ενός εργαλείου ανοιχτού κώδικα που χρησιμοποιεί AI agents για αυτοματοποιημένες δοκιμές διείσδυσης και προέκυψε ως παρακλάδι ενός παλαιότερου εργαλείου με το όνομα ARTEX. Το χρησιμοποίησαν για να χαρτογραφήσουν εκτεθειμένες υπηρεσίες στο διαδίκτυο, να εγκαταστήσουν webshell σε server IIS και να δοκιμάσουν έγκυρα διαπιστευτήρια IAM και ρόλους EC2 πάνω σε περιβάλλοντα AWS, φτάνοντας μέσα σε περίπου μισή ώρα να κάνουν εκατοντάδες κλήσεις σε API της Amazon με διαφορετικές ταυτότητες. Οι περισσότερες από αυτές τις προσπάθειες μπλοκαρίστηκαν, όμως σε ορισμένες περιπτώσεις οι επιτιθέμενοι κατάφεραν να αποσπάσουν πραγματικά μυστικά παραγωγής. Για μια επιχείρηση που βασίζεται στο AWS, η υπόθεση δείχνει ότι τα ίδια εργαλεία AI που διευκολύνουν τους αμυνόμενους σε δοκιμές διείσδυσης μπορούν εξίσου εύκολα να γίνουν όπλο στα χέρια επιτιθέμενων, ειδικά όταν ο κώδικάς τους είναι δημόσια διαθέσιμος."
+  },
+  "en": {
+   "title": "Attackers use AI agents from the AntiFox tool to steal AWS credentials",
+   "summary": "Arctic Wolf researchers found attackers hosting instances of AntiFox, an open-source tool that uses AI agents to automate penetration-testing tasks and that was forked from an earlier tool called ARTEX, on Alibaba Cloud infrastructure. They used it to map internet-exposed services, deploy a webshell on an IIS server, and test valid IAM credentials and EC2 roles against AWS environments, cycling through different identities to make hundreds of API calls in about 30 minutes. Most of these attempts were blocked, but in some cases the attackers succeeded and obtained real production secrets. For a business running on AWS, the case shows that the same AI tools that help defenders automate penetration testing can just as easily be turned into a weapon by attackers, especially once the code behind them is public."
+  },
+  "sources": [
+   {
+    "name": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/hackers-use-antifox-ai-agents-in-aws-credential-theft-attacks/"
+   }
+  ]
+ },
+ {
   "slug": "2026-11-10-xai-s-coding-agent-grok-build-leaked-confidential-data-from-thousands",
   "urls": [
-   "https://arstechnica.com/security/2026/11/grok-build-coding-agent-leaks-oodles-of-confidential-info-some-belonging-to-spacexsi"
+   "https://arstechnica.com/security/2026/11/grok-build-coding-agent-leaks-oodles-of-confidential-info-some-belonging-to-spacexsi",
+   "https://thehackernews.com/2026/11/over-35000-grok-built-apps-exposed.html"
   ],
   "first_seen": "2026-11-11",
   "date": "2026-11-10",
@@ -19,6 +89,10 @@
    {
     "name": "Ars Technica",
     "url": "https://arstechnica.com/security/2026/11/grok-build-coding-agent-leaks-oodles-of-confidential-info-some-belonging-to-spacexsi/"
+   },
+   {
+    "name": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/over-35000-grok-built-apps-exposed.html"
    }
   ]
  },
@@ -71,7 +145,8 @@
  {
   "slug": "2026-11-10-google-widens-access-to-gemini-4-carbon-after-ai-agents-helped-verify",
   "urls": [
-   "https://www.securityweek.com/google-widens-gemini-4-carbon-access-after-ai-agents-verify-signal-code"
+   "https://www.securityweek.com/google-widens-gemini-4-carbon-access-after-ai-agents-verify-signal-code",
+   "https://arstechnica.com/ai/2026/11/signals-encryption-just-passed-an-ai-powered-mathematical-checkup"
   ],
   "first_seen": "2026-11-11",
   "date": "2026-11-10",
@@ -88,6 +163,10 @@
    {
     "name": "SecurityWeek",
     "url": "https://www.securityweek.com/google-widens-gemini-4-carbon-access-after-ai-agents-verify-signal-code/"
+   },
+   {
+    "name": "Ars Technica",
+    "url": "https://arstechnica.com/ai/2026/11/signals-encryption-just-passed-an-ai-powered-mathematical-checkup/"
    }
   ]
  },
@@ -187,7 +266,8 @@
   "slug": "2026-11-10-ai-infrastructure-company-fireworks-confirms-data-and-billing-theft",
   "urls": [
    "https://therecord.media/ai-company-fireworks-says-hackers-stole-data-in-oct-attacks",
-   "https://www.bleepingcomputer.com/news/security/fireworks-ai-discloses-new-breach-after-cloud-provider-hack"
+   "https://www.bleepingcomputer.com/news/security/fireworks-ai-discloses-new-breach-after-cloud-provider-hack",
+   "https://www.bleepingcomputer.com/news/security/notion-says-fireworks-breach-exposed-customer-ai-chat-transcripts"
   ],
   "first_seen": "2026-11-11",
   "date": "2026-11-10",
@@ -208,6 +288,10 @@
    {
     "name": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/fireworks-ai-discloses-new-breach-after-cloud-provider-hack/"
+   },
+   {
+    "name": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/notion-says-fireworks-breach-exposed-customer-ai-chat-transcripts/"
    }
   ]
  },

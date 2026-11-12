@@ -431,3 +431,8 @@ rsa (κρυπτογράφηση δημόσιου κλειδιού)
 trusted execution environment (tee)
 έμπιστο περιβάλλον εκτέλεσης
 raise act
+
+# --- 2026-11-12 ---
+νευρώνας μοντέλου ai
+μητρώο ευπαθειών
+vulnerability ledger

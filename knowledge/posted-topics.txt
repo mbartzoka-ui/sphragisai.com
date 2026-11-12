@@ -104,3 +104,4 @@
 2026-11-05 | openai-948-linux-lpe-exploits-ai-pipeline | Το AI pipeline της OpenAI παρήγαγε 948 exploits πλήρους ελέγχου σε Linux μέσα σε 30 ώρες
 2026-11-10 | claude-office-party-vendor-security-boundary | Ευπάθεια «Office Party» στο Claude, η Anthropic αρνείται να τη διορθώσει γιατί τη θεωρεί εκτός του δικού της ορίου ασφαλείας
 2026-11-11 | anthropic-claude-meetings-ai-trust-boundary | Η Anthropic φέρνει το Claude μέσα σε βιντεοκλήσεις εργασίας με πρόσβαση σε συνδεδεμένες εφαρμογές
+2026-11-12 | ms-lazarus-neuron-backdoor-ai-agent | Η Microsoft δείχνει πώς λιγότεροι από 10 νευρώνες αρκούν για κερκόπορτα σε AI agent
