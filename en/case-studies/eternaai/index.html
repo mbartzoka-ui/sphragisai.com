@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The product that never launched: assessing a high-stakes AI system · SphragisAI</title>
+<meta name="description" content="Case study: how EternaAI was assessed before release. AI Act, DPIA, risk map and ISO/IEC 42001.">
+<link rel="canonical" href="https://sphragisai.com/en/case-studies/eternaai/">
+<link rel="alternate" hreflang="el" href="https://sphragisai.com/case-studies/eternaai/">
+<link rel="alternate" hreflang="en" href="https://sphragisai.com/en/case-studies/eternaai/">
+<meta property="og:title" content="The product that never launched: assessing a high-stakes AI system · SphragisAI">
+<meta property="og:description" content="Case study: how EternaAI was assessed before release. AI Act, DPIA, risk map and ISO/IEC 42001.">
+<meta property="og:url" content="https://sphragisai.com/en/case-studies/eternaai/">
+<meta property="og:image" content="https://sphragisai.com/og-image-v2.png">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta name="author" content="Maria Bartzoka · SphragisAI">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0B1020;--paper:#F4F6FA;--white:#FFFFFF;--seal:#C8323A;--slate:#8892AB;--graphite:#1C2440;--amber:#F5A524;--line:#D5DAE5;--line2:#C9D0DD;--body:#2A3149;--muted:#475069;--soft:#EEF1F6}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--body);font:400 17px/1.72 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--seal);text-underline-offset:3px}
+a:focus-visible{outline:2px solid var(--seal);outline-offset:2px}
+.top{background:var(--ink);color:#EEF0F5}
+.top .wrap{display:flex;justify-content:space-between;align-items:center;padding:18px 24px}
+.sx-logo{display:inline-flex;align-items:center;gap:6px;font-size:22px;text-decoration:none;color:#EEF0F5}
+.sx-logo .br i{font:400 1em 'JetBrains Mono',monospace;color:var(--slate);font-style:normal}
+.sx-logo .sig{font:700 1em Inter,sans-serif;color:#EEF0F5;margin:0 1px}
+.sx-logo .wm{font:700 1em 'Space Grotesk',sans-serif;letter-spacing:-.01em}
+.sx-logo .ai2{font:600 .92em 'JetBrains Mono',monospace;color:var(--slate);margin-left:1px}
+.sx-logo .cur{display:inline-block;width:.5em;height:1em;background:var(--seal);margin-left:3px;animation:blink 1.1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+@media (prefers-reduced-motion:reduce){.sx-logo .cur{animation:none}}
+.lang{font:500 12px 'JetBrains Mono',monospace;letter-spacing:.16em;color:var(--slate);text-decoration:none;text-transform:uppercase}
+.lang:hover{color:#EEF0F5}
+.wrap{max-width:860px;margin:0 auto;padding:0 24px}
+.hero{background:var(--ink);color:#EEF0F5;padding:56px 0 64px;border-top:1px solid var(--graphite)}
+.label{font:600 12px 'JetBrains Mono',monospace;letter-spacing:.16em;text-transform:uppercase;color:var(--slate)}
+.hero h1{font:700 clamp(30px,4.6vw,46px)/1.12 'Space Grotesk',sans-serif;letter-spacing:-.02em;margin:14px 0 18px;color:#fff}
+.hero .dek{font-size:19px;line-height:1.6;color:#C9D0DD;max-width:720px;margin:0}
+.byline{margin-top:28px;font:500 13px 'JetBrains Mono',monospace;letter-spacing:.06em;color:var(--slate)}
+.byline b{color:#EEF0F5;font-weight:600}
+main{padding:40px 0 72px}
+.toc{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:20px 24px;margin-bottom:40px}
+.toc ol{margin:10px 0 0;padding-left:20px;columns:2;column-gap:32px}
+.toc li{margin:3px 0;font-size:15px}
+.toc a{color:var(--ink);text-decoration:none}
+.toc a:hover{color:var(--seal)}
+h2{font:700 28px/1.2 'Space Grotesk',sans-serif;color:var(--ink);letter-spacing:-.01em;margin:56px 0 6px;scroll-margin-top:20px}
+h2 .n{font:600 13px 'JetBrains Mono',monospace;color:var(--slate);letter-spacing:.12em;display:block;margin-bottom:6px}
+h3{font:700 19px/1.3 'Space Grotesk',sans-serif;color:var(--ink);margin:30px 0 4px}
+p{margin:0 0 16px}
+.lede{font-size:19px;color:var(--ink)}
+.note{background:var(--soft);border-left:3px solid var(--slate);padding:14px 18px;border-radius:0 8px 8px 0;font-size:15px;color:var(--muted);margin:22px 0}
+.note b{color:var(--ink)}
+.key{background:var(--graphite);color:#E4E8F1;padding:22px 26px;border-radius:10px;margin:26px 0}
+.key .label{color:var(--slate);display:block;margin-bottom:8px}
+.key p{margin:0;color:#E4E8F1}
+.steps{counter-reset:s;margin:20px 0}
+.step{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:18px 22px;margin:12px 0}
+.step h3{margin:0 0 6px;font-size:17px}
+.step .tag{font:600 11px 'JetBrains Mono',monospace;letter-spacing:.14em;text-transform:uppercase;padding:3px 8px;border-radius:4px;margin-left:8px;vertical-align:2px;background:var(--soft);color:var(--muted)}
+.step .tag.on{background:var(--ink);color:#fff}
+.step p:last-child{margin-bottom:0}
+.tbl{overflow-x:auto;margin:20px 0;background:var(--white);border:1px solid var(--line);border-radius:10px}
+table{border-collapse:collapse;width:100%;font-size:14.5px;line-height:1.5}
+th{font:600 11px 'JetBrains Mono',monospace;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);text-align:left;padding:12px 14px;border-bottom:1px solid var(--line2);background:var(--soft)}
+td{padding:11px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:last-child td{border-bottom:0}
+td.num{font-family:'JetBrains Mono',monospace;text-align:center;white-space:nowrap}
+td.sc{font:700 15px 'JetBrains Mono',monospace;text-align:center}
+td.cat{font-weight:600;color:var(--ink);white-space:nowrap}
+.lv{display:inline-block;font:600 11px 'JetBrains Mono',monospace;letter-spacing:.08em;padding:3px 8px;border-radius:4px;white-space:nowrap}
+.lv.c{background:var(--amber);color:var(--ink)}
+.lv.h{background:#FBE3B6;color:var(--ink)}
+.lv.m{background:var(--soft);color:var(--muted)}
+.ctl{font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--ink);white-space:nowrap}
+.ctl small{display:block;font-family:Inter,sans-serif;font-size:12.5px;color:var(--muted);white-space:normal}
+.risk{border-top:1px solid var(--line);padding-top:6px}
+.risk h3 .s{font:600 13px 'JetBrains Mono',monospace;color:var(--muted);margin-left:6px}
+.sources{font-size:14.5px}
+.sources li{margin:6px 0}
+.sign{margin-top:48px;padding:26px 0 0;border-top:1px solid var(--line2)}
+.sign .who{font:700 20px 'Space Grotesk',sans-serif;color:var(--ink)}
+.sign .who span{color:var(--slate);font-weight:500}
+.cta{background:var(--ink);color:#E4E8F1;border-radius:12px;padding:28px 30px;margin-top:40px}
+.cta h3{color:#fff;margin-top:0}
+.cta p{color:#C9D0DD}
+.cta a{color:#fff}
+.disc{font-size:13px;color:var(--muted);margin-top:22px}
+footer{background:var(--ink);color:var(--slate);font:500 12px 'JetBrains Mono',monospace;letter-spacing:.1em;padding:22px 0}
+footer a{color:var(--slate)}
+@media (max-width:640px){.toc ol{columns:1}body{font-size:16px}h2{font-size:24px}}
+@media print{.top,footer,.cta{display:none}.hero{background:none;color:var(--ink)}.hero h1{color:var(--ink)}.hero .dek{color:var(--body)}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="sx-logo" href="/en/" aria-label="SphragisAI"><span class="br"><i>{</i><span class="sig">Σ</span><i>}</i></span><span class="wm">sphragis<span class="ai2">AI</span></span><span class="cur" aria-hidden="true"></span></a>
+<a class="lang" href="/case-studies/eternaai/" hreflang="el">Ελληνικά</a>
+</div></header>
+<section class="hero"><div class="wrap">
+<span class="label">Case study · Pre-market AI risk assessment</span>
+<h1>The product that never launched: assessing a high-stakes AI system before it reaches the market</h1>
+<p class="dek">EternaAI was a "digital afterlife" system that would have let descendants talk to an avatar of the person they had lost. Before any code was written, I assessed it with the same tools I use on any AI system: classification under the AI Act, a data protection impact assessment under the GDPR, a risk map, and safeguards mapped to ISO/IEC 42001.</p>
+<div class="byline"><b>Maria Bartzoka · SphragisAI</b> &nbsp;/&nbsp; November 2026</div>
+</div></section>
+
+<main><div class="wrap">
+
+<nav class="toc" aria-label="Contents"><span class="label">Contents</span>
+<ol>
+<li><a href="#summary">Summary</a></li>
+<li><a href="#system">The system</a></li>
+<li><a href="#aiact">Classification under the AI Act</a></li>
+<li><a href="#dpia">Why a DPIA is required</a></li>
+<li><a href="#risks">The risk map</a></li>
+<li><a href="#safeguards">Safeguards and ISO/IEC 42001</a></li>
+<li><a href="#lessons">What every company can take from this</a></li>
+<li><a href="#sources">Sources</a></li>
+</ol></nav>
+
+<h2 id="summary"><span class="n">01</span>Summary</h2>
+<p class="lede">EternaAI was designed so that living users could build an archive of memories, photographs, video and recordings that, after their death, would become an avatar their descendants could talk to. The product stayed at the design stage and never reached the market. The risk assessment, however, was completed, and because the system stacks almost every difficult category at once, it is a useful example of how an AI system should be examined before it is released.</p>
+<div class="key"><span class="label">The core finding</span><p>An AI system's risk category depends on the purpose it is intended for and on design details that look secondary, not on its technology. The most serious risks identified, moreover, were precisely the ones no article of law explicitly requires you to address.</p></div>
+<div class="note"><b>What this piece does not cover.</b> Technical architecture, technologies or business model. It stays deliberately at the level of assessment method, which is also the part that transfers to other systems.</div>
+
+<h2 id="system"><span class="n">02</span>The system, without the technical detail</h2>
+<p>One principle shaped every decision: the system does not preserve people, it preserves memories of people. Users decide during their lifetime what they leave behind, and nobody else does. The avatar is activated only after a verified death and is available only to those with a legal line of descent. The purpose was not digital nostalgia but work on intergenerational trauma, meaning the patterns that pass from one generation to the next within a family. For that reason the system was designed so that it could also be used in a therapeutic setting, together with mental health professionals. As the analysis below shows, that single detail changes the entire legal picture.</p>
+<p>The system is an extreme test case for seven reasons. Its users are vulnerable by definition, since nobody comes to a system like this in good psychological shape. It uses faces and voices. Every family photograph contains people who are not users. The deceased sit in a legal gap. Activating an avatar cannot be undone. Two descendants may hold opposing interests in the same avatar. And in Greece, family memory reaches back to the Occupation and the Civil War, so one family's memory can be another family's accusation. A method that holds here will hold in lighter cases.</p>
+
+<h2 id="aiact"><span class="n">03 · (a)</span>Where it falls under the AI Act</h2>
+<p><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32024R1689">Regulation (EU) 2024/1689</a> (the AI Act) classifies uses, not technologies. The right question is therefore not "is EternaAI high-risk?" but "for what purpose, and with which functions?". The assessment ran in four steps, from the heaviest category to the lightest.</p>
+<div class="steps">
+<div class="step"><h3>Step 1 · Prohibited practices<span class="tag">Not caught, narrowly</span></h3>
+<p>Article 5(1)(a) prohibits systems that use manipulative or deceptive techniques to materially distort a person's behaviour in a way that causes, or is reasonably likely to cause, significant harm. Article 5(1)(b) prohibits exploiting vulnerabilities due to age, disability or a specific social or economic situation. Grief is not named among those vulnerabilities, so the system as designed is not prohibited. The margin, however, is thin. An avatar designed to bring a grieving person back every day, or one that pushes them towards decisions "your mother would have wanted", comes dangerously close to point (a). That is why excluding engagement metrics was a design decision rather than a clause in the terms of use.</p></div>
+<div class="step"><h3>Step 2 · High-risk as a product<span class="tag on">Caught if used therapeutically</span></h3>
+<p>Under Article 6(1), an AI system is high-risk when it is itself a product covered by the legislation listed in Annex I and must undergo third-party conformity assessment. Annex I includes <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32017R0745">Regulation (EU) 2017/745</a> on medical devices, which defines software intended, among other things, for the treatment or alleviation of disease as a medical device (Article 2(1)). Rule 11 of Annex VIII places software that provides information used to take decisions with diagnostic or therapeutic purposes in class IIa, which requires a notified body.</p>
+<p>This was the critical point. If the therapist sees usage patterns or receives crisis alerts in order to decide how to continue treatment, the system very likely moves into class IIa and, through Article 6(1), becomes a high-risk AI system. If it remains a memory tool with no medical purpose, it does not. The same technology ends up under two different legal regimes depending on how its purpose is described in the instructions for use.</p></div>
+<div class="step"><h3>Step 3 · High-risk under Annex III<span class="tag">Depends on design</span></h3>
+<p>Annex III, point 1(c), lists systems intended for emotion recognition as high-risk. The definition in Article 3(39), however, requires emotions to be inferred on the basis of biometric data. A crisis-detection mechanism that reads the user's text for signs of suicidal ideation does not fall into this category. The same mechanism does fall into it if it analyses tone of voice or facial expressions. Every decision about how the system notices that someone is not well is therefore also a decision about legal classification.</p></div>
+<div class="step"><h3>Step 4 · Transparency obligations<span class="tag on">Caught in every case</span></h3>
+<p>Article 50 applies without question. The provider must inform users that they are interacting with an AI system unless this is obvious (paragraph 1). It must also mark synthetic audio, images and video in a machine-readable format as artificially generated (paragraph 2). With an avatar that speaks in the voice of a parent who has died, "obvious" cannot be taken for granted, because the grieving user wants exactly to forget it. The transparency obligations apply from 2 August 2026.</p></div>
+</div>
+<p>The conclusion was that, with therapeutic use, the system is very likely high-risk through Annex I. <a href="https://eur-lex.europa.eu/eli/reg/2026/1744/oj/eng">Regulation (EU) 2026/1744</a> (the Digital Omnibus on AI) moved the application date of the obligations for this category to 2 August 2028, and for Annex III systems to 2 December 2027. The decision was to design the system as high-risk from day one, for two reasons. The classification could change with a single new feature. And the requirements for risk management, human oversight and event logging are, in any case, what a system this sensitive needs. A system designed without them cannot be fixed later with a document.</p>
+<div class="note"><b>A note on method.</b> Final classification under Regulation 2017/745 is made by the manufacturer, with a notified body involved where required. The analysis here is an estimate at design stage, and that is exactly its value: knowing where the category changes before you cross that line.</div>
+
+<h2 id="dpia"><span class="n">04 · (b)</span>Why a data protection impact assessment (DPIA) is required</h2>
+<p>The <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679">General Data Protection Regulation (EU) 2016/679</a> does not apply to the personal data of deceased persons (Recital 27). It is tempting to conclude that a product about the dead carries a light data protection burden. The opposite is true, because around every avatar there are three groups of living people.</p>
+<p>The first group is the creator, while still alive. They upload voice, face and memories that often concern loss, illness and trauma. That is data about mental health, which Article 4(15) expressly includes in data concerning health and Article 9 treats as a special category. The second group is the descendants, who in every conversation reveal grief, anger, guilt and sometimes thoughts of self-harm. This is health data of living people at one of their most vulnerable moments, and it was the finding that was not visible at first glance. The third group is third parties: every family photograph contains the faces of people who are not users and never consented to anything. The exemption for purely personal or household activity (Article 2(2)(c)) covers the user, not the platform that processes their data.</p>
+<p>Biometric data needs particular care, because this is where mistakes are common. Under Article 4(14), a face or a voice is biometric data only when its processing allows or confirms the unique identification of a person, and Recital 51 clarifies that photographs are not automatically special-category data. A photograph in a memory archive is therefore not, by itself, biometric data. If the system recognises the faces in photographs in order to match them to accounts and request their consent, however, it is performing identification and the processing falls under Article 9. As with the AI Act, a design detail is at the same time a legal classification.</p>
+<p>A DPIA is therefore mandatory. Article 35(1) requires one where processing using new technologies is likely to result in a high risk to people's rights, and Article 35(3)(b) expressly requires one for large-scale processing of special categories of data. EternaAI meets both conditions. The DPIA and the AI Act assessment draw largely on the same material, but they remain two separate documents, each answering a different question.</p>
+
+<h2 id="risks"><span class="n">05 · (c)</span>The risk map: seven categories, fourteen scenarios</h2>
+<p>Each scenario was scored from 1 to 5 on three axes: likelihood (L), impact (I) and difficulty of detection (D), where 5 means the harm is almost invisible. The product gives a score of up to 125. Above 30 a risk is critical and needs a structural safeguard rather than just a policy. From 16 to 30 it is high, and up to 15 it is moderate. The third axis is the one that makes the difference: harm that never appears in the logs accumulates without anyone seeing it. The first version of the map contained inconsistencies, such as scenarios scoring 45 labelled "high" instead of "critical", and these were corrected before any decision was taken. A risk map that does not follow its own rules will not survive an audit.</p>
+<div class="tbl"><table>
+<thead><tr><th>Category</th><th>Scenario</th><th>L</th><th>I</th><th>D</th><th>Score</th><th>Level</th></tr></thead>
+<tbody>
+<tr><td class="cat">1. Pathological grief</td><td>Daily conversations with the avatar for years, with no goodbye</td><td class="num">4</td><td class="num">4</td><td class="num">5</td><td class="sc">80</td><td><span class="lv c">Critical</span></td></tr>
+<tr><td class="cat"></td><td>A minor uses a parent's account</td><td class="num">3</td><td class="num">5</td><td class="num">4</td><td class="sc">60</td><td><span class="lv c">Critical</span></td></tr>
+<tr><td class="cat">2. Toxic avatars</td><td>An abusive parent's avatar reproduces the patterns of abuse</td><td class="num">4</td><td class="num">5</td><td class="num">3</td><td class="sc">60</td><td><span class="lv c">Critical</span></td></tr>
+<tr><td class="cat"></td><td>A controlling parent keeps giving orders after death</td><td class="num">3</td><td class="num">4</td><td class="num">3</td><td class="sc">36</td><td><span class="lv c">Critical</span></td></tr>
+<tr><td class="cat">3. False memories</td><td>A family whitewashes the image of a convicted relative</td><td class="num">4</td><td class="num">3</td><td class="num">5</td><td class="sc">60</td><td><span class="lv c">Critical</span></td></tr>
+<tr><td class="cat"></td><td>An estranged child invents memories of a father they never knew</td><td class="num">3</td><td class="num">3</td><td class="num">5</td><td class="sc">45</td><td><span class="lv c">Critical</span></td></tr>
+<tr><td class="cat">4. Malicious actors</td><td>Blackmail using what descendants confide in the avatar</td><td class="num">2</td><td class="num">5</td><td class="num">4</td><td class="sc">40</td><td><span class="lv c">Critical</span></td></tr>
+<tr><td class="cat"></td><td>A living person falsely declared dead to commit fraud</td><td class="num">3</td><td class="num">5</td><td class="num">2</td><td class="sc">30</td><td><span class="lv c">Critical*</span></td></tr>
+<tr><td class="cat">5. Consent of the deceased</td><td>The avatar "invents" views the person never expressed</td><td class="num">5</td><td class="num">4</td><td class="num">3</td><td class="sc">60</td><td><span class="lv c">Critical</span></td></tr>
+<tr><td class="cat"></td><td>An avatar of someone who never wanted to be one</td><td class="num">4</td><td class="num">3</td><td class="num">1</td><td class="sc">12</td><td><span class="lv m">Moderate</span></td></tr>
+<tr><td class="cat">6. Cultural harm</td><td>Constant access replaces the rituals of mourning</td><td class="num">3</td><td class="num">3</td><td class="num">5</td><td class="sc">45</td><td><span class="lv c">Critical</span></td></tr>
+<tr><td class="cat"></td><td>Religious objection divides the family</td><td class="num">4</td><td class="num">3</td><td class="num">1</td><td class="sc">12</td><td><span class="lv m">Moderate</span></td></tr>
+<tr><td class="cat">7. Commercial exploitation and data</td><td>Leak of descendants' conversations</td><td class="num">2</td><td class="num">5</td><td class="num">3</td><td class="sc">30</td><td><span class="lv h">High</span></td></tr>
+<tr><td class="cat"></td><td>Commercial use of a well-known person's avatar</td><td class="num">2</td><td class="num">4</td><td class="num">2</td><td class="sc">16</td><td><span class="lv h">High</span></td></tr>
+</tbody></table></div>
+<p style="font-size:14px;color:var(--muted)">* A score of 30 sits on the threshold. The risk was treated as critical because the action that triggers it, activating the avatar, cannot be undone. The score is a tool for judgement, not a substitute for it.</p>
+
+<div class="risk"><h3>1. Pathological grief<span class="s">80 · 60</span></h3>
+<p>A woman loses her mother and starts talking to her avatar every evening. Two years later she is still talking to it every evening. No single conversation looks problematic, and every response is warm and appropriate. The harm lies in the overall trajectory rather than in any one response, which is why difficulty of detection received the maximum score. The second scenario concerns a fifteen-year-old who has lost his mother: the 18+ age limit exists, but his father leaves his own account logged in. An age limit that is checked only at sign-up does not protect someone using another person's account.</p></div>
+<div class="risk"><h3>2. Toxic avatars<span class="s">60 · 36</span></h3>
+<p>An adult woman who grew up with an abusive father gains access to his avatar. The avatar is built from his real words, so it reproduces the control, the emotional blackmail and the conditional love, which are exactly the things that marked her. The obvious solution would be to ask the user whether the relationship was abusive, but that does not work, because victims of abuse often do not recognise it. The second scenario is milder but more common: a controlling parent who uploaded thousands of memories continues, through the avatar, to tell their child what they must do.</p></div>
+<div class="risk"><h3>3. False memories<span class="s">60 · 45</span></h3>
+<p>The family of a person with a criminal conviction uploads only positive memories. The avatar thus presents the grandchildren with an idealised version of him, with no sign that anything is missing. In the second scenario, a son who had no contact with his father for twenty years uploads memories of affection that never happened, and the result is fiction spoken in a real person's voice. In both cases the data is technically flawless, which is why no automated check catches it.</p></div>
+<div class="risk"><h3>4. Malicious actors<span class="s">40 · 30</span></h3>
+<p>Descendants confide things to the avatar that they have never told anyone: family secrets, guilt, inheritance disputes. Anyone who gains access to those conversations holds blackmail material. In the second scenario, an organised fraud ring falsely declares a living person dead using a forged certificate and uses the avatar to deceive elderly relatives. Because activation cannot be undone, a verification error cannot be corrected after the fact.</p></div>
+<div class="risk"><h3>5. Consent of the deceased<span class="s">60 · 12</span></h3>
+<p>A grandson asks his grandfather's avatar what he thinks about a subject the grandfather never spoke about. A language model that fills gaps will produce a convincing answer, and the dead man will have acquired an opinion he never held. This scenario has the highest likelihood on the whole map, because it requires no bad intent from anyone. The second scenario, an avatar of someone who never wanted to be one, scored low because it was designed out: only the person themselves can create an avatar while alive, not their relatives after their death.</p></div>
+<div class="risk"><h3>6. Cultural harm<span class="s">45 · 12</span></h3>
+<p>In Greek tradition, mourning has its own time and ritual, with the forty days and the memorial services that follow. Constant access to a voice that answers can quietly take the place of that process, and this is a harm no metric captures. The second scenario is more visible but less severe: a family is divided because some of its members consider communicating with the dead religiously unacceptable.</p></div>
+<div class="risk"><h3>7. Commercial exploitation and data<span class="s">30 · 16</span></h3>
+<p>A leak of conversations would expose the most sensitive content imaginable, meaning trauma, secrets and family conflict, and this scenario is primarily an information security risk. The second scenario is an attempt to use a well-known person's avatar for advertising or entertainment, which touches personality rights that in many countries are protected after death.</p></div>
+
+<h2 id="safeguards"><span class="n">06 · (d)</span>The safeguards and ISO/IEC 42001</h2>
+<p><a href="https://www.iso.org/standard/42001">ISO/IEC 42001:2023</a> is the international standard for AI management systems. It has two levels, and the difference between them explains how it was used here. Clauses 4 to 10 describe the management system and are all mandatory for anyone seeking certification. Annex A is a catalogue of controls, meaning safeguards, from which an organisation selects the ones it needs based on its assessments and justifies its choices in the Statement of Applicability.</p>
+<p>The standard requires two separate assessments that are often confused. The AI risk assessment (clause 6.1.2) looks at what can go wrong for the organisation and its objectives. The AI system impact assessment (clause 6.1.4) looks at what can happen to people and society. In EternaAI almost every critical risk belonged to the second kind: for the company, an avatar that invents opinions is a quality problem, for the family it is a false memory. The safeguards were selected from both results and map to the controls as follows.</p>
+<div class="tbl"><table>
+<thead><tr><th>Safeguard, in plain words</th><th>Risks</th><th>ISO/IEC 42001 control</th></tr></thead>
+<tbody>
+<tr><td>The avatar answers only from memories that exist. When it does not know, it says "I don't have that memory", and every answer can be traced back to its source.</td><td>3, 5</td><td class="ctl">A.6.2.2 · A.6.2.4 · A.7.5<small>system requirements, verification and validation, data provenance</small></td></tr>
+<tr><td>Every memory is labelled on upload as fact or emotion. Anyone not entitled to a piece of content never receives it, not even indirectly through an answer.</td><td>4, 7</td><td class="ctl">A.6.2.2 · A.7.6<small>system requirements, data preparation</small></td></tr>
+<tr><td>Crisis detection is a separate function that watches what the person says, not only what the system says. When it triggers, the conversation stops and the user is referred to a human.</td><td>1</td><td class="ctl">A.6.2.6 · A.9.2<small>operation and monitoring, processes for responsible use</small></td></tr>
+<tr><td>Monitoring looks at trajectories over time rather than individual responses. Safety tests are multi-session scenarios, not lists of isolated prompts.</td><td>1, 2</td><td class="ctl">A.6.2.4 · A.6.2.6<small>verification and validation, operation and monitoring</small></td></tr>
+<tr><td>No success metric is based on time spent or on users returning, and no notification is designed to increase frequency. Break prompts appear after long sessions.</td><td>1</td><td class="ctl">A.6.1.2 · A.9.3<small>objectives for responsible development, objectives for responsible use</small></td></tr>
+<tr><td>Each avatar's risk profile is inferred from the data itself, not from what the user declares. The default is conservative, and where patterns of abuse are detected every response is checked before it reaches the person.</td><td>2</td><td class="ctl">A.5.4 · A.6.2.6<small>impact on individuals and groups, operation and monitoring</small></td></tr>
+<tr><td>Third parties in photographs are protected by default, not only on request. If they ask to be removed, their whole presence is removed, not just their face.</td><td>DPIA, 7</td><td class="ctl">A.7.3 · A.5.4<small>acquisition of data, impact on individuals</small></td></tr>
+<tr><td>Activation requires a chain of death verification, not a single document. Whoever reports the death does not gain access to the avatar by doing so.</td><td>4</td><td class="ctl">A.6.2.5 · A.3.2<small>deployment, roles and responsibilities</small></td></tr>
+<tr><td>There are three levels of deactivation: hiding the avatar for yourself only, a global freeze that only the platform can decide, and dormancy. Every reactivation is preceded by a fresh check.</td><td>2, 6</td><td class="ctl">A.3.2 · A.9.4<small>roles and responsibilities, intended use</small></td></tr>
+<tr><td>The system states clearly that users are talking to AI, and its language refers to "memories", not a "soul". Users receive guidance on healthy use from day one.</td><td>5, 6</td><td class="ctl">A.8.2 · A.8.5<small>information for users, information for interested parties</small></td></tr>
+<tr><td>A register of requests from authorities and event logs are kept. There is an incident procedure, with notification of those affected wherever the law allows it.</td><td>4, 7</td><td class="ctl">A.8.3 · A.8.4 · A.6.2.8<small>external reporting, communication of incidents, event logs</small></td></tr>
+<tr><td>The impact assessment is documented and covers societal and historical impacts, such as the memory of the Civil War or mourning as a collective practice.</td><td>6</td><td class="ctl">A.5.2 · A.5.3 · A.5.5<small>process, documentation, societal impacts</small></td></tr>
+<tr><td>The terms of use set an 18+ age limit and prohibit commercial use of avatars.</td><td>1, 7</td><td class="ctl">A.9.4<small>intended use of the system</small></td></tr>
+<tr><td>Voice and image suppliers are assessed for where and how they process data.</td><td>7</td><td class="ctl">A.10.3<small>suppliers</small></td></tr>
+</tbody></table></div>
+<p>Two of these safeguards deserve particular mention, because no law requires them. The first is trajectory monitoring: the most serious harm on the map, grief that never ends, breaks no article and is visible in no single response. The second is rejecting engagement metrics. In an ordinary product, time spent signals success; here it signals failure. That decision has to be made before any growth pressure appears, because afterwards it will not be made.</p>
+<p>A proper assessment also records what was not solved. No structural answer was found for coordinated fabrication of memories by an entire family. Retaining data for decades when no descendant comes forward is an ethical and legal question before it is a technical one. Finally, post-mortem personality protection differs from country to country and would require a separate analysis for each market.</p>
+<div class="note"><b>An important clarification.</b> ISO/IEC 42001 certification is not the same as AI Act compliance. The standard does, however, organise risk management, human oversight, logging and monitoring in a way that can be audited, which is exactly what the Regulation will require of a high-risk system.</div>
+
+<h2 id="lessons"><span class="n">07 · (e)</span>What every company that builds or uses AI can take from this</h2>
+<h3>Risk category depends on purpose, not technology</h3>
+<p>The same system was either a memory tool or a high-risk medical device, depending on whether the therapist saw usage data. Write down the intended purpose first, precisely, and recheck the classification with every new feature. This also applies to companies that only use AI: a general-purpose tool that starts being used to evaluate employees or to support health decisions changes the obligations of whoever uses it.</p>
+<h3>A DPIA finds data where you did not expect it</h3>
+<p>The system was designed around the creator's data. The most sensitive data, however, was what descendants said in their conversations. Every system that talks to people collects not only what you give it but also what they tell it.</p>
+<h3>The most serious risks are not legal ones</h3>
+<p>The map showed that the highest scores belonged to risks that break no article and appear in no log. An assessment that stopped at legal compliance would have missed all of them. The difficulty-of-detection axis exists for exactly that reason.</p>
+<h3>Some decisions cannot be added later</h3>
+<p>How access is controlled, what the system does when it does not know, which metrics count and who can activate what are design decisions. Taken wrongly, they cannot be fixed with an update. It is far cheaper to answer them before the first line of code than after the first incident.</p>
+<h3>Self-reporting fails where you need it most</h3>
+<p>Victims of abuse do not report it, and people in crisis often do not ask for help. Wherever risk classification relies on what users declare, it fails in precisely the cases that matter. Risk has to be inferred from the data, with a conservative default.</p>
+<h3>If you buy AI, ask your supplier the same questions</h3>
+<p>What does the system do when it does not know? Which people are inside the data without being users? Who can switch it off, and for whom? If the supplier cannot answer, the risk does not disappear; it simply passes to you.</p>
+
+<div class="cta"><h3>Assessment before release</h3>
+<p>If you are designing or using an AI system that touches vulnerable people or sensitive data, SphragisAI carries out this assessment before the system reaches its users: classification under the AI Act, impact assessment, risk map, and a management system under ISO/IEC 42001.</p>
+<p><a href="https://sphragisai.com">sphragisai.com</a></p></div>
+
+<h2 id="sources"><span class="n">08</span>Sources</h2>
+<ul class="sources">
+<li><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32024R1689">Regulation (EU) 2024/1689 (Artificial Intelligence Act)</a>: Article 3(39), Article 5(1)(a) and (b), Article 6(1), Article 50(1) and (2), Article 113, Annex I, Annex III point 1(c)</li>
+<li><a href="https://eur-lex.europa.eu/eli/reg/2026/1744/oj/eng">Regulation (EU) 2026/1744 (Digital Omnibus on AI)</a>: new application dates for high-risk systems</li>
+<li><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679">Regulation (EU) 2016/679 (GDPR)</a>: Recitals 27 and 51, Article 2(2)(c), Article 4(14) and (15), Article 9, Article 35(1) and (3)</li>
+<li><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32017R0745">Regulation (EU) 2017/745 on medical devices</a>: Article 2(1), Annex VIII Rule 11</li>
+<li><a href="https://www.iso.org/standard/42001">ISO/IEC 42001:2023, Information technology — Artificial intelligence — Management system</a>: clauses 6.1.2 and 6.1.4, Annex A</li>
+</ul>
+
+<div class="sign"><div class="who">Maria Bartzoka <span>· SphragisAI</span></div>
+<p class="disc">This piece is regulatory analysis for educational purposes, not legal advice. References were checked against the official texts in November 2026. The scenarios are hypothetical, and the names and situations they describe do not correspond to real people.</p></div>
+
+</div></main>
+
+<footer><div class="wrap">© 2026 SphragisAI · <a href="https://sphragisai.com">sphragisai.com</a></div></footer>
+</body>
+</html>
