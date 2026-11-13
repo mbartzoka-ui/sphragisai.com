@@ -436,3 +436,9 @@ raise act
 νευρώνας μοντέλου ai
 μητρώο ευπαθειών
 vulnerability ledger
+
+# --- 2026-11-13 ---
+race condition
+συνθήκη ανταγωνισμού
+μορατόριουμ
+moratorium
