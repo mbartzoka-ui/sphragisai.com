@@ -6,6 +6,13 @@ Site languages: Greek (default, https://sphragisai.com/) and English (https://sp
 
 ## Services
 
+- [All services](https://sphragisai.com/en/ypiresies/) ([EL](https://sphragisai.com/ypiresies/))
+- [AI Readiness Check: AI Act and ISO/IEC 42001 gap assessment](https://sphragisai.com/en/ypiresies/ai-readiness-check/) ([EL](https://sphragisai.com/ypiresies/ai-readiness-check/))
+- [AI Security Assessment: security testing of chatbots and AI agents](https://sphragisai.com/en/ypiresies/ai-security-assessment/) ([EL](https://sphragisai.com/ypiresies/ai-security-assessment/))
+- [ISO/IEC 42001 AI management system implementation](https://sphragisai.com/en/ypiresies/iso-42001/) ([EL](https://sphragisai.com/ypiresies/iso-42001/))
+- [Integrated ISO/IEC 42001 & ISO/IEC 27001 system](https://sphragisai.com/en/ypiresies/iso-42001-27001/) ([EL](https://sphragisai.com/ypiresies/iso-42001-27001/))
+- [AI Literacy workshop (EU AI Act Article 4)](https://sphragisai.com/en/ypiresies/ai-literacy/) ([EL](https://sphragisai.com/ypiresies/ai-literacy/))
+- [Annual support for certified ISO/IEC 42001 / 27001 systems](https://sphragisai.com/en/ypiresies/annual-support/) ([EL](https://sphragisai.com/ypiresies/annual-support/))
 - [ISO/IEC 42001 consulting (EN)](https://sphragisai.com/en/iso-42001/): gap assessment, AI management system set-up, internal audit before certification ([EL](https://sphragisai.com/iso-42001/))
 - [sphragisAI home (EN)](https://sphragisai.com/en/): EU AI Act compliance and AI security services for SMBs
 - [sphragisAI home (EL)](https://sphragisai.com/): the same in Greek

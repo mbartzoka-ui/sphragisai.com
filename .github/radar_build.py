@@ -99,8 +99,8 @@ OLD_TAGLINE = {"el": "Θ ως ασπίδα", "en": "Θ as a shield"}
 # ήδη ο γενικός click handler της σελίδας για κάθε link προς το Google Calendar booking (calendar.app.google).
 BOOKING_URL = "https://calendar.app.google/6C5eXMiNmEHWMqxN9"
 CTA_TOP = {
-    "el": "Δωρεάν 45λεπτη χαρτογράφηση: πού στέκεται η επιχείρησή σας απέναντι στον AI Act και το ISO 42001 →",
-    "en": "Free 45-minute mapping session: where your business stands on the AI Act and ISO 42001 →",
+    "el": "Δωρεάν 20λεπτη χαρτογράφηση: πού στέκεται η επιχείρησή σας απέναντι στον AI Act και το ISO 42001 →",
+    "en": "Free 20-minute mapping session: where your business stands on the AI Act and ISO 42001 →",
 }
 CTA_CSS = (".cta-top{margin-top:16px;}"
            ".cta-top a{display:inline-block;background:#fff;border:0.5px solid var(--line-d);"

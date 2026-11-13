@@ -148,7 +148,7 @@ After the «Συνολική εικόνα» paragraph, add a horizontal rule and
 ```
 Καθημερινή ενημέρωση: sphragisai.com/radar
 
-Δωρεάν 45λεπτη χαρτογράφηση: πού στέκεται η επιχείρησή σου απέναντι στον AI Act και το ISO 42001 → https://sphragisai.com/iso-42001/?utm_source=linkedin&utm_medium=social&utm_campaign=<YYYY-MM>-radar&utm_content=<YYYY-MM-DD>-<el|en>
+Δωρεάν 20λεπτη χαρτογράφηση: πού στέκεται η επιχείρησή σου απέναντι στον AI Act και το ISO 42001 → https://sphragisai.com/iso-42001/?utm_source=linkedin&utm_medium=social&utm_campaign=<YYYY-MM>-radar&utm_content=<YYYY-MM-DD>-<el|en>
 
 Το κείμενο γράφτηκε αυτόματα με AI από το AI Radar της sphragisAI, με βάση δημόσιες πηγές.
 ```

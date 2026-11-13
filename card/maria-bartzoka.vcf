@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Μπαρτζώκα;Μαρία;;;
+FN:Μαρία Μπαρτζώκα
+NICKNAME:Maria Bartzoka
+ORG:SphragisAI
+TITLE:Founder · AI Security & Governance · ISO/IEC 27001 Lead Auditor
+TEL;TYPE=CELL,VOICE:+306936144826
+EMAIL;TYPE=INTERNET,WORK:maria@sphragisai.com
+URL;TYPE=WORK:https://sphragisai.com
+URL;TYPE=LinkedIn:https://www.linkedin.com/in/mariabartzoka/
+X-SOCIALPROFILE;TYPE=linkedin:https://www.linkedin.com/in/mariabartzoka/
+NOTE:AI Security & Governance · ISO/IEC 42001 & 27001 · EU AI Act
+END:VCARD
