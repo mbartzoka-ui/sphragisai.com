@@ -1,0 +1,29 @@
+name: Apply site update
+
+# Μία φορά: όταν ανέβει το site-update.zip, το αποσυμπιέζει, εφαρμόζει τις
+# αλλαγές και σβήνει το zip και αυτό το αρχείο.
+
+on:
+  push:
+    branches: [main]
+    paths: ["site-update.zip"]
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Apply
+        run: |
+          unzip -q site-update.zip -d /tmp/upd
+          python3 /tmp/upd/site-update/apply.py
+          git rm -q --ignore-unmatch site-update.zip sphragisai-site-upload.zip .github/workflows/apply-site-update.yml
+          git add -A
+          git config user.name "Maria Bartzoka"
+          git config user.email "maria@sphragisai.com"
+          git commit -q -m "Νέες σελίδες υπηρεσιών (EL/EN), νέα κάρτα, δωρεάν συνεδρία 20′, νέα ονόματα υπηρεσιών"
+          git push origin HEAD:main
