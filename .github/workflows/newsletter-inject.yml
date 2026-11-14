@@ -5,7 +5,7 @@ name: Newsletter form on pages
 on:
   push:
     branches: [newsletter-form]
-    paths: [".github/nl_inject.py", "nl.js", ".github/workflows/newsletter-inject.yml"]
+    paths: [".github/newsletter_setup.py", ".github/workflows/newsletter-inject.yml"]
   workflow_dispatch:
 
 permissions:
@@ -16,11 +16,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: python3 .github/nl_inject.py
+      - run: python3 .github/newsletter_setup.py
       - name: Commit
         run: |
           git config user.name "SphragisAI"
           git config user.email "info@sphragisai.com"
+          git rm -q --ignore-unmatch .github/nl_inject.py
           git add -A '*.html'
-          git diff --cached --quiet || git commit -m "Newsletter: script nl.js στις ελληνικές σελίδες"
+          git diff --cached --quiet || git commit -m "Newsletter: nl.js, χωρίς Google Analytics, πολιτική απορρήτου"
           git push
