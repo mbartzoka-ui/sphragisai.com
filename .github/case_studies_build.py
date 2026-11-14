@@ -46,7 +46,7 @@ def chrome(lang):
     b = R(('en/' if lang == 'en' else '') + 'blog/index.html')
     hdr = re.search(r'<header class="sx-top">.*?</header>', b, re.S)[0]
     ftr = re.search(r'<footer class="sx-foot">.*?</footer>\s*<script>document\.addEventListener\("click".*?</script>', b, re.S)[0]
-    ga = re.search(r'<!-- Google tag \(gtag\.js\) -->.*?<!-- sphragisAI key events -->\s*<script>.*?</script>', b, re.S)[0]
+    ga = re.search(r'(?:<!-- Google tag \(gtag\.js\) -->.*?)?<!-- sphragisAI key events -->\s*<script>.*?</script>', b, re.S)[0]
     cf = re.search(r'<!-- Cloudflare Web Analytics -->.*?<!-- End Cloudflare Web Analytics -->', b, re.S)[0]
     return b, hdr, ftr, ga, cf
 

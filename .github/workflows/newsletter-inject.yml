@@ -1,0 +1,27 @@
+name: Newsletter form on pages
+
+# Τρέχει μόνο στο branch newsletter-form. Τίποτα δεν πάει στο main
+# χωρίς έγκριση του Pull Request.
+on:
+  push:
+    branches: [newsletter-form]
+    paths: [".github/newsletter_setup.py", ".github/workflows/newsletter-inject.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  inject:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 .github/newsletter_setup.py
+      - name: Commit
+        run: |
+          git config user.name "SphragisAI"
+          git config user.email "info@sphragisai.com"
+          git rm -q --ignore-unmatch .github/nl_inject.py
+          git add -A '*.html'
+          git diff --cached --quiet || git commit -m "Newsletter: nl.js, χωρίς Google Analytics, πολιτική απορρήτου"
+          git push
