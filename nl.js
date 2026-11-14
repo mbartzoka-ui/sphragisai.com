@@ -65,7 +65,6 @@
           set("sub");
           f.parentNode.querySelector(".n").remove();
           f.outerHTML = '<p class="ok"><b>Σχεδόν έτοιμο.</b> Κοίτα το email σου και πάτα το κουμπί επιβεβαίωσης. Αν δεν το βρίσκεις, δες και στα Promotions ή στα Spam.</p>';
-          if (window.gtag) window.gtag("event", "newsletter_signup", { form: withClose ? "popup" : "inline" });
         })
         .catch(function () { b.disabled = false; b.textContent = "Εγγραφή"; fail("Κάτι δεν πήγε καλά. Δοκίμασε ξανά ή γράψε στο info@sphragisai.com."); });
       function fail(msg) { var p = document.createElement("p"); p.className = "err"; p.textContent = msg; d.appendChild(p); }
