@@ -1,13 +1,30 @@
-/* Newsletter «Σφραγίδα» (MailerLite). Φόρμα στο τέλος των άρθρων radar/blog
-   και παράθυρο μία φορά ανά επισκέπτη. Μόνο στις ελληνικές σελίδες. */
+/* Newsletter (MailerLite): «Σφραγίδα» στις ελληνικές σελίδες, «Sealed» στις αγγλικές.
+   Φόρμα στο τέλος των άρθρων radar/blog και παράθυρο μία φορά ανά επισκέπτη. */
 (function () {
   "use strict";
-  var ACTION = "https://assets.mailerlite.com/jsonp/2795445/forms/204122248105166682/subscribe";
-  var KEY = "sx-nl";            // "closed" | "sub"
   var path = location.pathname;
-  var lang = (document.documentElement.lang || "").toLowerCase();
-  if (path.indexOf("/en/") === 0 || (lang && lang.indexOf("el") !== 0)) return;
-  if (/^\/(privacy|p|card|ig|odigos\/efxaristo)\//.test(path)) return;
+  var EN = path.indexOf("/en/") === 0;
+  var rest = EN ? path.slice(3) : path;
+  if (/^\/(privacy|p|card|ig|odigos\/efxaristo)\//.test(rest)) return;
+  var T = EN ? {
+    form: "204125864851408748", key: "sx-nl-en", name: "Sealed",
+    label: "Newsletter · once a month",
+    desc: "AI security and the EU AI Act, once a month, from SphragisAI. What changed, what it means for a business using AI, and one practical step for the month.",
+    ph: "Your email", btn: "Subscribe", hp: "Leave empty", close: "Close",
+    note: 'We will send you a confirmation email. You can unsubscribe at any time with one click. <a href="/en/privacy/">Privacy policy</a>',
+    ok: "<b>Almost done.</b> Check your inbox and click the confirmation button. If you can't find it, look in Promotions or Spam.",
+    bad: "Please enter a valid email.", err: "Something went wrong. Try again or write to info@sphragisai.com."
+  } : {
+    form: "204122248105166682", key: "sx-nl", name: "Σφραγίδα",
+    label: "Newsletter · μία φορά τον μήνα",
+    desc: "Ασφάλεια και κανόνες για το AI, μία φορά τον μήνα, από τη SphragisAI. Τι άλλαξε στον AI Act, τι σημαίνει για μια ελληνική επιχείρηση και ένα πρακτικό βήμα για τον μήνα.",
+    ph: "Το email σου", btn: "Εγγραφή", hp: "Μην συμπληρώνεις", close: "Κλείσιμο",
+    note: 'Θα σου στείλουμε email επιβεβαίωσης. Μπορείς να διαγραφείς όποτε θέλεις με ένα κλικ. <a href="/privacy/">Πολιτική απορρήτου</a>',
+    ok: "<b>Σχεδόν έτοιμο.</b> Κοίτα το email σου και πάτα το κουμπί επιβεβαίωσης. Αν δεν το βρίσκεις, δες και στα Promotions ή στα Spam.",
+    bad: "Γράψε ένα σωστό email.", err: "Κάτι δεν πήγε καλά. Δοκίμασε ξανά ή γράψε στο info@sphragisai.com."
+  };
+  var ACTION = "https://assets.mailerlite.com/jsonp/2795445/forms/" + T.form + "/subscribe";
+  var KEY = T.key;              // "closed" | "sub"
 
   function get() { try { return localStorage.getItem(KEY); } catch (e) { return null; } }
   function set(v) { try { localStorage.setItem(KEY, v); } catch (e) {} }
@@ -39,22 +56,22 @@
     var d = document.createElement("div");
     d.className = "sx-nl";
     d.innerHTML =
-      (withClose ? '<button class="x" type="button" aria-label="Κλείσιμο">×</button>' : "") +
-      '<div class="l"><b></b>Newsletter · μία φορά τον μήνα</div>' +
+      (withClose ? '<button class="x" type="button" aria-label="' + T.close + '">×</button>' : "") +
+      '<div class="l"><b></b>' + T.label + '</div>' +
       '<div class="s">{<span>Σ</span>}</div>' +
-      "<h3>Σφραγίδα<i aria-hidden=\"true\"></i></h3>" +
-      "<p>Ασφάλεια και κανόνες για το AI, μία φορά τον μήνα, από τη SphragisAI. Τι άλλαξε στον AI Act, τι σημαίνει για μια ελληνική επιχείρηση και ένα πρακτικό βήμα για τον μήνα.</p>" +
-      '<form novalidate><label class="hp">Μην συμπληρώνεις<input name="website" tabindex="-1" autocomplete="off"></label>' +
-      '<input type="email" name="email" required placeholder="Το email σου" aria-label="Email" autocomplete="email">' +
-      '<button type="submit">Εγγραφή</button></form>' +
-      '<div class="n">Θα σου στείλουμε email επιβεβαίωσης. Μπορείς να διαγραφείς όποτε θέλεις με ένα κλικ. <a href="/privacy/">Πολιτική απορρήτου</a></div>';
+      "<h3>" + T.name + "<i aria-hidden=\"true\"></i></h3>" +
+      "<p>" + T.desc + "</p>" +
+      '<form novalidate><label class="hp">' + T.hp + '<input name="website" tabindex="-1" autocomplete="off"></label>' +
+      '<input type="email" name="email" required placeholder="' + T.ph + '" aria-label="Email" autocomplete="email">' +
+      '<button type="submit">' + T.btn + '</button></form>' +
+      '<div class="n">' + T.note + '</div>';
     var f = d.querySelector("form");
     f.addEventListener("submit", function (e) {
       e.preventDefault();
       var em = f.email.value.trim(), old = d.querySelector(".err");
       if (old) old.remove();
       if (f.website.value) return;                       // bot
-      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em)) return fail("Γράψε ένα σωστό email.");
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em)) return fail(T.bad);
       var b = f.querySelector("button"); b.disabled = true; b.textContent = "…";
       var fd = new FormData();
       fd.append("fields[email]", em); fd.append("ml-submit", "1"); fd.append("anticsrf", "true");
@@ -64,9 +81,9 @@
           if (!j || !j.success) throw 0;
           set("sub");
           f.parentNode.querySelector(".n").remove();
-          f.outerHTML = '<p class="ok"><b>Σχεδόν έτοιμο.</b> Κοίτα το email σου και πάτα το κουμπί επιβεβαίωσης. Αν δεν το βρίσκεις, δες και στα Promotions ή στα Spam.</p>';
+          f.outerHTML = '<p class="ok">' + T.ok + '</p>';
         })
-        .catch(function () { b.disabled = false; b.textContent = "Εγγραφή"; fail("Κάτι δεν πήγε καλά. Δοκίμασε ξανά ή γράψε στο info@sphragisai.com."); });
+        .catch(function () { b.disabled = false; b.textContent = T.btn; fail(T.err); });
       function fail(msg) { var p = document.createElement("p"); p.className = "err"; p.textContent = msg; d.appendChild(p); }
     });
     return d;
@@ -75,7 +92,7 @@
   function init() {
     var st = document.createElement("style"); st.textContent = css; document.head.appendChild(st);
     var foot = document.querySelector("footer.sx-foot");
-    var isArticle = /^\/(radar|blog)\/[^\/]+\/$/.test(path) && !/^\/radar\/archive\//.test(path);
+    var isArticle = /^\/(radar|blog)\/[^\/]+\/$/.test(rest) && !/^\/radar\/archive\//.test(rest);
     if (isArticle && foot) {
       var w = document.createElement("section"); w.className = "sx-nl-in"; w.id = "newsletter";
       w.appendChild(card(false));
@@ -86,7 +103,7 @@
     function show() {
       if (shown || get()) return;
       shown = true; clearTimeout(timer); window.removeEventListener("scroll", onScroll);
-      var o = document.createElement("div"); o.className = "sx-nl-pop"; o.setAttribute("role", "dialog"); o.setAttribute("aria-label", "Newsletter Σφραγίδα");
+      var o = document.createElement("div"); o.className = "sx-nl-pop"; o.setAttribute("role", "dialog"); o.setAttribute("aria-label", "Newsletter " + T.name);
       var c = card(true); o.appendChild(c); document.body.appendChild(o);
       function close() { set(get() || "closed"); o.remove(); document.removeEventListener("keydown", esc); }
       function esc(e) { if (e.key === "Escape") close(); }
