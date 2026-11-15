@@ -93,13 +93,22 @@ jobs:
           CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: |
+          # Sonnet gets TWO tries before Haiku. On the second try it sees the
+          # checker's reason for rejecting the first, so it can fix exactly that.
+          # (15/11/2026: one checker rejection sent the day straight to Haiku.)
           attempt=0
-          for model in claude-sonnet-5 claude-haiku-4-5-20251001 claude-haiku-4-5-20251001; do
+          prev_feedback=""
+          for model in claude-sonnet-5 claude-sonnet-5 claude-haiku-4-5-20251001 claude-haiku-4-5-20251001; do
             attempt=$((attempt+1))
             echo "=== Attempt $attempt: $model ==="
             git checkout -- radar en/radar knowledge
             rm -f /tmp/radar-digest.md /tmp/radar-verdict.txt /tmp/radar-run-info.md /tmp/radar-model.txt
-            if ! claude -p "$(cat .github/radar-prompt.md)" --model "$model" --dangerously-skip-permissions; then
+            prompt="$(cat .github/radar-prompt.md)"
+            if [ -n "$prev_feedback" ]; then
+              note="ΣΗΜΕΙΩΣΗ ΑΠΟ ΤΗΝ ΠΡΟΗΓΟΥΜΕΝΗ ΠΡΟΣΠΑΘΕΙΑ: ο ανεξάρτητος ελεγκτής την απέρριψε για τον λόγο που ακολουθεί. Ξεκίνα από την αρχή και φρόντισε να μην επαναληφθεί:"
+              prompt="${prompt}"$'\n\n'"${note}"$'\n'"${prev_feedback}"
+            fi
+            if ! claude -p "$prompt" --model "$model" --dangerously-skip-permissions; then
               echo "::warning::Attempt $attempt ($model): claude exited with an error (API/safeguard block) - retrying with next model."
               continue
             fi
@@ -126,6 +135,7 @@ jobs:
               echo "--- Checker verdict ---"; cat /tmp/radar-verdict.txt
               if [ "$(head -n1 /tmp/radar-verdict.txt)" != "PASS" ]; then
                 echo "::warning::Attempt $attempt ($model): checker rejected the output - rolling back and retrying."
+                prev_feedback="$(head -c 2000 /tmp/radar-verdict.txt)"
                 continue
               fi
             else
@@ -145,7 +155,7 @@ jobs:
               verdict="δεν παρήχθη (έγινε δεκτό βάσει του δομικού ελέγχου)"
             fi
             {
-              echo "> **Πώς φτιάχτηκε:** $friendly · προσπάθεια $attempt από 3 · δομικός έλεγχος OK"
+              echo "> **Πώς φτιάχτηκε:** $friendly · προσπάθεια $attempt από 4 · δομικός έλεγχος OK"
               echo ">"
               echo "> **Ανεξάρτητος ελεγκτής:** $verdict · ίδιο μοντέλο, καθαρή συνεδρία, επιβεβαιωμένα καμία εγγραφή"
               if [ "$friendly" = "Haiku" ]; then
