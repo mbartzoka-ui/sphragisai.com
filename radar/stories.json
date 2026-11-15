@@ -1,5 +1,74 @@
 [
  {
+  "slug": "2026-11-14-no-signs-of-hacking-in-faa-ground-stop-as-fbi-probes-software-update",
+  "urls": [
+   "https://www.securityweek.com/no-signs-of-hacking-in-faa-ground-stop-as-fbi-reportedly-probes-software-update"
+  ],
+  "first_seen": "2026-11-15",
+  "date": "2026-11-14",
+  "topic": "AI Security",
+  "el": {
+   "title": "Κανένα σημάδι χακερ στη διακοπή FAA καθώς FBI ερευνά ενημέρωση λογισμικού",
+   "summary": "Η FAA (Ομοσπονδιακή Διοίκηση Αεροναυτικής) διαπίστωσε ότι ένας μαζικός διακοπή πτήσεων που συνέβη ήταν αποτέλεσμα σφάλματος σε ενημέρωση λογισμικού, όχι επίθεσης χάκερ. Το FBI ωστόσο ερευνά το περιστατικό για να αποκλείσει ύποπτη δράστηριότητα. Αυτό αναδεικνύει τη σημασία της δοκιμής ενημερώσεων κρίσιμης υποδομής και της πλάνης ότι σημαντικές διακοπές είναι αναπόφευκτα αποτέλεσμα επιθέσεων πληροφοριακής ασφαλείας."
+  },
+  "en": {
+   "title": "No signs of hacking in FAA ground stop as FBI probes software update",
+   "summary": "The FAA (Federal Aviation Administration) determined that a major flight disruption was caused by a software update failure, not a cyberattack. However, the FBI is investigating to rule out malicious activity. The incident underscores the importance of testing critical infrastructure updates and challenges the assumption that major operational disruptions must result from security breaches."
+  },
+  "sources": [
+   {
+    "name": "SecurityWeek",
+    "url": "https://www.securityweek.com/no-signs-of-hacking-in-faa-ground-stop-as-fbi-reportedly-probes-software-update/"
+   }
+  ]
+ },
+ {
+  "slug": "2026-11-14-cursor-confirms-security-breach-that-led-to-malicious-claude-code",
+  "urls": [
+   "https://www.bleepingcomputer.com/news/security/cursor-confirms-security-breach-led-to-malicious-claude-code-extension"
+  ],
+  "first_seen": "2026-11-15",
+  "date": "2026-11-14",
+  "topic": "AI Security",
+  "el": {
+   "title": "Cursor επιβεβαιώνει παραβίαση ασφαλείας που οδήγησε σε κακόβουλη επέκταση Claude Code",
+   "summary": "Το πρόγραμμα επεξεργασίας κώδικα Cursor (που έχει ενσωματωμένη AI) ανακοίνωσε ότι είχε παραβίαση ασφαλείας η οποία εκμεταλλεύτηκε για τη δημοσίευση κακόβουλης έκδοσης του Claude Code, της επέκτασης του VS Code από την Anthropic. Οι επιτιθέμενοι έκαναν αντιγραφή της αυθεντικής επέκτασης αλλά ενσωμάτωσαν κακόβουλο κώδικα. Το περιστατικό υπογραμμίζει τον κίνδυνο όταν εργαλεία που τρέχουν ευαίσθητο κώδικα και δεδομένα εξαρτώνται από τρίτα μέρη και έχουν πρόσβαση σε κατάλογα προσθέτων."
+  },
+  "en": {
+   "title": "Cursor confirms security breach that led to malicious Claude Code extension",
+   "summary": "Cursor, an AI-powered code editor, disclosed a security breach that allowed attackers to publish a malicious version of Claude Code, the VS Code extension from Anthropic. The attackers cloned the legitimate extension but injected malicious code. The incident highlights risks when developer tools with sensitive code access depend on third parties managing extensions."
+  },
+  "sources": [
+   {
+    "name": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/cursor-confirms-security-breach-led-to-malicious-claude-code-extension/"
+   }
+  ]
+ },
+ {
+  "slug": "2026-11-14-apple-reveals-how-secure-exclaves-shield-camera-and-microphone-data",
+  "urls": [
+   "https://www.securityweek.com/apple-reveals-how-secure-exclaves-shield-camera-and-microphone-data"
+  ],
+  "first_seen": "2026-11-15",
+  "date": "2026-11-14",
+  "topic": "AI Security",
+  "el": {
+   "title": "Apple αποκαλύπτει πώς τα Secure Exclaves προστατεύουν κάμερα και μικρόφωνο",
+   "summary": "Η Apple δημοσίευσε τεχνικές λεπτομέρειες για τα Secure Exclaves, εξειδικευμένα τμήματα υλικού που απομονώνουν ευαίσθητες λειτουργίες όπως η κάμερα και το μικρόφωνο. Αυτός ο σχεδιασμός ασφαλείας, που χρησιμοποιείται και στις AI-προτεινόμενες λειτουργίες που δημοσίευσε πρόσφατα η Apple, περιορίζει την πρόσβαση σε ευαίσθητα δεδομένα χρήστη ακόμη και αν ο κύριος επεξεργαστής έχει παρακολυθηθεί ή παραβιαστεί."
+  },
+  "en": {
+   "title": "Apple reveals how Secure Exclaves shield camera and microphone data",
+   "summary": "Apple published technical details on Secure Exclaves, specialized hardware components that isolate sensitive functions such as camera and microphone access. This architectural safeguard, now used in Apple's recently announced AI features, restricts access to sensitive user data even if the main processor is compromised or has been breached."
+  },
+  "sources": [
+   {
+    "name": "SecurityWeek",
+    "url": "https://www.securityweek.com/apple-reveals-how-secure-exclaves-shield-camera-and-microphone-data/"
+   }
+  ]
+ },
+ {
   "slug": "2026-11-12-united-airlines-blocks-ai-agents-from-booking-flights-citing",
   "urls": [
    "https://techcrunch.com/2026/11/12/united-airlines-blocks-ai-agents-from-booking-flights-citing-cybersecurity-risks",
