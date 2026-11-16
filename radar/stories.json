@@ -1,5 +1,51 @@
 [
  {
+  "slug": "2026-11-16-research-reports-of-ai-related-child-sexual-abuse-material-rose-8-400",
+  "urls": [
+   "https://www.theguardian.com/technology/2026/nov/16/ai-related-child-sexual-abuse-material-rise-exploitation-deepfakes"
+  ],
+  "first_seen": "2026-11-16",
+  "date": "2026-11-16",
+  "topic": "Incidents",
+  "el": {
+   "title": "Έρευνα: οι αναφορές υλικού σεξουαλικής κακοποίησης παιδιών που σχετίζεται με AI αυξήθηκαν κατά 8.400% σε δύο χρόνια",
+   "summary": "Έρευνα του οργανισμού Childlight, με έδρα το Εδιμβούργο, βρήκε ότι οι αναφορές υλικού σεξουαλικής κακοποίησης παιδιών που δημιουργείται ή τροποποιείται με AI, όπως εικόνες deepfake από λεγόμενες εφαρμογές «nudify» που γδύνουν ψηφιακά φωτογραφίες παιδιών, αυξήθηκαν από περίπου 4.700 το 2023 σε πάνω από 400.000 το 2025, αύξηση πάνω από 8.400% μέσα σε δύο χρόνια. Οι ερευνητές βασίστηκαν σε αναφορές που εταιρείες τεχνολογίας υποβάλλουν στον αμερικανικό οργανισμό National Center for Missing and Exploited Children, ενώ ξεχωριστή έκθεση της βρετανικής Internet Watch Foundation τον προηγούμενο μήνα βρήκε ότι μόνο μέσα στο πρώτο εξάμηνο του 2026 εντοπίστηκαν περισσότερες φωτορεαλιστικές τέτοιες εικόνες από όσες σε ολόκληρο το 2025. Η καθηγήτρια Debi Fry, επικεφαλής δεδομένων στο Childlight, μίλησε για «σοκαριστική» κλίμακα εκμετάλλευσης, ενώ ο οργανισμός εκτιμά ότι πάνω από 300 εκατομμύρια παιδιά παγκοσμίως πέφτουν θύματα τουλάχιστον μίας μορφής ψηφιακής σεξουαλικής εκμετάλλευσης κάθε χρόνο, υλικό που σε ορισμένες περιπτώσεις χρησιμοποιείται και για εκβιασμό των ίδιων των παιδιών. Για μια επιχείρηση που αναπτύσσει ή ενσωματώνει εργαλεία δημιουργίας εικόνων με AI, η έκθεση δείχνει γιατί τα φίλτρα ασφαλείας για ανήλικους και ο έλεγχος κατάχρησης δεν είναι πλέον προαιρετικό στοιχείο σχεδιασμού, αλλά ζήτημα που εξετάζουν στενά ρυθμιστές και νόμοι προστασίας παιδιών σε όλο τον κόσμο."
+  },
+  "en": {
+   "title": "Research: reports of AI-related child sexual abuse material rose 8,400% in two years",
+   "summary": "A report by the Edinburgh-based Childlight (Global Child Safety Institute) found that reports of child sexual abuse material created or altered using AI, including deepfakes from so-called 'nudify' apps that digitally strip clothing from photos of children, rose from about 4,700 in 2023 to more than 400,000 in 2025, an increase of more than 8,400% in two years. The researchers drew on reports tech companies submit to the US-based National Center for Missing and Exploited Children, while a separate report from the UK's Internet Watch Foundation last month found that more photorealistic material of this kind was identified in just the first half of 2026 than in all of 2025. Professor Debi Fry, Childlight's global director of data, called the scale of exploitation 'shocking', and the organization estimates more than 300 million children worldwide are victims of at least one form of technology-facilitated sexual exploitation every year, material that is sometimes used to blackmail the children themselves. For a business building or embedding AI image-generation tools, the report shows why safety filters for minors and abuse monitoring are no longer optional design choices but an issue regulators and child-protection laws worldwide are scrutinizing closely."
+  },
+  "sources": [
+   {
+    "name": "The Guardian",
+    "url": "https://www.theguardian.com/technology/2026/nov/16/ai-related-child-sexual-abuse-material-rise-exploitation-deepfakes"
+   }
+  ]
+ },
+ {
+  "slug": "2026-11-15-fbi-warns-that-ai-hacking-tool-artex-is-powering-attacks-worldwide",
+  "urls": [
+   "https://www.bleepingcomputer.com/news/security/fbi-warns-artex-ai-hacking-tool-is-powering-global-cyberattacks"
+  ],
+  "first_seen": "2026-11-16",
+  "date": "2026-11-15",
+  "topic": "Incidents",
+  "el": {
+   "title": "Το FBI προειδοποιεί ότι το εργαλείο hacking με AI ARTEX τροφοδοτεί επιθέσεις σε όλο τον κόσμο",
+   "summary": "Το FBI εξέδωσε προειδοποίηση FLASH την Παρασκευή για το ARTEX, ένα εργαλείο δοκιμών διείσδυσης ανοιχτού κώδικα γραμμένο σε Go, που χρησιμοποιεί AI agents, εργαλεία AI που εκτελούν εργασίες μόνα τους, για να κάνουν αναγνώριση, να εντοπίζουν ευπάθειες, να εκμεταλλεύονται συστήματα, να αποκτούν αυξημένα δικαιώματα και να κλέβουν δεδομένα με ελάχιστη ανθρώπινη παρέμβαση. Το εργαλείο δεν τρέχει δικό του μοντέλο αλλά συνδέεται με εξωτερικά μεγάλα γλωσσικά μοντέλα, όπως το Claude της Anthropic, το GPT της OpenAI, το DeepSeek, το GLM, το Grok και το Kimi, και σύμφωνα με το FBI έχει χρησιμοποιηθεί από πολλαπλές ομάδες επιτιθέμενων τουλάχιστον από τον Αύγουστο του 2026 εναντίον οργανισμών στον χρηματοπιστωτικό, κυβερνητικό, αμυντικό και υγειονομικό τομέα, με ορισμένες επιθέσεις να φτάνουν από την αρχική στόχευση σε πλήρη πρόσβαση μέσα σε λιγότερο από τρεις ώρες. Το εργαλείο έχει ήδη συνδεθεί με την επίθεση εφοδιαστικής αλυσίδας στην ConnectWise που επηρέασε περιβάλλοντα πελατών του Microsoft 365. Αν και ο δημιουργός του το απέσυρε από το GitHub στις 8 Οκτωβρίου μόλις έμαθε για την κατάχρησή του, παραμένει διαθέσιμο μέσω παρακλαδιών, αρχειοθετημένων αντιγράφων και εμπορικής έκδοσης με το όνομα ARTEX PRO, με ερευνητές να έχουν ήδη εντοπίσει πάνω από 1.600 δημόσια εκτεθειμένες κονσόλες διαχείρισής του. Για μια ελληνική επιχείρηση, η προειδοποίηση δείχνει ότι ένα εργαλείο επίθεσης με AI μπορεί πλέον να μετατρέψει έναν επιτιθέμενο χωρίς ιδιαίτερη τεχνική εμπειρία σε απειλή που χτυπά πολλούς στόχους ταυτόχρονα, ιδίως μέσα από σημεία που συχνά παραμελούνται, όπως οι πύλες συνεργατών, οι εφαρμογές υπαλλήλων και οι παλιές υπηρεσίες που έχουν ξεχαστεί."
+  },
+  "en": {
+   "title": "FBI warns that AI hacking tool ARTEX is powering attacks worldwide",
+   "summary": "The FBI issued a FLASH advisory on Friday about ARTEX, an open-source penetration-testing framework written in Go that uses AI agents, tools that carry out tasks on their own, to perform reconnaissance, find vulnerabilities, exploit systems, escalate privileges, and steal data with minimal human involvement. The framework doesn't run its own model but plugs into external large language models, including Anthropic's Claude, OpenAI's GPT, DeepSeek, GLM, Grok, and Kimi, and the FBI says multiple threat actors have used it since at least August 2026 against organizations in finance, government, defense, and healthcare, with some intrusions going from initial targeting to privileged access in under three hours. The tool has already been tied to the supply-chain breach at ConnectWise that compromised Microsoft 365 customer environments. Although its creator pulled the GitHub repository on October 8 once abuse reports surfaced, it remains available through forks, archived copies, and a commercial edition called ARTEX PRO, with researchers identifying more than 1,600 publicly exposed management consoles so far. For a Greek business, the warning shows that an AI-powered attack tool can now turn even a low-skill attacker into a threat capable of hitting multiple targets at once, especially through commonly overlooked entry points like partner portals, employee apps, and forgotten legacy services."
+  },
+  "sources": [
+   {
+    "name": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/fbi-warns-artex-ai-hacking-tool-is-powering-global-cyberattacks/"
+   }
+  ]
+ },
+ {
   "slug": "2026-11-14-no-signs-of-hacking-in-faa-ground-stop-as-fbi-probes-software-update",
   "urls": [
    "https://www.securityweek.com/no-signs-of-hacking-in-faa-ground-stop-as-fbi-reportedly-probes-software-update"
@@ -25,7 +71,8 @@
  {
   "slug": "2026-11-14-cursor-confirms-security-breach-that-led-to-malicious-claude-code",
   "urls": [
-   "https://www.bleepingcomputer.com/news/security/cursor-confirms-security-breach-led-to-malicious-claude-code-extension"
+   "https://www.bleepingcomputer.com/news/security/cursor-confirms-security-breach-led-to-malicious-claude-code-extension",
+   "https://thehackernews.com/2026/11/stolen-fireworks-ai-key-led-to-cursor.html"
   ],
   "first_seen": "2026-11-15",
   "date": "2026-11-14",
@@ -42,6 +89,10 @@
    {
     "name": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/cursor-confirms-security-breach-led-to-malicious-claude-code-extension/"
+   },
+   {
+    "name": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/stolen-fireworks-ai-key-led-to-cursor.html"
    }
   ]
  },

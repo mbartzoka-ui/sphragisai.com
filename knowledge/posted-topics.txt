@@ -107,3 +107,4 @@
 2026-11-12 | ms-lazarus-neuron-backdoor-ai-agent | Η Microsoft δείχνει πώς λιγότεροι από 10 νευρώνες αρκούν για κερκόπορτα σε AI agent
 2026-11-13 | united-airlines-blocks-ai-agents-credential-risk | Η United Airlines μπλοκάρει AI agents από κρατήσεις πτήσεων, επικαλούμενη κινδύνους κυβερνοασφάλειας
 2026-11-15 | cursor-malicious-extension | Cursor παραβίαση ασφαλείας και κακόβουλη επέκταση Claude Code
+2026-11-16 | ai-csam-nudify-apps-childlight | Έρευνα Childlight: οι αναφορές υλικού σεξουαλικής κακοποίησης παιδιών με AI αυξήθηκαν κατά 8.400% σε δύο χρόνια

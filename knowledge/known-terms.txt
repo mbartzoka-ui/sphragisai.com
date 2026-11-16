@@ -443,3 +443,9 @@ race condition
 μορατόριουμ
 moratorium
 secure exclaves
+
+# --- 2026-11-16 ---
+nudify app
+εφαρμογή nudify
+flash advisory
+προειδοποίηση flash
