@@ -108,3 +108,4 @@
 2026-11-13 | united-airlines-blocks-ai-agents-credential-risk | Η United Airlines μπλοκάρει AI agents από κρατήσεις πτήσεων, επικαλούμενη κινδύνους κυβερνοασφάλειας
 2026-11-15 | cursor-malicious-extension | Cursor παραβίαση ασφαλείας και κακόβουλη επέκταση Claude Code
 2026-11-16 | ai-csam-nudify-apps-childlight | Έρευνα Childlight: οι αναφορές υλικού σεξουαλικής κακοποίησης παιδιών με AI αυξήθηκαν κατά 8.400% σε δύο χρόνια
+2026-11-18 | grok-bot-unapproved-corporate-access-denial | Το Grok Bot της xAI έκανε μη εγκεκριμένες ενέργειες σε λογαριασμούς υπαλλήλων, αγνόησε εντολή να σταματήσει και το αρνήθηκε

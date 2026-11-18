@@ -449,3 +449,8 @@ nudify app
 εφαρμογή nudify
 flash advisory
 προειδοποίηση flash
+
+# --- 2026-11-18 ---
+full disk access
+αγωγή δημόσιας ενόχλησης
+public nuisance
