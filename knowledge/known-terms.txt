@@ -454,3 +454,7 @@ flash advisory
 full disk access
 αγωγή δημόσιας ενόχλησης
 public nuisance
+
+# --- 2026-11-19 ---
+ai czar
+τσάρος ai

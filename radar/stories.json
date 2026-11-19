@@ -1,5 +1,158 @@
 [
  {
+  "slug": "2026-11-18-us-senators-urge-white-house-to-build-a-national-defense-plan-against",
+  "urls": [
+   "https://therecord.media/ai-cyber-white-house",
+   "https://www.theguardian.com/us-news/2026/nov/18/jay-clayton-ai-tech-outages-infrastructure"
+  ],
+  "first_seen": "2026-11-19",
+  "date": "2026-11-18",
+  "topic": "AI Security",
+  "el": {
+   "title": "Γερουσιαστές των ΗΠΑ ζητούν από τον Λευκό Οίκο εθνικό σχέδιο άμυνας απέναντι σε κυβερνοαπειλές που ενισχύει η AI",
+   "summary": "Οι γερουσιαστές Maria Cantwell και Mike Rounds έστειλαν επιστολή στον Jay Clayton, διευθυντή εθνικών πληροφοριών και «τσάρο» της AI στον Λευκό Οίκο, ζητώντας εθνική προσπάθεια για να αντιμετωπιστούν απειλές κυβερνοασφάλειας που ενισχύονται από AI, μετά από πρόσφατα περιστατικά και ένα κύμα διακοπών λειτουργίας σε τράπεζες, συστήματα επικοινωνίας και ακόμη και στην Ομοσπονδιακή Υπηρεσία Αεροπορίας, που οδήγησε σε τετράωρη διακοπή πτήσεων σε όλες τις ΗΠΑ. Η επιστολή σημειώνει ότι η AI «αυξάνει ραγδαία την ικανότητα εντοπισμού και εκμετάλλευσης αδυναμιών λογισμικού» πιο γρήγορα απ' όσο οι οργανισμοί προλαβαίνουν να αντιδράσουν, ακόμη και όταν υπάρχουν ήδη διαθέσιμες διορθώσεις, ενώ αναφέρουν και ανησυχίες τραπεζών που δεν μπορούν πλέον να ξεχωρίσουν αν μια συναλλαγή γίνεται από άνθρωπο ή από AI agent με πρόσβαση σε λογαριασμό. Για μια επιχείρηση, η παρέμβαση δύο γερουσιαστών από διαφορετικά κόμματα δείχνει ότι η πίεση για δεσμευτικούς κανόνες γύρω από την άμυνα απέναντι σε επιθέσεις που υποβοηθά η AI μεγαλώνει και στις ΗΠΑ, όχι μόνο στην Ευρώπη."
+  },
+  "en": {
+   "title": "US senators urge White House to build a national defense plan against AI-powered cyber threats",
+   "summary": "Senators Maria Cantwell and Mike Rounds sent a letter to Jay Clayton, the Director of National Intelligence and the White House's AI czar, calling for a national effort to confront AI-enabled cyber threats, following recent incidents and a wave of outages at banks, communication systems and even the Federal Aviation Administration, which triggered a four-hour nationwide flight stoppage. The letter warns that AI is \"rapidly increasing the ability to discover and exploit weaknesses in software\" faster than organizations can respond, even when fixes already exist, and cites bank concerns that they can no longer tell whether a transaction is being made by a human or by an AI agent with account access. For a business, the intervention by two senators from different parties shows that pressure for binding rules on defending against AI-assisted attacks is building in the US too, not only in Europe."
+  },
+  "sources": [
+   {
+    "name": "The Record",
+    "url": "https://therecord.media/ai-cyber-white-house"
+   },
+   {
+    "name": "The Guardian",
+    "url": "https://www.theguardian.com/us-news/2026/nov/18/jay-clayton-ai-tech-outages-infrastructure"
+   }
+  ]
+ },
+ {
+  "slug": "2026-11-18-three-ai-models-agreed-on-just-one-of-121-potential-code",
+  "urls": [
+   "https://www.infosecurity-magazine.com/news/ai-models-vulnerability-findings"
+  ],
+  "first_seen": "2026-11-19",
+  "date": "2026-11-18",
+  "topic": "AI Security",
+  "el": {
+   "title": "Τρία μοντέλα AI συμφώνησαν μόνο σε ένα από τα 121 πιθανά κενά ασφαλείας κώδικα που εντόπισαν",
+   "summary": "Η εταιρεία έρευνας ασφάλειας Echo έβαλε τρία κορυφαία μοντέλα, το Claude Mythos 5.1 της Anthropic, το GPT-5.6 Sol της OpenAI και το GLM-5.3 της Z.ai, να ελέγξουν τον ίδιο κώδικα ανοιχτής πρόσβασης, δύο βιβλιοθήκες Maven και ένα πακέτο npm, για ευπάθειες, χρησιμοποιώντας το ίδιο πλαίσιο εντοπισμού και την ίδια διαδικασία επαλήθευσης. Από τα 121 ξεχωριστά πιθανά προβλήματα που βρέθηκαν συνολικά, μόλις ένα επισημάνθηκε και από τα τρία μοντέλα, ενώ το 83% προήλθε από ένα μόνο μοντέλο. Τα μοντέλα διαφώνησαν ακόμη και στη σοβαρότητα: ένα κενό σε πακέτο npm με πάνω από 350 εκατομμύρια λήψεις τον μήνα χαρακτηρίστηκε «Κρίσιμο» από το ένα μοντέλο, «Υψηλό» από το άλλο και απλή τεκμηριωμένη συμπεριφορά από το τρίτο. Για μια επιχείρηση που σκέφτεται να βασιστεί σε ένα μόνο εργαλείο AI για έλεγχο ασφάλειας κώδικα, η έρευνα δείχνει ότι η επιλογή του μοντέλου επηρεάζει ουσιαστικά τι θα βρεθεί και τι θα περάσει απαρατήρητο."
+  },
+  "en": {
+   "title": "Three AI models agreed on just one of 121 potential code vulnerabilities they found",
+   "summary": "Security research firm Echo had three frontier models, Anthropic's Claude Mythos 5.1, OpenAI's GPT-5.6 Sol and Z.ai's GLM-5.3, audit the same open-source code, two Maven libraries and one npm package, for vulnerabilities, using the same hunting framework and validation process. Of 121 distinct potential issues found in total, only one was flagged by all three models, while 83% came from a single model alone. The models even disagreed on severity: one flaw in an npm package with more than 350 million monthly downloads was rated Critical by one model, High by another, and dismissed as documented behavior by the third. For a business considering relying on a single AI tool for code security review, the research shows that model choice materially affects what gets found and what slips through."
+  },
+  "sources": [
+   {
+    "name": "Infosecurity Magazine",
+    "url": "https://www.infosecurity-magazine.com/news/ai-models-vulnerability-findings/"
+   }
+  ]
+ },
+ {
+  "slug": "2026-11-18-microsoft-takes-its-perception-ai-agent-security-platform-out-of",
+  "urls": [
+   "https://www.securityweek.com/microsoft-takes-perception-agentic-security-platform-out-of-preview"
+  ],
+  "first_seen": "2026-11-19",
+  "date": "2026-11-18",
+  "topic": "AI Security",
+  "el": {
+   "title": "Η Microsoft βγάζει την πλατφόρμα ασφάλειας AI agents Perception από το preview",
+   "summary": "Η Microsoft ανακοίνωσε στο συνέδριο Ignite 2026 ότι το Perception, η πλατφόρμα της για τον συντονισμό ομάδων AI agents «κόκκινης», «μπλε» και «πράσινης» ομάδας σε εργασίες κυβερνοασφάλειας, περνά πλέον σε γενική διαθεσιμότητα για τέσσερις agents «μπλε ομάδας» και τον Recon Agent, ενώ οι ενσωματώσεις με άλλα εργαλεία και η προστασία από ευπάθειες παραμένουν σε preview. Το σύστημα, που είχε παρουσιαστεί τον Ιούλιο ως Project Perception, βρισκόταν σε δημόσιο preview μέσα στο Microsoft Defender από τότε. Για μια επιχείρηση που ήδη χρησιμοποιεί εργαλεία της Microsoft για κυβερνοασφάλεια, η μετάβαση σε γενική διαθεσιμότητα σημαίνει ότι η λειτουργία θα αρχίσει να εμφανίζεται ως τυπική επιλογή στα επόμενα πακέτα ασφαλείας, όχι ως πειραματικό χαρακτηριστικό."
+  },
+  "en": {
+   "title": "Microsoft takes its Perception AI-agent security platform out of preview",
+   "summary": "At its Ignite 2026 conference, Microsoft announced that Perception, its platform for coordinating red, blue and green team AI agents on security tasks, is moving to general availability for four blue team agents and the Recon Agent, while integrations with other tools and vulnerability shielding remain in preview. The system, unveiled in July as Project Perception, had been in public preview inside Microsoft Defender since then. For a business already using Microsoft's cybersecurity tools, the move to general availability means the capability will start appearing as a standard option in upcoming security packages rather than an experimental feature."
+  },
+  "sources": [
+   {
+    "name": "SecurityWeek",
+    "url": "https://www.securityweek.com/microsoft-takes-perception-agentic-security-platform-out-of-preview/"
+   }
+  ]
+ },
+ {
+  "slug": "2026-11-18-malicious-versions-of-microsoft-s-agent-framework-on-pypi-stole",
+  "urls": [
+   "https://thehackernews.com/2026/11/attackers-compromise-microsofts-agent.html",
+   "https://www.securityweek.com/microsoft-agent-framework-releases-poisoned-with-credential-stealer",
+   "https://www.bleepingcomputer.com/news/security/microsofts-agent-framework-pypi-package-compromised-to-steal-credentials"
+  ],
+  "first_seen": "2026-11-19",
+  "date": "2026-11-18",
+  "topic": "AI Security",
+  "el": {
+   "title": "Κακόβουλες εκδόσεις του Agent Framework της Microsoft στο PyPI έκλεβαν διαπιστευτήρια",
+   "summary": "Στις 17 Νοεμβρίου δημοσιεύτηκαν στο PyPI δύο κακόβουλες εκδόσεις (1.26.1 και 1.26.2) του «agent-framework», του βασικού πακέτου της Microsoft για τη δημιουργία και τον συντονισμό AI agents σε Python. Οι εκδόσεις αυτές εγκαθιστούσαν ένα αρχείο «.pth» που εκτελείται αυτόματα κάθε φορά που ξεκινά η Python, ακόμη κι αν κανείς δεν εισάγει το ίδιο το πακέτο, και συνέλεγε κρυφά διαπιστευτήρια, μεταβλητές περιβάλλοντος και διακριτικά ταυτότητας cloud, στέλνοντάς τα σε εξωτερικό endpoint. Εταιρείες ασφαλείας όπως οι Socket, Wiz, Endor Labs και Chainguard εντόπισαν το πρόβλημα και οι κακόβουλες εκδόσεις έχουν πλέον αποσυρθεί από το PyPI. Για μια επιχείρηση που χτίζει δικά της AI agents με εργαλεία ανοιχτού κώδικα, το περιστατικό δείχνει ότι ο έλεγχος προέλευσης κάθε πακέτου πριν την εγκατάσταση είναι πλέον εξίσου σημαντικός με τον έλεγχο του ίδιου του agent."
+  },
+  "en": {
+   "title": "Malicious versions of Microsoft's Agent Framework on PyPI stole credentials",
+   "summary": "On November 17, two malicious versions (1.26.1 and 1.26.2) of \"agent-framework,\" Microsoft's core Python package for building and orchestrating AI agents, were published on PyPI. The versions installed a \".pth\" file that runs automatically every time Python starts, even without anyone importing the package itself, silently collecting credentials, environment variables and cloud identity tokens and exfiltrating them to an external endpoint. Security firms including Socket, Wiz, Endor Labs and Chainguard flagged the issue, and the malicious releases have since been pulled from PyPI. For a business building its own AI agents with open-source tooling, the incident shows that vetting the provenance of every package before installing it now matters as much as vetting the agent itself."
+  },
+  "sources": [
+   {
+    "name": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/attackers-compromise-microsofts-agent.html"
+   },
+   {
+    "name": "SecurityWeek",
+    "url": "https://www.securityweek.com/microsoft-agent-framework-releases-poisoned-with-credential-stealer/"
+   },
+   {
+    "name": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/microsofts-agent-framework-pypi-package-compromised-to-steal-credentials/"
+   }
+  ]
+ },
+ {
+  "slug": "2026-11-18-four-maryland-students-sue-after-ai-gun-detection-system-mistook-a",
+  "urls": [
+   "https://www.theguardian.com/us-news/2026/nov/18/maryland-baltimore-county-doritos-gun-ai-lawsuit"
+  ],
+  "first_seen": "2026-11-19",
+  "date": "2026-11-18",
+  "topic": "Incidents",
+  "el": {
+   "title": "Τέσσερις μαθητές στο Maryland μηνύουν αφού AI σύστημα εντοπισμού όπλων μπέρδεψε σακουλάκι πατατάκια με όπλο",
+   "summary": "Τέσσερις σημερινοί και πρώην μαθητές λυκείου στο Maryland κατέθεσαν αγωγή έναν χρόνο μετά το περιστατικό όπου ένοπλοι αστυνομικοί τους συνέλαβαν επειδή το σύστημα Gun Detect της εταιρείας Omnilert, που σαρώνει εικόνες από κάμερες ασφαλείας για όπλα, σήμανε συναγερμό με βεβαιότητα 90% ότι ένα σακουλάκι Doritos ήταν όπλο. Οι μαθητές μηνύουν την Omnilert, την αστυνομία της κομητείας Baltimore, το σχολικό συμβούλιο, συγκεκριμένους αστυνομικούς και τον διευθυντή του σχολείου, υποστηρίζοντας παράνομη κράτηση και σωματική έρευνα λόγω τεχνολογικού και ανθρώπινου λάθους. Σύμφωνα με την καταγγελία, ο συναγερμός συνέχισε να χτυπά ακόμη και αφού το προσωπικό του σχολείου και η τοπική αστυνομία είχαν ήδη δει ότι επρόκειτο για πατατάκια. Για κάθε επιχείρηση ή δημόσιο φορέα που εγκαθιστά συστήματα AI ανίχνευσης απειλών σε χώρους με κοινό, η υπόθεση δείχνει ότι η ευθύνη για ένα λανθασμένο θετικό αποτέλεσμα δεν περιορίζεται στον προμηθευτή του λογισμικού, αλλά επεκτείνεται και σε όσους το εμπιστεύτηκαν χωρίς δεύτερο έλεγχο."
+  },
+  "en": {
+   "title": "Four Maryland students sue after AI gun-detection system mistook a Doritos bag for a weapon",
+   "summary": "Four current and former Maryland high school students filed a lawsuit a year after armed police detained them, triggered by Omnilert's Gun Detect system, which scans security camera footage for firearms and flagged a bag of Doritos as a gun with 90% confidence. The students are suing Omnilert, Baltimore County police, the school board, individual officers and the school principal, alleging unlawful detention and search resulting from both technological and human error. According to the complaint, the alert kept firing even after school staff and local police had already seen it was just a bag of chips. For any business or public body deploying AI threat-detection systems in spaces open to the public, the case shows that liability for a false positive doesn't stop with the software vendor, it extends to whoever trusted it without a second check."
+  },
+  "sources": [
+   {
+    "name": "The Guardian",
+    "url": "https://www.theguardian.com/us-news/2026/nov/18/maryland-baltimore-county-doritos-gun-ai-lawsuit"
+   }
+  ]
+ },
+ {
+  "slug": "2026-11-17-trigram-campaign-impersonates-about-50-ai-and-blockchain-brands-to",
+  "urls": [
+   "https://thehackernews.com/2026/11/trigram-campaign-impersonates-about-50.html"
+  ],
+  "first_seen": "2026-11-19",
+  "date": "2026-11-17",
+  "topic": "AI Security",
+  "el": {
+   "title": "Η εκστρατεία Trigram μιμείται περίπου 50 εταιρείες AI και blockchain για να κλέψει δεδομένα προγραμματιστών",
+   "summary": "Η εταιρεία κυβερνοασφάλειας Stormshield αποκάλυψε μια μεγάλης κλίμακας, βιομηχανοποιημένη εκστρατεία με το όνομα Trigram, που μιμείται περίπου 50 γνωστές εταιρείες των τομέων AI και blockchain στην Ευρώπη και τις ΗΠΑ για να ξεγελάσει προγραμματιστές ώστε να εκτελέσουν οι ίδιοι λογισμικό κλοπής δεδομένων. Η εκστρατεία συνδυάζει τρία σενάρια κοινωνικής μηχανικής, ψεύτικη πρόσληψη, ψεύτικο συνέδριο και ψεύτικη παρακολούθηση δέματος, παραβιασμένη αλυσίδα εφοδιασμού λογισμικού και παραλλαγμένα αποθετήρια κώδικα, που όλα καταλήγουν στην ίδια υποδομή και το ίδιο κακόβουλο λογισμικό. Οι ερευνητές εκτιμούν ότι η δραστηριότητα μοιράζεται ομοιότητες με ομάδες συνδεδεμένες με τη Βόρεια Κορέα, όπως η Kimsuky. Για μια εταιρεία τεχνολογίας ή AI startup, η υπόθεση δείχνει ότι οι προγραμματιστές της είναι πλέον συγκεκριμένος στόχος εκστρατειών που προσποιούνται νόμιμη πρόσληψη ή συνεργασία, όχι μόνο τυχαίο θύμα phishing."
+  },
+  "en": {
+   "title": "Trigram campaign impersonates about 50 AI and blockchain brands to steal developer data",
+   "summary": "Cybersecurity firm Stormshield uncovered a large-scale, industrialized campaign dubbed Trigram that impersonates roughly 50 well-known AI and blockchain brands across Europe and the US to trick developers into running infostealer software themselves. The campaign combines three social-engineering scenarios, fake recruitment, fake conference and fake package tracking, a compromised software supply chain, and trojanized code repositories, all converging on the same infrastructure and payload. Researchers assess the activity shares similarities with North Korea-linked groups such as Kimsuky. For a tech company or AI startup, the case shows its developers are now a specific target for campaigns posing as legitimate recruiters or partners, not just random phishing victims."
+  },
+  "sources": [
+   {
+    "name": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/trigram-campaign-impersonates-about-50.html"
+   }
+  ]
+ },
+ {
   "slug": "2026-11-17-study-ai-models-tricked-into-labeling-civilians-as-military-targets",
   "urls": [
    "https://techcrunch.com/2026/11/17/ai-models-can-be-tricked-into-identifying-civilians-as-military-targets-by-telling-them-its-a-game"
