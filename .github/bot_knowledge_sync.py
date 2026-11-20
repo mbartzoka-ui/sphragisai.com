@@ -21,7 +21,7 @@ SECTIONS = {               # φάκελος -> ετικέτα
     "blog": "Blog", "radar": "AI Security Radar", "ypiresies": "Υπηρεσίες", "case-studies": "Case studies",
     "ergaleia": "Εργαλεία", "odigos": "Οδηγός", "odigoi": "Οδηγοί", "iso-42001": "ISO/IEC 42001",
 }
-SKIP_TAGS = {"script", "style", "nav", "header", "footer", "form", "noscript", "svg", "button", "aside", "template", "dialog", "select"}
+SKIP_TAGS = {"head", "script", "style", "nav", "header", "footer", "form", "noscript", "svg", "button", "aside", "template", "dialog", "select"}
 BLOCK_TAGS = {"p", "div", "section", "article", "li", "ul", "ol", "h1", "h2", "h3", "h4", "h5", "h6", "tr", "table", "br", "blockquote", "pre", "dd", "dt", "figcaption", "details", "summary"}
 
 
@@ -31,7 +31,8 @@ class Extract(HTMLParser):
         self.title = ""; self.h1 = ""; self.desc = ""; self.date = ""
         self.in_title = self.in_h1 = False
         self.skip = 0; self.main_depth = 0; self.seen_main = False
-        self.body, self.main = [], []
+        self.art_depth = 0; self.seen_art = False
+        self.body, self.main, self.art = [], [], []
 
     def handle_starttag(self, tag, attrs):
         a = dict(attrs)
@@ -40,6 +41,7 @@ class Extract(HTMLParser):
         elif tag == "time" and a.get("datetime") and not self.date: self.date = a["datetime"][:10]
         if tag in SKIP_TAGS: self.skip += 1
         if tag == "main": self.main_depth += 1; self.seen_main = True
+        if tag == "article": self.art_depth += 1; self.seen_art = True
         if tag == "h1" and not self.h1: self.in_h1 = True
         if tag in BLOCK_TAGS: self._add("\n")
 
@@ -47,20 +49,23 @@ class Extract(HTMLParser):
         if tag == "title": self.in_title = False
         if tag in SKIP_TAGS and self.skip: self.skip -= 1
         if tag == "main" and self.main_depth: self.main_depth -= 1
+        if tag == "article" and self.art_depth: self.art_depth -= 1
         if tag == "h1": self.in_h1 = False
         if tag in BLOCK_TAGS: self._add("\n")
 
     def handle_data(self, data):
-        if self.in_title: self.title += data
+        if self.in_title: self.title += data; return
         if self.in_h1: self.h1 += data
         if not self.skip: self._add(data)
 
     def _add(self, t):
         self.body.append(t)
         if self.main_depth: self.main.append(t)
+        if self.art_depth: self.art.append(t)
 
     def text(self):
-        raw = "".join(self.main if self.seen_main else self.body)
+        # το κείμενο του άρθρου, αλλιώς το <main>, αλλιώς όλο το <body>
+        raw = "".join(self.art if self.seen_art and len("".join(self.art)) > 400 else self.main if self.seen_main else self.body)
         lines = [re.sub(r"[ \t ]+", " ", l).strip() for l in raw.split("\n")]
         out, blank = [], False
         for l in lines:
@@ -103,8 +108,12 @@ def read_page(root, rel, sec, label):
     if not ex.date:
         m = re.match(r"(?:blog|radar)/(\d{4}-\d{2}-\d{2})", rel)
         if m: ex.date = m.group(1)
+    desc = re.sub(r"\s+", " ", ex.desc).strip()
+    if desc.endswith("…") or desc.rstrip("…").strip()[:80] in re.sub(r"\s+", " ", text):
+        desc = ""                                   # η περίληψη επαναλαμβάνει την αρχή του κειμένου
+    text = "\n".join(l for l in text.split("\n") if l.strip() != title).strip()   # ο τίτλος μπαίνει χωριστά
     page = {"url": url, "title": title[:200], "section": sec, "section_label": label, "date": ex.date,
-            "description": re.sub(r"\s+", " ", ex.desc).strip()[:500], "text": text[:120000]}
+            "description": desc[:500], "text": text[:120000]}
     page["hash"] = hashlib.sha256(json.dumps(page, ensure_ascii=False, sort_keys=True).encode()).hexdigest()[:40]
     return page
 
