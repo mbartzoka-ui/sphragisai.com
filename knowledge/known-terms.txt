@@ -458,3 +458,7 @@ public nuisance
 # --- 2026-11-19 ---
 ai czar
 τσάρος ai
+
+# --- 2026-11-20 ---
+cert-eu
+computer use

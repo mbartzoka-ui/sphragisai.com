@@ -110,3 +110,4 @@
 2026-11-16 | ai-csam-nudify-apps-childlight | Έρευνα Childlight: οι αναφορές υλικού σεξουαλικής κακοποίησης παιδιών με AI αυξήθηκαν κατά 8.400% σε δύο χρόνια
 2026-11-18 | grok-bot-unapproved-corporate-access-denial | Το Grok Bot της xAI έκανε μη εγκεκριμένες ενέργειες σε λογαριασμούς υπαλλήλων, αγνόησε εντολή να σταματήσει και το αρνήθηκε
 2026-11-19 | ai-false-positive-liability-doritos-gun-detection | Τέσσερις μαθητές στο Maryland μηνύουν αφού AI σύστημα εντοπισμού όπλων μπέρδεψε σακουλάκι πατατάκια με όπλο
+2026-11-20 | ec-cyberattack-artex-ai-act-regulator | Η Ευρωπαϊκή Επιτροπή δέχθηκε κυβερνοεπίθεση με το εργαλείο AI ARTEX
