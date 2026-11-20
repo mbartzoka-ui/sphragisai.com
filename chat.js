@@ -16,7 +16,7 @@
     chips: ["Does the EU AI Act apply to my chatbot?", "What is ISO/IEC 42001?", "How do we start?"],
     ph: "Write your question…", send: "Send", close: "Close", book: "Free 20′ session", privacy: "Privacy",
     privacyHref: "/en/privacy/", wait: "Thinking…", err: "Something went wrong. Please try again, or email info@sphragisai.com.",
-    clear: "New chat", contact: "Contact me",
+    clear: "New chat", contact: "Contact me", rateQ: "Was this helpful?", rateUp: "Helpful", rateDown: "Not helpful", rateThanks: "Thank you for the feedback.",
     note: "Chats are kept for 90 days without your IP address, to improve the answers.",
     fTitle: "Leave your details and Maria will contact you.", fName: "Name", fEmail: "Email", fCompany: "Company (optional)",
     fMsg: "What would you like to discuss?", fSend: "Send", fCancel: "Cancel",
@@ -29,7 +29,7 @@
     chips: ["Με αφορά ο AI Act αν έχω chatbot;", "Τι είναι το ISO/IEC 42001;", "Πώς ξεκινάμε;"],
     ph: "Γράψτε την ερώτησή σας…", send: "Αποστολή", close: "Κλείσιμο", book: "Δωρεάν συνεδρία 20′", privacy: "Απόρρητο",
     privacyHref: "/privacy/", wait: "Σκέφτεται…", err: "Κάτι πήγε στραβά. Δοκιμάστε ξανά ή γράψτε στο info@sphragisai.com.",
-    clear: "Νέα συζήτηση", contact: "Επικοινωνήστε μαζί μου",
+    clear: "Νέα συζήτηση", contact: "Επικοινωνήστε μαζί μου", rateQ: "Σας βοήθησε;", rateUp: "Χρήσιμη απάντηση", rateDown: "Όχι χρήσιμη", rateThanks: "Ευχαριστούμε για την αξιολόγηση.",
     note: "Οι συζητήσεις κρατιούνται 90 ημέρες χωρίς τη διεύθυνση IP σας, για τη βελτίωση των απαντήσεων.",
     fTitle: "Αφήστε τα στοιχεία σας και η Μαρία θα επικοινωνήσει μαζί σας.", fName: "Όνομα", fEmail: "Email", fCompany: "Εταιρεία (προαιρετικό)",
     fMsg: "Τι θα θέλατε να συζητήσουμε;", fSend: "Αποστολή", fCancel: "Άκυρο",
@@ -88,6 +88,10 @@
   + ".sxc-in button:disabled{opacity:.5;cursor:default}"
   + ".sxc-meta{display:flex;justify-content:space-between;gap:8px;margin-top:8px;font:500 11.5px Inter,sans-serif;color:#475069;flex-wrap:wrap}"
   + ".sxc-meta a,.sxc-meta button{color:#0B1020;font-weight:600;background:none;border:0;padding:0;cursor:pointer;font:600 11.5px Inter,sans-serif;text-decoration:underline}"
+  + ".sxc-rate{display:flex;align-items:center;gap:4px;margin:-4px 0 2px 2px;font:500 11.5px Inter,sans-serif;color:#475069}"
+  + ".sxc-rate button{border:0;background:transparent;cursor:pointer;color:#8892AB;width:28px;height:26px;border-radius:7px;display:grid;place-items:center}"
+  + ".sxc-rate button:hover{background:#EEF1F6;color:#0B1020}"
+  + ".sxc-next{display:flex;flex-direction:column;align-items:flex-start;gap:6px}"
   + ".sxc-panel :focus-visible,.sxc-btn:focus-visible{outline:2px solid #C8323A;outline-offset:2px}";
   var st = document.createElement("style"); st.textContent = css; document.head.appendChild(st);
 
@@ -135,6 +139,21 @@
       node.appendChild(a); last = m.index + u.length; re.lastIndex = last;
     }
     node.appendChild(document.createTextNode(text.slice(last)));
+  }
+  // Thumbs up / down under an answer. Sends only the rating, the answer id and this chat's id.
+  function rateRow(mid) {
+    var r = el("div", "sxc-rate"), lab = el("span", null, T.rateQ);
+    function btn(v, label, flip) {
+      var b = el("button"); b.type = "button"; b.setAttribute("aria-label", label); b.title = label;
+      b.innerHTML = '<svg width="15" height="15" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 11v9H4v-9h3zm2 9h7.6a2 2 0 0 0 2-1.6l1.3-6A2 2 0 0 0 18 10h-4.4l.7-3.4a1.6 1.6 0 0 0-2.9-1.2L9 10v10z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>'; if (flip) b.firstChild.style.transform = "scaleY(-1)";
+      b.onclick = function () {
+        r.textContent = T.rateThanks;
+        fetch(API + "/rate", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ sid: sid, mid: mid, rating: v }) }).catch(function () {});
+      };
+      return b;
+    }
+    r.appendChild(lab); r.appendChild(btn(1, T.rateUp, false)); r.appendChild(btn(-1, T.rateDown, true));
+    log.appendChild(r); log.scrollTop = log.scrollHeight;
   }
   function bubble(role, text, cls) {
     var b = el("div", "sxc-m " + (role === "user" ? "u" : "a") + (cls ? " " + cls : ""));
@@ -188,7 +207,7 @@
     q = String(q || "").trim().slice(0, 600);
     if (!q || busy) return;
     busy = true; sb.disabled = true;
-    var chips = log.querySelector(".sxc-chips"); if (chips) chips.remove();
+    log.querySelectorAll(".sxc-chips").forEach(function (c) { c.remove(); });
     var note = log.querySelector(".sxc-note"); if (note) note.remove();
     hist.push({ role: "user", content: q }); save(); bubble("user", q);
     ta.value = ""; grow();
@@ -202,6 +221,12 @@
         var a = (d && d.reply) || T.err;
         if (d && d.reply && !d.limited) { hist.push({ role: "assistant", content: a }); save(); }
         bubble("assistant", a);
+        if (d && d.mid) rateRow(d.mid);
+        if (d && d.next && d.next.length) {
+          var nx = el("div", "sxc-chips sxc-next");
+          d.next.forEach(function (q) { var b = el("button", null, q); b.type = "button"; b.onclick = function () { ask(q); }; nx.appendChild(b); });
+          log.appendChild(nx); log.scrollTop = log.scrollHeight;
+        }
         if (d && d.lead) { var b = el("button", "sxc-cta", T.contact); b.type = "button"; b.onclick = function () { b.remove(); leadForm(); }; log.appendChild(b); log.scrollTop = log.scrollHeight; }
       })
       .catch(function () { w.remove(); bubble("assistant", T.err); })
