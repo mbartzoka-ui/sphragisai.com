@@ -4,7 +4,7 @@
 Διαβάζει τα HTML του repo (Blog, AI Security Radar, υπηρεσίες, case studies, εργαλεία,
 οδηγοί, ISO 42001, αρχική), εξάγει τον τίτλο και το κείμενο κάθε σελίδας και στέλνει
 στον βοηθό μόνο όσες άλλαξαν. Σελίδες που σβήστηκαν αφαιρούνται και από τη γνώση.
-Ταυτοποίηση: GitHub Actions OIDC token (audience sphragisai-bot), χωρίς κοινό μυστικό.
+Ταυτοποίηση: GitHub Actions OIDC token (audience sphragisai-bot, repo mbartzoka-ui/sphragisai.com), χωρίς κοινό μυστικό.
 Μόνο βιβλιοθήκες της Python. Τρέχει από το .github/workflows/bot-knowledge-sync.yml.
 """
 import hashlib, json, os, re, sys, time, urllib.parse, urllib.request
