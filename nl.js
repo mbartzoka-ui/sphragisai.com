@@ -1,3 +1,5 @@
+/* Βοηθός AI κάτω δεξιά (chat.js) σε όλες τις σελίδες που φορτώνουν το nl.js. */
+(function(){try{var s=document.createElement("script");s.src="/chat.js";s.defer=true;document.head.appendChild(s);}catch(e){}})();
 /* Newsletter (MailerLite): «Σφραγίδα» στις ελληνικές σελίδες, «Sealed» στις αγγλικές.
    Φόρμα στο τέλος των άρθρων radar/blog και παράθυρο μία φορά ανά επισκέπτη. */
 (function () {
