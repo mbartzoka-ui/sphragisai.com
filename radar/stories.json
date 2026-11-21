@@ -1,5 +1,125 @@
 [
  {
+  "slug": "2026-11-20-us-congressional-investigation-warns-against-american-companies-use",
+  "urls": [
+   "https://therecord.media/chinese-open-weight-ai-use-by-us-companies-house-investigation"
+  ],
+  "first_seen": "2026-11-21",
+  "date": "2026-11-20",
+  "topic": "AI Act",
+  "el": {
+   "title": "Αμερικανική βουλευτική έρευνα προειδοποιεί για τη χρήση κινεζικών μοντέλων AI ανοιχτών βαρών από εταιρείες των ΗΠΑ",
+   "summary": "Κοινή έκθεση της Επιτροπής Εσωτερικής Ασφάλειας και της Ειδικής Επιτροπής για το Κομμουνιστικό Κόμμα της Κίνας της Βουλής των Αντιπροσώπων των ΗΠΑ προειδοποιεί ότι εταιρείες όπως η Airbnb, η DoorDash και η Anysphere, ιδιοκτήτρια της πλατφόρμας προγραμματισμού Cursor, έχουν ενσωματώσει κινεζικά μοντέλα AI ανοιχτών βαρών, δηλαδή μοντέλα των οποίων οι αριθμητικές παράμετροι είναι δημόσια διαθέσιμες για λήψη, σε συστήματα εξυπηρέτησης πελατών, προγραμματισμού και διαχείρισης αποθεμάτων. Η 50σέλιδη έκθεση παρομοιάζει την τάση με την πρώιμη διείσδυση εξοπλισμού Huawei και ZTE σε αμερικανικά δίκτυα, προειδοποιώντας ότι αν τα κινεζικά μοντέλα ριζώσουν, η αφαίρεσή τους αργότερα θα κοστίσει χρόνια και δισεκατομμύρια σε φόρους, και αναφέρει στοιχεία ότι κινεζικές ομάδες χρησιμοποιούν δίκτυα μεσαζόντων και πλαστούς λογαριασμούς για να αντλούν έξοδο από αμερικανικά μοντέλα αιχμής και να αναπαράγουν τις δυνατότητές τους. Ανάμεσα στις δώδεκα συστάσεις πολιτικής περιλαμβάνονται η δημιουργία αμερικανικής πρωτοβουλίας για ανοιχτά μοντέλα, ένα πρότυπο «δελτίου υλικών AI» που να δείχνει την προέλευση κάθε μοντέλου, και η απαγόρευση κινεζικών μοντέλων από ομοσπονδιακά συμβόλαια και κρίσιμες υποδομές. Για μια ελληνική επιχείρηση που εξετάζει φθηνά, ανοιχτά μοντέλα AI από κινεζικούς παρόχους για λόγους κόστους, η έκθεση δείχνει ότι η προέλευση ενός μοντέλου αρχίζει να γίνεται ζήτημα εθνικής ασφάλειας και κανονιστικής συμμόρφωσης, όχι μόνο τεχνικής επιλογής."
+  },
+  "en": {
+   "title": "US congressional investigation warns against American companies' use of Chinese open-weight AI models",
+   "summary": "A joint report from the House Homeland Security Committee and the Select Committee on the Chinese Communist Party warns that companies including Airbnb, DoorDash and Anysphere, owner of the Cursor coding platform, have embedded China-developed open-weight AI models, models whose numerical weights are made public for download, into customer service, coding and inventory systems. The 50-page report compares the trend to the early spread of Huawei and ZTE equipment in American networks, warning that if Chinese models take root, removing them later will take years and cost taxpayers billions, and cites findings that Chinese developers use proxy networks and fraudulent accounts to harvest outputs from American frontier models and replicate their capabilities. Among its twelve policy recommendations are building an American open-weight AI initiative, a standard \"AI bill of materials\" to show where a model actually comes from, and barring Chinese models from federal contracts and critical infrastructure. For a Greek business considering cheap, open-weight AI models from Chinese vendors to cut costs, the report signals that a model's origin is becoming a national-security and compliance question, not just a technical choice."
+  },
+  "sources": [
+   {
+    "name": "The Record",
+    "url": "https://therecord.media/chinese-open-weight-AI-use-by-US-companies-house-investigation"
+   }
+  ]
+ },
+ {
+  "slug": "2026-11-20-researcher-plants-2-million-tracking-canaries-across-the-ai-supply",
+  "urls": [
+   "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate"
+  ],
+  "first_seen": "2026-11-21",
+  "date": "2026-11-20",
+  "topic": "AI Security",
+  "el": {
+   "title": "Πείραμα με 2 εκατομμύρια ψηφιακά «δολώματα» αποκαλύπτει διαρροές ευαίσθητων δεδομένων μέσα στην αλυσίδα παρόχων AI",
+   "summary": "Ο ερευνητής ασφαλείας HD Moore, επικεφαλής έρευνας στην εταιρεία Dragos, έστειλε σχεδόν 2 εκατομμύρια prompts με μοναδικά, ανιχνεύσιμα «δολώματα» (κλειδιά πρόσβασης AWS, κωδικούς SSH, διευθύνσεις URL) μέσα από δημοφιλείς «δρομολογητές AI» όπως οι OpenRouter και Vercel, υπηρεσίες που προωθούν τα αιτήματα χρηστών στον φθηνότερο ή καταλληλότερο πάροχο inference. Το πείραμα εντόπισε τουλάχιστον τρεις παρόχους AI των οποίων η υποδομή είχε παραβιαστεί από επιτιθέμενους που υπέκλεπταν τα prompts που περνούσαν από αυτούς, καθώς και πολλαπλούς μεσάζοντες που κατέγραφαν και διέρρεαν περιεχόμενο παρά τις δηλώσεις «μηδενικής διατήρησης δεδομένων» (Zero Data Retention) που είχαν υποσχεθεί στους πελάτες τους. Το πρόβλημα εντοπίζεται στην ίδια την αρχιτεκτονική αυτών των υπηρεσιών, αφού κάθε prompt αποκρυπτογραφείται σε κάθε ενδιάμεσο κόμβο της αλυσίδας για να αποφασιστεί ποιο μοντέλο θα το επεξεργαστεί, πριν φτάσει καν στον τελικό πάροχο όπως η Anthropic ή η OpenAI. Για μια επιχείρηση που χρησιμοποιεί AI μέσω τέτοιων ενδιάμεσων υπηρεσιών για λόγους κόστους ή ταχύτητας, το εύρημα δείχνει ότι μια δέσμευση για μη διατήρηση δεδομένων στο συμβόλαιο δεν αρκεί από μόνη της, αν δεν γνωρίζεις ποιοι ενδιάμεσοι κρίκοι βλέπουν πραγματικά τα δεδομένα σου."
+  },
+  "en": {
+   "title": "Researcher plants 2 million tracking canaries across the AI supply chain, finds privacy failures at scale",
+   "summary": "Security researcher HD Moore, chief research officer at Dragos, sent nearly two million prompts containing unique, trackable secrets (AWS access keys, SSH credentials, tracking URLs) through popular \"AI routers\" such as OpenRouter and Vercel, services that forward user requests to whichever inference provider is cheapest or best suited for the task. The experiment found that at least three AI providers had been compromised by attackers who were siphoning off prompts passing through their infrastructure, along with multiple resellers that logged and leaked prompt content despite promising customers \"Zero Data Retention.\" The root issue lies in the architecture itself: each prompt is decrypted at every hop in the chain so a router can decide which model should handle it, well before it ever reaches a named provider like Anthropic or OpenAI. For a business relying on such intermediary services for cost or speed, the finding shows that a \"no data retention\" clause in a contract is not enough on its own if you don't know which links in the chain actually see your data in the clear."
+  },
+  "sources": [
+   {
+    "name": "Ars Technica",
+    "url": "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/"
+   }
+  ]
+ },
+ {
+  "slug": "2026-11-20-openai-details-how-it-is-fighting-adversarial-distillation-of-its",
+  "urls": [
+   "https://openai.com/index/combatting-adversarial-distillation"
+  ],
+  "first_seen": "2026-11-21",
+  "date": "2026-11-20",
+  "topic": "AI Security",
+  "el": {
+   "title": "Η OpenAI περιγράφει πώς αντιμετωπίζει την «ανταγωνιστική απόσταξη» μοντέλων AI από τρίτους",
+   "summary": "Η OpenAI δημοσίευσε ανάλυση για το πώς εντοπίζει και μπλοκάρει την «ανταγωνιστική απόσταξη» (adversarial distillation), δηλαδή την πρακτική όπου κάποιος χρησιμοποιεί χωρίς άδεια τις απαντήσεις ενός μοντέλου αιχμής για να εκπαιδεύσει ένα δικό του μοντέλο με παρόμοιες ικανότητες αλλά χωρίς τα μέτρα ασφαλείας του πρωτότυπου. Η εταιρεία εστιάζει ιδιαίτερα στην προστασία της εσωτερικής «αλυσίδας σκέψης» (chain-of-thought) των μοντέλων της, των ενδιάμεσων βημάτων συλλογισμού που μπορεί να περιέχουν πληροφορία χρήσιμη για την αναπαραγωγή επικίνδυνων ικανοτήτων σε κυβερνοασφάλεια ή βιολογία, και αναφέρει ότι μετά τις νέες άμυνες στα μοντέλα GPT-6.2 Astra και Sol, το ποσοστό επιτυχίας επιθέσεων εξαγωγής αυτής της αλυσίδας σκέψης έπεσε από 54% σε 0,2% σε εσωτερικές δοκιμές. Ο κίνδυνος, σύμφωνα με την εταιρεία, είναι ότι ένα μοντέλο που βοηθά αμυνόμενους να βρουν ευπάθειες θα μπορούσε, αν «αποσταχθεί» από κάποιον χωρίς τα ίδια φίλτρα, να βοηθήσει εξίσου εύκολα επιτιθέμενους να τις εκμεταλλευτούν. Για μια επιχείρηση που αξιολογεί προμηθευτές AI, η ανακοίνωση δείχνει ότι τα μέτρα ασφαλείας ενός μοντέλου δεν μεταφέρονται αυτόματα σε «κλώνους» ή παράγωγα μοντέλα που εκπαιδεύτηκαν πάνω στην έξοδό του, άρα η καταγωγή ενός μοντέλου έχει σημασία για την αξιολόγηση κινδύνου."
+  },
+  "en": {
+   "title": "OpenAI details how it is fighting 'adversarial distillation' of its models",
+   "summary": "OpenAI published an analysis of how it detects and blocks \"adversarial distillation,\" the practice where someone uses a frontier model's outputs without authorization to train their own model with similar capabilities but without the original's safety measures. The company focuses in particular on protecting its models' internal \"chain-of-thought,\" the intermediate reasoning steps that can contain information useful for reproducing dangerous capabilities in cybersecurity or biology, and reports that after new defenses in GPT-6.2 Astra and Sol, the success rate of attacks aimed at extracting this reasoning chain fell from 54% to 0.2% in internal testing. The risk, OpenAI says, is that a model which helps defenders find vulnerabilities could, if \"distilled\" by someone without the same safeguards, just as easily help attackers exploit them. For a business evaluating AI vendors, the announcement shows that a model's safety measures do not automatically carry over to \"clones\" or derivative models trained on its output, making a model's lineage relevant to risk assessment."
+  },
+  "sources": [
+   {
+    "name": "OpenAI Blog",
+    "url": "https://openai.com/index/combatting-adversarial-distillation"
+   }
+  ]
+ },
+ {
+  "slug": "2026-11-20-autonomous-cairn-ai-agents-find-a-zero-day-on-their-own-and-take-over",
+  "urls": [
+   "https://www.bleepingcomputer.com/news/security/hackers-use-autonomous-ai-tool-cairn-to-find-zero-day-take-over-server",
+   "https://therecord.media/amazon-research-cairn-ai-university-attacks-possible-zero-day"
+  ],
+  "first_seen": "2026-11-21",
+  "date": "2026-11-20",
+  "topic": "AI Security",
+  "el": {
+   "title": "Αυτόνομα AI agents του εργαλείου Cairn βρήκαν μόνα τους zero-day ευπάθεια και πήραν τον έλεγχο server",
+   "summary": "Σύμφωνα με έρευνα της Amazon Threat Intelligence, ύποπτοι για σύνδεση με την Κίνα επιτιθέμενοι έδωσαν στο αυτόνομο πλαίσιο AI agents «Cairn» μόνο τη γενική εντολή «απόκτησε πρόσβαση shell» και άφησαν τα ίδια τα agents να βρουν και να εκμεταλλευτούν μια άγνωστη ευπάθεια (zero-day) σε εφαρμογή ιατρικής απεικόνισης ανοιχτού κώδικα, το MONAI Label, που χρησιμοποιείται από ερευνητικά ιδρύματα της Ανατολικής Ασίας. Μέσα σε μόλις 11 λεπτά από τη χαρτογράφηση του API της εφαρμογής, τα agents εντόπισαν ευπάθεια διαδρομής αρχείων, έγραψαν κακόβουλο κώδικα Python σε αρχείο που φορτώνεται αυτόματα, και απέκτησαν πλήρη πρόσβαση root στον server, ενώ σε άλλες προσπάθειες, όπως 30.000 δοκιμές κωδικών πρόσβασης σε έξι ώρες, απέτυχαν. Το Cairn είναι νόμιμο εργαλείο δοκιμών διείσδυσης, αλλά η κατάχρησή του εντάσσεται σε αυξανόμενη σειρά περιστατικών με παρόμοια εργαλεία, όπως το ARTEX που χρησιμοποιήθηκε στην επίθεση κατά της Ευρωπαϊκής Επιτροπής. Η Amazon προειδοποίησε ότι τα AI agents μπορούν πλέον να εντοπίζουν και να εκμεταλλεύονται ευπάθειες ταχύτερα από όσο μπορούν να αντιδράσουν οι ομάδες ασφαλείας, κάτι που στενεύει το χρονικό περιθώριο που έχει μια επιχείρηση για να εφαρμόσει μια διόρθωση πριν αυτή γίνει στόχος."
+  },
+  "en": {
+   "title": "Autonomous Cairn AI agents find a zero-day on their own and take over a server",
+   "summary": "According to Amazon Threat Intelligence, suspected China-linked attackers gave the autonomous AI agent framework \"Cairn\" only the general instruction to \"obtain shell access,\" then let the agents independently discover and exploit an unknown (zero-day) vulnerability in MONAI Label, an open-source medical imaging application used by East Asian research institutions. Within just 11 minutes of mapping the application's API, the agents found a path traversal flaw, wrote malicious Python code into a file that loads automatically, and gained full root access to the server, though other attempts, such as 30,000 password guesses over six hours, failed. Cairn is a legitimate penetration-testing tool, but its abuse joins a growing string of incidents involving similar tools, including ARTEX, which was used in the attack on the European Commission. Amazon warned that AI agents can now find and exploit vulnerabilities faster than security teams can react, which narrows the window a business has to apply a security patch before it becomes a target."
+  },
+  "sources": [
+   {
+    "name": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/hackers-use-autonomous-ai-tool-cairn-to-find-zero-day-take-over-server/"
+   },
+   {
+    "name": "The Record",
+    "url": "https://therecord.media/amazon-research-cairn-ai-university-attacks-possible-zero-day"
+   }
+  ]
+ },
+ {
+  "slug": "2026-11-20-agentic-hacker-breaches-bell-canada-steals-business-customer-data",
+  "urls": [
+   "https://www.bleepingcomputer.com/news/security/bell-canada-says-agentic-hacker-stole-enterprise-customer-data"
+  ],
+  "first_seen": "2026-11-21",
+  "date": "2026-11-20",
+  "topic": "Incidents",
+  "el": {
+   "title": "«Agentic hacker» παραβίασε συστήματα της Bell Canada και έκλεψε δεδομένα επιχειρηματικών πελατών",
+   "summary": "Η Bell Canada, ένας από τους μεγαλύτερους παρόχους τηλεπικοινωνιών της χώρας, επιβεβαίωσε ότι στις 17 Νοεμβρίου 2026 ένας «agentic» επιτιθέμενος, δηλαδή δράστης που χρησιμοποιεί αυτόνομο εργαλείο AI για να εκτελεί μόνο του τα βήματα της επίθεσης, απέκτησε πρόσβαση σε περιβάλλον προ-παραγωγής του συστήματος Maximo, που η εταιρεία χρησιμοποιεί για την παραγγελία και διαχείριση τηλεπικοινωνιακών κυκλωμάτων. Τα δεδομένα που ενδέχεται να εκτέθηκαν περιλαμβάνουν επαγγελματικά στοιχεία επικοινωνίας πελατών, όπως ονόματα, τίτλους θέσεων, εταιρικά email και τηλέφωνα, καθώς και τίτλους αιτημάτων υποστήριξης και ορισμένες διευθύνσεις IP δικτυακού εξοπλισμού, χωρίς ωστόσο να περιλαμβάνονται διαπιστευτήρια ή ιδιαίτερα ευαίσθητα προσωπικά δεδομένα. Η εταιρεία δεν αποκάλυψε ποιο συγκεκριμένο εργαλείο AI χρησιμοποίησε ο επιτιθέμενος, κάτι που την εντάσσει σε μια σειρά πρόσφατων περιστατικών όπου επιτιθέμενοι αναθέτουν σε AI agents να βρουν και να εκμεταλλευτούν μόνοι τους τρόπους εισβολής. Για μια επιχείρηση με επιχειρηματικούς πελάτες σε κλάδους υποδομών, η υπόθεση δείχνει ότι ακόμη και περιβάλλοντα «δοκιμών» μπορεί να περιέχουν πραγματικά δεδομένα πελατών και να αποτελούν στόχο."
+  },
+  "en": {
+   "title": "'Agentic' hacker breaches Bell Canada, steals business customer data",
+   "summary": "Bell Canada, one of the country's largest telecom providers, confirmed that on November 17, 2026 an \"agentic\" threat actor, meaning an attacker who uses an autonomous AI tool to carry out attack steps on its own, gained access to a pre-production environment of its Maximo system, used to order and provision telecom network circuits. The data that may have been exposed includes business contact information such as customer names, job titles, corporate emails and phone numbers, along with support ticket titles and some network equipment IP addresses, though Bell says no credentials or highly sensitive personal data were included. The company did not disclose which specific AI tool the attacker used, placing the incident alongside a string of recent cases where attackers delegate the job of finding and exploiting a way in to AI agents. For a business with enterprise customers in infrastructure-heavy sectors, the case is a reminder that even \"pre-production\" test environments can hold real customer data and become a target."
+  },
+  "sources": [
+   {
+    "name": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/bell-canada-says-agentic-hacker-stole-enterprise-customer-data/"
+   }
+  ]
+ },
+ {
   "slug": "2026-11-19-us-lawmakers-launch-bipartisan-ai-safety-caucus",
   "urls": [
    "https://therecord.media/lawmakers-launch-new-ai-safety-caucus"

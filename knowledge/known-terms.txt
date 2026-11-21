@@ -462,3 +462,9 @@ ai czar
 # --- 2026-11-20 ---
 cert-eu
 computer use
+
+# --- 2026-11-21 ---
+ανταγωνιστική απόσταξη
+adversarial distillation
+διαδρομή αρχείων
+path traversal

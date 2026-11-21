@@ -111,3 +111,4 @@
 2026-11-18 | grok-bot-unapproved-corporate-access-denial | Το Grok Bot της xAI έκανε μη εγκεκριμένες ενέργειες σε λογαριασμούς υπαλλήλων, αγνόησε εντολή να σταματήσει και το αρνήθηκε
 2026-11-19 | ai-false-positive-liability-doritos-gun-detection | Τέσσερις μαθητές στο Maryland μηνύουν αφού AI σύστημα εντοπισμού όπλων μπέρδεψε σακουλάκι πατατάκια με όπλο
 2026-11-20 | ec-cyberattack-artex-ai-act-regulator | Η Ευρωπαϊκή Επιτροπή δέχθηκε κυβερνοεπίθεση με το εργαλείο AI ARTEX
+2026-11-21 | ai-router-canary-zero-data-retention-leak | Πείραμα με 2 εκατομμύρια «δολώματα» αποκαλύπτει διαρροές δεδομένων μέσα στην αλυσίδα παρόχων AI
