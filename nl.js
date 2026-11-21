@@ -1,5 +1,5 @@
-/* Βοηθός AI κάτω δεξιά (chat.js) σε όλες τις σελίδες που φορτώνουν το nl.js. */
-(function(){try{var s=document.createElement("script");s.src="/chat.js?v=20261121";s.defer=true;document.head.appendChild(s);}catch(e){}})();
+/* Βοηθός AI κάτω δεξιά (πλατφόρμα Sphragis Assistant, πελάτης sphragisai) σε όλες τις σελίδες που φορτώνουν το nl.js. */
+(function(){try{var p=location.pathname,r=p.indexOf("/en/")===0?p.slice(3):p;if(/^\/(p|card|ig|parousiasi|parousiasi-asfaleias|admin)\//.test(r))return;var s=document.createElement("script");s.src="https://sphragis-platform.m-bartzoka.workers.dev/widget.js";s.setAttribute("data-bot","sphragisai");s.defer=true;document.head.appendChild(s);}catch(e){}})();
 /* Newsletter (MailerLite): «Σφραγίδα» στις ελληνικές σελίδες, «Sealed» στις αγγλικές.
    Φόρμα στο τέλος των άρθρων radar/blog και παράθυρο μία φορά ανά επισκέπτη. */
 (function () {
