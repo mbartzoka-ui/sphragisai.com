@@ -1,19 +1,19 @@
 #!/usr/bin/env python3
-"""Στέλνει τις σελίδες του site στη γνώση του βοηθού AI (sphragisai-bot).
+"""Στέλνει τις σελίδες του site στη γνώση του βοηθού AI (πλατφόρμα Sphragis Assistant, πελάτης sphragisai).
 
 Διαβάζει τα HTML του repo (Blog, AI Security Radar, υπηρεσίες, case studies, εργαλεία,
 οδηγοί, ISO 42001, αρχική), εξάγει τον τίτλο και το κείμενο κάθε σελίδας και στέλνει
 στον βοηθό μόνο όσες άλλαξαν. Σελίδες που σβήστηκαν αφαιρούνται και από τη γνώση.
-Ταυτοποίηση: GitHub Actions OIDC token (audience sphragisai-bot, repo mbartzoka-ui/sphragisai.com), χωρίς κοινό μυστικό.
+Ταυτοποίηση: GitHub Actions OIDC token (audience sphragis-platform, repo mbartzoka-ui/sphragisai.com), χωρίς κοινό μυστικό.
 Μόνο βιβλιοθήκες της Python. Τρέχει από το .github/workflows/bot-knowledge-sync.yml.
 """
 import hashlib, json, os, re, sys, time, urllib.parse, urllib.request
 from datetime import date, timedelta
 from html.parser import HTMLParser
 
-BOT = "https://sphragisai-bot.m-bartzoka.workers.dev"
+BOT = "https://sphragis-platform.m-bartzoka.workers.dev/sync/sphragisai"
 SITE = "https://sphragisai.com"
-AUDIENCE = "sphragisai-bot"
+AUDIENCE = "sphragis-platform"
 RADAR_DAYS = 365          # τα άρθρα του Radar μένουν στη γνώση για έναν χρόνο
 BATCH = 4
 
@@ -146,17 +146,17 @@ def main():
     for rel, sec, label in pages(root):
         p = read_page(root, rel, sec, label)
         if p: local[p["url"]] = p
-    remote = {r["url"]: r["hash"] for r in call("/sync/state")["pages"]}
+    remote = {r["url"]: r["hash"] for r in call("/state")["pages"]}
     changed = [p for u, p in local.items() if remote.get(u) != p["hash"]]
     removed = [u for u in remote if u not in local]
     print(f"Σελίδες στο site: {len(local)} · αλλαγμένες ή νέες: {len(changed)} · για αφαίρεση: {len(removed)}")
     changed.sort(key=lambda p: (p["section"] != "radar", p.get("date") or ""), reverse=True)   # πρώτα οι σελίδες του site, μετά τα νεότερα άρθρα
     for i in range(0, len(changed), BATCH):
         batch = changed[i:i + BATCH]
-        res = call("/sync/pages", {"pages": batch})
+        res = call("/pages", {"pages": batch})
         print(f"  {i + len(batch)}/{len(changed)} · {len(res.get('done', []))} ενημερώθηκαν")
     for i in range(0, len(removed), 50):
-        res = call("/sync/delete", {"urls": removed[i:i + 50]})
+        res = call("/delete", {"urls": removed[i:i + 50]})
         print(f"  αφαιρέθηκαν {res.get('deleted')}")
     print("Ολοκληρώθηκε.")
 
