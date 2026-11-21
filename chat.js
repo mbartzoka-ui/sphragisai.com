@@ -211,25 +211,51 @@
     var note = log.querySelector(".sxc-note"); if (note) note.remove();
     hist.push({ role: "user", content: q }); save(); bubble("user", q);
     ta.value = ""; grow();
-    var w = bubble("assistant", T.wait, "w");
+    var w = bubble("assistant", T.wait, "w"), live = "";
+    function finish(d) {
+      w.remove();
+      var a = (d && d.reply) || T.err;
+      if (d && d.reply && !d.limited) { hist.push({ role: "assistant", content: a }); save(); }
+      bubble("assistant", a);
+      if (d && d.mid) rateRow(d.mid);
+      if (d && d.next && d.next.length) {
+        var nx = el("div", "sxc-chips sxc-next");
+        d.next.forEach(function (q) { var b = el("button", null, q); b.type = "button"; b.onclick = function () { ask(q); }; nx.appendChild(b); });
+        log.appendChild(nx); log.scrollTop = log.scrollHeight;
+      }
+      if (d && d.lead) { var b = el("button", "sxc-cta", T.contact); b.type = "button"; b.onclick = function () { b.remove(); leadForm(); }; log.appendChild(b); log.scrollTop = log.scrollHeight; }
+    }
+    // The reply arrives as it is written (Server-Sent Events); older browsers get it in one piece.
+    function readStream(r) {
+      var reader = r.body.getReader(), dec = new TextDecoder(), buf = "", done = null;
+      function onEvent(o) {
+        if (o.done) { done = o; return; }
+        if (o.reset) { live = ""; }
+        if (o.t) live += o.t;
+        if (w.className.indexOf(" w") >= 0) w.className = w.className.replace(" w", "");
+        w.textContent = ""; render(w, live); log.scrollTop = log.scrollHeight;
+      }
+      function pump() {
+        return reader.read().then(function (x) {
+          if (x.done) return done || {};
+          buf += dec.decode(x.value, { stream: true });
+          var parts = buf.split("\n\n"); buf = parts.pop();
+          parts.forEach(function (ev) { var l = ev.replace(/^data: ?/, ""); try { onEvent(JSON.parse(l)); } catch (e) {} });
+          return done ? done : pump();
+        });
+      }
+      return pump();
+    }
     fetch(API + "/chat", {
       method: "POST", headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ lang: EN ? "en" : "el", sid: sid, page: path, messages: hist.slice(-10) })
-    }).then(function (r) { return r.json().catch(function () { return {}; }); })
-      .then(function (d) {
-        w.remove();
-        var a = (d && d.reply) || T.err;
-        if (d && d.reply && !d.limited) { hist.push({ role: "assistant", content: a }); save(); }
-        bubble("assistant", a);
-        if (d && d.mid) rateRow(d.mid);
-        if (d && d.next && d.next.length) {
-          var nx = el("div", "sxc-chips sxc-next");
-          d.next.forEach(function (q) { var b = el("button", null, q); b.type = "button"; b.onclick = function () { ask(q); }; nx.appendChild(b); });
-          log.appendChild(nx); log.scrollTop = log.scrollHeight;
-        }
-        if (d && d.lead) { var b = el("button", "sxc-cta", T.contact); b.type = "button"; b.onclick = function () { b.remove(); leadForm(); }; log.appendChild(b); log.scrollTop = log.scrollHeight; }
+      body: JSON.stringify({ lang: EN ? "en" : "el", sid: sid, page: path, messages: hist.slice(-10), stream: !!(window.ReadableStream && window.TextDecoder) })
+    }).then(function (r) {
+        var ct = r.headers.get("Content-Type") || "";
+        if (ct.indexOf("text/event-stream") >= 0 && r.body && r.body.getReader) return readStream(r);
+        return r.json().catch(function () { return {}; });
       })
-      .catch(function () { w.remove(); bubble("assistant", T.err); })
+      .then(finish)
+      .catch(function () { w.remove(); bubble("assistant", live ? live : T.err); })
       .then(function () { busy = false; sb.disabled = false; ta.focus(); });
   }
   function grow() { ta.style.height = "auto"; ta.style.height = Math.min(120, ta.scrollHeight) + "px"; }
