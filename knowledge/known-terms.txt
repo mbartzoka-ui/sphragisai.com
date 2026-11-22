@@ -468,3 +468,7 @@ computer use
 adversarial distillation
 διαδρομή αρχείων
 path traversal
+
+# --- 2026-11-22 ---
+sandbox escape
+ξεφυγή από το sandbox

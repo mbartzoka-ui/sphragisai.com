@@ -1,5 +1,56 @@
 [
  {
+  "slug": "2026-11-21-signal-restricts-mobile-screenshots-to-block-os-level-ai-agents-from",
+  "urls": [
+   "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance",
+   "https://thehackernews.com/2026/11/signal-blocks-ai-agents-from-reading.html"
+  ],
+  "first_seen": "2026-11-22",
+  "date": "2026-11-21",
+  "topic": "AI Security",
+  "el": {
+   "title": "Το Signal περιορίζει τα screenshots στο κινητό για να «τυφλώσει» τους AI βοηθούς του λειτουργικού",
+   "summary": "Το Signal ανακοίνωσε ότι περιορίζει εξ ορισμού τη δυνατότητα για screenshot μέσα στην εφαρμογή σε Android και iOS, έπειτα από ανάλογο μέτρο που είχε ήδη εφαρμόσει στα Windows. Η πρόεδρος του Signal Foundation, Meredith Whittaker, το περιέγραψε ως απάντηση σε αυτό που ονόμασε «υπαρξιακή απειλή»: τα νέα AI agents που ενσωματώνονται στο ίδιο το λειτουργικό σύστημα, όπως το Recall των Windows, «σαρώνουν» ό,τι εμφανίζεται στην οθόνη για να απαντούν σε ερωτήσεις του χρήστη, με αποτέλεσμα περιεχόμενο από κρυπτογραφημένες συνομιλίες να καταλήγει σε βάσεις δεδομένων ή διακομιστές εκτός του ελέγχου του Signal. Η ίδια η εταιρεία παραδέχεται ότι η λύση είναι «ατελής», αφού ο χρήστης μπορεί να απενεργοποιήσει τον περιορισμό και αφού δεν καλύπτει άλλους, λιγότερο προφανείς τρόπους πρόσβασης ενός AI agent σε δεδομένα εφαρμογής. Για μια επιχείρηση που εξετάζει AI βοηθούς με πρόσβαση σε όλη την οθόνη ή τον υπολογιστή, το περιστατικό δείχνει ότι ακόμη και μια εφαρμογή σχεδιασμένη γύρω από την κρυπτογράφηση δεν μπορεί να εγγυηθεί απόρρητο μόλις ένας AI agent του λειτουργικού αποκτήσει πρόσβαση στην οθόνη."
+  },
+  "en": {
+   "title": "Signal restricts mobile screenshots to block OS-level AI agents from reading chats",
+   "summary": "Signal announced it is restricting screenshots by default inside its Android and iOS app, extending a similar limit it already applies on Windows. Signal Foundation president Meredith Whittaker called it a response to what she described as an 'existential threat': AI agents built into the operating system itself, such as Windows Recall, 'scan' whatever appears on screen to answer user questions, meaning content from encrypted chats can end up in databases or servers outside Signal's control. The company admits the fix is 'incomplete', since users can turn the restriction off and it does not cover other, less obvious ways an AI agent can reach an app's data. For a business weighing AI assistants with full-screen or full-computer access, the episode shows that even an app built around encryption cannot guarantee privacy once an OS-level AI agent can read the screen."
+  },
+  "sources": [
+   {
+    "name": "TechCrunch",
+    "url": "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/"
+   },
+   {
+    "name": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/signal-blocks-ai-agents-from-reading.html"
+   }
+  ]
+ },
+ {
+  "slug": "2026-11-21-researchers-gained-full-control-of-meta-s-muse-ai-agent-through-a",
+  "urls": [
+   "https://thehackernews.com/2026/11/a-single-malicious-webpage-let.html"
+  ],
+  "first_seen": "2026-11-22",
+  "date": "2026-11-21",
+  "topic": "AI Security",
+  "el": {
+   "title": "Ερευνητές απέκτησαν πλήρη έλεγχο στο AI agent Muse της Meta μέσω μιας μόνο κακόβουλης ιστοσελίδας",
+   "summary": "Η εταιρεία ασφάλειας NebuSec έδειξε πώς μια απλή κακόβουλη ιστοσελίδα, ανοιγμένη από το ίδιο το Muse, το AI agent της Meta που εκτελεί εργασίες μόνο του μέσω λογαριασμών που του συνδέει ο χρήστης, αρκούσε για να αντλήσει το ιστορικό συνομιλιών και τις αποθηκευμένες του «αναμνήσεις» προς εξωτερικό διακομιστή, χωρίς καμία ειδοποίηση έγκρισης. Οι ερευνητές συνδύασαν ένα ελάττωμα στον ενσωματωμένο browser του Muse, που η εφαρμογή χρησιμοποιεί για εργασίες όπως τη δημιουργία PDF, με ευπάθεια στον πυρήνα Linux, αποκτώντας πλήρη έλεγχο του cloud υπολογιστή όπου «τρέχει» ο agent κάθε χρήστη. Από εκεί έφτασαν ως και στο σημείο όπου το Muse κρατά κωδικούς και tokens συνδεδεμένων λογαριασμών, ακριβώς το κομμάτι που η αρχιτεκτονική ασφαλείας της Meta, με το επίπεδο παρακολούθησης Sentinel, υποτίθεται ότι κρατά εκτός προσέγγισης του agent. Η Meta διόρθωσε τα ελαττώματα πριν τη δημοσίευση της έρευνας, χωρίς όμως να επιβεβαιώσει δημόσια τις διορθώσεις ή αν υπήρξε πραγματικό θύμα. Για μια επιχείρηση που εξετάζει AI agents με πρόσβαση σε συνδεδεμένους λογαριασμούς, η υπόθεση δείχνει ότι ακόμη και πολυεπίπεδα μέτρα περιορισμού γύρω από έναν agent μπορούν να παρακαμφθούν με μια αλυσίδα από μικρότερα ελαττώματα."
+  },
+  "en": {
+   "title": "Researchers gained full control of Meta's Muse AI agent through a single malicious webpage",
+   "summary": "Security firm NebuSec showed that a single malicious webpage, opened by Muse itself, Meta's AI agent that performs tasks on a user's behalf through connected accounts, was enough to extract a user's conversation history and stored memories to an external server, without triggering any approval prompt. The researchers chained a flaw in Muse's built-in browser, which the assistant uses for tasks like creating PDFs, with a Linux kernel vulnerability to gain full control of the cloud machine each user's agent runs on. From there they reached the credential store holding passwords and tokens for connected accounts, exactly the part Meta's security design, including a monitoring layer called Sentinel, is meant to keep out of the agent's reach. Meta fixed the flaws before the research was published but has not publicly confirmed the fixes or said whether any real user was affected. For a business considering AI agents with access to connected accounts, the case shows that even layered containment around an agent can be defeated by chaining together smaller flaws."
+  },
+  "sources": [
+   {
+    "name": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/a-single-malicious-webpage-let.html"
+   }
+  ]
+ },
+ {
   "slug": "2026-11-20-us-congressional-investigation-warns-against-american-companies-use",
   "urls": [
    "https://therecord.media/chinese-open-weight-ai-use-by-us-companies-house-investigation"
@@ -25,7 +76,8 @@
  {
   "slug": "2026-11-20-researcher-plants-2-million-tracking-canaries-across-the-ai-supply",
   "urls": [
-   "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate"
+   "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate",
+   "https://thehackernews.com/2026/11/openrouter-drops-3-providers-after.html"
   ],
   "first_seen": "2026-11-21",
   "date": "2026-11-20",
@@ -42,6 +94,10 @@
    {
     "name": "Ars Technica",
     "url": "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/"
+   },
+   {
+    "name": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/openrouter-drops-3-providers-after.html"
    }
   ]
  },
@@ -72,7 +128,9 @@
   "slug": "2026-11-20-autonomous-cairn-ai-agents-find-a-zero-day-on-their-own-and-take-over",
   "urls": [
    "https://www.bleepingcomputer.com/news/security/hackers-use-autonomous-ai-tool-cairn-to-find-zero-day-take-over-server",
-   "https://therecord.media/amazon-research-cairn-ai-university-attacks-possible-zero-day"
+   "https://therecord.media/amazon-research-cairn-ai-university-attacks-possible-zero-day",
+   "https://thehackernews.com/2026/11/attackers-ai-agents-found-zero-day-in.html",
+   "https://www.securityweek.com/amazon-china-linked-hackers-ai-agents-exploited-medical-software-zero-day"
   ],
   "first_seen": "2026-11-21",
   "date": "2026-11-20",
@@ -93,6 +151,14 @@
    {
     "name": "The Record",
     "url": "https://therecord.media/amazon-research-cairn-ai-university-attacks-possible-zero-day"
+   },
+   {
+    "name": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/attackers-ai-agents-found-zero-day-in.html"
+   },
+   {
+    "name": "SecurityWeek",
+    "url": "https://www.securityweek.com/amazon-china-linked-hackers-ai-agents-exploited-medical-software-zero-day/"
    }
   ]
  },
