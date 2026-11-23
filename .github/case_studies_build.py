@@ -31,7 +31,7 @@ for dp, dns, fns in os.walk(ROOT):
         if not fn.endswith('.html') or fn.startswith('google'): continue
         p = os.path.join(rel, fn); s = R(p); t = s
         for a, b in LINKS:
-            if a in t and a + b not in t: t = t.replace(a, a + b)
+            if a in t and b not in t: t = t.replace(a, a + b)   # b present = link already there (also when another link sits between)
         if t != s: W(p, t); n += 1
 print('menu link added in', n, 'files')
 
