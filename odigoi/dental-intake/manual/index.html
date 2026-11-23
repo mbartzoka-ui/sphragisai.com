@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Οδηγός χρήσης · Dental Intake | sphragisAI</title>
+<meta name="description" content="Οδηγός χρήσης της εφαρμογής φορμών Dental Intake: manual σε PDF και σύντομα βίντεο με υπότιτλους.">
+<!-- Οδηγός χρήσης (manual + βίντεο): ανοίγει από το email πρόσκλησης. Εκτός μενού, sitemap και μηχανών αναζήτησης. -->
+<meta name="robots" content="noindex,nofollow,noarchive">
+<meta name="referrer" content="no-referrer">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0B1020;--paper:#F4F6FA;--white:#FFFFFF;--seal:#C8323A;--slate:#8892AB;--amber:#F5A524;--line:#D5DAE5;--body:#2A3149;--muted:#475069;--soft:#EEF1F6;
+  --f-head:'Space Grotesk',Inter,system-ui,sans-serif;--f-text:Inter,system-ui,sans-serif;--f-mono:'JetBrains Mono',ui-monospace,Consolas,monospace}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--f-text);background:var(--paper);color:var(--body);line-height:1.6;font-size:17px;-webkit-font-smoothing:antialiased}
+a{color:var(--seal)}
+a:focus-visible{outline:2px solid var(--seal);outline-offset:3px;border-radius:4px}
+.w{max-width:720px;margin:0 auto;padding:0 18px}
+header{border-bottom:1px solid var(--line);background:rgba(244,246,250,.94);backdrop-filter:blur(8px);position:sticky;top:0;z-index:5}
+.top{display:flex;align-items:center;justify-content:space-between;height:60px;gap:12px}
+.top .tag{font-family:var(--f-mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.sx-logo{display:inline-flex;align-items:center;gap:8px;font-family:var(--f-head);font-weight:700;font-size:20px;line-height:1;color:var(--ink);text-decoration:none}
+.sx-logo .br{font-family:var(--f-mono);font-weight:600}.sx-logo .br i{font-style:normal;color:var(--slate)}
+.sx-logo .sig{font-family:var(--f-text);font-weight:700}.sx-logo .ai2{font-family:var(--f-mono);font-weight:600;color:var(--slate)}
+.sx-logo .cur{display:inline-block;width:.36em;height:.9em;background:var(--seal);animation:b 1.1s step-end infinite}
+@keyframes b{50%{opacity:0}}@media (prefers-reduced-motion:reduce){.sx-logo .cur{animation:none}}
+main{padding:36px 0 64px}
+h1{font-family:var(--f-head);font-size:clamp(28px,6vw,36px);font-weight:700;line-height:1.15;color:var(--ink)}
+.need{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 28px}
+.need span{background:var(--white);border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:15px;color:var(--ink)}
+.part{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:24px 20px;margin-bottom:18px;scroll-margin-top:76px}
+.part-h{display:flex;align-items:center;gap:12px;margin-bottom:6px}
+.badge{flex:none;width:34px;height:34px;border-radius:50%;background:var(--ink);color:var(--white);font-family:var(--f-head);font-weight:700;display:flex;align-items:center;justify-content:center;font-size:17px}
+h2{font-family:var(--f-head);font-size:22px;font-weight:700;color:var(--ink);line-height:1.2}
+.where{color:var(--muted);font-size:15px;margin:0 0 16px 46px}
+.step{display:flex;gap:12px;padding:12px 0;border-top:1px solid var(--soft)}
+.step:first-of-type{border-top:0}
+.n{flex:none;font-family:var(--f-mono);font-weight:600;font-size:14px;color:var(--seal);width:26px;padding-top:2px}
+.step p{margin:0}
+.k{display:inline-block;font-weight:600;font-size:15px;color:var(--white);background:var(--ink);border-radius:6px;padding:1px 9px}
+figure{margin:12px 0 0}
+figure img{display:block;width:100%;max-width:360px;border:1px solid var(--line);border-radius:12px;background:var(--soft)}
+figcaption{font-size:13px;color:var(--muted);margin-top:6px}
+.apps{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.app{border:1px solid var(--line);border-radius:12px;padding:14px}
+.app b{display:block;color:var(--ink);margin-bottom:10px}
+.app .st{display:flex;gap:8px;flex-wrap:wrap}
+.app .st a{font-size:14px;font-weight:600;color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:6px 12px;text-decoration:none}
+.app .st a:hover{border-color:var(--ink)}
+.tip{background:var(--soft);border-radius:10px;padding:12px 14px;font-size:15px;margin-top:14px}
+.warn{border-left:3px solid var(--amber);background:#FFF8EA;border-radius:8px;padding:12px 14px;font-size:15px;margin-top:14px}
+.done{background:#EEF7F1;border-radius:10px;padding:12px 14px;font-size:15px;margin-top:14px;color:#1F5136}
+.os{border:1px solid var(--line);border-radius:12px;padding:14px;margin-top:12px}
+.os b{color:var(--ink)}
+.os ol{margin:8px 0 0 20px}
+.os li{margin:4px 0}
+details{border-top:1px solid var(--soft);padding:12px 0}
+details:first-of-type{border-top:0}
+summary{cursor:pointer;font-weight:600;color:var(--ink)}
+details p{margin-top:8px}
+footer{border-top:1px solid var(--line);padding:22px 0;font-size:13px;color:var(--muted)}
+footer .mono{font-family:var(--f-mono);font-size:11px;letter-spacing:.08em;color:var(--slate)}
+@media (max-width:520px){.top .tag{display:none}.where{margin-left:0}}
+
+.lead{font-size:18px;color:var(--muted);margin:10px 0 22px}
+.dl{display:flex;flex-wrap:wrap;align-items:center;gap:14px;background:var(--ink);color:#EEF0F5;border-radius:16px;padding:20px;margin-bottom:22px}
+.dl b{display:block;color:#fff;font-size:18px}.dl span{font-size:14px;color:#C9D0DD}
+.dl a.btn{margin-left:auto;background:var(--seal);color:#fff;text-decoration:none;font-weight:600;border-radius:10px;padding:12px 20px}
+.toc{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 22px}
+.toc a{background:var(--white);border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:14px;color:var(--ink);text-decoration:none}
+video{display:block;width:100%;border-radius:12px;border:1px solid var(--line);background:var(--ink);margin-top:12px}
+.dur{font-family:var(--f-mono);font-size:12px;color:var(--slate);margin-left:auto}
+</style>
+</head>
+<body>
+<header><div class="w top"><a class="sx-logo" href="/" aria-label="sphragisAI"><span class="br"><i>{</i><span class="sig">Σ</span><i>}</i></span><span>sphragis<span class="ai2">AI</span></span><span class="cur" aria-hidden="true"></span></a><span class="tag">Dental Intake · Οδηγός χρήσης</span></div></header>
+
+<main><div class="w">
+  <h1>Οδηγός χρήσης της εφαρμογής φορμών</h1>
+  <p class="lead">Από την πρώτη σύνδεση μέχρι την πρώτη φόρμα στο tablet. Το manual σε PDF και 7 σύντομα βίντεο με υπότιτλους.</p>
+
+  <div class="dl"><div><b>Manual (PDF)</b><span>8 ενότητες με βήματα και εικόνες · 3 MB</span></div>
+    <a class="btn" href="Odigos-xrisis-Dental-Intake.pdf" download>Λήψη PDF</a></div>
+
+  <nav class="toc" aria-label="Βίντεο"><a href="#01-proti-syndesi">1. Πρώτη σύνδεση και επαλήθευση δύο βημάτων</a><a href="#02-tablet">2. Σύνδεση του tablet της ρεσεψιόν</a><a href="#03-forma-sto-tablet">3. Φόρμα ιστορικού στο tablet</a><a href="#04-kartela">4. Η καρτέλα του ασθενή και το PDF</a><a href="#05-syndesmos-spiti">5. Φόρμα από το σπίτι</a><a href="#06-xristes">6. Πρόσκληση της γραμματείας</a><a href="#07-voitheia">7. Βοήθεια</a></nav>
+
+  <section class="part" id="01-proti-syndesi">
+    <div class="part-h"><span class="badge">1</span><h2>Πρώτη σύνδεση και επαλήθευση δύο βημάτων</h2><span class="dur">0:53</span></div>
+    <p class="where">Από το email της πρόσκλησης: κωδικός, εφαρμογή επαλήθευσης στο κινητό, εφεδρικοί κωδικοί.</p>
+    <video controls preload="none" playsinline poster="videos/01-proti-syndesi.jpg"><source src="videos/01-proti-syndesi.mp4" type="video/mp4"></video>
+  </section>
+
+  <section class="part" id="02-tablet">
+    <div class="part-h"><span class="badge">2</span><h2>Σύνδεση του tablet της ρεσεψιόν</h2><span class="dur">0:29</span></div>
+    <p class="where">Ρυθμίσεις → Tablets → κωδικός σύνδεσης, και στο tablet app.sphragisai.com/kiosk.</p>
+    <video controls preload="none" playsinline poster="videos/02-tablet.jpg"><source src="videos/02-tablet.mp4" type="video/mp4"></video>
+  </section>
+
+  <section class="part" id="03-forma-sto-tablet">
+    <div class="part-h"><span class="badge">3</span><h2>Φόρμα ιστορικού στο tablet</h2><span class="dur">1:30</span></div>
+    <p class="where">Η γραμματεία στέλνει τη φόρμα, ο ασθενής συμπληρώνει και υπογράφει. Τι σημαίνει «Με κόκκινες επισημάνσεις».</p>
+    <video controls preload="none" playsinline poster="videos/03-forma-sto-tablet.jpg"><source src="videos/03-forma-sto-tablet.mp4" type="video/mp4"></video>
+  </section>
+
+  <section class="part" id="04-kartela">
+    <div class="part-h"><span class="badge">4</span><h2>Η καρτέλα του ασθενή και το PDF</h2><span class="dur">0:33</span></div>
+    <p class="where">ΑΜΚΑ, κόκκινες επισημάνσεις, ιστορικό, PDF, «Ελέγχθηκε» και σημειώσεις.</p>
+    <video controls preload="none" playsinline poster="videos/04-kartela.jpg"><source src="videos/04-kartela.mp4" type="video/mp4"></video>
+  </section>
+
+  <section class="part" id="05-syndesmos-spiti">
+    <div class="part-h"><span class="badge">5</span><h2>Φόρμα από το σπίτι</h2><span class="dur">0:35</span></div>
+    <p class="where">Σύνδεσμος με email, που ανοίγει με την ημερομηνία γέννησης και ισχύει 48 ώρες.</p>
+    <video controls preload="none" playsinline poster="videos/05-syndesmos-spiti.jpg"><source src="videos/05-syndesmos-spiti.mp4" type="video/mp4"></video>
+  </section>
+
+  <section class="part" id="06-xristes">
+    <div class="part-h"><span class="badge">6</span><h2>Πρόσκληση της γραμματείας</h2><span class="dur">0:21</span></div>
+    <p class="where">Ρυθμίσεις → Χρήστες: κάθε άτομο με δικό του λογαριασμό και ρόλο.</p>
+    <video controls preload="none" playsinline poster="videos/06-xristes.jpg"><source src="videos/06-xristes.mp4" type="video/mp4"></video>
+  </section>
+
+  <section class="part" id="07-voitheia">
+    <div class="part-h"><span class="badge">7</span><h2>Βοήθεια</h2><span class="dur">0:20</span></div>
+    <p class="where">Ερωτήσεις προς την ομάδα υποστήριξης μέσα από την εφαρμογή.</p>
+    <video controls preload="none" playsinline poster="videos/07-voitheia.jpg"><source src="videos/07-voitheia.mp4" type="video/mp4"></video>
+  </section>
+
+  <section class="part">
+    <div class="part-h"><span class="badge">?</span><h2>Χρειάζεστε βοήθεια;</h2></div>
+    <p>Μέσα στην εφαρμογή πατήστε <span class="k">Βοήθεια</span> κάτω δεξιά. Για τη σύνδεση με το κινητό υπάρχει και ο <a href="../">οδηγός σύνδεσης βήμα-βήμα</a>. Τεχνικό θέμα: <a href="mailto:info@sphragisai.com">info@sphragisai.com</a> (χωρίς κωδικούς ή στοιχεία ασθενών).</p>
+    <div class="tip">Οι εικόνες και τα βίντεο είναι από δοκιμαστικό ιατρείο με συνθετικά δεδομένα.</div>
+  </section>
+</div></main>
+
+<footer><div class="w">
+  <span class="mono">DENTAL INTAKE · sphragisAI · app.sphragisai.com · ΦΙΛΟΞΕΝΙΑ ΣΤΗΝ ΕΕ</span><br>
+  © 2026 sphragisAI · <a href="/privacy/" style="color:var(--muted)">Πολιτική απορρήτου</a>
+</div><script src="/nl.js" defer></script></footer>
+</body>
+</html>
