@@ -4,6 +4,9 @@
 import os, re, io
 
 ROOT = '.'
+# hero visual for the listing page (decorative, styled by /sx-v2.css)
+V2VIS = {'el': '<div class="v2-vis" aria-hidden="true"><div class="v2-card"><div class="v2-body"><div class="v2-k">Χάρτης κινδύνων</div><div class="v2-grid"><i></i><i class="a"></i><i></i><i class="b"></i><i class="a"></i><i class="a"></i><i class="b"></i><i class="c"></i><i class="a"></i><i></i><i class="b"></i><i class="c"></i><i class="r"></i><i class="c"></i><i class="a"></i><i class="a"></i><i class="b"></i><i class="c"></i><i class="b"></i><i></i><i></i><i class="a"></i><i class="b"></i><i class="a"></i><i></i></div><div class="v2-rows"><div><span class="v2-ln" style="max-width:70%"></span><span class="v2-pill r">AI ACT</span></div><div><span class="v2-ln" style="max-width:54%"></span><span class="v2-pill">DPIA</span></div><div><span class="v2-ln" style="max-width:62%"></span><span class="v2-pill">ISO 42001</span></div></div></div></div></div>', 'en': '<div class="v2-vis" aria-hidden="true"><div class="v2-card"><div class="v2-body"><div class="v2-k">Risk map</div><div class="v2-grid"><i></i><i class="a"></i><i></i><i class="b"></i><i class="a"></i><i class="a"></i><i class="b"></i><i class="c"></i><i class="a"></i><i></i><i class="b"></i><i class="c"></i><i class="r"></i><i class="c"></i><i class="a"></i><i class="a"></i><i class="b"></i><i class="c"></i><i class="b"></i><i></i><i></i><i class="a"></i><i class="b"></i><i class="a"></i><i></i></div><div class="v2-rows"><div><span class="v2-ln" style="max-width:70%"></span><span class="v2-pill r">AI ACT</span></div><div><span class="v2-ln" style="max-width:54%"></span><span class="v2-pill">DPIA</span></div><div><span class="v2-ln" style="max-width:62%"></span><span class="v2-pill">ISO 42001</span></div></div></div></div></div>'}
+
 def R(p): return io.open(os.path.join(ROOT, p), encoding='utf8').read()
 def W(p, s):
     p = os.path.join(ROOT, p); os.makedirs(os.path.dirname(p), exist_ok=True)
@@ -66,13 +69,13 @@ for lang in ('el', 'en'):
     if lang == 'el':
         head = re.sub(r'<title>.*?</title>', '<title>Case studies — Αξιολόγηση συστημάτων AI | sphragisAI</title>', head)
         desc = 'Πραγματικές αξιολογήσεις συστημάτων AI: κατάταξη κατά τον AI Act, εκτίμηση αντικτύπου, χάρτης κινδύνων και μέτρα κατά ISO/IEC 42001.'
-        main = ('<main>\n  <div class="wrap">\n    <div class="eyebrow">CASE STUDIES</div>\n    <h1>Case studies.</h1>\n'
-                '    <p class="sub">Πραγματικές αξιολογήσεις συστημάτων AI, από την κατάταξη κατά τον AI Act μέχρι τα μέτρα προστασίας, με τη μέθοδο που μεταφέρεται σε κάθε εταιρεία.</p>\n')
+        main = ('<main>\n  <div class="wrap">\n    <div class="v2-hero"><div class="eyebrow">CASE STUDIES</div>\n    <h1>Case studies.</h1>\n'
+                '    <p class="sub">Πραγματικές αξιολογήσεις συστημάτων AI, από την κατάταξη κατά τον AI Act μέχρι τα μέτρα προστασίας, με τη μέθοδο που μεταφέρεται σε κάθε εταιρεία.</p>' + V2VIS[lang] + '</div>\n')
     else:
         head = re.sub(r'<title>.*?</title>', '<title>Case studies — AI system assessments | sphragisAI</title>', head)
         desc = 'Real assessments of AI systems: AI Act classification, impact assessment, risk map and safeguards under ISO/IEC 42001.'
-        main = ('<main>\n  <div class="wrap">\n    <div class="eyebrow">CASE STUDIES</div>\n    <h1>Case studies.</h1>\n'
-                '    <p class="sub">Real assessments of AI systems, from AI Act classification to safeguards, using a method that transfers to any company.</p>\n')
+        main = ('<main>\n  <div class="wrap">\n    <div class="v2-hero"><div class="eyebrow">CASE STUDIES</div>\n    <h1>Case studies.</h1>\n'
+                '    <p class="sub">Real assessments of AI systems, from AI Act classification to safeguards, using a method that transfers to any company.</p>' + V2VIS[lang] + '</div>\n')
     head = re.sub(r'(<meta name="description" content=")[^"]*', lambda m: m[1] + desc, head)
     head = re.sub(r'(<meta property="og:description" content=")[^"]*', lambda m: m[1] + desc, head)
     head = re.sub(r'(<meta property="og:title" content=")[^"]*', lambda m: m[1] + 'sphragisAI — Case studies', head)
