@@ -161,3 +161,29 @@ body.sx-tpl.v2-page .item{margin:0;background:var(--white);border:1px solid var(
 /* some template pages force dark buttons with !important; keep the primary hero button light */
 .v2-hero .btn:not(.btn-ghost){background:#fff!important;border-color:#fff!important;color:var(--ink)!important}
 .v2-hero .btn:not(.btn-ghost):hover{background:var(--paper)!important}
+
+/* Homepage: About + FAQ (#about). Home loads this file only for this block. */
+.sx-home #about{background:var(--paper);padding-block:clamp(72px,9vw,120px)}
+.sx-home #about .sx-about{grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:clamp(40px,6vw,88px)}
+.sx-home #about .sx-label{color:var(--seal)}
+.sx-home #about .sx-h2{font-size:clamp(32px,4.4vw,48px);line-height:1.08;letter-spacing:-.02em;font-weight:800;max-width:14ch}
+.sx-home #about .sx-about>div:first-child>p{font-size:17px;line-height:1.65;max-width:52ch}
+.sx-home #about .sx-about>div:first-child>p:first-of-type{margin-top:22px}
+.sx-home #about .sx-person{position:relative;overflow:hidden;margin-top:34px;background:var(--ink);color:#EEF0F5;border:1px solid #2A3355;border-radius:16px;padding:28px 150px 28px 28px;box-shadow:0 24px 60px rgba(11,16,32,.22)}
+.sx-home #about .sx-person::before{content:"";position:absolute;inset:0 auto 0 0;width:4px;background:var(--seal)}
+.sx-home #about .sx-person::after{content:"Σ";position:absolute;right:28px;top:50%;width:84px;height:84px;margin-top:-42px;border-radius:50%;border:2px solid #E5626A;box-shadow:inset 0 0 0 5px var(--ink),inset 0 0 0 6px #E5626A;display:grid;place-items:center;color:#E5626A;font:700 34px/1 var(--f-disp);transform:rotate(-12deg)}
+.sx-home #about .sx-person .nm{font-family:var(--f-disp);font-size:21px;color:#fff}
+.sx-home #about .sx-person .rl{color:#A7B0C5}
+.sx-home #about .sx-person .cr{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;color:#EEF0F5;margin-top:16px;padding-top:14px;border-top:1px solid #2A3355}
+.sx-home #about .sx-person a{color:#fff;text-decoration-color:var(--seal);text-underline-offset:4px}
+.sx-home #about #faq>.sx-label{color:var(--muted)}
+.sx-home #about .sx-faq{gap:10px}
+.sx-home #about .sx-faq details,.sx-home #about .sx-faq details:first-child{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:18px 22px;transition:border-color .15s,box-shadow .15s}
+.sx-home #about .sx-faq details:hover{border-color:#C9D0DD}
+.sx-home #about .sx-faq details[open]{box-shadow:0 10px 30px rgba(11,16,32,.07)}
+.sx-home #about .sx-faq summary{font-size:16px;line-height:1.4;align-items:flex-start}
+.sx-home #about .sx-faq summary::after{flex:0 0 26px;height:26px;border-radius:50%;background:var(--soft);display:grid;place-items:center;font-size:15px;line-height:1}
+.sx-home #about .sx-faq details[open] summary::after{background:var(--seal);color:#fff}
+.sx-home #about .sx-faq details p{margin:12px 0 0;color:var(--body)}
+@media (max-width:980px){.sx-home #about .sx-about{grid-template-columns:1fr}.sx-home #about .sx-h2{max-width:none}}
+@media (max-width:720px){.sx-home #about .sx-person{padding:24px 24px 24px 26px}.sx-home #about .sx-person::after{width:58px;height:58px;top:20px;right:18px;margin-top:0;font-size:24px}.sx-home #about .sx-person .nm,.sx-home #about .sx-person .rl{padding-right:72px}.sx-home #about .sx-faq details,.sx-home #about .sx-faq details:first-child{padding:16px 18px}}
