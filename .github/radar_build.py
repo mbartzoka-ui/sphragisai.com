@@ -345,9 +345,10 @@ def page(lang, c, *, title, desc, path, el_path, en_path, body, jsonld,
 {c['fonts']}
 {c['styles']}
 {EXTRA_CSS}
+<link rel="stylesheet" href="/sx-v2.css">
 <script type="application/ld+json">{json.dumps(jsonld, ensure_ascii=False)}</script>
 </head>
-<body class="sx-tpl">
+<body class="sx-tpl v2-sub-page">
 {lang_switch(c['header'], lang, el_path, en_path)}
 <div class="wrap">
 {body}
@@ -385,10 +386,10 @@ def story_page(rec, lang, c):
     srcs = "\n".join(
         f'<li><a href="{esc(s["url"])}" target="_blank" rel="noopener">{esc(s["name"])}</a></li>'
         for s in rec["sources"])
-    body = f"""<nav class="crumbs" aria-label="breadcrumb"><a href="{radar}">AI Security Radar</a> › <a href="{radar}archive/">{t['archive']}</a></nav>
-<article class="story">
+    body = f"""<article class="story">
+<div class="v2-hero v2-sub"><nav class="crumbs" aria-label="breadcrumb"><a href="{radar}">AI Security Radar</a> › <a href="{radar}archive/">{t['archive']}</a></nav>
 <div class="it-top"><span class="badge {BADGE.get(rec['topic'], 'b-gen')}">{esc(rec['topic'])}</span> <time datetime="{rec['date']}">{fmt_date(rec['date'], lang)}</time></div>
-<h1>{esc(txt['title'])}</h1>
+<h1>{esc(txt['title'])}</h1></div>
 <p class="lead">{esc(txt['summary'])}</p>
 <h2>{t['sources']}</h2>
 <ul>
@@ -434,8 +435,8 @@ def archive_page(registry, lang, c):
             f'<a href="{radar}{r["slug"]}/">{esc(r[lang]["title"])}</a></li>'
             for r in months[ym])
         parts.append(f'<h2 class="arch-month">{MONTHS_FULL[lang][int(m) - 1]} {y} · {len(months[ym])} {t["stories"]}</h2>\n<ul class="arch-list">\n{rows}\n</ul>')
-    body = f"""<nav class="crumbs" aria-label="breadcrumb"><a href="{radar}">AI Security Radar</a> › {t['archive']}</nav>
-<section class="intro"><h1>{t['archive_h1']}</h1><p class="sub">{t['archive_sub']}</p></section>
+    body = f"""<div class="v2-hero v2-sub"><nav class="crumbs" aria-label="breadcrumb"><a href="{radar}">AI Security Radar</a> › {t['archive']}</nav>
+<h1>{t['archive_h1']}</h1><p class="sub">{t['archive_sub']}</p></div>
 {''.join(parts)}"""
     jsonld = {"@context": "https://schema.org", "@type": "CollectionPage",
               "name": t["archive_title"], "url": SITE + path, "inLanguage": lang,

@@ -236,3 +236,34 @@ body.sx-tpl.v2-page .item{margin:0;background:var(--white);border:1px solid var(
 .sx-home #guide .sx-form{border-radius:16px}
 @media (max-width:980px){.sx-home #services .sx-svrow{grid-template-columns:48px minmax(0,1fr) 40px}.sx-home #services .sx-svrow>div{grid-column:2/4}}
 @media (max-width:760px){.sx-home #services .sx-svrow{grid-template-columns:40px minmax(0,1fr);gap:10px 14px}.sx-home #services .sx-svrow>div{grid-column:2}.sx-home #services .sx-svrow .arr{display:none}.sx-home #services .sx-svrow,.sx-home #services .sx-svrow:hover{padding:22px 20px}.sx-home #services .sx-svrow:hover{transform:none}}
+
+/* ---------- sub pages (service details, tools, articles, radar stories, support, privacy) ----------
+   body.v2-sub-page + the page intro wrapped in .v2-hero.v2-sub: one-column dark header. */
+body.sx-tpl.v2-sub-page main > .wrap,body.sx-tpl.v2-sub-page > .wrap,body.sx-tpl.v2-sub-page main{padding-top:0}
+body.v2-sub-page .story{padding-top:0}
+body.sx-tpl.v2-sub-page main.sx-solo-main{padding-block:clamp(40px,7vw,72px)}
+:root body.v2-sub-page .v2-hero.v2-sub{grid-template-columns:minmax(0,1fr);padding-block:clamp(48px,7vw,80px) clamp(52px,7vw,84px);margin:0 0 clamp(36px,5vw,56px)}
+:root body.v2-sub-page .v2-sub > *{max-width:880px}
+:root body.v2-sub-page .v2-sub h1{font-weight:800;font-size:clamp(30px,4.4vw,52px);margin:14px 0 16px}
+:root body.v2-sub-page .v2-sub .eyebrow,:root body.v2-sub-page .v2-sub .sx-label{color:#E5626A}
+:root body.v2-sub-page .v2-sub > p,:root body.v2-sub-page .v2-sub .tool-intro p,:root body.v2-sub-page .v2-sub .sub,:root body.v2-sub-page .v2-sub .sx-sub,:root body.v2-sub-page .v2-sub .lead{font-size:18px;line-height:1.6;color:#C4CBDB;max-width:720px;margin:0}
+:root body.v2-sub-page .v2-sub .lead b,:root body.v2-sub-page .v2-sub > p b,:root body.v2-sub-page .v2-sub > p strong{color:#fff}
+:root body.v2-sub-page .v2-sub .updated,:root body.v2-sub-page .v2-sub .art-meta,:root body.v2-sub-page .v2-sub time{font-family:var(--f-mono);font-size:12.5px;color:#A7B0C5;opacity:1;margin:0}
+:root body.v2-sub-page .v2-sub .breadcrumb,:root body.v2-sub-page .v2-sub .crumbs,:root body.v2-sub-page .v2-sub .svc-crumb{font-family:var(--f-mono);font-size:12.5px;color:#A7B0C5;margin:0 0 18px}
+:root body.v2-sub-page .v2-sub .breadcrumb a,:root body.v2-sub-page .v2-sub .crumbs a,:root body.v2-sub-page .v2-sub .svc-crumb a{color:#C4CBDB;text-decoration:underline;text-decoration-color:#3A4366;text-underline-offset:3px}
+:root body.v2-sub-page .v2-sub .breadcrumb a:hover,:root body.v2-sub-page .v2-sub .crumbs a:hover,:root body.v2-sub-page .v2-sub .svc-crumb a:hover{color:#fff;text-decoration-color:var(--seal)}
+:root body.v2-sub-page .v2-sub .breadcrumb span{margin:0 6px;opacity:.6}
+:root body.v2-sub-page .v2-sub .tool-intro{margin:0;padding:0;background:none;border:0}
+:root body.v2-sub-page .v2-sub .svc-meta span{background:transparent;border-color:#3A4366;color:#C4CBDB}
+:root body.v2-sub-page .v2-sub .sx-ctas .sx-btn-dark{background:var(--seal);color:#fff}
+:root body.v2-sub-page .v2-sub .sx-ctas .sx-btn-dark:hover{background:#B02A32;color:#fff}
+:root body.v2-sub-page .v2-sub .it-top{display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+:root body.v2-sub-page .v2-sub .badge{background:rgba(229,98,106,.14);color:#F2A0A5;border:0}
+/* thank-you page (odigos/efxaristo) */
+body.v2-sub-page .sx-solo-main{background:var(--ink);background-image:radial-gradient(600px 400px at 50% 110%,rgba(200,50,58,.22),transparent)}
+body.v2-sub-page .sx-solo-main .card{border:0;border-radius:20px;box-shadow:0 30px 70px rgba(0,0,0,.45)}
+body.v2-sub-page .sx-solo-main .check{background:#FBEDEE;color:var(--seal)}
+body.v2-sub-page .sx-solo-main .check svg{stroke:var(--seal)}
+body.v2-sub-page .sx-solo-main .btn{background:var(--seal);color:#fff}
+@media (max-width:720px){:root body.v2-sub-page .v2-sub > p,:root body.v2-sub-page .v2-sub .tool-intro p,:root body.v2-sub-page .v2-sub .sub,:root body.v2-sub-page .v2-sub .sx-sub,:root body.v2-sub-page .v2-sub .lead{font-size:16.5px}}
+:root body.v2-sub-page .v2-sub > .sx-ctas ~ p{margin-top:18px}
