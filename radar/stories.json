@@ -1,10 +1,154 @@
 [
  {
+  "slug": "2026-11-24-ox-security-research-the-instructions-given-to-an-ai-agent-are-now-a",
+  "urls": [
+   "https://www.infosecurity-magazine.com/news/researchers-new-ai-attack-path"
+  ],
+  "first_seen": "2026-11-24",
+  "date": "2026-11-24",
+  "topic": "AI Security",
+  "el": {
+   "title": "Έρευνα Ox Security: οι «οδηγίες» που δίνει κανείς σε έναν AI agent έγιναν νέος δρόμος επίθεσης",
+   "summary": "Η εταιρεία ασφαλείας Ox Security ανέλυσε 542.207 ανοιχτού κώδικα εξαρτήσεις λογισμικού ανάμεσα στον Ιούλιο και τον Οκτώβριο του 2026 και βρήκε ότι, πέρα από τον κλασικό κακόβουλο κώδικα, όλο και περισσότερες επιθέσεις χρησιμοποιούν «δηλητηρίαση εργαλείων» (tool poisoning, κείμενο μέσα σε ένα εργαλείο που παραπλανεί τον AI agent) και prompt injection, δηλαδή κείμενο που πείθει έναν AI agent να χρησιμοποιήσει τα δικαιώματα που ήδη έχει με τρόπο επιζήμιο. Στους εξυπηρετητές MCP, το πρωτόκολλο που συνδέει AI agents με εξωτερικά εργαλεία, το 22% των ύποπτων συστατικών περιείχε τέτοιες «οδηγίες», ενώ σχεδόν δύο στα πέντε, το 44%, περιείχαν εντολές που έστελναν δεδομένα προς τα έξω. Η εταιρεία βρήκε επίσης ότι μόλις το 70% των εξυπηρετητών MCP είχε αναγνωρίσιμο ιδιοκτήτη, ότι τα δύο τρίτα έτρεχαν σε υποδομή ελεγχόμενη αποκλειστικά από τον ίδιο τον εκδότη, κάτι που εμποδίζει ανεξάρτητο έλεγχο, και ότι στο 82% των περιπτώσεων η πρώτη έκδοση που εντοπίστηκε ήταν ήδη κακόβουλη, χωρίς δηλαδή καθαρή προηγούμενη έκδοση για σύγκριση. Για μια επιχείρηση που συνδέει AI agents με εξωτερικά εργαλεία, η έρευνα δείχνει ότι ο έλεγχος ασφαλείας δεν αρκεί να εξετάζει μόνο αν ο κώδικας ενός εργαλείου είναι κακόβουλος, πρέπει να εξετάζει και ποιος το ελέγχει, πού φιλοξενείται και αν κάποιος μπορεί να αλλάξει αθόρυβα τις οδηγίες του αργότερα."
+  },
+  "en": {
+   "title": "Ox Security research: the \"instructions\" given to an AI agent are now a new attack path",
+   "summary": "Security vendor Ox Security analyzed 542,207 open source software components between July and October 2026 and found that, beyond classic malicious code, a growing share of attacks rely on \"tool poisoning\" and prompt injection, text crafted to convince an AI agent to misuse permissions it already holds. Among MCP servers, the protocol that connects AI agents to external tools, 22% of flagged components contained such instructions, and nearly two in five, 44%, contained commands directing the agent to send data out. The firm also found that only 70% of MCP servers had an identifiable owner, that two-thirds ran on infrastructure controlled solely by the publisher, which blocks independent verification, and that in 82% of cases the first version ever observed was already malicious, leaving no clean baseline to compare against. For a business connecting AI agents to outside tools, the research shows that security review can no longer just check whether a tool's code is malicious, it must also check who controls that tool, where it runs, and whether someone can quietly change its instructions later."
+  },
+  "sources": [
+   {
+    "name": "Infosecurity Magazine",
+    "url": "https://www.infosecurity-magazine.com/news/researchers-new-ai-attack-path/"
+   }
+  ]
+ },
+ {
+  "slug": "2026-11-23-virginia-and-oregon-sue-spacex-saying-grok-keeps-generating-child",
+  "urls": [
+   "https://arstechnica.com/tech-policy/2026/11/states-sue-spacex-to-stop-grok-from-generating-child-sex-images-revenge-porn"
+  ],
+  "first_seen": "2026-11-24",
+  "date": "2026-11-23",
+  "topic": "Incidents",
+  "el": {
+   "title": "Βιρτζίνια και Όρεγκον μηνύουν τη SpaceX, λέγοντας ότι το Grok συνεχίζει να παράγει υλικό σεξουαλικής κακοποίησης παιδιών",
+   "summary": "Οι γενικοί εισαγγελείς της Βιρτζίνια και του Όρεγκον κατέθεσαν τις πρώτες αγωγές πολιτειών εναντίον της SpaceX, που εξαγόρασε την xAI τον Φεβρουάριο, υποστηρίζοντας ότι το chatbot Grok εξακολουθεί να παράγει ανεπιθύμητο σεξουαλικό περιεχόμενο, πραγματικές φωτογραφίες κυρίως γυναικών και παιδιών που μετατρέπονται σε σεξουαλικοποιημένες εικόνες χωρίς συναίνεση. Σύμφωνα με τις αγωγές, παρόλο που η xAI δήλωσε δημόσια ότι εφάρμοσε πρόσθετες διασφαλίσεις μετά την αρχική αντίδραση για τη λειτουργία «spicy mode» του Grok, οι δηλώσεις αυτές ήταν «παραπλανητικές» και η ομάδα ασφάλειας που ήταν υπεύθυνη για τον έλεγχο του Grok περιορίστηκε σε μόλις δύο με τρία άτομα. Ο γενικός εισαγγελέας της Βιρτζίνια, Jay Jones, ανέφερε στην αγωγή ότι το υλικό αυτό, μόλις δημιουργηθεί και μοιραστεί, «δεν μπορεί ποτέ να διαγραφεί πλήρως και γίνεται μόνιμο αρχείο της κακοποίησης του παιδιού», ενώ ο γενικός εισαγγελέας του Όρεγκον, Dan Rayfield, κατηγόρησε την xAI ότι «έβαλε σε κίνδυνο παιδιά και κοινότητες και μετά μας είπε ψέματα για μέτρα ασφαλείας που δεν υπήρχαν». Η υπόθεση ξεχωρίζει από προηγούμενες νομικές ενέργειες εναντίον της xAI επειδή είναι η πρώτη φορά που πολιτείες στρέφονται απευθείας κατά της μητρικής εταιρείας SpaceX και επειδή περιγράφει συγκεκριμένα την υποστελέχωση της ομάδας ασφάλειας ως αιτία του προβλήματος, όχι απλώς ανεπαρκή φίλτρα."
+  },
+  "en": {
+   "title": "Virginia and Oregon sue SpaceX, saying Grok keeps generating child sexual abuse material",
+   "summary": "The attorneys general of Virginia and Oregon filed the first state lawsuits against SpaceX, which acquired xAI in February, arguing that the Grok chatbot continues to generate unwanted sexual content, turning real photos of mostly women and children into non-consensual sexualized images. According to the lawsuits, although xAI publicly stated it had added safeguards after the initial backlash over Grok's \"spicy mode\" feature, those statements were \"misleading,\" and the safety team responsible for reviewing Grok had been cut to just two or three people. Virginia Attorney General Jay Jones said in the complaint that such material, once created and shared, \"can never be fully erased and becomes a permanent record of the child's abuse,\" while Oregon Attorney General Dan Rayfield accused xAI of \"endangering children and communities and then lying to us about safety measures that didn't exist.\" The case stands out from earlier legal action against xAI because it is the first time states have sued the parent company SpaceX directly, and because it specifically describes an understaffed safety team as the cause, not just inadequate filters."
+  },
+  "sources": [
+   {
+    "name": "Ars Technica",
+    "url": "https://arstechnica.com/tech-policy/2026/11/states-sue-spacex-to-stop-grok-from-generating-child-sex-images-revenge-porn/"
+   }
+  ]
+ },
+ {
+  "slug": "2026-11-23-shirudo-openai-and-cisco-build-an-ai-tool-that-shields-linux-systems",
+  "urls": [
+   "https://openai.com/index/introducing-shirudo",
+   "https://thehackernews.com/2026/11/openai-and-cisco-unveil-ai-assisted.html"
+  ],
+  "first_seen": "2026-11-24",
+  "date": "2026-11-23",
+  "topic": "AI Security",
+  "el": {
+   "title": "«Shirudo»: η OpenAI και η Cisco φτιάχνουν εργαλείο AI που «μπαλώνει» Linux συστήματα εν ώρα λειτουργίας",
+   "summary": "Η OpenAI και η Cisco παρουσίασαν από κοινού το Shirudo, ιαπωνικά «ασπίδα», ένα εργαλείο ανοιχτού κώδικα που επιτρέπει σε μια εταιρεία να προστατεύσει έναν server με Linux από μια γνωστή ευπάθεια όσο περιμένει να δοκιμαστεί και να εγκατασταθεί η μόνιμη διόρθωση, χωρίς να χρειάζεται επανεκκίνηση της υπηρεσίας. Το εργαλείο βασίζεται στην τεχνολογία eBPF, που επιτρέπει την παρακολούθηση και τον περιορισμό συγκεκριμένης συμπεριφοράς μέσα στον πυρήνα του λειτουργικού συστήματος, ενώ AI agents μπορούν να αναλύσουν μια ευπάθεια, να φτιάξουν μια στοχευμένη «ασπίδα» και να την ελέγξουν σε πραγματικό φόρτο εργασίας πριν ένας άνθρωπος την εγκρίνει για χρήση. Σε δοκιμή που περιγράφουν οι δύο εταιρείες, μια τέτοια ασπίδα, φτιαγμένη με το εργαλείο Codex της OpenAI, μπλόκαρε με επιτυχία μια πρόσφατη επίθεση τύπου Java4Shell σε διακομιστή Elasticsearch, χωρίς να διακόψει την υπηρεσία. Για μια επιχείρηση που διαχειρίζεται δικά της συστήματα Linux, η πρωτοβουλία δείχνει πώς η AI μπορεί να συντομεύσει το παράθυρο ευπάθειας ανάμεσα στην ανακάλυψη ενός προβλήματος και στην πλήρη διόρθωσή του, χωρίς όμως να καταργεί την ανάγκη ανθρώπινου ελέγχου πριν από κάθε αλλαγή σε παραγωγικό περιβάλλον."
+  },
+  "en": {
+   "title": "\"Shirudo\": OpenAI and Cisco build an AI tool that \"shields\" Linux systems while they run",
+   "summary": "OpenAI and Cisco jointly introduced Shirudo, Japanese for \"shield,\" an open source tool that lets a company protect a Linux server against a known vulnerability while the permanent patch is still being tested and rolled out, without restarting the service. The tool is built on eBPF, a technology that lets it observe and restrict specific behavior inside the operating system kernel, and AI agents can analyze a vulnerability, build a targeted \"shield,\" and validate it against a live workload before a human approves it for deployment. In a test the two companies describe, a shield built with OpenAI's Codex successfully blocked a recent Java4Shell-style exploit attempt against a running Elasticsearch server without interrupting the service. For a business running its own Linux infrastructure, the project shows how AI can shorten the gap between discovering a flaw and fully patching it, though it does not remove the need for a human to approve each change before it reaches production."
+  },
+  "sources": [
+   {
+    "name": "OpenAI",
+    "url": "https://openai.com/index/introducing-shirudo"
+   },
+   {
+    "name": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/openai-and-cisco-unveil-ai-assisted.html"
+   }
+  ]
+ },
+ {
+  "slug": "2026-11-23-cequence-research-bots-disguised-as-ai-agents-hunt-for-secrets-while",
+  "urls": [
+   "https://www.infosecurity-magazine.com/news/secrethunting-trafficai-agent"
+  ],
+  "first_seen": "2026-11-24",
+  "date": "2026-11-23",
+  "topic": "AI Security",
+  "el": {
+   "title": "Έρευνα Cequence: bots μεταμφιεσμένα σε AI agents ψάχνουν κωδικούς, ενώ οι πραγματικοί agents περνούν από την ανάγνωση στην αγορά",
+   "summary": "Η εταιρεία ασφαλείας Cequence δημοσίευσε τον δείκτη Agentic AI Security Index, βασισμένο σε δεδομένα κίνησης από Μάιο έως Νοέμβριο του 2026, και βρήκε ότι κακόβουλα bots χρησιμοποιούν ολοένα πιο συχνά το όνομα γνωστών AI agents σαν κάλυψη για να ψάξουν αρχεία ρυθμίσεων, κλειδιά πρόσβασης και κονσόλες διαχείρισης, με την κίνηση αυτού του τύπου να φτάνει έως και 1.450 επισκέψεις την ημέρα τον Οκτώβριο από λιγότερες από 30 τον Μάιο. Επειδή το όνομα ενός agent δηλώνεται από τον ίδιο τον επισκέπτη, οποιοδήποτε bot μπορεί να ισχυριστεί ότι είναι, για παράδειγμα, agent της Perplexity, χωρίς αυτό να σημαίνει πραγματική εμπλοκή της εταιρείας. Παράλληλα, η έρευνα δείχνει ότι οι πραγματικοί, αναγνωρισμένοι AI agents περνούν πλέον από την απλή ανάγνωση ιστοσελίδων σε πραγματικές ενέργειες όπως σύνδεση, κράτηση και αγορά, με τέτοιες ενέργειες να αυξάνονται κατά 240% μέσα στο ίδιο διάστημα, ενώ νέοι agents όπως το Meta Muse εμφανίστηκαν να «ενεργούν» στο 51% των επισκέψεών τους ήδη από τον πρώτο μήνα. Για μια επιχείρηση με ηλεκτρονικό κατάστημα ή πλατφόρμα που δέχεται AI agents ως επισκέπτες, η έρευνα δείχνει ότι η διαχείριση κινδύνου πρέπει πλέον να βασίζεται στη συμπεριφορά κάθε επισκέπτη και όχι στο όνομα που δηλώνει, αφού αυτό το όνομα από μόνο του δεν αποδεικνύει τίποτα."
+  },
+  "en": {
+   "title": "Cequence research: bots disguised as AI agents hunt for secrets, while real agents shift from reading to buying",
+   "summary": "Security firm Cequence published its Agentic AI Security Index, based on traffic data from May through November 2026, and found that malicious bots increasingly use the names of well-known AI agents as cover to probe for configuration files, access keys, and admin consoles, with that kind of traffic reaching as many as 1,450 visits a day in October, up from fewer than 30 in May. Because an agent's name is self-reported by the visitor, any bot can claim to be, for example, a Perplexity agent, without that implying any real involvement from the company. The research also shows that established, recognized AI agents are shifting from simply reading web pages to taking real actions such as signing in, booking, and buying, with action-taking visits up 240% over the same period, while newer agents such as Meta Muse were already \"acting\" on 51% of their visits within their first month. For a business running an online store or platform that AI agents visit, the research shows that risk management now has to rest on each visitor's behavior rather than the name it claims, since that name alone proves nothing."
+  },
+  "sources": [
+   {
+    "name": "Infosecurity Magazine",
+    "url": "https://www.infosecurity-magazine.com/news/secrethunting-trafficai-agent/"
+   }
+  ]
+ },
+ {
+  "slug": "2026-11-23-anthropic-launches-claude-ship-ai-agents-that-review-fix-and-approve",
+  "urls": [
+   "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes"
+  ],
+  "first_seen": "2026-11-24",
+  "date": "2026-11-23",
+  "topic": "AI Security",
+  "el": {
+   "title": "Η Anthropic παρουσιάζει το Claude Ship: AI agents που ελέγχουν, διορθώνουν και εγκρίνουν μόνοι τους αλλαγές κώδικα",
+   "summary": "Η Anthropic ανακοίνωσε το Claude Ship, μια σειρά AI agents για την αυτοματοποίηση του ελέγχου κώδικα, με τρία ξεχωριστά κομμάτια: το Code Review, που είναι ήδη γενικά διαθέσιμο και εντοπίζει προβλήματα σε προτεινόμενες αλλαγές, το PR Steward, που διορθώνει αποτυχημένους ελέγχους και συγκρούσεις συγχώνευσης, και το Claude Approvals, που μπορεί να εγκρίνει αυτόματα μια αλλαγή κώδικα με βάση πολιτική που γράφει η ίδια η ομάδα σε απλή γλώσσα μέσα στο αποθετήριο. Το πιο αξιοσημείωτο σημείο είναι ότι το Claude Approvals αναλαμβάνει ένα βήμα που μέχρι τώρα θεωρούνταν αποκλειστικά ανθρώπινο, την τελική έγκριση μιας αλλαγής πριν φτάσει σε παραγωγή, με την Anthropic να σημειώνει ότι «τα περισσότερα group θέλουν έναν άνθρωπο να εγκρίνει κάθε αλλαγή, και αυτό είναι εύκολο όσο ο κώδικας γράφεται γραμμή προς γραμμή από ανθρώπους». Η εταιρεία προτείνει οι ομάδες να ξεκινήσουν με λειτουργία «μόνο παρατήρησης» και σε ένα μόνο αποθετήριο προτού ενεργοποιήσουν πλήρη αυτόματη έγκριση, διατηρώντας τον έλεγχο στο πού τρέχει το εργαλείο και ποιες αλλαγές ανεβαίνουν σε άνθρωπο. Για μια επιχείρηση που αναπτύσσει λογισμικό, η κίνηση δείχνει πόσο γρήγορα μετακινείται το όριο ανθρώπινης εποπτείας στην πράξη, μετατρέποντας μια απόφαση εμπιστοσύνης, αν δηλαδή μια αλλαγή κώδικα είναι ασφαλής για παραγωγή, σε κάτι που μπορεί πλέον να παίρνει και μηχανή, όχι μόνο άνθρωπος."
+  },
+  "en": {
+   "title": "Anthropic launches Claude Ship: AI agents that review, fix, and approve code changes on their own",
+   "summary": "Anthropic announced Claude Ship, a set of AI agents for automating code review, with three separate pieces: Code Review, already generally available, which flags problems in proposed changes; PR Steward, which fixes failing checks and merge conflicts; and Claude Approvals, which can automatically approve a code change based on a policy the team itself writes in plain language inside the repository. The most notable part is that Claude Approvals takes over a step long considered strictly human, final sign-off on a change before it reaches production, with Anthropic noting that \"most teams want a person to approve every change, and that's easy to keep up with when people write every line.\" The company recommends teams start in \"observe only\" mode on a single repository before turning on full automatic approval, keeping control over where the tool runs and which changes still get escalated to a human. For a software company, the move shows how fast the line of human oversight is shifting in practice, turning a trust decision, whether a code change is safe for production, into something a machine can now make too, not only a person."
+  },
+  "sources": [
+   {
+    "name": "TechCrunch",
+    "url": "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/"
+   }
+  ]
+ },
+ {
+  "slug": "2026-11-22-openai-s-chief-scientist-proposes-a-shared-speed-limit-for-ai-model",
+  "urls": [
+   "https://techcrunch.com/2026/11/22/openais-chief-scientist-has-thoughts-on-how-to-limit-ai-development"
+  ],
+  "first_seen": "2026-11-24",
+  "date": "2026-11-22",
+  "topic": "General",
+  "el": {
+   "title": "Ο επικεφαλής επιστήμονας της OpenAI προτείνει κοινό «όριο ταχύτητας» για την ανάπτυξη μοντέλων AI",
+   "summary": "Ο Jakub Pachocki, επικεφαλής επιστήμονας της OpenAI, δημοσίευσε κείμενο όπου προτείνει τρόπο να μετριέται ένα ενδεχόμενο κοινό όριο στον ρυθμό βελτίωσης των μοντέλων AI, πρόταση που ο διευθύνων σύμβουλος Sam Altman χαρακτήρισε «από τα πιο σημαντικά που έχει δημοσιεύσει ποτέ η OpenAI». Το κείμενο έρχεται μετά την πρόταση του διευθύνοντος συμβούλου της Anthropic, Dario Amodei, να «μπει φρένο» στην πρόοδο της AI, πρόταση που υποστήριξαν δημόσια τόσο ο Altman όσο και ο Elon Musk. Ο Pachocki προτείνει ως κοινό μέτρο το perplexity, έναν δείκτη που δείχνει πόσο καλά προβλέπει ένα μοντέλο την επόμενη λέξη ενός κειμένου, υποστηρίζοντας ότι, σε αντίθεση με τα συνηθισμένα benchmarks δυνατοτήτων που «ξεπερνιούνται» γρήγορα, το perplexity παραμένει αξιόπιστο μέτρο σύγκρισης στον χρόνο. Σύμφωνα με το κείμενο, όταν αυτός ο δείκτης έπεσε κάτω από ένα συγκεκριμένο όριο στα μοντέλα της εταιρείας, εμφανίστηκαν απότομα ισχυρές δυνατότητες σε τομείς όπως η κυβερνοασφάλεια και τα μαθηματικά, και η πρόταση είναι οι εταιρείες AI να δεσμευτούν να μην ξεπεράσουν ένα κοινά αποδεκτό όριο μέχρι να αναπτυχθεί επαρκής ικανότητα παρακολούθησης της συμπεριφοράς των μοντέλων. Για μια επιχείρηση που παρακολουθεί προς τα πού κινείται η ρύθμιση της AI, η πρόταση δείχνει ότι ακόμη και οι ίδιες οι εταιρείες αναγνωρίζουν την ανάγκη για μετρήσιμα όρια στην ανάπτυξη μοντέλων, χωρίς όμως αυτό να αντικαθιστά δεσμευτική νομοθεσία ή ανεξάρτητο έλεγχο."
+  },
+  "en": {
+   "title": "OpenAI's chief scientist proposes a shared \"speed limit\" for AI model development",
+   "summary": "Jakub Pachocki, OpenAI's chief scientist, published a post proposing a way to measure a possible shared limit on how fast AI models improve, a proposal CEO Sam Altman called \"the most important thing OpenAI has published in a while.\" The post follows Anthropic CEO Dario Amodei's proposal to \"pace the frontier\" of AI progress, which both Altman and Elon Musk publicly endorsed. Pachocki proposes perplexity as the shared measure, a metric of how well a model predicts the next word in a piece of text, arguing that unlike capability benchmarks that quickly become outdated, perplexity has stayed a reliable point of comparison over time. According to the post, once that metric fell below a certain threshold in the company's own models, strong capabilities in fields such as cybersecurity and mathematics emerged abruptly, and the proposal is for AI companies to commit not to exceed a jointly agreed threshold until they develop enough ability to monitor model behavior. For a business tracking where AI regulation is heading, the proposal shows that AI companies themselves now recognize the need for measurable limits on model development, though it does not replace binding legislation or independent oversight."
+  },
+  "sources": [
+   {
+    "name": "TechCrunch",
+    "url": "https://techcrunch.com/2026/11/22/openais-chief-scientist-has-thoughts-on-how-to-limit-ai-development/"
+   }
+  ]
+ },
+ {
   "slug": "2026-11-21-signal-restricts-mobile-screenshots-to-block-os-level-ai-agents-from",
   "urls": [
    "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance",
    "https://thehackernews.com/2026/11/signal-blocks-ai-agents-from-reading.html",
-   "https://www.bleepingcomputer.com/news/security/signal-to-block-siri-gemini-ai-from-capturing-chats-on-ios-android"
+   "https://www.bleepingcomputer.com/news/security/signal-to-block-siri-gemini-ai-from-capturing-chats-on-ios-android",
+   "https://therecord.media/signal-no-screenshots-by-apple-google-operating-systems"
   ],
   "first_seen": "2026-11-22",
   "date": "2026-11-21",
@@ -29,6 +173,10 @@
    {
     "name": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/signal-to-block-siri-gemini-ai-from-capturing-chats-on-ios-android/"
+   },
+   {
+    "name": "The Record",
+    "url": "https://therecord.media/signal-no-screenshots-by-apple-google-operating-systems"
    }
   ]
  },

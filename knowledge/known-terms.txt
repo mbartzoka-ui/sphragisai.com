@@ -472,3 +472,8 @@ path traversal
 # --- 2026-11-22 ---
 sandbox escape
 ξεφυγή από το sandbox
+
+# --- 2026-11-24 ---
+ebpf
+tool poisoning
+perplexity

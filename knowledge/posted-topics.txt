@@ -113,3 +113,4 @@
 2026-11-20 | ec-cyberattack-artex-ai-act-regulator | Η Ευρωπαϊκή Επιτροπή δέχθηκε κυβερνοεπίθεση με το εργαλείο AI ARTEX
 2026-11-21 | ai-router-canary-zero-data-retention-leak | Πείραμα με 2 εκατομμύρια «δολώματα» αποκαλύπτει διαρροές δεδομένων μέσα στην αλυσίδα παρόχων AI
 2026-11-22 | signal-blocks-os-ai-agents-screenshots | Το Signal περιορίζει τα screenshots για να εμποδίσει τους AI βοηθούς του λειτουργικού
+2026-11-24 | anthropic-claude-ship-autonomous-code-approval | Η Anthropic φέρνει το Claude Ship, AI agents που εγκρίνουν μόνοι τους αλλαγές κώδικα
