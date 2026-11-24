@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Στέλνει τις σελίδες του site στη γνώση του βοηθού AI (πλατφόρμα Sphragis Assistant, πελάτης sphragisai).
+"""Στέλνει τις σελίδες του site στη γνώση του βοηθού AI (πλατφόρμα Sealbot, πελάτης sphragisai).
 
 Διαβάζει τα HTML του repo (Blog, AI Security Radar, υπηρεσίες, case studies, εργαλεία,
 οδηγοί, ISO 42001, αρχική), εξάγει τον τίτλο και το κείμενο κάθε σελίδας και στέλνει
