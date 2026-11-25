@@ -477,3 +477,7 @@ sandbox escape
 ebpf
 tool poisoning
 perplexity
+
+# --- 2026-11-25 ---
+agentic offensive framework
+aof

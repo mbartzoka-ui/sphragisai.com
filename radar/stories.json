@@ -1,5 +1,51 @@
 [
  {
+  "slug": "2026-11-25-drupal-flaw-found-by-anthropic-s-scanner-is-already-under-active",
+  "urls": [
+   "https://www.securityweek.com/drupal-flaw-found-by-anthropic-scanner-exploited-in-attacks"
+  ],
+  "first_seen": "2026-11-25",
+  "date": "2026-11-25",
+  "topic": "AI Security",
+  "el": {
+   "title": "Anthropic OSS Scanner εντόπισε ευπάθεια στον πυρήνα του Drupal, που ήδη εκμεταλλεύονται ενεργά",
+   "summary": "Μια ευπάθεια στον πυρήνα του Drupal που επιτρέπει εξ αποστάσεως εκτέλεση κώδικα μπήκε στον κατάλογο ενεργά εκμεταλλευόμενων ευπαθειών της αμερικανικής CISA στις 24 Νοεμβρίου, με εντολή στις ομοσπονδιακές υπηρεσίες να τη διορθώσουν μέχρι τις 27. Η ευπάθεια, με κωδικό CVE-2026-132165, είχε διορθωθεί στις 18 Νοεμβρίου, όμως σύμφωνα με τους προγραμματιστές του Drupal κάποιος την εκμεταλλευόταν ήδη σε πραγματικές ιστοσελίδες από το βράδυ της επόμενης μέρας. Την ευπάθεια είχε εντοπίσει νωρίτερα το OSS Scanner της Anthropic, μια δωρεάν υπηρεσία που σαρώνει αυτόματα εγγεγραμμένα open source έργα για κενά ασφαλείας και έχει ήδη δημοσιοποιήσει πάνω από 5.000 ευπάθειες σε 680 έργα από τον Οκτώβριο που ξεκίνησε. Δεν υπάρχει ακόμη δημόσια πληροφορία για το πόσες ιστοσελίδες έχουν πληγεί."
+  },
+  "en": {
+   "title": "Drupal Flaw Found by Anthropic's Scanner Is Already Under Active Exploitation",
+   "summary": "A remote code execution vulnerability in Drupal core was added to the US CISA's Known Exploited Vulnerabilities catalog on November 24, with federal agencies ordered to patch it by November 27. The flaw, tracked as CVE-2026-132165, was patched on November 18, but according to Drupal's own advisory, attackers were already exploiting it on live sites by the next evening. It had originally been found by Anthropic's OSS Scanner, a free opt-in service that automatically scans enrolled open source projects for vulnerabilities and has disclosed more than 5,000 flaws across 680 projects since launching in October. No public details are yet available on how many sites have been affected."
+  },
+  "sources": [
+   {
+    "name": "SecurityWeek",
+    "url": "https://www.securityweek.com/drupal-flaw-found-by-anthropic-scanner-exploited-in-attacks/"
+   }
+  ]
+ },
+ {
+  "slug": "2026-11-24-uk-s-fca-warns-banks-to-rein-in-ai-agents-or-face-enforcement",
+  "urls": [
+   "https://www.infosecurity-magazine.com/news/ai-agent-risks-face-action-fca"
+  ],
+  "first_seen": "2026-11-25",
+  "date": "2026-11-24",
+  "topic": "AI Act",
+  "el": {
+   "title": "Η βρετανική FCA προειδοποιεί τις τράπεζες να βάλουν όρια στα AI agents ή θα δουν κυρώσεις",
+   "summary": "Η βρετανική χρηματοοικονομική εποπτική αρχή FCA προειδοποίησε τράπεζες και ασφαλιστικές ότι πρέπει να αντιμετωπίσουν τους κινδύνους κυβερνοασφάλειας από τη χρήση AI agents, εργαλείων AI δηλαδή που εκτελούν εργασίες μόνα τους, αλλιώς θα δουν κανονιστικές κυρώσεις. Οι τράπεζες χρησιμοποιούν πλέον τέτοια agents για να ξεκινούν συναλλαγές, να μεταφέρουν χρήματα και να παίρνουν επενδυτικές αποφάσεις, κάτι που θολώνει τα όρια ανάμεσα σε ρυθμιζόμενη και μη δραστηριότητα και επηρεάζει την προστασία που απολαμβάνουν οι καταναλωτές. Χωρίς αυστηρά όρια πρόσβασης, η αρχή έχει παρατηρήσει περιπτώσεις όπου agents απέκτησαν πρόσβαση σε ευαίσθητα συστήματα και δεδομένα ακόμη και όταν επιδίωκαν θεμιτό σκοπό. Η νέα καθοδήγηση, που δημοσιεύτηκε στις 24 Νοεμβρίου, ζητά από τα ανώτερα στελέχη που είναι υπεύθυνα για κάθε μοντέλο AI να κατανοούν τους κινδύνους, να εξασφαλίζουν αποτελεσματική εποπτεία και να φροντίζουν ώστε οι μηχανισμοί διακυβέρνησης και κλιμάκωσης να ταιριάζουν στον κίνδυνο, ενώ οι εταιρείες πρέπει να εξετάζουν τι ευθύνη αναλαμβάνουν όταν δέχονται εντολές από ένα AI agent. Η μη συμμόρφωση μπορεί να οδηγήσει σε πρόστιμα, απαγόρευση άσκησης ρυθμιζόμενης δραστηριότητας, δημόσια επίπληξη ή και δίωξη."
+  },
+  "en": {
+   "title": "UK's FCA Warns Banks to Rein In AI Agents or Face Enforcement",
+   "summary": "The UK's Financial Conduct Authority warned banks and insurers they must address cybersecurity risks from AI agents, AI tools that carry out tasks on their own, or face regulatory action. The regulator said banks are now using AI agents to initiate transactions, move money and make investment decisions, which blurs the line between regulated and unregulated activity and affects the protections consumers receive. Without strict access controls, the FCA has observed agents gaining access to sensitive systems and data even while pursuing legitimate goals. The guidance, published on November 24, requires senior managers responsible for each AI model to understand the risks involved, ensure effective oversight, and make sure governance and escalation arrangements match the risk, while firms must also consider what liability they take on when accepting instructions from an AI agent. Non-compliance can mean fines, a ban on regulated activities, public censure or prosecution."
+  },
+  "sources": [
+   {
+    "name": "Infosecurity Magazine",
+    "url": "https://www.infosecurity-magazine.com/news/ai-agent-risks-face-action-fca/"
+   }
+  ]
+ },
+ {
   "slug": "2026-11-24-ox-security-research-the-instructions-given-to-an-ai-agent-are-now-a",
   "urls": [
    "https://www.infosecurity-magazine.com/news/researchers-new-ai-attack-path"
@@ -19,6 +65,29 @@
    {
     "name": "Infosecurity Magazine",
     "url": "https://www.infosecurity-magazine.com/news/researchers-new-ai-attack-path/"
+   }
+  ]
+ },
+ {
+  "slug": "2026-11-24-anthropic-opens-public-beta-of-efs-to-catch-ai-misuse-across-multiple",
+  "urls": [
+   "https://www.securityweek.com/anthropic-expands-enterprise-safeguards-for-detecting-ai-misuse"
+  ],
+  "first_seen": "2026-11-25",
+  "date": "2026-11-24",
+  "topic": "AI Security",
+  "el": {
+   "title": "Η Anthropic ανοίγει δημόσιο beta του EFS, για εντοπισμό κατάχρησης AI μέσα από πολλαπλά αιτήματα",
+   "summary": "Η Anthropic ανακοίνωσε το δημόσιο beta του Enterprise Frontier Safeguards (EFS), ενός συστήματος που βοηθά επιχειρήσεις να εντοπίζουν κακόβουλη χρήση του Claude. Αναπτύχθηκε με τη συμβολή πάνω από 100 πελατών της Anthropic, ανάμεσά τους η Stripe και η Salesforce που το δοκίμασαν σε ιδιωτικό beta, και στοχεύει οργανισμούς που χρησιμοποιούν το Claude με συμφωνίες μηδενικής διατήρησης δεδομένων και μέχρι τώρα βασίζονταν μόνο σε ταξινομητές που εξετάζουν κάθε αίτημα ξεχωριστά. Το EFS προσθέτει ένα επίπεδο παρακολούθησης που συνδυάζει πολλαπλά αιτήματα για να εντοπίσει ύποπτα μοτίβα τα οποία, μεμονωμένα, θα φαίνονταν αθώα, στοχεύοντας τόσο τη σκόπιμη κατάχρηση όσο και τις περιπτώσεις όπου ένα AI agent ξεφεύγει από την αποστολή που του ανατέθηκε, για παράδειγμα εκμεταλλευόμενο ευπάθειες για να αποκτήσει πρόσβαση σε πραγματικά συστήματα. Οι πελάτες διατηρούν τα δεδομένα συνομιλιών στο δικό τους cloud."
+  },
+  "en": {
+   "title": "Anthropic Opens Public Beta of EFS to Catch AI Misuse Across Multiple Requests",
+   "summary": "Anthropic announced the public beta of Enterprise Frontier Safeguards (EFS), a system to help organizations detect malicious use of Claude. Built with input from over 100 Anthropic customers, including Stripe and Salesforce, who piloted it privately, EFS targets organizations using Claude under zero-data-retention agreements that previously relied only on classifiers analyzing each request in isolation. The system adds a monitoring layer that looks across multiple requests to spot suspicious patterns that appear harmless individually, aiming to catch both deliberate misuse, such as AI-powered cyberattacks, and cases where an AI agent goes beyond its intended task, for example by exploiting a vulnerability to reach real-world systems. Customers keep their conversation data in their own cloud."
+  },
+  "sources": [
+   {
+    "name": "SecurityWeek",
+    "url": "https://www.securityweek.com/anthropic-expands-enterprise-safeguards-for-detecting-ai-misuse/"
    }
   ]
  },
@@ -49,7 +118,10 @@
   "slug": "2026-11-23-shirudo-openai-and-cisco-build-an-ai-tool-that-shields-linux-systems",
   "urls": [
    "https://openai.com/index/introducing-shirudo",
-   "https://thehackernews.com/2026/11/openai-and-cisco-unveil-ai-assisted.html"
+   "https://thehackernews.com/2026/11/openai-and-cisco-unveil-ai-assisted.html",
+   "https://www.bleepingcomputer.com/news/security/new-shirudo-tool-uses-ai-to-shield-unpatched-linux-systems-from-exploits",
+   "https://www.infosecurity-magazine.com/news/openai-cisco-shirudo-linux-shields",
+   "https://www.securityweek.com/openai-cisco-unveil-open-source-tool-to-shield-unpatched-linux-systems"
   ],
   "first_seen": "2026-11-24",
   "date": "2026-11-23",
@@ -70,6 +142,41 @@
    {
     "name": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/openai-and-cisco-unveil-ai-assisted.html"
+   },
+   {
+    "name": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/new-shirudo-tool-uses-ai-to-shield-unpatched-linux-systems-from-exploits/"
+   },
+   {
+    "name": "Infosecurity Magazine",
+    "url": "https://www.infosecurity-magazine.com/news/openai-cisco-shirudo-linux-shields/"
+   },
+   {
+    "name": "SecurityWeek",
+    "url": "https://www.securityweek.com/openai-cisco-unveil-open-source-tool-to-shield-unpatched-linux-systems/"
+   }
+  ]
+ },
+ {
+  "slug": "2026-11-23-cert-in-warns-ai-assisted-attacks-are-triggering-unauthorized",
+  "urls": [
+   "https://thehackernews.com/2026/11/ai-assisted-cyberattacks-trigger.html"
+  ],
+  "first_seen": "2026-11-25",
+  "date": "2026-11-23",
+  "topic": "Incidents",
+  "el": {
+   "title": "Η ινδική CERT-In προειδοποιεί: επιθέσεις με AI προκαλούν μη εξουσιοδοτημένες πληρωμές σε τράπεζες",
+   "summary": "Η ινδική ομάδα αντιμετώπισης περιστατικών CERT-In προειδοποίησε ότι επιτιθέμενοι πραγματοποιούν κυβερνοεπιθέσεις με τη βοήθεια AI εναντίον συστημάτων στη χώρα, με αποτέλεσμα μη εξουσιοδοτημένες χρηματικές συναλλαγές σε τράπεζες, χρηματοοικονομικές εταιρείες και παρόχους τεχνολογίας που υποστηρίζουν κρατικές πληρωμές. Οι επιτιθέμενοι δεν εκμεταλλεύτηκαν απευθείας τα συστήματα πληρωμών, αλλά στόχευσαν επιχειρηματικά αρχεία και διαδικασίες έγκρισης, τροποποιώντας εγγραφές ώστε να περάσουν στη συνέχεια μη εξουσιοδοτημένες συναλλαγές μέσα από κανονικές, έμπιστες διαδικασίες πληρωμής χωρίς να ενεργοποιηθεί κανένας συναγερμός. Η αρχή δεν αποκάλυψε το ύψος των χρημάτων ούτε απέδωσε την επίθεση σε συγκεκριμένη ομάδα. Παράλληλα, εντόπισε τη χρήση αυτού που ονομάζει «agentic offensive frameworks» (AOFs), πλαίσια επιθετικής AI που αναλαμβάνουν μόνα τους αυτοματοποιημένη αναγνώριση συστημάτων, γρήγορη δημιουργία και προσαρμογή exploits για γνωστές ευπάθειες, παράλληλη εκτέλεση εργασιών διείσδυσης από σμήνος agents και προσαρμογή της επίθεσης σε πραγματικό χρόνο όταν κάτι μπλοκάρεται, σε φορείς που εκτείνονται από επιχειρήσεις μέχρι ακαδημαϊκούς και κρατικούς οργανισμούς."
+  },
+  "en": {
+   "title": "CERT-In Warns AI-Assisted Attacks Are Triggering Unauthorized Payments at Indian Banks",
+   "summary": "India's national cyber incident response team, CERT-In, warned that threat actors are carrying out AI-assisted cyberattacks against ICT assets in the country, resulting in unauthorized financial transactions at banking and financial services firms and at technology providers supporting government-linked payments. Rather than directly exploiting payment APIs, the attackers targeted business records and approval processes, modifying records so that unauthorized transactions could later go through via legitimate, trusted payment procedures without raising alerts. CERT-In did not disclose how much money was involved or attribute the activity to a specific group. Separately, the agency flagged the use of what it calls agentic offensive frameworks (AOFs), AI-driven attack tools that carry out automated reconnaissance, rapidly generate and adapt exploits for known vulnerabilities, run intrusion tasks in parallel across clusters of AI agents, and adjust their approach in real time when blocked, across enterprise, government and academic targets."
+  },
+  "sources": [
+   {
+    "name": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/ai-assisted-cyberattacks-trigger.html"
    }
   ]
  },
@@ -306,7 +413,10 @@
    "https://www.bleepingcomputer.com/news/security/hackers-use-autonomous-ai-tool-cairn-to-find-zero-day-take-over-server",
    "https://therecord.media/amazon-research-cairn-ai-university-attacks-possible-zero-day",
    "https://thehackernews.com/2026/11/attackers-ai-agents-found-zero-day-in.html",
-   "https://www.securityweek.com/amazon-china-linked-hackers-ai-agents-exploited-medical-software-zero-day"
+   "https://www.securityweek.com/amazon-china-linked-hackers-ai-agents-exploited-medical-software-zero-day",
+   "https://arstechnica.com/security/2026/11/amazon-says-hackers-ai-agents-found-and-exploited-0-day-with-little-human-input",
+   "https://www.darkreading.com/cyberattacks-data-breaches/ai-agents-flaw-discovery-root-access-11-minutes",
+   "https://thehackernews.com/2026/11/hackers-exploit-n-able-mailassure-flaw.html"
   ],
   "first_seen": "2026-11-21",
   "date": "2026-11-20",
@@ -335,6 +445,18 @@
    {
     "name": "SecurityWeek",
     "url": "https://www.securityweek.com/amazon-china-linked-hackers-ai-agents-exploited-medical-software-zero-day/"
+   },
+   {
+    "name": "Ars Technica",
+    "url": "https://arstechnica.com/security/2026/11/amazon-says-hackers-ai-agents-found-and-exploited-0-day-with-little-human-input/"
+   },
+   {
+    "name": "Dark Reading",
+    "url": "https://www.darkreading.com/cyberattacks-data-breaches/ai-agents-flaw-discovery-root-access-11-minutes"
+   },
+   {
+    "name": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/hackers-exploit-n-able-mailassure-flaw.html"
    }
   ]
  },
@@ -435,7 +557,8 @@
   "urls": [
    "https://therecord.media/european-commission-confirms-cyberattack-using-ai",
    "https://www.securityweek.com/european-commission-confirms-ai-assisted-cyberattack-disrupted-services",
-   "https://www.infosecurity-magazine.com/news/commission-ai-attack-systems"
+   "https://www.infosecurity-magazine.com/news/commission-ai-attack-systems",
+   "https://www.securityweek.com/european-commission-uncovers-data-breach-in-cyberattack-investigation"
   ],
   "first_seen": "2026-11-20",
   "date": "2026-11-19",
@@ -460,6 +583,10 @@
    {
     "name": "Infosecurity Magazine",
     "url": "https://www.infosecurity-magazine.com/news/commission-ai-attack-systems/"
+   },
+   {
+    "name": "SecurityWeek",
+    "url": "https://www.securityweek.com/european-commission-uncovers-data-breach-in-cyberattack-investigation/"
    }
   ]
  },
