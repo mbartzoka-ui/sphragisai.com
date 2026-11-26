@@ -1,8 +1,55 @@
 [
  {
+  "slug": "2026-11-25-microsoft-links-chinese-state-hacking-groups-salt-typhoon-and-crystal",
+  "urls": [
+   "https://therecord.media/microsoft-china-salt-typhoon-using-artex-ai-tool"
+  ],
+  "first_seen": "2026-11-26",
+  "date": "2026-11-25",
+  "topic": "Incidents",
+  "el": {
+   "title": "Η Microsoft συνδέει τις κινεζικές ομάδες Salt Typhoon και Crystal Typhoon με χρήση του εργαλείου AI Artex",
+   "summary": "Σύμφωνα με έκθεση της Microsoft, κρατικά υποστηριζόμενες ομάδες χάκερ από την Κίνα και τη Βόρεια Κορέα χρησιμοποιούν το Artex, μια πλατφόρμα AI που αυτοματοποιεί πολλαπλά στάδια μιας κυβερνοεπίθεσης με ιδιαίτερη ταχύτητα. Η Microsoft αναφέρει ότι οι κινεζικές ομάδες Crystal Typhoon και Salt Typhoon το έχουν ενσωματώσει πλέον στο οπλοστάσιό τους για αναγνώριση δικτύου, επιθέσεις σε διαπιστευτήρια και εκμετάλλευση εφαρμογών ιστού. Η Salt Typhoon είναι η ίδια ομάδα που οι αμερικανικές αρχές θεωρούν υπεύθυνη για την παραβίαση τουλάχιστον εννέα τηλεπικοινωνιακών εταιρειών το 2024, μια επίθεση που έδωσε, σύμφωνα με καταγγελίες, πρόσβαση σε επικοινωνίες του τότε προέδρου και του αντιπροέδρου των ΗΠΑ. Η είδηση έρχεται ώρες αφού οι New York Times και NextGov ανέφεραν ότι το Artex φέρεται να χρησιμοποιήθηκε και σε επιθέσεις εναντίον αμερικανικών υπηρεσιών πληροφοριών. Για επιχειρήσεις εκτός κρατικού τομέα, η υπόθεση δείχνει ότι εργαλεία επιθετικής AI που ξεκίνησαν ως πειράματα δοκιμών διείσδυσης περνούν πλέον και στο οπλοστάσιο κρατικών ομάδων κατασκοπείας, κάτι που σημαίνει πιο γρήγορες και πιο δύσκολα ανιχνεύσιμες επιθέσεις για όλους."
+  },
+  "en": {
+   "title": "Microsoft links Chinese state hacking groups Salt Typhoon and Crystal Typhoon to the Artex AI tool",
+   "summary": "According to a Microsoft report, state-backed hacking groups from China and North Korea are using Artex, an AI platform that automates multiple stages of a cyberattack at unusual speed. Microsoft says the Chinese groups Crystal Typhoon and Salt Typhoon have folded it into their toolkits for network reconnaissance, credential attacks, and web application exploitation. Salt Typhoon is the same group U.S. agencies blame for breaching at least nine telecommunications companies in 2024, an attack that reportedly exposed communications involving the then president and vice president of the United States. The report lands hours after the New York Times and NextGov reported that Artex was allegedly used in attacks against U.S. intelligence agencies. For businesses outside the government sector, the case shows offensive AI tools that started as penetration-testing experiments are now migrating into the toolkits of state-sponsored espionage groups, meaning faster, harder-to-detect attacks for everyone else too."
+  },
+  "sources": [
+   {
+    "name": "The Record",
+    "url": "https://therecord.media/microsoft-china-salt-typhoon-using-artex-ai-tool"
+   }
+  ]
+ },
+ {
+  "slug": "2026-11-25-italy-and-switzerland-warn-of-autonomous-ai-driven-cyberattacks-on",
+  "urls": [
+   "https://www.bleepingcomputer.com/news/security/italy-and-switzerland-warn-of-autonomous-ai-driven-cyberattacks"
+  ],
+  "first_seen": "2026-11-26",
+  "date": "2026-11-25",
+  "topic": "AI Security",
+  "el": {
+   "title": "Η Ιταλία και η Ελβετία προειδοποιούν για αυτόνομες κυβερνοεπιθέσεις με AI agents σε υποδομές ζωτικής σημασίας",
+   "summary": "Οι αρχές κυβερνοασφάλειας Ιταλίας (CSIRT Italia) και Ελβετίας προειδοποίησαν οργανισμούς κρίσιμων υποδομών για αυτοματοποιημένες επιθέσεις που εκτελούνται από AI agents, εργαλεία AI που αναλαμβάνουν μόνα τους εργασίες, χωρίς βήμα προς βήμα καθοδήγηση από άνθρωπο. Οι δύο αρχές κατονόμασαν τέσσερα πλαίσια δοκιμών διείσδυσης με AI, το ARTEX AI, το CyberStrikeAI, το DeepSeek Harness και το PentAGI, που έχουν ήδη εμπλακεί σε πραγματικές παραβιάσεις. Η ιταλική υπηρεσία κατέγραψε περιπτώσεις όπου πολλαπλά AI agents δούλευαν παράλληλα, με μία από αυτές να αναθέτει εργασίες σε πέντε agents που κάλυψαν ολόκληρο τον κύκλο της επίθεσης, από τη συλλογή πληροφοριών έως την παραμονή μέσα στο δίκτυο, μέσα σε λίγες ώρες. Και οι δύο αρχές συστήνουν να μειωθούν οι υπηρεσίες που είναι εκτεθειμένες απευθείας στο διαδίκτυο, να δοθεί προτεραιότητα στις ενημερώσεις ασφαλείας και να παρακολουθείται συστηματικά η ασυνήθιστη δραστηριότητα. Για μικρομεσαίες επιχειρήσεις με απομακρυσμένη πρόσβαση ή πάνελ διαχείρισης ανοιχτά στο διαδίκτυο, η προειδοποίηση δείχνει ότι δεν χρειάζεται πια μεγάλη ομάδα επιτιθέμενων για να δεχθούν συντονισμένη επίθεση, αρκεί ένα από αυτά τα εργαλεία."
+  },
+  "en": {
+   "title": "Italy and Switzerland warn of autonomous AI-driven cyberattacks on critical infrastructure",
+   "summary": "Italy's CSIRT and Switzerland's cybersecurity authority warned critical-infrastructure organizations about automated attacks carried out by AI agents, AI tools that take on tasks on their own without step-by-step human direction. The two agencies named four AI-powered penetration-testing and red-teaming frameworks already involved in real breaches: ARTEX AI, CyberStrikeAI, DeepSeek Harness, and PentAGI. Italy's agency documented campaigns where multiple AI agents worked in parallel, including one case where a coordinator assigned tasks to five agents that covered the full attack chain, from reconnaissance to persistence, within hours. Both agencies recommend reducing internet-exposed services, prioritizing patching, and actively monitoring for unusual activity. For small and mid-sized businesses running exposed remote-access tools or admin panels, the warning shows that a coordinated, multi-step attack no longer requires a large human team, just one of these frameworks."
+  },
+  "sources": [
+   {
+    "name": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/italy-and-switzerland-warn-of-autonomous-ai-driven-cyberattacks/"
+   }
+  ]
+ },
+ {
   "slug": "2026-11-25-drupal-flaw-found-by-anthropic-s-scanner-is-already-under-active",
   "urls": [
-   "https://www.securityweek.com/drupal-flaw-found-by-anthropic-scanner-exploited-in-attacks"
+   "https://www.securityweek.com/drupal-flaw-found-by-anthropic-scanner-exploited-in-attacks",
+   "https://thehackernews.com/2026/11/drupal-warns-of-new-highly-critical.html"
   ],
   "first_seen": "2026-11-25",
   "date": "2026-11-25",
@@ -19,6 +66,33 @@
    {
     "name": "SecurityWeek",
     "url": "https://www.securityweek.com/drupal-flaw-found-by-anthropic-scanner-exploited-in-attacks/"
+   },
+   {
+    "name": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/drupal-warns-of-new-highly-critical.html"
+   }
+  ]
+ },
+ {
+  "slug": "2026-11-25-anthropic-s-dario-amodei-calls-accusations-of-surrendering-human",
+  "urls": [
+   "https://techcrunch.com/2026/11/25/anthropics-dario-amodei-calls-accusations-of-surrendering-human-control-to-ai-absurd"
+  ],
+  "first_seen": "2026-11-26",
+  "date": "2026-11-25",
+  "topic": "General",
+  "el": {
+   "title": "Ο Dario Amodei της Anthropic χαρακτηρίζει «παράλογη» την κατηγορία ότι παραδίδει τον έλεγχο στην AI",
+   "summary": "Ο διευθύνων σύμβουλος της Anthropic απάντησε σε μεγάλη ανάρτηση στο X σε όσους τον κατηγορούν ότι πιστεύει πως η ανθρωπότητα πρέπει να παραδώσει την ελεύθερη βούλησή της στην AI, χαρακτηρίζοντας την ιδέα «παράλογη» και υπενθυμίζοντας πως έχει υποστηρίξει επανειλημμένα τη δημοκρατική εποπτεία της τεχνολογίας. Η παρέμβαση έρχεται μετά από δηλώσεις στελεχών ανταγωνιστριών εταιρειών, όπως ο Sam Altman της OpenAI και ο επικεφαλής AI της Meta Alexandr Wang, που προειδοποίησαν πρόσφατα για τον κίνδυνο να χάσει η κοινωνία τον έλεγχο καθώς προχωρά η ανάπτυξη των μοντέλων. Ο Amodei ξεχωρίζει την καθημερινή αυτοματοποίηση εργασιών, όπως η οδήγηση ή η συγγραφή κώδικα, από το σημείο που ο κλάδος ονομάζει recursive self-improvement, δηλαδή τη στιγμή όπου ένα μοντέλο γίνεται ικανό να βελτιώνει μόνο του την επόμενη γενιά χωρίς ανθρώπινη καθοδήγηση, λέγοντας πως εκεί πρέπει να μπει το όριο. Για μια επιχείρηση που χτίζει τη στρατηγική της πάνω σε μοντέλα τρίτων, η δημόσια αντιπαράθεση ανάμεσα στους επικεφαλής των μεγαλύτερων εταιρειών AI δείχνει πόσο ρευστό παραμένει ακόμη το ζήτημα του ποιος κρατάει πραγματικά τον έλεγχο."
+  },
+  "en": {
+   "title": "Anthropic's Dario Amodei calls accusations of surrendering human control to AI 'absurd'",
+   "summary": "Anthropic's CEO responded to a long post on X to critics who accuse him of believing humanity should hand over its free will to AI, calling the suggestion \"absurd\" and reiterating that he has repeatedly argued for democratic oversight of the technology. The pushback follows public remarks from rival lab leaders, including OpenAI's Sam Altman and Meta's chief AI officer Alexandr Wang, who recently warned about the risk of society losing control as model development accelerates. Amodei draws a distinction between everyday task automation, such as driving a car or writing code, and what the industry calls recursive self-improvement, the point at which a model becomes capable of improving the next generation of models on its own without human guidance, saying that is where the real line should be drawn. For a business building its strategy around third-party models, the public disagreement among the leaders of the biggest AI labs shows how unsettled the question of who actually keeps control still is."
+  },
+  "sources": [
+   {
+    "name": "TechCrunch",
+    "url": "https://techcrunch.com/2026/11/25/anthropics-dario-amodei-calls-accusations-of-surrendering-human-control-to-ai-absurd/"
    }
   ]
  },
@@ -740,6 +814,29 @@
    {
     "name": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/microsofts-agent-framework-pypi-package-compromised-to-steal-credentials/"
+   }
+  ]
+ },
+ {
+  "slug": "2026-11-18-italy-s-data-protection-authority-fines-meta-eur-805-million-over",
+  "urls": [
+   "https://www.edpb.europa.eu/news/italian-dpa-fines-meta-eur-805-million-for-unlawful-access-to-facebook-users-photo-galleries_en"
+  ],
+  "first_seen": "2026-11-26",
+  "date": "2026-11-18",
+  "topic": "Incidents",
+  "el": {
+   "title": "Η ιταλική Αρχή Προστασίας Δεδομένων επιβάλλει πρόστιμο 805 εκατ. ευρώ στη Meta για πρόσβαση στις φωτογραφίες χρηστών του Facebook",
+   "summary": "Η ιταλική Αρχή Προστασίας Δεδομένων (Garante) επέβαλε πρόστιμο 805 εκατομμυρίων ευρώ στη Meta Platforms Ireland, ένα από τα μεγαλύτερα πρόστιμα GDPR της χρονιάς, μετά από έρευνα που ξεκίνησε από καταγγελία καταναλωτών το 2025. Η έρευνα αφορούσε τη λειτουργία του Facebook «προτάσεις από τη βιβλιοθήκη σου», η οποία εμφάνιζε φωτογραφίες και βίντεο αποθηκευμένα στο κινητό του χρήστη ως προτάσεις για ανάρτηση. Η αρχή διαπίστωσε ότι η εφαρμογή ζητούσε ένα ενιαίο δικαίωμα πρόσβασης στη βιβλιοθήκη πολυμέσων για πολλές διαφορετικές λειτουργίες μαζί, χωρίς σαφή ενημέρωση ότι η άδεια θα ενεργοποιούσε και αυτή τη συγκεκριμένη λειτουργία, η οποία μάλιστα ήταν ενεργοποιημένη από προεπιλογή. Η Garante έκρινε πως η Meta δεν είχε λάβει συγκεκριμένη και ενημερωμένη συναίνεση για αυτή τη χρήση, παραβιάζοντας το άρθρο 122 του ιταλικού κώδικα προστασίας δεδομένων, και απέρριψε παράλληλα την ένσταση της εταιρείας ότι η υπόθεση έπρεπε να κριθεί μέσω του μηχανισμού μίας στάσης της GDPR. Για κάθε επιχείρηση που ζητά πρόσβαση σε δεδομένα συσκευής μέσω μιας εφαρμογής, η υπόθεση δείχνει πόσο αυστηρά εξετάζουν πλέον οι ευρωπαϊκές αρχές τη διαφορά ανάμεσα σε γενική άδεια και σε πραγματικά ενημερωμένη συναίνεση για κάθε επιμέρους χρήση."
+  },
+  "en": {
+   "title": "Italy's data protection authority fines Meta EUR 805 million over access to users' Facebook photo galleries",
+   "summary": "Italy's data protection authority (Garante) fined Meta Platforms Ireland EUR 805 million, one of the largest GDPR fines of the year, following an investigation opened after a 2025 consumer complaint. The case centered on a Facebook feature that surfaced photos and videos stored on a user's phone as suggestions for posting. The authority found that the app requested a single bundled permission to access the photo gallery for several different features at once, without clearly disclosing that the permission would also enable this specific feature, which was turned on by default. Garante ruled that Meta had not obtained specific, informed consent for this use, in breach of Article 122 of Italy's data protection code, and rejected Meta's argument that the case should have been handled under the GDPR's one-stop-shop mechanism. For any business requesting device-level data access through an app, the case shows how strictly European regulators now distinguish between a blanket permission and genuinely informed consent for each individual use."
+  },
+  "sources": [
+   {
+    "name": "EDPB",
+    "url": "https://www.edpb.europa.eu/news/italian-dpa-fines-meta-eur-805-million-for-unlawful-access-to-facebook-users-photo-galleries_en"
    }
   ]
  },

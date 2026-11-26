@@ -481,3 +481,6 @@ perplexity
 # --- 2026-11-25 ---
 agentic offensive framework
 aof
+
+# --- 2026-11-26 ---
+csirt
