@@ -116,3 +116,4 @@
 2026-11-24 | anthropic-claude-ship-autonomous-code-approval | Η Anthropic φέρνει το Claude Ship, AI agents που εγκρίνουν μόνοι τους αλλαγές κώδικα
 2026-11-25 | fca-ai-agent-banking-enforcement-warning | Η βρετανική FCA προειδοποιεί τράπεζες και ασφαλιστικές να βάλουν όρια στα AI agents ή θα δουν κυρώσεις
 2026-11-26 | amodei-absurd-human-control-ai-labs-governance-debate | Ο Dario Amodei χαρακτηρίζει παράλογη την κατηγορία ότι η Anthropic θέλει να παραδώσει τον έλεγχο στην AI
+2026-11-27 | meta-muse-black-friday-shopping-agent-liability | Ποιος ευθύνεται όταν ο AI αγοραστικός βοηθός Muse της Meta κάνει λάθος στις αγορές της Black Friday

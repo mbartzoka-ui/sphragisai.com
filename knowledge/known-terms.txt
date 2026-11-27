@@ -484,3 +484,11 @@ aof
 
 # --- 2026-11-26 ---
 csirt
+
+# --- 2026-11-27 ---
+human-in-the-loop
+hitl
+data loss prevention
+dlp
+identity and access management
+iam

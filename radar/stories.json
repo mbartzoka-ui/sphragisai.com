@@ -1,8 +1,124 @@
 [
  {
+  "slug": "2026-11-27-if-the-bot-gets-it-wrong-who-s-liable-retailers-enter-the-unknown",
+  "urls": [
+   "https://www.theguardian.com/business/2026/nov/27/retailers-ai-shopping-assistants-black-friday-brands-meta-muse"
+  ],
+  "first_seen": "2026-11-27",
+  "date": "2026-11-27",
+  "topic": "General",
+  "el": {
+   "title": "«Αν κάνει λάθος ο βοηθός, ποιος ευθύνεται;» Οι λιανέμποροι μπαίνουν σε αχαρτογράφητο έδαφος με τους AI αγοραστικούς βοηθούς τη Black Friday",
+   "summary": "Το Muse, ο AI αγοραστικός βοηθός της Meta, κυκλοφόρησε αυτή την εβδομάδα στο Ηνωμένο Βασίλειο με συνεργασίες από αλυσίδες όπως τα Marks & Spencer, Sainsbury's, JD Sports και Currys, υποσχόμενος να κάνει τα χριστουγεννιάτικα ψώνια, να βρει φθηνότερο πάροχο ενέργειας ή να οργανώσει το σχολικό πρόγραμμα του παιδιού σου. Σύμφωνα με δημοσκόπηση της YouGov, το ένα τρίτο των καταναλωτών στο Ηνωμένο Βασίλειο σχεδιάζει να ζητήσει βοήθεια από AI στις φετινές εκπτώσεις της Black Friday, έναντι 19% πέρυσι. Ο John Roberts, διευθύνων σύμβουλος της online ηλεκτρικών ειδών AO.com, λέει ότι η επιρροή των agents στις πωλήσεις παραμένει προς το παρόν χαμηλή, όμως αναγνωρίζει πως είναι ξεκάθαρη η κατεύθυνση προς τα εκεί. Αναλύτρια της GlobalData σημειώνει ότι οι αλυσίδες που συνεργάζονται νωρίς με το Muse αποκτούν πρόσβαση σε δεδομένα για το πώς ψωνίζει ο κόσμος, αλλά προειδοποιεί ότι αν ο agent παρακάμπτει την ιστοσελίδα του καταστήματος, η επιχείρηση χάνει τις παρορμητικές αγορές που γίνονται κατά την περιήγηση, ενώ σε προϊόντα όπως τα ρούχα ο λάθος υπολογισμός μεγέθους από το AI μπορεί να αυξήσει τις επιστροφές. Για μια επιχείρηση λιανικής, ακόμη κι αν δεν έχει ακόμη συνεργάτη AI agent, το ζήτημα της ευθύνης όταν ένας agent κάνει μια κακή αγορά για λογαριασμό πελάτη παραμένει στην πράξη αρρύθμιστο."
+  },
+  "en": {
+   "title": "'If the bot gets it wrong, who's liable?' Retailers enter the unknown with AI shopping assistants on Black Friday",
+   "summary": "Muse, Meta's AI shopping assistant, launched in the UK this week with partners including Marks & Spencer, Sainsbury's, JD Sports, and Currys, promising to handle Christmas shopping, find a cheaper energy deal, or sort out a child's school calendar. According to a YouGov poll, a third of UK consumers plan to get AI help with this year's Black Friday sales, up from 19% last year. AO.com chief executive John Roberts says agents' impact on sales is still low for now, but acknowledges the direction of travel is clear. A GlobalData analyst notes that chains partnering early with Muse get early data on how people shop, but warns that if an agent bypasses a retailer's own website, the business loses the impulse purchases that happen while browsing, while for items like clothing, a wrong size call by the AI could drive up returns. For any retailer, even one without an AI agent partnership yet, the question of who is liable when an agent makes a bad purchase on a customer's behalf remains, in practice, unregulated."
+  },
+  "sources": [
+   {
+    "name": "The Guardian",
+    "url": "https://www.theguardian.com/business/2026/nov/27/retailers-ai-shopping-assistants-black-friday-brands-meta-muse"
+   }
+  ]
+ },
+ {
+  "slug": "2026-11-26-phishers-abused-hugging-face-s-deepsite-ai-tool-to-build-fake-login",
+  "urls": [
+   "https://www.infosecurity-magazine.com/news/hugging-face-ai-builder-phishing"
+  ],
+  "first_seen": "2026-11-27",
+  "date": "2026-11-26",
+  "topic": "AI Security",
+  "el": {
+   "title": "Phishers εκμεταλλεύτηκαν το εργαλείο DeepSite του Hugging Face για να φτιάξουν ψεύτικες σελίδες σύνδεσης γνωστών brands",
+   "summary": "Η εταιρεία ασφαλείας Aikido εντόπισε 42 σελίδες phishing φιλοξενημένες στο Hugging Face Spaces, τον δημόσιο χώρο όπου οποιοσδήποτε μπορεί να ανεβάσει μικρές εφαρμογές AI, με τις 29 να έχουν φτιαχτεί μέσω του DeepSite, του εργαλείου της πλατφόρμας που μετατρέπει μια απλή περιγραφή σε κείμενο σε έτοιμο ιστότοπο. Οι σελίδες μιμούνταν 28 γνωστά brands όπως τη Microsoft, το PayPal και το Netflix, με prompts γραμμένα σε έξι γλώσσες, ενώ μία ψεύτικη σελίδα σύνδεσης της Microsoft χρειάστηκε περίπου 90 λεπτά διαδοχικών εντολών για να φτιαχτεί. Μερικά prompts ζητούσαν ρητά το αποτέλεσμα να μείνει κρυφό από τους αυτόματους ελέγχους ασφαλείας, ενώ κάποιες σελίδες ζητούσαν τον κωδικό δύο φορές ώστε το θύμα να νομίζει πως έκανε λάθος. Από τις 42 σελίδες, 25 έστελναν τα κλεμμένα στοιχεία σε bots του Telegram, 11 σε Discord και έξι σε απλές online φόρμες, ενώ κάποιες υπήρχαν ενεργές πάνω από έναν χρόνο πριν εντοπιστούν. Η Hugging Face ενημερώθηκε άμεσα και μέχρι τις 29 Οκτωβρίου είχε αφαιρέσει όλες τις σελίδες, όμως η υπόθεση δείχνει ότι μια διεύθυνση huggingface.co δεν αποδεικνύει πλέον από μόνη της ότι μια σελίδα σύνδεσης είναι γνήσια."
+  },
+  "en": {
+   "title": "Phishers abused Hugging Face's DeepSite AI tool to build fake login pages for major brands",
+   "summary": "Security firm Aikido found 42 phishing pages hosted on Hugging Face Spaces, the platform's public area where anyone can publish small AI-powered apps, with 29 of them built using DeepSite, the platform's own tool that turns a plain-language description into a finished website. The pages imitated 28 well-known brands including Microsoft, PayPal, and Netflix, with prompts written in six languages, and one fake Microsoft login page took roughly 90 minutes of iterative prompting to build. Some prompts explicitly asked for the result to stay hidden from security scanners, and a few pages asked visitors to enter their password twice so they would assume they had mistyped it. Of the 42 pages, 25 forwarded stolen data to Telegram bots, 11 to Discord webhooks, and six to simple online forms, and some had been live for over a year before being caught. Hugging Face was notified right away and had removed every page by October 29, but the case shows that a huggingface.co address is no longer proof on its own that a login page is genuine."
+  },
+  "sources": [
+   {
+    "name": "Infosecurity Magazine",
+    "url": "https://www.infosecurity-magazine.com/news/hugging-face-ai-builder-phishing/"
+   }
+  ]
+ },
+ {
+  "slug": "2026-11-26-investigation-at-least-25-court-cases-in-england-and-wales-affected",
+  "urls": [
+   "https://www.theguardian.com/technology/2026/nov/26/dozens-of-court-cases-in-england-and-wales-affected-by-undisclosed-ai-use-in-2026"
+  ],
+  "first_seen": "2026-11-27",
+  "date": "2026-11-26",
+  "topic": "Incidents",
+  "el": {
+   "title": "Έρευνα: τουλάχιστον 25 δικαστικές υποθέσεις στην Αγγλία και την Ουαλία επηρεάστηκαν φέτος από αδήλωτη χρήση AI",
+   "summary": "Έρευνα του Bureau of Investigative Journalism, σε συνεργασία με την εφημερίδα Guardian, εντόπισε φέτος τουλάχιστον 25 δικαστικές υποθέσεις στην Αγγλία και την Ουαλία όπου δικαστές αναγκάστηκαν να αντιμετωπίσουν καταθέσεις μαρτύρων γραμμένες από AI, ανύπαρκτη νομολογία και νόμους που δεν υπάρχουν. Σε μία υπόθεση, αστυνομικός χρησιμοποίησε AI για να γράψει κατάθεση θύματος με ρητή εντολή να πετύχει «την πιο σκληρή ποινή και τη σελίδα που θα κάνει τον δικαστή να κλάψει», ενώ σε άλλη, δικηγόρος σε διαφορά 21 εκατομμυρίων δολαρίων ανάμεσα σε δύο εταιρείες πετρελαίου επικαλέστηκε απόφαση δικαστή που είχε εφεύρει εξ ολοκλήρου ένα AI μοντέλο. Ανώτερος δικαστής πτωχεύσεων ανακάλυψε ότι νέος δικηγόρος είχε βασιστεί σε απάντηση chatbot που παρέθετε απόσπασμα από νόμο που δεν υπάρχει καθόλου, χαρακτηρίζοντας στην απόφασή του το AI «εντελώς αναξιόπιστο». Ο δικαστής του Ανώτατου Δικαστηρίου Lord Sales δήλωσε πρόσφατα ότι ο μεγαλύτερος κίνδυνος δεν είναι απλώς ότι το μοντέλο κάνει λάθος, αλλά ότι οι άνθρωποι σταδιακά χάνουν την ικανότητα να καταλάβουν πότε έχει κάνει λάθος, ενώ ο πρόεδρος της Law Society προειδοποίησε ότι εκτενή κείμενα γραμμένα από AI επιβαρύνουν επιπλέον τον ήδη καθυστερημένο όγκο υποθέσεων των δικαστηρίων. Για κάθε επιχείρηση ή δικηγορικό γραφείο που χρησιμοποιεί εργαλεία AI για νομική έρευνα, η έρευνα είναι υπενθύμιση ότι η επαλήθευση κάθε απάντησης παραμένει δική του ευθύνη, όχι του εργαλείου."
+  },
+  "en": {
+   "title": "Investigation: at least 25 court cases in England and Wales affected this year by undisclosed AI use",
+   "summary": "An investigation by the Bureau of Investigative Journalism, shared with the Guardian, found at least 25 court cases in England and Wales this year where judges had to deal with AI-generated witness statements, fictitious case law, and laws that do not exist. In one case, a police officer used AI to write a victim statement with the explicit instruction to achieve \"the harshest sentence and the page that makes a judge weep,\" while in another, a barrister in a $21m dispute between two oil companies cited a ruling that an AI model had entirely invented. A senior insolvency judge discovered that a junior solicitor had relied on a chatbot answer quoting a nonexistent statute, calling the AI \"wholly unreliable\" in his judgment. Supreme Court judge Lord Sales recently said the greater danger is not simply that the model gets the answer wrong, but that people gradually lose the ability to tell when it has, while the Law Society's president warned that long AI-generated documents are adding further strain to courts' already heavy backlogs. For any business or law firm using AI tools for legal research, the investigation is a reminder that verifying every answer remains its own responsibility, not the tool's."
+  },
+  "sources": [
+   {
+    "name": "The Guardian",
+    "url": "https://www.theguardian.com/technology/2026/nov/26/dozens-of-court-cases-in-england-and-wales-affected-by-undisclosed-ai-use-in-2026"
+   }
+  ]
+ },
+ {
+  "slug": "2026-11-26-google-cloud-will-require-ai-agents-to-reach-workspace-only-through",
+  "urls": [
+   "https://www.infosecurity-magazine.com/news/google-cloud-ai-agents-workspace"
+  ],
+  "first_seen": "2026-11-27",
+  "date": "2026-11-26",
+  "topic": "AI Security",
+  "el": {
+   "title": "Η Google Cloud υποχρεώνει τα AI agents να συνδέονται στο Workspace μόνο μέσω εγκεκριμένων καναλιών",
+   "summary": "Η Google παρουσίασε νέους, ειδικά σχεδιασμένους διακομιστές MCP (model context protocol, το κοινό πρωτόκολλο που επιτρέπει σε ένα AI agent να συνδέεται με εφαρμογές) για το Gmail, το Drive, τα Docs, τα Sheets, τα Slides, το Calendar, το Chat και τα Tasks, με ενσωματωμένα δικαιώματα, ελέγχους DLP (data loss prevention, αυτόματο σύστημα που μπλοκάρει τη διαρροή ευαίσθητων αρχείων) και επιβεβαίωση από άνθρωπο πριν από ευαίσθητες ενέργειες. Παρουσίασε επίσης ένα Workspace CLI για σύνδεση agents μέσω εντολών, και από τον Φεβρουάριο του 2027 όλοι οι χρήστες Workspace θα είναι υποχρεωμένοι να συνδέουν τα AI agents τους μέσω αυτών των καναλιών αντί του παλιού τρόπου με απλό κλειδί API. Η εταιρεία εξηγεί την αλλαγή λέγοντας ότι ένα έγκυρο token OAuth παλιά σήμαινε αυτόματα πρόθεση ανθρώπου, κάτι που δεν ισχύει πια όταν ένα agent ενεργεί μόνο του και σε ταχύτητα μηχανής. Παράλληλα λάνσαρε και το Agent Gateway, μια πύλη που ελέγχει την ταυτότητα κάθε agent, επιβάλλει πολιτικές πρόσβασης και σαρώνει αιτήματα για prompt injection μέσω της υπηρεσίας της Model Armor. Για μια επιχείρηση που έχει ήδη συνδέσει AI agents με το Gmail ή το Drive της, η αλλαγή σημαίνει ότι χρειάζεται να προγραμματίσει τη μετάβαση πριν κλείσουν οι παλιές πόρτες πρόσβασης."
+  },
+  "en": {
+   "title": "Google Cloud will require AI agents to reach Workspace only through approved channels",
+   "summary": "Google introduced purpose-built MCP (model context protocol, the common standard that lets an AI agent connect to an application) servers for Gmail, Drive, Docs, Sheets, Slides, Calendar, Chat and Tasks, with built-in permissions, DLP (data loss prevention) checks, and human-in-the-loop confirmation before sensitive actions. It also launched a Workspace command-line interface for agents, and starting in February 2027 all Workspace users will be required to connect AI agents through these channels instead of the older approach of handing an agent a plain API key. The company explains the shift by noting that a valid OAuth token used to imply human intent, which no longer holds once an agent acts on its own at machine speed. Alongside this, Google launched Agent Gateway, a layer that verifies each agent's identity, enforces access policies, and screens requests for prompt injection through its Model Armor service. For a business that has already connected AI agents to its Gmail or Drive, the change means it needs to plan the migration before the older access paths are shut off."
+  },
+  "sources": [
+   {
+    "name": "Infosecurity Magazine",
+    "url": "https://www.infosecurity-magazine.com/news/google-cloud-ai-agents-workspace/"
+   }
+  ]
+ },
+ {
+  "slug": "2026-11-26-accenture-finds-signs-of-suspected-ai-use-in-an-attack-that-exploited",
+  "urls": [
+   "https://www.securityweek.com/mitel-micollab-zero-days-exploited-in-suspected-ai-assisted-attacks"
+  ],
+  "first_seen": "2026-11-27",
+  "date": "2026-11-26",
+  "topic": "Incidents",
+  "el": {
+   "title": "Η Accenture εντοπίζει ίχνη ύποπτης χρήσης AI σε επίθεση που εκμεταλλεύτηκε ευπάθειες zero-day στο Mitel MiCollab",
+   "summary": "Σύμφωνα με την Apex Labs, το τμήμα έρευνας της Accenture, επιτιθέμενοι εκμεταλλεύτηκαν πέντε ευπάθειες της πλατφόρμας συνεργασίας Mitel MiCollab ως zero-day, δηλαδή πριν υπάρξει διαθέσιμη διόρθωση, και πριν η ίδια η Mitel δημοσιεύσει την ανακοίνωσή της στις 16 Νοεμβρίου. Σε μία περίπτωση, οι ερευνητές είδαν τους επιτιθέμενους να εγκαθιστούν webshell στις 15 Νοεμβρίου, να εκτελούν εντολές μόλις 12 λεπτά μετά το πρώτο αίτημα, να αποκτούν πρόσβαση root μέσα σε μισή ώρα και να φτάνουν σε servers αντιγράφων ασφαλείας και βάσεων δεδομένων περίπου 20 ώρες αργότερα. Η Accenture εντόπισε ότι η υποδομή των επιτιθεμένων επικοινωνούσε με δύο άγνωστες εμπορικές υπηρεσίες AI, και ότι η επικοινωνία αυτή ξανάρχισε, μετά από οκτάωρη σιωπή, ακριβώς τη στιγμή που στάλθηκε το αίτημα παράκαμψης ταυτοποίησης, κάτι που θεωρεί ένδειξη πως το AI βοήθησε στην προετοιμασία της επίθεσης ή του υλικού εκβιασμού. Η CISA πρόσθεσε τις πέντε ευπάθειες στον κατάλογο KEV και έδωσε προθεσμία ως τις 28 Νοεμβρίου για τέσσερις από αυτές. Για μια επιχείρηση που χρησιμοποιεί το MiCollab ή αντίστοιχο λογισμικό επικοινωνίας συνδεδεμένο με το Active Directory της, η υπόθεση δείχνει πόσο λίγο χρόνο αφήνει πλέον μια τέτοια ευπάθεια ανάμεσα στην πρώτη εκμετάλλευση και την πλήρη πρόσβαση σε εσωτερικά συστήματα."
+  },
+  "en": {
+   "title": "Accenture finds signs of suspected AI use in an attack that exploited zero-day flaws in Mitel MiCollab",
+   "summary": "According to Accenture's Apex Labs research unit, attackers exploited five vulnerabilities in the Mitel MiCollab collaboration platform as zero-days, meaning before a fix was available, and before Mitel published its advisory on November 16. In one case, researchers saw the attackers plant a web shell on November 15, execute commands just 12 minutes after their first request, gain root access within half an hour, and reach backup and database servers roughly 20 hours later. Accenture found that the attackers' infrastructure communicated with two unnamed commercial AI services, and that this communication resumed, after an eight-hour silence, at the exact moment an authentication-bypass request was sent, which it considers a sign AI may have helped prepare the attack or the extortion material. CISA added the five flaws to its KEV catalog and set a deadline of November 28 for four of them. For a business running MiCollab or similar communication software tied into its Active Directory, the case shows how little time such a flaw now leaves between first exploitation and full access to internal systems."
+  },
+  "sources": [
+   {
+    "name": "SecurityWeek",
+    "url": "https://www.securityweek.com/mitel-micollab-zero-days-exploited-in-suspected-ai-assisted-attacks/"
+   }
+  ]
+ },
+ {
   "slug": "2026-11-25-microsoft-links-chinese-state-hacking-groups-salt-typhoon-and-crystal",
   "urls": [
-   "https://therecord.media/microsoft-china-salt-typhoon-using-artex-ai-tool"
+   "https://therecord.media/microsoft-china-salt-typhoon-using-artex-ai-tool",
+   "https://www.infosecurity-magazine.com/news/chinese-north-korea-artex"
   ],
   "first_seen": "2026-11-26",
   "date": "2026-11-25",
@@ -19,13 +135,19 @@
    {
     "name": "The Record",
     "url": "https://therecord.media/microsoft-china-salt-typhoon-using-artex-ai-tool"
+   },
+   {
+    "name": "Infosecurity Magazine",
+    "url": "https://www.infosecurity-magazine.com/news/chinese-north-korea-artex/"
    }
   ]
  },
  {
   "slug": "2026-11-25-italy-and-switzerland-warn-of-autonomous-ai-driven-cyberattacks-on",
   "urls": [
-   "https://www.bleepingcomputer.com/news/security/italy-and-switzerland-warn-of-autonomous-ai-driven-cyberattacks"
+   "https://www.bleepingcomputer.com/news/security/italy-and-switzerland-warn-of-autonomous-ai-driven-cyberattacks",
+   "https://thehackernews.com/2026/11/switzerland-confirms-ai-assisted.html",
+   "https://www.infosecurity-magazine.com/news/ncsc-tips-tackle-agentic-threat"
   ],
   "first_seen": "2026-11-26",
   "date": "2026-11-25",
@@ -42,6 +164,14 @@
    {
     "name": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/italy-and-switzerland-warn-of-autonomous-ai-driven-cyberattacks/"
+   },
+   {
+    "name": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/switzerland-confirms-ai-assisted.html"
+   },
+   {
+    "name": "Infosecurity Magazine",
+    "url": "https://www.infosecurity-magazine.com/news/ncsc-tips-tackle-agentic-threat/"
    }
   ]
  },
