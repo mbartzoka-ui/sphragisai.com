@@ -97,7 +97,7 @@ OLD_TAGLINE = {"el": "Θ ως ασπίδα", "en": "Θ as a shield"}
 # είναι ~7s: το CTA στο τέλος της λίστας δεν το βλέπει σχεδόν κανείς. Μία
 # γραμμή κάτω από τον υπότιτλο, πριν τη λίστα. Το booking_click το στέλνει
 # ήδη ο γενικός click handler της σελίδας για κάθε link προς το Google Calendar booking (calendar.app.google).
-BOOKING_URL = "https://calendar.app.google/6C5eXMiNmEHWMqxN9"
+BOOKING_URL = "https://calendar.app.google/q6fc5eZUcWrYVQxk8"
 CTA_TOP = {
     "el": "Δωρεάν 20λεπτη χαρτογράφηση: πού στέκεται η επιχείρησή σας απέναντι στον AI Act και το ISO 42001 →",
     "en": "Free 20-minute mapping session: where your business stands on the AI Act and ISO 42001 →",

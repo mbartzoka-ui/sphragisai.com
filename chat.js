@@ -5,7 +5,7 @@
   "use strict";
   if (window.__sxChat) return; window.__sxChat = 1;
   var API = "https://sphragisai-bot.m-bartzoka.workers.dev";
-  var BOOK = "https://calendar.app.google/6C5eXMiNmEHWMqxN9";
+  var BOOK = "https://calendar.app.google/q6fc5eZUcWrYVQxk8";
   var path = location.pathname, EN = path.indexOf("/en/") === 0;
   var rest = EN ? path.slice(3) : path;
   if (/^\/(p|card|ig|parousiasi|parousiasi-asfaleias|admin)\//.test(rest)) return;
