@@ -345,7 +345,7 @@ def page(lang, c, *, title, desc, path, el_path, en_path, body, jsonld,
 {c['fonts']}
 {c['styles']}
 {EXTRA_CSS}
-<link rel="stylesheet" href="/sx-v2.css">
+<link rel="stylesheet" href="/sx-v2.css?v=2">
 <script type="application/ld+json">{json.dumps(jsonld, ensure_ascii=False)}</script>
 </head>
 <body class="sx-tpl v2-sub-page">
