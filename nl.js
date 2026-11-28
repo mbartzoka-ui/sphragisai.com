@@ -1,6 +1,6 @@
 /* Βοηθός AI κάτω δεξιά (πλατφόρμα Sealbot, πελάτης sphragisai) σε όλες τις σελίδες που φορτώνουν το nl.js. */
 (function(){try{var p=location.pathname,r=p.indexOf("/en/")===0?p.slice(3):p;if(/^\/(p|card|ig|parousiasi|parousiasi-asfaleias|admin)\//.test(r))return;var s=document.createElement("script");s.src="https://sphragis-platform.m-bartzoka.workers.dev/widget.js";s.setAttribute("data-bot","sphragisai");s.defer=true;document.head.appendChild(s);}catch(e){}})();
-/* Newsletter (MailerLite): «Σφραγίδα» στις ελληνικές σελίδες, «Sealed» στις αγγλικές.
+/* Newsletter (MailerLite) «Sealed», κάθε δύο εβδομάδες: ελληνική ομάδα στις ελληνικές σελίδες, αγγλική στις αγγλικές.
    Φόρμα στο τέλος των άρθρων radar/blog και παράθυρο μία φορά ανά επισκέπτη. */
 (function () {
   "use strict";
@@ -10,16 +10,16 @@
   if (/^\/(privacy|p|card|ig|odigos\/efxaristo)\//.test(rest)) return;
   var T = EN ? {
     form: "204125864851408748", key: "sx-nl-en", name: "Sealed",
-    label: "Newsletter · once a month",
-    desc: "AI security and the EU AI Act, once a month, from SphragisAI. What changed, what it means for a business using AI, and one practical step for the month.",
+    label: "Newsletter · every two weeks",
+    desc: "AI security and the EU AI Act, every two weeks, from SphragisAI. What changed, what it means for a business using AI, and one practical step you can take.",
     ph: "Your email", btn: "Subscribe", hp: "Leave empty", close: "Close",
     note: 'We will send you a confirmation email. You can unsubscribe at any time with one click. <a href="/en/privacy/">Privacy policy</a>',
     ok: "<b>Almost done.</b> Check your inbox and click the confirmation button. If you can't find it, look in Promotions or Spam.",
     bad: "Please enter a valid email.", err: "Something went wrong. Try again or write to info@sphragisai.com."
   } : {
-    form: "204122248105166682", key: "sx-nl", name: "Σφραγίδα",
-    label: "Newsletter · μία φορά τον μήνα",
-    desc: "Ασφάλεια και κανόνες για το AI, μία φορά τον μήνα, από τη SphragisAI. Τι άλλαξε στον AI Act, τι σημαίνει για μια ελληνική επιχείρηση και ένα πρακτικό βήμα για τον μήνα.",
+    form: "204122248105166682", key: "sx-nl", name: "Sealed",
+    label: "Newsletter · κάθε δύο εβδομάδες",
+    desc: "Ασφάλεια και κανόνες για το AI, κάθε δύο εβδομάδες, από τη SphragisAI. Τι άλλαξε στον AI Act, τι σημαίνει για μια ελληνική επιχείρηση και ένα πρακτικό βήμα που μπορείτε να κάνετε αμέσως.",
     ph: "Το email σου", btn: "Εγγραφή", hp: "Μην συμπληρώνεις", close: "Κλείσιμο",
     note: 'Θα σου στείλουμε email επιβεβαίωσης. Μπορείς να διαγραφείς όποτε θέλεις με ένα κλικ. <a href="/privacy/">Πολιτική απορρήτου</a>',
     ok: "<b>Σχεδόν έτοιμο.</b> Κοίτα το email σου και πάτα το κουμπί επιβεβαίωσης. Αν δεν το βρίσκεις, δες και στα Promotions ή στα Spam.",
