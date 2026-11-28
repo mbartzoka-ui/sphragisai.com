@@ -117,3 +117,4 @@
 2026-11-25 | fca-ai-agent-banking-enforcement-warning | Η βρετανική FCA προειδοποιεί τράπεζες και ασφαλιστικές να βάλουν όρια στα AI agents ή θα δουν κυρώσεις
 2026-11-26 | amodei-absurd-human-control-ai-labs-governance-debate | Ο Dario Amodei χαρακτηρίζει παράλογη την κατηγορία ότι η Anthropic θέλει να παραδώσει τον έλεγχο στην AI
 2026-11-27 | meta-muse-black-friday-shopping-agent-liability | Ποιος ευθύνεται όταν ο AI αγοραστικός βοηθός Muse της Meta κάνει λάθος στις αγορές της Black Friday
+2026-11-28 | ai-encryption-bombshell-q-day | Ειδικοί προειδοποιούν ότι οι εταιρείες AI μπορεί να κρύβουν ανακάλυψη που απειλεί την κρυπτογράφηση, το «Q-Day» ίσως έρχεται νωρίτερα απ' όσο περιμέναμε

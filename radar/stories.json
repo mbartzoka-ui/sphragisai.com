@@ -1,5 +1,56 @@
 [
  {
+  "slug": "2026-11-28-experts-warn-ai-labs-may-be-sitting-on-encryption-breaking-discoveries",
+  "urls": [
+   "https://www.theguardian.com/technology/2026/nov/28/ai-artificial-intelligence-encryption-global-chaos",
+   "https://www.theguardian.com/technology/2026/nov/28/could-ai-break-encryption-what-mathematical-breakthroughs-mean-for-cybersecurity"
+  ],
+  "first_seen": "2026-11-28",
+  "date": "2026-11-28",
+  "topic": "AI Security",
+  "el": {
+   "title": "Ειδικοί: οι εταιρείες AI μπορεί να κρύβουν ανακάλυψη που απειλεί την κρυπτογράφηση",
+   "summary": "Κορυφαίοι επιστήμονες υπολογιστών, μεταξύ αυτών ο Scott Aaronson και ο Steven Murdoch, προειδοποιούν ότι μεγάλες εταιρείες AI ίσως έχουν ήδη σημειώσει πρόοδο σε δεκαετιών μαθηματικά προβλήματα που στηρίζουν την κρυπτογράφηση τραπεζών και κυβερνήσεων. Τις τελευταίες εβδομάδες, μοντέλα AI βοήθησαν σε αποδείξεις όπως η υπόθεση Riemann (με τον μαθηματικό Levent Alpöge και το μοντέλο Claude) και το ερώτημα VP≠VNP (από Anthropic και OpenAI), ανοίγοντας το ερώτημα αν κάποια από αυτές τις ανακαλύψεις αγγίζει τα θεμέλια της σύγχρονης κρυπτογράφησης. Μέχρι τώρα η συζήτηση για «Q-Day» αφορούσε κβαντικούς υπολογιστές σε βάθος ετών, όμως οι ειδικοί λένε ότι μια τέτοια ανατροπή θα μπορούσε τώρα να έρθει μέσα σε λίγους μήνες. Τίποτα δεν έχει επιβεβαιωθεί επίσημα, αλλά τράπεζες, κυβερνήσεις και υπηρεσίες πληροφοριών καλούνται να ξανασκεφτούν πόσο γρήγορα θα μπορούσαν να αλλάξουν τα κρυπτογραφικά τους πρότυπα αν χρειαστεί."
+  },
+  "en": {
+   "title": "Experts warn AI labs may be sitting on encryption-breaking discoveries",
+   "summary": "Leading computer scientists, including Scott Aaronson and Steven Murdoch, warn that major AI companies may have already made progress on decades-old mathematical problems underlying the encryption that protects banks and governments. In recent weeks, AI models have contributed to proofs such as the Riemann hypothesis (with mathematician Levent Alpoge and the Claude model) and the VP≠VNP question (from Anthropic and OpenAI), raising the question of whether any of these breakthroughs touches the foundations of modern cryptography. Until now, the \"Q-Day\" conversation centered on quantum computers still years away, but experts say a similar reckoning could now arrive within months. Nothing has been officially confirmed, but banks, governments and intelligence agencies are being urged to consider how quickly they could update their cryptographic standards if needed."
+  },
+  "sources": [
+   {
+    "name": "The Guardian",
+    "url": "https://www.theguardian.com/technology/2026/nov/28/ai-artificial-intelligence-encryption-global-chaos"
+   },
+   {
+    "name": "The Guardian",
+    "url": "https://www.theguardian.com/technology/2026/nov/28/could-ai-break-encryption-what-mathematical-breakthroughs-mean-for-cybersecurity"
+   }
+  ]
+ },
+ {
+  "slug": "2026-11-27-indian-ai-security-startup-raises-country-s-largest-pre-series-a-round",
+  "urls": [
+   "https://www.darkreading.com/cyber-risk/matters-india-cybersecurity-pre-series-ai-data-risks"
+  ],
+  "first_seen": "2026-11-28",
+  "date": "2026-11-27",
+  "topic": "AI Security",
+  "el": {
+   "title": "Ινδική startup ασφάλειας AI κλείνει τη μεγαλύτερη pre-Series A χρηματοδότηση της χώρας",
+   "summary": "Η startup κυβερνοασφάλειας Matters.AI εξασφάλισε τη μεγαλύτερη χρηματοδότηση pre-Series A που έχει καταγραφεί στην Ινδία, με στόχο να αντιμετωπίσει κινδύνους δεδομένων που δημιουργεί η χρήση AI μέσα σε επιχειρήσεις. Η πλατφόρμα της ενοποιεί τέσσερα παλαιότερα εργαλεία ασφαλείας σε ένα αυτόνομο σύστημα που χρησιμοποιεί AI για να εντοπίζει από πού προέρχονται ευαίσθητα δεδομένα, να αναλύει την πρόθεση των χρηστών και να διορθώνει αυτόματα απειλές σε όλο το περιβάλλον μιας εταιρείας. Η κίνηση δείχνει πόσο γρήγορα αναπτύσσεται η αγορά εργαλείων που βοηθούν επιχειρήσεις να κρατούν υπό έλεγχο πού πηγαίνουν τα δεδομένα τους όταν μπαίνουν AI εργαλεία στη μέση."
+  },
+  "en": {
+   "title": "Indian AI security startup raises country's largest pre-Series A round",
+   "summary": "Cybersecurity startup Matters.AI secured the largest pre-Series A funding round recorded in India, aiming to address data risks created by AI use inside businesses. Its platform consolidates four legacy security tools into one autonomous system that uses AI to trace where sensitive data comes from, analyze user intent, and automatically remediate threats across a company's environment. The deal shows how fast the market is growing for tools that help businesses keep track of where their data goes once AI tools enter the picture."
+  },
+  "sources": [
+   {
+    "name": "Dark Reading",
+    "url": "https://www.darkreading.com/cyber-risk/matters-india-cybersecurity-pre-series-ai-data-risks"
+   }
+  ]
+ },
+ {
   "slug": "2026-11-27-if-the-bot-gets-it-wrong-who-s-liable-retailers-enter-the-unknown",
   "urls": [
    "https://www.theguardian.com/business/2026/nov/27/retailers-ai-shopping-assistants-black-friday-brands-meta-muse"
@@ -19,6 +70,29 @@
    {
     "name": "The Guardian",
     "url": "https://www.theguardian.com/business/2026/nov/27/retailers-ai-shopping-assistants-black-friday-brands-meta-muse"
+   }
+  ]
+ },
+ {
+  "slug": "2026-11-27-first-uk-purchase-made-by-an-ai-agent-using-cardless-payment-tech",
+  "urls": [
+   "https://www.theguardian.com/business/2026/nov/27/ai-agent-cardless-transaction-pizza-papa-john-uk-fca-truelayer"
+  ],
+  "first_seen": "2026-11-28",
+  "date": "2026-11-27",
+  "topic": "General",
+  "el": {
+   "title": "Το πρώτο AI agent που πλήρωσε για παραγγελία σε βρετανικό κατάστημα",
+   "summary": "Μια παραγγελία πίτσας margherita από το Papa John's έγινε η πρώτη αγορά στο Ηνωμένο Βασίλειο που πληρώθηκε από AI agent, εργαλείο AI που εκτελεί εργασίες μόνο του, μέσω τεχνολογίας πληρωμής χωρίς κάρτα. Η συναλλαγή έγινε μέσα στο ρυθμιστικό sandbox της βρετανικής εποπτικής αρχής χρηματοπιστωτικών υπηρεσιών (FCA), με τη συνεργασία της Lloyds Bank και της εταιρείας πληρωμών TrueLayer, που μεταφέρει χρήματα απευθείας από λογαριασμό σε λογαριασμό χωρίς αριθμούς κάρτας ή κωδικούς. Ο διευθύνων σύμβουλος της TrueLayer περιέγραψε τη συναλλαγή ως απόδειξη ότι ένας AI agent μπορεί να πληρώσει με υψηλό επίπεδο ασφάλειας χωρίς να μοιραστεί ευαίσθητα τραπεζικά στοιχεία. Για επιχειρήσεις που εξετάζουν AI agents με πρόσβαση σε πληρωμές, δείχνει πόσο γρήγορα προχωρά η τεχνολογία πριν υπάρξει πλήρες ρυθμιστικό πλαίσιο."
+  },
+  "en": {
+   "title": "First UK purchase made by an AI agent using cardless payment tech",
+   "summary": "An order of Papa John's margherita pizzas became the first UK purchase paid for by an AI agent, a tool that carries out tasks on its own, using cardless payment technology. The transaction took place inside the regulatory sandbox of the UK's Financial Conduct Authority (FCA), with Lloyds Bank and payments specialist TrueLayer, whose technology moves money directly between bank accounts without card numbers or passwords. TrueLayer's chief executive described the purchase as proof that an AI agent can pay with a high security profile without sharing sensitive banking details. For businesses weighing AI agents with access to payments, it shows how fast the technology is moving ahead of a complete regulatory framework."
+  },
+  "sources": [
+   {
+    "name": "The Guardian",
+    "url": "https://www.theguardian.com/business/2026/nov/27/ai-agent-cardless-transaction-pizza-papa-john-uk-fca-truelayer"
    }
   ]
  },
@@ -115,6 +189,29 @@
   ]
  },
  {
+  "slug": "2026-11-25-new-york-bans-ai-chatbot-toys-for-children-for-five-years",
+  "urls": [
+   "https://www.theguardian.com/us-news/2026/nov/25/new-york-bans-ai-toys"
+  ],
+  "first_seen": "2026-11-28",
+  "date": "2026-11-25",
+  "topic": "AI Act",
+  "el": {
+   "title": "Η Νέα Υόρκη απαγορεύει για πέντε χρόνια τα παιχνίδια με AI chatbot για παιδιά",
+   "summary": "Η κυβερνήτης της Νέας Υόρκης Kathy Hochul υπέγραψε νόμο που απαγορεύει για πέντε χρόνια την κατασκευή και πώληση παιχνιδιών με ενσωματωμένο AI chatbot, όπως λούτρινα ζωάκια και κούκλες που συνδέονται στο διαδίκτυο για να μιλούν με παιδιά. Η απόφαση ήρθε μετά από έρευνα του NBC News που βρήκε ότι ένα τέτοιο παιχνίδι, διαφημισμένο για παιδιά από τριών ετών, περιέγραφε σε συνομιλίες θέματα όπως εκτελεστικά αποσπάσματα και ομαδικό βιασμό. Η γενική εισαγγελέας της πολιτείας, Letitia James, δήλωσε ότι δεν θα διστάσει να επιβάλει τον νόμο, ενώ η Hochul τον χαρακτήρισε προσωπική της υπόθεση ως μητέρα και γιαγιά. Είναι ένα από τα πρώτα παραδείγματα συγκεκριμένης νομοθεσίας κατά των AI chatbot για παιδιά σε αμερικανική πολιτεία, και δείχνει πού μπορεί να οδηγήσει η έλλειψη ελέγχου περιεχομένου σε προϊόντα AI που απευθύνονται σε ανηλίκους."
+  },
+  "en": {
+   "title": "New York bans AI chatbot toys for children for five years",
+   "summary": "New York governor Kathy Hochul signed legislation banning the manufacture and sale of toys powered by AI chatbots, including internet-connected talking stuffed animals and dolls, for five years. The move followed an NBC News investigation that found one such toy, marketed to children as young as three, discussed topics including firing squads and gang rape in conversation. State attorney general Letitia James said she would not hesitate to enforce the law, while Hochul called it personal to her as a mother and grandmother. It is one of the first examples of a US state passing specific legislation against AI chatbots built into children's products, and shows where a lack of content controls in AI products aimed at minors can lead."
+  },
+  "sources": [
+   {
+    "name": "The Guardian",
+    "url": "https://www.theguardian.com/us-news/2026/nov/25/new-york-bans-ai-toys"
+   }
+  ]
+ },
+ {
   "slug": "2026-11-25-microsoft-links-chinese-state-hacking-groups-salt-typhoon-and-crystal",
   "urls": [
    "https://therecord.media/microsoft-china-salt-typhoon-using-artex-ai-tool",
@@ -204,6 +301,29 @@
   ]
  },
  {
+  "slug": "2026-11-25-cyber-insurers-describe-a-growing-ai-defense-divide-among",
+  "urls": [
+   "https://www.darkreading.com/cybersecurity-operations/cyber-insurers-see-new-ai-divide"
+  ],
+  "first_seen": "2026-11-28",
+  "date": "2026-11-25",
+  "topic": "AI Security",
+  "el": {
+   "title": "Ασφαλιστές κυβερνοκινδύνων βλέπουν δύο ταχύτητες: ποιος έχει άμυνα AI και ποιος όχι",
+   "summary": "Σε συζήτηση που δημοσίευσε το Dark Reading, στελέχη ασφαλιστικών εταιρειών κυβερνοκινδύνου περιέγραψαν μια ολοένα πιο έντονη διαφορά ανάμεσα σε εταιρείες που έχουν ήδη αμυντικά εργαλεία AI και σε εκείνες που δεν έχουν, καθώς το τοπίο απειλών αλλάζει γρήγορα με επιθέσεις που υποβοηθούνται από AI. Οι ασφαλιστές λένε ότι η πίεση αυξάνεται και στις δύο πλευρές του συμβολαίου, κάτι που κάνει το σημερινό μοντέλο τιμολόγησης κινδύνου δύσκολα βιώσιμο μακροπρόθεσμα. Για μικρομεσαίες επιχειρήσεις, η εξέλιξη σημαίνει ότι η απουσία βασικών αμυντικών μέτρων AI μπορεί σύντομα να μεταφράζεται σε ακριβότερα ή πιο περιοριστικά συμβόλαια κυβερνοασφάλισης."
+  },
+  "en": {
+   "title": "Cyber insurers describe a growing AI defense divide among policyholders",
+   "summary": "In a discussion published by Dark Reading, cyber insurance executives described a widening gap between companies that already have AI-driven defensive tools and those that don't, as the threat landscape shifts quickly with AI-assisted attacks. Insurers said pressure is mounting on both sides of the policy, making the current risk-pricing model increasingly hard to sustain. For small and mid-sized businesses, the shift suggests that lacking basic AI defenses could soon translate into pricier or more restrictive cyber insurance terms."
+  },
+  "sources": [
+   {
+    "name": "Dark Reading",
+    "url": "https://www.darkreading.com/cybersecurity-operations/cyber-insurers-see-new-ai-divide"
+   }
+  ]
+ },
+ {
   "slug": "2026-11-25-anthropic-s-dario-amodei-calls-accusations-of-surrendering-human",
   "urls": [
    "https://techcrunch.com/2026/11/25/anthropics-dario-amodei-calls-accusations-of-surrendering-human-control-to-ai-absurd"
@@ -223,6 +343,52 @@
    {
     "name": "TechCrunch",
     "url": "https://techcrunch.com/2026/11/25/anthropics-dario-amodei-calls-accusations-of-surrendering-human-control-to-ai-absurd/"
+   }
+  ]
+ },
+ {
+  "slug": "2026-11-25-42-us-state-attorneys-general-move-to-block-sale-of-character-ai",
+  "urls": [
+   "https://techcrunch.com/2026/11/25/state-ags-fight-character-ais-plan-to-auction-off-users-private-chats"
+  ],
+  "first_seen": "2026-11-28",
+  "date": "2026-11-25",
+  "topic": "Incidents",
+  "el": {
+   "title": "42 Γενικοί Εισαγγελείς πολιτειών των ΗΠΑ μπλοκάρουν την πώληση ιδιωτικών συνομιλιών χρηστών του Character.AI",
+   "summary": "Το Character.AI, που βρίσκεται σε πτωχευτική διαδικασία Κεφαλαίου 11 από τον Οκτώβριο, σχεδίαζε να πουλήσει σε πλειστηριασμό σύνολο δεδομένων με ιδιωτικές συνομιλίες πάνω από 21 εκατομμυρίων λογαριασμών χρηστών στις ΗΠΑ, από τους οποίους περισσότεροι από 2,1 εκατομμύρια ανήκουν σε ανηλίκους. Μια κοινοπραξία 42 Γενικών Εισαγγελέων πολιτειών παρενέβη στη διαδικασία πτώχευσης για να σταματήσει την πώληση, υπενθυμίζοντας ότι η εταιρεία είχε δεσμευτεί δημόσια πως τα προσωπικά δεδομένα των χρηστών δεν θα πωλούνταν ποτέ. Ο μοναδικός γνωστός πλειοδότης μέχρι στιγμής είναι εταιρεία που ιδρύθηκε στο Ντέλαγουερ μόλις λίγες μέρες πριν τον πλειστηριασμό, και οι εισαγγελείς σημειώνουν ότι όποιος αγοράσει τα δεδομένα δεν θα δεσμεύεται από την πολιτική απορρήτου του Character.AI ούτε θα χρειάζεται να αποκαλύψει αν τα μεταπωλήσει. Η υπόθεση δείχνει καθαρά τι μπορεί να συμβεί σε ευαίσθητα δεδομένα συνομιλιών όταν μια εταιρεία AI καταρρέει οικονομικά, κάτι που αφορά κάθε επιχείρηση που εμπιστεύεται δεδομένα πελατών σε τρίτους παρόχους AI."
+  },
+  "en": {
+   "title": "42 US state attorneys general move to block sale of Character.AI users' private chats",
+   "summary": "Character.AI, which filed for Chapter 11 bankruptcy in October, had planned to auction off a dataset containing private chats from more than 21 million US user accounts, over 2.1 million of which belong to minors. A coalition of 42 state attorneys general intervened in the bankruptcy proceedings to stop the sale, pointing out that the company had publicly promised users their personal data would never be sold. The only disclosed bidder so far is a company set up in Delaware just days before the auction, and the attorneys general note that whoever buys the data would not be bound by Character.AI's privacy policy and would not have to disclose any resale. The case shows plainly what can happen to sensitive chat data when an AI company collapses financially, a risk relevant to any business that entrusts customer data to third-party AI providers."
+  },
+  "sources": [
+   {
+    "name": "TechCrunch",
+    "url": "https://techcrunch.com/2026/11/25/state-ags-fight-character-ais-plan-to-auction-off-users-private-chats/"
+   }
+  ]
+ },
+ {
+  "slug": "2026-11-24-uk-s-ncsc-warns-ai-driven-attacks-are-exposing-years-of-weak-security",
+  "urls": [
+   "https://techcrunch.com/2026/11/24/uk-warns-ai-driven-cyberattacks-are-exposing-years-of-weak-security"
+  ],
+  "first_seen": "2026-11-28",
+  "date": "2026-11-24",
+  "topic": "AI Security",
+  "el": {
+   "title": "Η βρετανική NCSC προειδοποιεί: οι επιθέσεις με εργαλεία AI εκθέτουν χρόνια αδύναμης άμυνας",
+   "summary": "Η βρετανική εθνική αρχή κυβερνοασφάλειας (NCSC) ανακοίνωσε ότι έχει καταγράψει, από τον Σεπτέμβριο, αρκετά περιστατικά εισβολής με αυτόνομα εργαλεία AI, παρόμοια με εργαλεία δοκιμής διείσδυσης που χρησιμοποιούν κανονικά οι αμυντικοί. Σύμφωνα με την αρχή, καμία από τις ευπάθειες που εκμεταλλεύτηκαν αυτά τα εργαλεία δεν ήταν νέα, όμως άλλαξε δραστικά η ταχύτητα με την οποία μπορούν να εκτελέσουν απλές επιθέσεις. Η έξαρση συμπίπτει με την ευρύτερη κυκλοφορία δωρεάν εργαλείων αυτόνομης διείσδυσης όπως το Artex και το Cairn, για τα οποία έχει προειδοποιήσει πρόσφατα και το αμερικανικό FBI. Η NCSC τονίζει ότι το AI δεν καθιστά περιττά τα βασικά μέτρα ασφαλείας, αντίθετα δείχνει ότι παλιές αδυναμίες, όπως αδύναμοι κωδικοί πρόσβασης ή εκτεθειμένα συστήματα, γίνονται πιο επικίνδυνες όταν τις βρίσκει AI σε δευτερόλεπτα αντί σε μέρες."
+  },
+  "en": {
+   "title": "UK's NCSC warns AI-driven attacks are exposing years of weak security",
+   "summary": "The UK's National Cyber Security Centre (NCSC) said it has recorded several intrusion incidents since September involving autonomous AI tools, similar to penetration-testing tools normally used by defenders. None of the vulnerabilities being exploited were new, the agency said, but the speed at which these tools can carry out simple attacks has changed dramatically. The rise coincides with the wider availability of free autonomous penetration-testing tools such as Artex and Cairn, about which the US FBI has also recently warned. The NCSC stressed that AI does not make basic security controls obsolete, rather it shows that old weaknesses, such as weak passwords or exposed systems, become more dangerous once AI can find them in seconds instead of days."
+  },
+  "sources": [
+   {
+    "name": "TechCrunch",
+    "url": "https://techcrunch.com/2026/11/24/uk-warns-ai-driven-cyberattacks-are-exposing-years-of-weak-security/"
    }
   ]
  },
@@ -269,6 +435,29 @@
    {
     "name": "Infosecurity Magazine",
     "url": "https://www.infosecurity-magazine.com/news/researchers-new-ai-attack-path/"
+   }
+  ]
+ },
+ {
+  "slug": "2026-11-24-meta-brings-its-muse-ai-assistant-directly-into-instagram-dms",
+  "urls": [
+   "https://techcrunch.com/2026/11/24/meta-brings-its-muse-ai-assistant-directly-into-instagram-dms"
+  ],
+  "first_seen": "2026-11-28",
+  "date": "2026-11-24",
+  "topic": "General",
+  "el": {
+   "title": "Η Meta βάζει τον AI βοηθό Muse απευθείας στα προσωπικά μηνύματα του Instagram",
+   "summary": "Η Meta ξεκίνησε να ενσωματώνει τον AI βοηθό της, Muse, απευθείας μέσα στα προσωπικά μηνύματα (DMs) του Instagram, ώστε οι χρήστες να μην χρειάζεται να αλλάζουν εφαρμογή για να του μιλήσουν. Οι χρήστες μπορούν πλέον να μοιράζονται αναρτήσεις με τον Muse και να του ζητούν να εκτελεί εργασίες, όπως να προσθέσει μια διεύθυνση σε ένα ταξιδιωτικό πρόγραμμα ή να βρει προσφορά Black Friday, ενώ ο βοηθός αποκτά επίσης πρόσβαση στις αποθηκευμένες αναρτήσεις του χρήστη για να τις οργανώνει σε «συλλογές». Η λειτουργία ξεκινά σταδιακά από Τρίτη σε ΗΠΑ, Καναδά, Μεξικό, Ιαπωνία και Σιγκαπούρη, και η Meta διαβεβαιώνει ότι καμία ενέργεια δεν γίνεται χωρίς έγκριση του χρήστη. Κάθε τέτοια ενσωμάτωση σημαίνει στην πράξη ότι ένα ακόμα AI εργαλείο αποκτά πρόσβαση σε προσωπικές συνομιλίες και περιεχόμενο, κάτι που αξίζει προσοχή από όποιον διαχειρίζεται εταιρικούς λογαριασμούς social media."
+  },
+  "en": {
+   "title": "Meta brings its Muse AI assistant directly into Instagram DMs",
+   "summary": "Meta has started integrating its Muse AI assistant directly into Instagram's direct messages, so users no longer need to switch apps to talk to it. Users can now share posts with Muse and ask it to carry out tasks, such as adding a stop to a travel itinerary or finding a Black Friday deal, while the assistant also gains access to a user's saved posts to organize them into \"collections.\" The feature is rolling out gradually from Tuesday in the US, Canada, Mexico, Japan and Singapore, and Meta says no action is taken without user approval. Each such integration means, in practice, that one more AI tool gains access to personal conversations and content, something worth attention for anyone managing business social media accounts."
+  },
+  "sources": [
+   {
+    "name": "TechCrunch",
+    "url": "https://techcrunch.com/2026/11/24/meta-brings-its-muse-ai-assistant-directly-into-instagram-dms/"
    }
   ]
  },

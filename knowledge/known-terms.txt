@@ -492,3 +492,7 @@ data loss prevention
 dlp
 identity and access management
 iam
+
+# --- 2026-11-28 ---
+q-day
+penetration testing
