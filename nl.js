@@ -93,6 +93,8 @@
 
   function init() {
     var st = document.createElement("style"); st.textContent = css; document.head.appendChild(st);
+    var slot = document.getElementById("sx-nl-slot");      // σελίδα εγγραφής (/newsletter/): η φόρμα μέσα στη σελίδα, χωρίς παράθυρο
+    if (slot) { slot.appendChild(card(false)); return; }
     var foot = document.querySelector("footer.sx-foot");
     var isArticle = /^\/(radar|blog)\/[^\/]+\/$/.test(rest) && !/^\/radar\/archive\//.test(rest);
     if (isArticle && foot) {
